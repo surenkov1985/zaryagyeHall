@@ -1,0 +1,71 @@
+@media (max-width: 360px) {
+  h1,
+  .h1,
+  .text-content h1 {
+    font-size: 3.75rem;
+  }
+  h2,
+  .h2,
+  .text-content h2 {
+    font-size: 2.5rem;
+  }
+  h3,
+  .h3,
+  .text-content h3 {
+    font-size: 2rem;
+  }
+  h4,
+  .h4,
+  .text-content h4 {
+    font-size: 1.75rem;
+  }
+  h5,
+  .h5,
+  .text-content h5 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .numbers {
+    font-size: 4rem;
+  }
+  .numbers_xl {
+    font-size: 16.25rem;
+  }
+  .date_xl {
+    font-family: var(--font-accent);
+    font-size: 4.75rem;
+    line-height: 1.3;
+    letter-spacing: -3%;
+  }
+  .date {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1.125rem;
+  }
+  .afisha {
+    font-size: 0.875rem;
+  }
+  .main_font {
+    font-size: 0.875rem;
+  }
+  .sm_font {
+    font-size: 0.75rem;
+  }
+  .menu_font {
+    font-size: 2.375rem;
+  }
+  .xs_font {
+    font-size: 0.75rem;
+  }
+  .btn {
+    font-size: 0.875rem;
+    justify-content: space-between;
+  }
+  .link {
+    font-size: 0.875rem;
+  }
+  label {
+    font-size: 0.875rem;
+  }
+}

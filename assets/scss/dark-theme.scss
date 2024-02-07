@@ -1,0 +1,123 @@
+.dark-theme {
+	& .btn {
+		background: var(--clr-white-10);
+		color: var(--clr-white);
+
+		& svg path {
+			fill: var(--clr-white);;
+		}
+
+		&:hover {
+			color: var(--clr-gray);
+			background: var(--clr-white);
+
+			& svg path {
+				fill: var(--clr-black);;
+			}
+		}
+
+		&:disabled {
+			border-color: var(--clr-white-20);
+			color: var(--clr-white-20);
+		}
+
+		&_with-icon {
+			gap: 10px;
+			padding: 20px 24px 20px 32px;
+			border-color: var(--clr-white-20);
+	
+			& svg {
+				width: 19px;
+				flex-shrink: 0;
+			}
+
+			&:hover {
+				border-color: var(--clr-white);
+			}
+		}
+	}
+
+	& .link {
+		color: var(--clr-white);
+
+		&:hover {
+			border-color: var(--clr-white);
+		}
+	}
+
+	& label {
+		color: var(--clr-white);
+	
+		& input[type=checkbox] {
+	
+			&:checked + span.checkbox {
+				background: var(--clr-white);
+				border-color: var(--clr-white);
+	
+				& svg {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+
+		&.label_text {
+			&:hover {
+				color: var(--clr-white);
+				& input {
+					border-color: var(--clr-white);
+					&::placeholder {
+						color: transparent;
+					}
+	
+					&:focus {
+						&::placeholder {
+							color: var(--clr-white-40);
+						}
+					}
+				}
+			}
+		}
+
+		& input[type=radio] {
+	
+			&:checked + span.checkbox {
+				background: var(--clr-white);
+				border-color: var(--clr-white);
+			}
+		}
+
+		& input[type=text], & input[type=email], & input[type=tel]  {
+			border-color: var(--clr-white-40);
+		}
+
+		& span.placeholder {
+			color: var(--clr-white-40);
+		}
+	
+		& span.checkbox {
+			border: 1px solid var(--clr-white-10);
+			background: var(--clr-white-10);
+	
+			& svg {
+				opacity: 0;
+				visibility: hidden;
+				transition: all .2s;
+
+				& path {
+					fill: var(--clr-white);
+				}
+			}
+		}
+	
+		&:hover {
+			& span.checkbox {
+				border-color: var(--clr-white);
+			}
+		}
+	
+		&.disabled {
+			color: var(--clr-white-10);
+		}
+	}
+}
