@@ -1,0 +1,126 @@
+@media (max-width: 1650px) {
+  .head__left_content {
+    gap: 72px;
+  }
+  .head__left_content .depkult-logo {
+    width: 195px;
+  }
+  .head__left .links__list {
+    gap: 1.25rem;
+  }
+  .head__left .links__item {
+    width: 28px;
+    height: 28px;
+  }
+  .head__left .links__item svg {
+    width: 85%;
+  }
+  .head__left .links.head__left .links:nth-child(2) {
+    margin-left: 20px;
+  }
+  .head__right_content {
+    padding-bottom: 27px;
+  }
+  .head__logo {
+    height: 101px;
+  }
+  .head__languages {
+    font-size: 1.25rem;
+  }
+  .btn_menu {
+    width: 56px;
+    height: 56px;
+    margin-right: -16px;
+  }
+  .btn_menu svg {
+    width: 22px;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1550px) {
+  .head__left_content {
+    gap: 68px;
+  }
+  .head__left_content .depkult-logo {
+    width: 170px;
+  }
+  .head__left .links__list {
+    gap: 1.125rem;
+  }
+  .head__left .links__item {
+    width: 26px;
+    height: 26px;
+  }
+  .head__left .links__item svg {
+    width: 85%;
+  }
+  .head__left .links.head__left .links:nth-child(2) {
+    margin-left: 20px;
+  }
+  .head__right_content {
+    padding-bottom: 26px;
+  }
+  .head__logo {
+    height: 97px;
+  }
+  .head__languages {
+    font-size: 1.125rem;
+  }
+  .btn_menu {
+    width: 52px;
+    height: 52px;
+    margin-right: -16px;
+  }
+  .btn_menu svg {
+    width: 21px;
+  }
+  .nav-link {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 1440px) {
+  .head__left_content {
+    gap: 68px;
+    padding-bottom: 8px;
+  }
+  .head__left_content .depkult-logo {
+    width: 155px;
+  }
+  .head__left .links__list {
+    gap: 1rem;
+  }
+  .head__left .links__item {
+    width: 24px;
+    height: 24px;
+  }
+  .head__left .links__item svg {
+    width: 85%;
+    height: 85%;
+  }
+  .head__left .links.head__left .links:nth-child(2) {
+    margin-left: 10px;
+  }
+  .head__right_content {
+    padding-bottom: 21px;
+  }
+  .head__logo {
+    height: 85px;
+  }
+  .head__languages {
+    font-size: 1rem;
+  }
+  .btn_menu {
+    width: 48px;
+    height: 48px;
+    margin-right: -14px;
+  }
+  .btn_menu svg {
+    width: 19px;
+    height: 14px;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}

@@ -3,13 +3,13 @@
 	// COLORS
 	--clr-black: #101010;
 	--clr-black-5: rgba(0, 0, 0, 0.05);
-	--clr-black-10: rgba(#000000, 0.1);
-	--clr-black-40: rgba(#000000, 0.4);
+	--clr-black-10: rgba(0, 0, 0, 0.1);
+	--clr-black-40: rgba(0, 0, 0, 0.4);
 
 	--clr-white: #ffffff;
-	--clr-white-10: rgba(#ffffff, 0.1);
-	--clr-white-20: rgba(#ffffff, 0.2);
-	--clr-white-40: rgba(#ffffff, 0.4);
+	--clr-white-10: rgba(255, 255, 255, 0.1);
+	--clr-white-20: rgba(255, 255, 255, 0.2);
+	--clr-white-40: rgba(255, 255, 255, 0.4);
 	
 	--clr-bg: #fbfbfb;
 
@@ -37,8 +37,8 @@
 
 	// FONTS
 
-	--font-accent: 'GolosTextWebVF' sans-serif;
-	--font-title: 'TT-Knickerbockers' sans-serif;
+	--font-accent: 'GolosTextWebVF';
+	--font-title: 'TT-Knickerbockers';
 	--font-size: 16px;
 
 

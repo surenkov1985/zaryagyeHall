@@ -1,3 +1,209 @@
+@media (max-width: 1650px) {
+	.head {
+
+		&__left {
+
+			&_content {
+				gap: 72px;
+
+				& .depkult-logo {
+					width: 195px;
+				}
+			}
+
+			& .links {
+
+				&__list {
+					gap: 1.25rem;
+				}
+
+				&__item {
+					width: 28px;
+					height: 28px;
+
+					& svg {
+						width: 85%;
+					}
+				}
+
+				&.head__left .links:nth-child(2) {
+					margin-left: 20px;
+			  }
+			}
+		}
+
+		&__right {
+
+			&_content {
+				padding-bottom: 27px;
+			}
+		}
+
+		&__logo {
+			height: 101px;
+		}
+
+		&__languages {
+			font-size: 1.25rem;
+		}
+	}
+
+	.btn {
+		&_menu {
+			width: 56px;
+			height: 56px;
+			margin-right: -16px;
+
+			& svg {
+				width: 22px;
+			}
+		}
+	}
+
+	.nav-link {
+		font-size: 1.25rem;
+	}
+
+
+}
+
+@media (max-width: 1550px) {
+	.head {
+
+		&__left {
+
+			&_content {
+				gap: 68px;
+
+				& .depkult-logo {
+					width: 170px;
+				}
+			}
+
+			& .links {
+
+				&__list {
+					gap: 1.125rem;
+				}
+
+				&__item {
+					width: 26px;
+					height: 26px;
+
+					& svg {
+						width: 85%;
+					}
+				}
+
+				&.head__left .links:nth-child(2) {
+					margin-left: 20px;
+			  }
+			}
+		}
+
+		&__right {
+
+			&_content {
+				padding-bottom: 26px;
+			}
+		}
+
+		&__logo {
+			height: 97px;
+		}
+
+		&__languages {
+			font-size: 1.125rem;
+		}
+	}
+
+	.btn {
+		&_menu {
+			width: 52px;
+			height: 52px;
+			margin-right: -16px;
+
+			& svg {
+				width: 21px;
+			}
+		}
+	}
+
+	.nav-link {
+		font-size: 1.125rem;
+	}
+
+
+}
+
 @media (max-width: 1440px) {
-	
+	.head {
+
+		&__left {
+
+			&_content {
+				gap: 68px;
+				padding-bottom: 8px;
+
+				& .depkult-logo {
+					width: 155px;
+				}
+			}
+
+			& .links {
+
+				&__list {
+					gap: 1rem;
+				}
+
+				&__item {
+					width: 24px;
+					height: 24px;
+
+					& svg {
+						width: 85%;
+						height: 85%;
+					}
+				}
+
+				&.head__left .links:nth-child(2) {
+					margin-left: 10px;
+			  }
+			}
+		}
+
+		&__right {
+
+			&_content {
+				padding-bottom: 21px;
+			}
+		}
+
+		&__logo {
+			height: 85px;
+		}
+
+		&__languages {
+			font-size: 1rem;
+		}
+	}
+
+	.btn {
+		&_menu {
+			width: 48px;
+			height: 48px;
+			margin-right: -14px;
+
+			& svg {
+				width: 19px;
+				height: 14px;
+			}
+		}
+	}
+
+	.nav-link {
+		font-size: 1rem;
+	}
+
+
 }
