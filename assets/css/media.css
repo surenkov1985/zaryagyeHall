@@ -1,9 +1,13 @@
 @media (max-width: 1650px) {
+  .depkult-logo {
+    width: 195px;
+  }
+  .menu_font {
+    font-family: var(--font-title);
+    font-size: 4.875rem;
+  }
   .head__left_content {
     gap: 72px;
-  }
-  .head__left_content .depkult-logo {
-    width: 195px;
   }
   .head__left .links__list {
     gap: 1.25rem;
@@ -35,16 +39,42 @@
   .btn_menu svg {
     width: 22px;
   }
+  .btn_social {
+    width: 160px;
+    height: 160px;
+  }
   .nav-link {
     font-size: 1.25rem;
   }
+  .foot__nav {
+    width: 29%;
+  }
+  .foot__nav_link {
+    font-size: 1.875rem;
+  }
+  .foot__contacts_phone {
+    width: 29%;
+  }
+  .foot__contacts_addr {
+    font-size: 1.25rem;
+  }
+  .scls__title {
+    font-size: 24px;
+  }
 }
 @media (max-width: 1550px) {
+  .depkult-logo {
+    width: 170px;
+  }
+  .menu_font {
+    font-family: var(--font-title);
+    font-size: 4.5rem;
+  }
+  .afisha {
+    font-size: 0.875rem;
+  }
   .head__left_content {
     gap: 68px;
-  }
-  .head__left_content .depkult-logo {
-    width: 170px;
   }
   .head__left .links__list {
     gap: 1.125rem;
@@ -76,17 +106,64 @@
   .btn_menu svg {
     width: 21px;
   }
+  .btn_social {
+    width: 140px;
+    height: 140px;
+  }
   .nav-link {
     font-size: 1.125rem;
   }
+  .foot__nav {
+    width: 28%;
+  }
+  .foot__nav_link {
+    font-size: 1.75rem;
+  }
+  .foot__contacts_phone {
+    width: 28%;
+  }
+  .foot__contacts_addr {
+    font-size: 1.125rem;
+  }
+  .foot__copy_nav_link {
+    font-size: 0.875rem;
+  }
+  .scls__title {
+    font-size: 22px;
+  }
 }
 @media (max-width: 1440px) {
+  .menu_font {
+    font-family: var(--font-title);
+    font-size: 4rem;
+  }
+  .afisha {
+    font-size: 0.75rem;
+  }
+  .container {
+    max-width: 1344px;
+  }
+  .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  .col {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .depkult-logo {
+    width: 155px;
+  }
+  .head .container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .head__left_content {
-    gap: 68px;
+    gap: 70px;
     padding-bottom: 8px;
   }
-  .head__left_content .depkult-logo {
-    width: 155px;
+  .head__left .links {
+    gap: 1rem;
   }
   .head__left .links__list {
     gap: 1rem;
@@ -99,14 +176,19 @@
     width: 85%;
     height: 85%;
   }
-  .head__left .links.head__left .links:nth-child(2) {
-    margin-left: 10px;
+  .head__left .links:nth-child(2) {
+    margin-left: 0px;
+  }
+  .head__nav_list {
+    gap: 32px;
   }
   .head__right_content {
-    padding-bottom: 21px;
+    padding-top: 12px;
+    padding-bottom: 24px;
   }
   .head__logo {
     height: 85px;
+    margin-left: -1.25rem;
   }
   .head__languages {
     font-size: 1rem;
@@ -120,7 +202,50 @@
     width: 19px;
     height: 14px;
   }
+  .btn_social {
+    width: 128px;
+    height: 128px;
+  }
+  .btn_social svg {
+    width: 20px;
+  }
+  .btn_social svg.tg {
+    width: 15px;
+  }
   .nav-link {
     font-size: 1rem;
+  }
+  .foot__left_content {
+    padding-top: 37px;
+    padding-bottom: 27px;
+  }
+  .foot__nav {
+    width: 27%;
+  }
+  .foot__nav_link {
+    font-size: 1.5rem;
+  }
+  .foot__contacts_phone {
+    width: 27%;
+  }
+  .foot__contacts_addr {
+    font-size: 1rem;
+  }
+  .foot__copy_text {
+    max-width: 285px;
+  }
+  .foot__copy_nav_list {
+    gap: 4px;
+  }
+  .foot__copy_nav_link {
+    font-size: 0.75rem;
+  }
+  .scls {
+    gap: 16px;
+    margin-bottom: -20px;
+  }
+  .scls__title {
+    max-width: 308px;
+    font-size: 20px;
   }
 }

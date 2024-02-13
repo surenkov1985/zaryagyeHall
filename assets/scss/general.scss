@@ -177,7 +177,7 @@ body {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	min-width: 370px;
+	min-width: 320px;
 	margin: 0;
 	overflow-x: hidden;
 	color: var(--clr-black);
@@ -274,6 +274,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-grow: 1;
 	/* gap: var(--main-content-gap); */
 }
 
@@ -387,11 +388,20 @@ h5,
 
 .menu_font {
 	font-family: var(--font-title);
-	font-size: 2.375rem;
+	font-size: 5.25rem;
 }
 
 .xs_font {
 	font-size: 0.75rem;
 	line-height: 1.6;
 	letter-spacing: 0%;
+}
+
+.main_font {
+	font-size: 1.375rem;
+	line-height: 1.4;
+}
+
+.light_text {
+	color: var(--clr-black-40);
 }

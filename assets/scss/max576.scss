@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+
+	.wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.head {
+		&__logo {
+			// height: 56px;
+			margin-left: 0;
+		}
+
+		&__right {
+			padding-left: 2px;
+		}
+
+		&__left {
+			padding-right: 2px;
+		}
+
+		& .col {
+			&-2 {
+				width: calc(100% / 12 * 4);
+			}
+
+			&-5 {
+				width: calc(100% / 12 * 4);
+			}
+		}
+	}
+}

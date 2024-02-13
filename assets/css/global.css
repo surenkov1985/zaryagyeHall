@@ -38,7 +38,8 @@
   transition: all 0.5s;
 }
 .btn_social {
-  padding: 52px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background: var(--clr-black-5);
   -webkit-backdrop-filter: var(--bg-filter-blur);
@@ -246,6 +247,7 @@ label.label_radio {
   height: 100%;
   min-height: 100vh;
   padding: 0 2rem;
+  position: relative;
 }
 
 .container {
@@ -299,8 +301,16 @@ label.label_radio {
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .nav-link {
@@ -308,8 +318,16 @@ label.label_radio {
   transition: all 0.3s;
   font-family: var(--font-accent);
   line-height: 1.4;
+  white-space: nowrap;
 }
 .nav-link:hover {
+  color: var(--clr-black-40);
+}
+
+.menu-link {
+  transition: all 0.5s;
+}
+.menu-link:hover {
   color: var(--clr-black-40);
 }
 
@@ -324,4 +342,8 @@ label.label_radio {
   visibility: visible;
   opacity: 1;
   transform: translateX(-50%) translateY(0px);
+}
+
+.max991 {
+  display: none !important;
 }
