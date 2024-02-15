@@ -32,6 +32,9 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .head .btn_menu {
+    margin-right: -12px;
+  }
   .head__left_content {
     gap: 32px;
     padding-bottom: 8px;
@@ -71,13 +74,51 @@
   .btn_menu {
     width: 44px;
     height: 44px;
-    margin-right: -12px;
   }
   .btn_menu svg {
     width: 19px;
     height: 14px;
   }
+  .btn_social {
+    width: 118px;
+    height: 118px;
+  }
+  .btn_social svg {
+    width: 18px;
+  }
+  .btn_social svg.tg {
+    width: 15px;
+  }
   .nav-link {
     font-size: 1rem;
+  }
+  .foot__nav {
+    width: 30%;
+  }
+  .foot__nav_link {
+    font-size: 1.5rem;
+  }
+  .foot__contacts {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .foot__copy_nav {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .scroll_top {
+    overflow-x: hidden;
+    align-items: flex-end;
+  }
+  .scroll_top_btn {
+    height: 40px;
+  }
+  .scroll_top > .icon {
+    width: auto;
+    height: 40px;
+  }
+  .scroll_top > svg {
+    width: auto;
+    height: 40px;
   }
 }

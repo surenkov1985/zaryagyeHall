@@ -10,6 +10,10 @@
 
 	.head {
 
+		& .btn_menu {
+			margin-right: -16px;
+		}
+
 		&__left {
 
 			&_content {
@@ -59,7 +63,7 @@
 		&_menu {
 			width: 56px;
 			height: 56px;
-			margin-right: -16px;
+			// margin-right: -16px;
 
 			& svg {
 				width: 22px;
@@ -89,7 +93,7 @@
 		&__contacts {
 
 			&_phone {
-				width: 29%;
+				// width: 29%;
 			}
 			
 			&_addr {
@@ -173,7 +177,7 @@
 		&_menu {
 			width: 52px;
 			height: 52px;
-			margin-right: -16px;
+			// margin-right: -16px;
 
 			& svg {
 				width: 21px;
@@ -203,7 +207,7 @@
 		&__contacts {
 
 			&_phone {
-				width: 28%;
+				// width: 28%;
 			}
 
 			&_addr {
@@ -267,6 +271,10 @@
 			padding-bottom: 16px;
 		}
 
+		& .btn_menu {
+			margin-right: -14px;
+		}
+
 		&__left {
 
 			&_content {
@@ -327,7 +335,7 @@
 		&_menu {
 			width: 48px;
 			height: 48px;
-			margin-right: -14px;
+			// margin-right: -14px;
 
 			& svg {
 				width: 19px;
@@ -355,16 +363,32 @@
 
 	.foot {
 
+		& .container {
+			padding-bottom: 40px;
+		}
+
 		&__left {
 
 			&_content {
 				padding-top: 37px;
-				padding-bottom: 27px;
+				padding-bottom: 30px;
+			}
+		}
+
+		&__right {
+
+			&_content {
+				padding-top: 32px;
+				padding-bottom: 22px;
 			}
 		}
 
 		&__nav {
 			width: 27%;
+
+			&_list {
+				gap: 16px;
+			}
 
 			&_link {
 				font-size: 1.5rem;
@@ -374,7 +398,7 @@
 		&__contacts {
 
 			&_phone {
-				width: 27%;
+				// width: 27%;
 			}
 
 			&_addr {
@@ -383,6 +407,7 @@
 		}
 
 		&__copy {
+			padding-top: 30px;
 
 			&_text {
 				max-width: 285px;
@@ -391,7 +416,7 @@
 			&_nav {
 
 				&_list {
-					gap: 4px;
+					gap: 6px;
 				}
 				
 				&_link {
@@ -403,7 +428,7 @@
 
 	.scls {
 		gap: 16px;
-		margin-bottom: -20px;
+		margin-bottom: -17px;
 
 		&__title {
 			max-width: 308px;

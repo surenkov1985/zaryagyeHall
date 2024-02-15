@@ -45,6 +45,10 @@
 			padding-bottom: 16px;
 		}
 
+		& .btn_menu {
+			margin-right: -12px;
+		}
+
 		&__left {
 
 			&_content {
@@ -104,11 +108,24 @@
 		&_menu {
 			width: 44px;
 			height: 44px;
-			margin-right: -12px;
+			// margin-right: -12px;
 
 			& svg {
 				width: 19px;
 				height: 14px;
+			}
+		}
+
+		&_social {
+			width: 118px;
+			height: 118px;
+
+			& svg {
+				width: 18px;
+
+				&.tg {
+					width: 15px;
+				}
 			}
 		}
 	}
@@ -117,5 +134,48 @@
 		font-size: 1rem;
 	}
 
+	.foot {
 
+		&__nav {
+			width: 30%;
+
+
+			&_link {
+				font-size: 1.5rem;
+			}
+		}
+
+		&__contacts {
+			gap: 18px;
+			flex-wrap: wrap;
+		}
+
+		&__copy {
+
+			&_nav {
+				gap: 6px;
+			flex-wrap: wrap;
+			}
+		}
+	}
+
+	.scroll_top {
+		overflow-x: hidden;
+		// height: 40px;
+		align-items: flex-end;
+
+		&_btn {
+			height: 40px;
+		}
+
+		&>.icon {
+			width: auto;
+			height: 40px;
+		}
+
+		&>svg {
+			width: auto;
+			height: 40px;
+		}
+	}
 }

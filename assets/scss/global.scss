@@ -4,9 +4,11 @@
 	justify-content: center;
 	cursor: pointer;
 	transition: all 0.5s;
-	padding: 21px 48px;
+	padding: 17px 42px;
 	background: var(--clr-black-5);
 	border-radius: 73px;
+	font-size: 1.375rem;
+	line-height: 1.4;
 
 	&:hover {
 		background: var(--clr-black);
@@ -93,12 +95,102 @@
 		width: 64px;
 		height: 64px;
 		border-radius: 50%;
-		margin-right: -20px;
+		// margin-right: -20px;
 		// margin-left: auto;
 
 		& svg {
+			// width: 24px;
+			// height: 16px;
+		}
+
+		& .lines {
+			display: flex;
+			flex-direction: column;
 			width: 24px;
 			height: 16px;
+			align-items: flex-end;
+			justify-content: space-between;
+			position: relative;
+		}
+
+		& .line {
+			display: block;
+			position: absolute;
+			height: 1px;
+			background: var(--clr-black);
+			transition: all .5s;
+
+			&-1 {
+				width: 100%;
+				top: 0;
+			}
+
+			&-2 {
+				width: 60%;
+				top: 50%;
+			}
+
+			&-3 {
+				width: 100%;
+				bottom: 0;
+			}
+		}
+
+		&:hover {
+
+			& .line {
+				background: var(--clr-white);
+
+				&-1 {
+					animation-name: slideTo;
+					animation-duration: 0.9s;
+					animation-timing-function: linear;
+					animation-fill-mode: both;
+					animation-iteration-count: infinite;
+				}
+
+				&-2 {
+					animation-name: slideFrom;
+					animation-duration: 0.9s;
+					animation-timing-function: linear;
+					animation-fill-mode: both;
+					animation-iteration-count: infinite;
+					animation-delay: 0.2s;
+				}
+
+				&-3 {
+					animation-name: slideTo;
+					animation-duration: 0.9s;
+					animation-timing-function: linear;
+					animation-fill-mode: both;
+					animation-iteration-count: infinite;
+					animation-delay: 0.4s;
+				}
+			}
+		}
+
+		&.active {
+
+			& .line {
+
+				&-1 {
+					width: 100%;
+					transform: rotate(45deg);
+					top: calc(50% - 1px);
+					animation-name: none;
+				}
+
+				&-2 {
+					opacity: 0;
+				}
+
+				&-3 {
+					width: 100%;
+					transform: rotate(-45deg);
+					bottom: calc(50% - 1px);
+					animation-name: none;
+				}
+			}
 		}
 		// background: none !important;
 
@@ -142,6 +234,30 @@
 				fill: var(--clr-black);
 			}
 		}
+	}
+}
+
+@keyframes slideTo {
+	from {
+		width: 100%;
+	} 
+	50%{
+		width: 60%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes slideFrom {
+	from {
+		width: 60%;
+	} 
+	50%{
+		width: 100%;
+	}
+	to {
+		width: 60%;
 	}
 }
 
@@ -395,11 +511,34 @@ label {
 
 	&:hover {
 		color: var(--clr-black-40);
+
+		& .icon {
+
+			& svg {
+	
+				& path {
+					fill: var(--clr-black-40);
+				}
+			}
+		}
+	}
+
+	& .icon {
+
+		& svg {
+			transition: all .3s;
+
+			& path {
+				transition: all .3s;
+			}
+		}
 	}
 }
 
 .menu-link {
+	line-height: 1;
 	transition: all .5s;
+	
 	&:hover {
 		color: var(--clr-black-40);
 	}
@@ -430,4 +569,8 @@ label {
 
 .max991 {
 	display: none !important;
+}
+
+.hidden {
+	overflow: hidden;
 }

@@ -82,6 +82,10 @@
 			width: 40px !important;
 			height: 40px !important;
 		}
+
+		&_social {
+			justify-content: center;
+		}
 	}
 
 	.link {
@@ -145,6 +149,144 @@
 					width: calc(100% / 12 * 4);
 				}
 			}
+		}
+	}
+
+	.foot {
+
+		& .container {
+			padding-top: 40px;
+			padding-bottom: 56px;
+		}
+
+		& .menu_font {
+			font-size: 2rem;
+		}
+
+		&__nav {
+			width: 100%;
+			margin-left: 0;
+			max-width: none;
+			
+
+			&_list {
+				flex-wrap: wrap;
+				max-height: 65px;
+				gap: 8px;
+			}
+
+			&_link {
+				font-size: 1.25rem;
+			}
+		}
+
+		&__contacts {
+			&_phone {
+				margin-right: 10px;
+				& .nav-link {
+					font-size: 0.875rem;
+				}
+			}
+		}
+
+		& .row {
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		& .col-2, & .col-4, & .col-5 {
+			width: 100%;
+		}
+
+		& .scls {
+			margin-bottom: 0px;
+			flex-direction: row;
+			justify-content: space-between;
+
+			&__title {
+				width: 100%;
+				max-width: none;
+				line-height: 1.4;
+				font-size: 18px;
+			}
+		}
+
+		&__left {
+			&_content {
+				padding-top: 0px;
+				padding-bottom: 14px;
+				gap: 24px;
+			}
+		}
+
+		&__right {
+
+			&_content {
+				padding-top: 0px;
+				padding-bottom: 16px;
+				gap: 48px;
+			}
+		}
+
+		&__copy {
+			padding-top: 18px;
+
+			& .row {
+				gap: 4px;
+			}
+
+			&_nav {
+				gap: 4px;
+
+				&_list {
+					gap: 4px;
+				}
+			}
+
+			& .afisha {
+				font-size: 0.75rem;
+			}
+
+			&_text {
+				max-width: none;
+			}
+			
+		}
+
+		&__email {
+			& .menu-link {
+				width: 100%;
+				justify-content: space-between;
+				display: flex;
+				align-items: center;
+	
+				& .icon {
+					display: flex;
+					width: 32px;
+					height: 32px;
+					align-items: center;justify-content: center;
+				}
+			}
+		}
+	}
+
+	.scroll_top {
+
+		& .lg {display: none;}
+
+		& .sm {
+			display: inline;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	
+	.btn {
+
+		&_social {
+			width: 90px;
+			height: 90px;
 		}
 	}
 }

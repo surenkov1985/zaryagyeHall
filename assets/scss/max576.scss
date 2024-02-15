@@ -4,6 +4,9 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.menu_font {
+		font-size: 3rem;
+	}
 	.head {
 		&__logo {
 			// height: 56px;
@@ -28,4 +31,113 @@
 			}
 		}
 	}
+
+	.foot {
+
+		& .container {
+			padding-top: 40px;
+			padding-bottom: 56px;
+		}
+
+		&__nav {
+			width: 100%;
+			margin-left: 0;
+			max-width: none;
+			align-content: space-between;
+
+			&_list {
+				flex-wrap: wrap;
+				max-height: 65px;
+				gap: 8px;
+				align-content: space-between;
+			}
+
+			&_item {
+				width: 42%;
+			}
+
+			&_link {
+				font-size: 1.25rem;
+			}
+		}
+
+		& .row {
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		& .col-2, & .col-4, & .col-5 {
+			width: 100%;
+		}
+
+		
+
+		& .scls {
+			margin-bottom: 0px;
+			flex-direction: row;
+			justify-content: space-between;
+
+			&__title {
+				width: 100%;
+				max-width: none;
+				line-height: 1.4;
+			}
+		}
+
+		&__left {
+			&_content {
+				padding-top: 0px;
+				padding-bottom: 20px;
+				gap: 24px;
+			}
+		}
+
+		&__right {
+
+			&_content {
+				padding-top: 0px;
+				padding-bottom: 20px;
+				gap: 48px;
+			}
+		}
+
+		&__copy {
+			padding-top: 24px;
+
+			& .row {
+				gap: 8px;
+			}
+
+			&_nav {
+				gap: 4px;
+			}
+
+			&_list {
+				gap: 4px;
+			}
+
+			&_text {
+				max-width: none;
+			}
+			
+		}
+
+		&__email {
+			& .menu-link {
+				width: 100%;
+				justify-content: space-between;
+				display: flex;
+				align-items: center;
+	
+				& .icon {
+					display: flex;
+					width: 32px;
+					height: 32px;
+					align-items: center;justify-content: center;
+				}
+			}
+		}
+	}
+
+	
 }

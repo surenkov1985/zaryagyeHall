@@ -15,6 +15,14 @@
     padding-left: 0.625rem;
     padding-right: 0.625rem;
   }
+  .btn_social {
+    width: 108px;
+    height: 108px;
+    padding: 0;
+  }
+  .btn_social svg.tg {
+    width: 15px;
+  }
   .col-2 {
     width: 16.6666666667%;
   }
@@ -70,5 +78,14 @@
   .head__right_content .btn_menu svg {
     width: 18px;
     height: 12px;
+  }
+  .foot .container {
+    padding-top: 36px;
+  }
+  .foot__nav {
+    width: 40%;
+  }
+  .foot .scls {
+    margin-bottom: 0;
   }
 }

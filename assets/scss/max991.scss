@@ -20,6 +20,23 @@
 		padding-left: 0.625rem;
 		padding-right: 0.625rem;
 	}
+
+	.btn {
+
+		&_social {
+			width: 108px;
+			height: 108px;
+			padding: 0;
+
+			& svg {
+				// width: 18px;
+
+				&.tg {
+					width: 15px;
+				}
+			}
+		}
+	}
 	
 	.col-2 {
 		width: calc(100% / 12 * 2);
@@ -104,5 +121,23 @@
 				}
 			}
 		}
+	}
+
+	.foot {
+
+		& .container {
+			padding-top: 36px;
+		}
+
+		&__nav {
+			width: 40%;
+			// margin-left: 0;
+		}
+
+		.scls {
+			margin-bottom: 0;
+		}
+
+		
 	}
 }

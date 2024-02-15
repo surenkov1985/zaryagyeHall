@@ -6,6 +6,9 @@
     font-family: var(--font-title);
     font-size: 4.875rem;
   }
+  .head .btn_menu {
+    margin-right: -16px;
+  }
   .head__left_content {
     gap: 72px;
   }
@@ -34,7 +37,6 @@
   .btn_menu {
     width: 56px;
     height: 56px;
-    margin-right: -16px;
   }
   .btn_menu svg {
     width: 22px;
@@ -51,9 +53,6 @@
   }
   .foot__nav_link {
     font-size: 1.875rem;
-  }
-  .foot__contacts_phone {
-    width: 29%;
   }
   .foot__contacts_addr {
     font-size: 1.25rem;
@@ -101,7 +100,6 @@
   .btn_menu {
     width: 52px;
     height: 52px;
-    margin-right: -16px;
   }
   .btn_menu svg {
     width: 21px;
@@ -118,9 +116,6 @@
   }
   .foot__nav_link {
     font-size: 1.75rem;
-  }
-  .foot__contacts_phone {
-    width: 28%;
   }
   .foot__contacts_addr {
     font-size: 1.125rem;
@@ -157,6 +152,9 @@
   .head .container {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  .head .btn_menu {
+    margin-right: -14px;
   }
   .head__left_content {
     gap: 70px;
@@ -196,7 +194,6 @@
   .btn_menu {
     width: 48px;
     height: 48px;
-    margin-right: -14px;
   }
   .btn_menu svg {
     width: 19px;
@@ -215,34 +212,44 @@
   .nav-link {
     font-size: 1rem;
   }
+  .foot .container {
+    padding-bottom: 40px;
+  }
   .foot__left_content {
     padding-top: 37px;
-    padding-bottom: 27px;
+    padding-bottom: 30px;
+  }
+  .foot__right_content {
+    padding-top: 32px;
+    padding-bottom: 22px;
   }
   .foot__nav {
     width: 27%;
   }
+  .foot__nav_list {
+    gap: 16px;
+  }
   .foot__nav_link {
     font-size: 1.5rem;
   }
-  .foot__contacts_phone {
-    width: 27%;
-  }
   .foot__contacts_addr {
     font-size: 1rem;
+  }
+  .foot__copy {
+    padding-top: 30px;
   }
   .foot__copy_text {
     max-width: 285px;
   }
   .foot__copy_nav_list {
-    gap: 4px;
+    gap: 6px;
   }
   .foot__copy_nav_link {
     font-size: 0.75rem;
   }
   .scls {
     gap: 16px;
-    margin-bottom: -20px;
+    margin-bottom: -17px;
   }
   .scls__title {
     max-width: 308px;
