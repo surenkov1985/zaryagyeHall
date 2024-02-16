@@ -121,4 +121,45 @@
     width: auto;
     height: 40px;
   }
+  .mobile__head .container {
+    padding-bottom: 8px;
+  }
+  .mobile__head .head__right_content {
+    justify-content: flex-end;
+    gap: 80px;
+    padding-bottom: 22px;
+  }
+  .mobile__nav {
+    flex: 1 1 270px;
+  }
+  .mobile__nav:nth-child(2) {
+    margin-left: 0px;
+  }
+  .mobile__nav:nth-child(3) {
+    margin-left: 0px;
+  }
+  .mobile__nav:nth-child(4) {
+    margin-right: 0px;
+  }
+  .mobile__nav:nth-child(5) {
+    margin-right: 0px;
+  }
+  .mobile__nav_title {
+    font-size: 2.375rem;
+    margin-bottom: 1.125rem;
+  }
+  .mobile__nav_list {
+    gap: 12px;
+  }
+  .mobile__scls {
+    gap: 8px;
+  }
+  .mobile__body_cols {
+    padding-top: 100px;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .animate__animated {
+    animation-duration: 1.2s;
+  }
 }

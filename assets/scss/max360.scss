@@ -76,6 +76,7 @@
 	.btn {
 		font-size: .875rem;
 		justify-content: space-between;
+		padding: 12px 28px;
 
 		&_menu {
 			justify-content: center;
@@ -276,6 +277,84 @@
 
 		& .sm {
 			display: inline;
+		}
+	}
+
+	.mobile {
+
+		&__head {
+				& .container {
+					padding-bottom: 0px;
+				}
+			& .head {
+
+				&__right {
+	
+					&_content {
+						justify-content: flex-end;
+						gap: 80px;
+						padding-bottom: 8px;
+					}
+				}
+
+				&__bottom {
+					padding-top: 7px;
+
+					&_sm {
+						padding-bottom: 12px;
+
+						& .head__right {
+							gap: 24px;
+						}
+					}
+				}
+			}
+		}
+
+		&__nav {
+			width: 100%;
+			flex: 0 0 0 ;
+
+			&_title {
+				font-size: 2rem;
+				padding: 20px 0 19px;
+				border-bottom: 1px solid rgb(216, 216, 216);
+				margin-bottom: 36px;
+			}
+
+			&_list {
+				gap: 28px;
+			}
+
+			&_btn {
+				display: flex;
+				width: 100%;
+				margin-bottom: 0;
+				padding: 20px 0 19px;
+			}
+		}
+
+		&__scls {
+			gap: 8px;
+
+			& .btn {
+				width: 48px !important;
+				height: 48px !important;
+			}
+		}
+
+		&__body {
+
+			&_cols {
+				margin-bottom: 56px;
+			}
+		}
+
+		&__wave {
+			// height: 80px;
+			& .lg	{
+				// display: none;
+			}
 		}
 	}
 }

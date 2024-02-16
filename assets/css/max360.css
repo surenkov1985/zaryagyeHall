@@ -61,6 +61,7 @@
   .btn {
     font-size: 0.875rem;
     justify-content: space-between;
+    padding: 12px 28px;
   }
   .btn_menu {
     justify-content: center;
@@ -209,6 +210,52 @@
   }
   .scroll_top .sm {
     display: inline;
+  }
+  .mobile__head .container {
+    padding-bottom: 0px;
+  }
+  .mobile__head .head__right_content {
+    justify-content: flex-end;
+    gap: 80px;
+    padding-bottom: 8px;
+  }
+  .mobile__head .head__bottom {
+    padding-top: 7px;
+  }
+  .mobile__head .head__bottom_sm {
+    padding-bottom: 12px;
+  }
+  .mobile__head .head__bottom_sm .head__right {
+    gap: 24px;
+  }
+  .mobile__nav {
+    width: 100%;
+    flex: 0 0 0;
+  }
+  .mobile__nav_title {
+    font-size: 2rem;
+    padding: 20px 0 19px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin-bottom: 36px;
+  }
+  .mobile__nav_list {
+    gap: 28px;
+  }
+  .mobile__nav_btn {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 20px 0 19px;
+  }
+  .mobile__scls {
+    gap: 8px;
+  }
+  .mobile__scls .btn {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .mobile__body_cols {
+    margin-bottom: 56px;
   }
 }
 @media (max-width: 350px) {

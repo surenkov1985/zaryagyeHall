@@ -10,10 +10,20 @@
 	}
 
 	.btn {
+		padding: 12px 34px;
+
+		&_menu {
+			padding: 0 !important;
+			& .lines {
+				width: 18px;
+				height: 14px;
+				
+			}
+		}
 		&_social {
 			width: 96px;
 			height: 96px;
-			padding: 0;
+			padding: 0 !important;
 
 			& svg {
 				width: 20px;
@@ -73,6 +83,10 @@
 
 		&__bottom {
 			padding-top: 10px;
+
+			&_sm {
+				display: flex;
+			}
 		}
 
 		&__logo {
@@ -134,6 +148,113 @@
 					gap: 4px;
 				}
 			
+		}
+	}
+
+	.mobile {
+
+		&__head {
+				& .container {
+					padding-bottom: 0px;
+				}
+			& .head {
+
+				
+	
+				&__right {
+	
+					&_content {
+						justify-content: flex-end;
+						gap: 80px;
+						padding-bottom: 8px;
+					}
+				}
+			}
+		}
+
+		&__nav {
+			width: 100%;
+			flex: 0 0 0 ;
+
+			&:nth-child(2) {
+				margin-left: 0px;
+			}
+
+			&:nth-child(3) {
+				margin-left: 0px;
+			}
+	
+			&:nth-child(4) {
+				margin-right: 0px;
+			}
+	
+			&:nth-child(5) {
+				margin-right: 0px;
+			}
+
+			&_title {
+				font-size: 2.375rem;
+				margin-bottom: 1.125rem;
+
+				& .icon {
+					display: flex;
+				}
+			}
+
+			&_list {
+				gap: 12px;
+			}
+
+			&_btn {
+				display: flex;
+				width: 100%;
+				margin-bottom: 0;
+			}
+
+			&_sublist {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				transform: translateX(-100%);
+				background: rgb(251,251,251);
+				visibility: hidden;
+				z-index: 10;
+
+				&.active {
+					transition: all 0.5s;
+					visibility: visible;
+					transform: translateX(0);
+				}
+			}
+		}
+
+		&__scls {
+			gap: 12px;
+		}
+
+		&__body {
+
+			& .container {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			&_cols {
+				padding-top: 0px;
+				gap: 0px;
+				position: relative;
+				flex-direction: column;
+				margin-bottom: 284px;
+			}
+		}
+
+		&__wave {
+			// height: 80px;
+			& .lg	{
+				// display: none;
+			}
 		}
 	}
 }

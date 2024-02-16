@@ -22,7 +22,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" /> -->
 	<link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="/assets/libs/animate/style.css">
 	<link rel="stylesheet" href="/assets/libs/fancybox/style.css">
@@ -227,8 +227,8 @@
 								<button class="btn btn_menu">
 									<span class="lines">
 										<span class="line line-1"></span>
-										<span class="line line-1"></span>
-										<span class="line line-1"></span>
+										<span class="line line-2"></span>
+										<span class="line line-3"></span>
 									</span>
 
 									<!-- <svg width="19.000000" height="13.000000" viewBox="0 0 19 13" fill="none"
@@ -606,30 +606,20 @@
 											<button class="btn btn_menu active">
 												<span class="lines">
 													<span class="line line-1"></span>
-													<span class="line line-1"></span>
-													<span class="line line-1"></span>
+													<span class="line line-2"></span>
+													<span class="line line-3"></span>
 												</span>
-
-												<!-- <svg width="19.000000" height="13.000000" viewBox="0 0 19 13" fill="none"
-											xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-											<defs />
-											<path id="Vector"
-												d="M0 0.5C0 0.223877 0.223877 0 0.5 0L18.5 0C18.7761 0 19 0.223877 19 0.5C19 0.776123 18.7761 1 18.5 1L0.5 1C0.223877 1 0 0.776123 0 0.5ZM6 6.5C6 6.22388 6.22388 6 6.5 6L18.5 6C18.7761 6 19 6.22388 19 6.5C19 6.77612 18.7761 7 18.5 7L6.5 7C6.22388 7 6 6.77612 6 6.5ZM0.5 12C0.223877 12 0 12.2239 0 12.5C0 12.7761 0.223877 13 0.5 13L18.5 13C18.7761 13 19 12.7761 19 12.5C19 12.2239 18.7761 12 18.5 12L0.5 12Z"
-												fill="#101010" fill-opacity="1.000000" fill-rule="evenodd" />
-										</svg> -->
 											</button>
 										</div>
 										<div class="head__right_content min991">
-											<!-- <nav class="head__nav">
-											<ul class="head__nav_list">
-												<li class="head__nav_item"><a href="/afisha.html" class="nav-link">Афиша</a></li>
-												<li class="head__nav_item"><a href="/o-zale.html" class="nav-link">О зале</a></li>
-												<li class="head__nav_item"><a href="/zritelyam.html" class="nav-link">Зрителям</a>
-												</li>
-												<li class="head__nav_item"><a href="/contacts.html" class="nav-link">Контакты</a>
-												</li>
-											</ul>
-										</nav> -->
+											<div class="head__theme">
+												<div class="head__theme_toggle">
+													<label class="switch">
+														<input type="checkbox">
+														<span class="slider round"></span>
+													</label>
+												</div>
+											</div>
 											<div class="head__languages ">
 												<div class="head__languages_dropdown dropdown dropdown-light">
 													<div class="dropdown__value"><span class="value">En</span></div>
@@ -649,13 +639,82 @@
 									</div>
 								</div>
 							</div>
+							<div class="head__bottom_sm">
+								<div class="head__left_controls">
+									<div class="links">
+										<a href="" class="links__item">
+											<svg width="15.339966" height="19.405991" viewBox="0 0 15.34 19.406" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path
+													d="M0.5 15.9584C0.5 18.3003 3.78186 18.906 7.67053 18.906C11.5381 18.906 14.84 18.3203 14.84 15.9793C14.84 13.6384 11.5591 13.0317 7.67053 13.0317C3.80286 13.0317 0.5 13.6165 0.5 15.9584Z"
+													stroke="#101010" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" />
+												<path
+													d="M12.2656 5.09525C12.2656 2.55713 10.2085 0.5 7.67041 0.5C5.13232 0.5 3.07422 2.55713 3.07422 5.09525C3.06567 7.62476 5.1095 9.68286 7.63806 9.69142L7.67041 9.69142C10.2085 9.69142 12.2656 7.63333 12.2656 5.09525Z"
+													stroke="#101010" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" />
+											</svg>
+
+										</a>
+									</div>
+
+								</div>
+								<div class="head__right">
+
+									<div class="links">
+										<a href="" class="links__item">
+											<svg width="19.500000" height="15.604004" viewBox="0 0 19.5 15.604" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path
+													d="M9.74951 10.9632C8.00354 10.9632 6.5885 9.54819 6.5885 7.80219C6.5885 6.05518 8.00354 4.64018 9.74951 4.64018C11.4955 4.64018 12.9115 6.05518 12.9115 7.80219C12.9115 9.54819 11.4955 10.9632 9.74951 10.9632Z"
+													stroke="#101010" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" />
+												<path
+													d="M19 7.802C17.0389 3.23801 13.556 0.5 9.74805 0.5L9.75195 0.5C5.94397 0.5 2.46106 3.23801 0.5 7.802C2.46106 12.366 5.94397 15.104 9.75195 15.104L9.74805 15.104C13.556 15.104 17.0389 12.366 19 7.802Z"
+													stroke="#101010" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" />
+											</svg>
+
+
+										</a>
+										<a href="" class="links__item">
+											<svg width="21.000000" height="18.999985" viewBox="0 0 21 19" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path
+													d="M16.4026 6.35115L11.9594 9.96419C11.1199 10.6302 9.93872 10.6302 9.09924 9.96419L4.61841 6.35115"
+													stroke="#101010" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" stroke-linecap="round" />
+												<path
+													d="M20.5 12.9384L20.5 6.07001C20.5 2.99884 18.4502 0.5 15.4088 0.5L5.59119 0.5C2.5498 0.5 0.5 2.99884 0.5 6.07001L0.5 12.9384C0.5 16.0096 2.5498 18.5084 5.59119 18.5L15.4088 18.5C18.4502 18.5084 20.5 16.0096 20.5 12.9384Z"
+													stroke="#101010" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" />
+											</svg>
+										</a>
+									</div>
+									<div class="head__languages ">
+										<div class="head__languages_dropdown dropdown dropdown-light">
+											<div class="dropdown__value"><span class="value">En</span></div>
+											<div class="dropdown__list">
+												<div class="dropdown__item">
+													<!-- <input type="radio" name="sortby" value=""> -->
+													<a href="/ru/" class="value">Ru</a>
+												</div>
+												<div class="dropdown__item">
+													<!-- <input type="radio" name="sortby" value=""> -->
+													<a href="/fr/" class="value">Fr</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
 
 						</div>
 					</div>
 					<div class="mobile__body">
 						<div class="container">
-							<div class="mobile__contacts d-flex justify-between animated fadeInUpSm "
-								style="animation-name: fadeInUpSm;">
+							<div class="mobile__contacts d-flex justify-between  ">
 								<div class="mobile__scls">
 									<a href="#" class="btn btn_menu">
 										<svg width="13.333374" height="7.333374" viewBox="0 0 13.3334 7.33337" fill="none"
@@ -686,128 +745,248 @@
 							</div>
 							<div class="mobile__body_cols">
 								<nav class="mobile__nav">
-									<span class="mobile__nav_title menu_font"><span class="d-flex animated fadeInUp"
-											style="animation-delay: 0.2s;">Афиша</span></span>
-									<ul class="mobile__nav_list">
-										<li class="mobile__nav_item  animated fadeInUp " style="animation-delay: 0.3s;">
-											<a href="" class="mobile__nav_link nav-link">Все события</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp" style="animation-delay: 0.4s;">
-											<a href="" class="mobile__nav_link nav-link">Лекции</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp " style="animation-delay: 0.5s;">
-											<a href="" class="mobile__nav_link nav-link">Экскурсии</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp " style="animation-delay: 0.6s;">
-											<a href="" class="mobile__nav_link nav-link">Фестивали</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp " style="animation-delay: 0.7s;">
-											<a href="" class="mobile__nav_link nav-link">Переносы и отмены</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-6s"
-											style="animation-delay: 0.8s;">
-											<a href="" class="mobile__nav_link nav-link">Трансляции</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-7s"
-											style="animation-delay: 0.9s;">
-											<a href="" class="mobile__nav_link nav-link">Архив мероприятий</a>
-										</li>
-									</ul>
+									<button class="mobile__nav_title mobile__nav_btn menu_font">
+										<span class="d-flex animate " style="animation-delay: 0.2s;">Афиша</span>
+										<span class="icon">
+											<svg width="6.001953" height="11.004089" viewBox="0 0 6.00195 11.0041" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path id="Vector" d="M0.501953 0.502045L5.50195 5.50204L0.501953 10.502"
+													stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" stroke-linecap="round" />
+											</svg>
+										</span>
+									</button>
+									<div class="mobile__nav_sublist">
+										<span class="mobile__nav_title menu_font">
+											<span class="icon">
+												<svg width="6.002197" height="11.004089" viewBox="0 0 6.0022 11.0041" fill="none"
+													xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<path id="Vector" d="M5.50024 0.502045L0.500244 5.50204L5.50024 10.502"
+														stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+														stroke-linejoin="round" stroke-linecap="round" />
+												</svg>
+											</span>
+											<span class="d-flex animate " style="animation-delay: 0.2s;">Афиша</span></span>
+										<ul class="mobile__nav_list">
+											<li class="mobile__nav_item  animate  " style="animation-delay: 0.3s;">
+												<a href="" class="mobile__nav_link nav-link">Все события</a>
+											</li>
+											<li class="mobile__nav_item animate " style="animation-delay: 0.4s;">
+												<a href="" class="mobile__nav_link nav-link">Лекции</a>
+											</li>
+											<li class="mobile__nav_item animate  " style="animation-delay: 0.5s;">
+												<a href="" class="mobile__nav_link nav-link">Экскурсии</a>
+											</li>
+											<li class="mobile__nav_item animate  " style="animation-delay: 0.6s;">
+												<a href="" class="mobile__nav_link nav-link">Фестивали</a>
+											</li>
+											<li class="mobile__nav_item animate  " style="animation-delay: 0.7s;">
+												<a href="" class="mobile__nav_link nav-link">Переносы и отмены</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-6s" style="animation-delay: 0.8s;">
+												<a href="" class="mobile__nav_link nav-link">Трансляции</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-7s" style="animation-delay: 0.9s;">
+												<a href="" class="mobile__nav_link nav-link">Архив мероприятий</a>
+											</li>
+										</ul>
+									</div>
+
 								</nav>
 								<nav class="mobile__nav">
-									<span class="mobile__nav_title menu_font"><span
-											class="d-flex animated fadeInUp">Зал</span></span>
-									<ul class="mobile__nav_list">
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.3s">
-											<a href="" class="mobile__nav_link nav-link">О зале</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.4s">
-											<a href="" class="mobile__nav_link nav-link">Залы и пространства
-												<span class="icon">
-													<svg width="12.124268" height="6.000000" viewBox="0 0 12.1243 6" fill="none"
-														xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<path d="M6.06213 6L12.1243 0L0 0L6.06213 6Z" fill="#101010"
-															fill-opacity="1.000000" fill-rule="evenodd" />
-													</svg>
-												</span>
-											</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.5s">
-											<a href="" class="mobile__nav_link nav-link">3D тур</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.6s">
-											<a href="" class="mobile__nav_link nav-link">Руководство</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.7s">
-											<a href="" class="mobile__nav_link nav-link">Новости и медиа</a>
-										</li>
-									</ul>
+									<button class="mobile__nav_title mobile__nav_btn menu_font">
+										<span class="d-flex animate " style="animation-delay: 0.2s;">Зал</span>
+										<span class="icon">
+											<svg width="6.001953" height="11.004089" viewBox="0 0 6.00195 11.0041" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path id="Vector" d="M0.501953 0.502045L5.50195 5.50204L0.501953 10.502"
+													stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" stroke-linecap="round" />
+											</svg>
+										</span>
+									</button>
+									<div class="mobile__nav_sublist">
+										<span class="mobile__nav_title menu_font">
+											<span class="icon">
+												<svg width="6.002197" height="11.004089" viewBox="0 0 6.0022 11.0041" fill="none"
+													xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<path id="Vector" d="M5.50024 0.502045L0.500244 5.50204L5.50024 10.502"
+														stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+														stroke-linejoin="round" stroke-linecap="round" />
+												</svg>
+											</span>
+											<span class="d-flex animate ">Зал</span></span>
+										<ul class="mobile__nav_list">
+											<li class="mobile__nav_item animate " style="animation-delay: 0.3s;">
+												<a href="" class="mobile__nav_link nav-link">О зале</a>
+											</li>
+											<li class="mobile__nav_item animate " style="animation-delay: 0.4s;">
+												<a href="" class="mobile__nav_link nav-link">Залы и пространства
+													<span class="icon">
+														<svg width="12.124268" height="6.000000" viewBox="0 0 12.1243 6" fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink">
+															<path d="M6.06213 6L12.1243 0L0 0L6.06213 6Z" fill="#101010"
+																fill-opacity="1.000000" fill-rule="evenodd" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.5s"
+												style="animation-delay: 0.5s;">
+												<a href="" class="mobile__nav_link nav-link">3D тур</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.6s"
+												style="animation-delay: 0.6s;">
+												<a href="" class="mobile__nav_link nav-link">Руководство</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.7s"
+												style="animation-delay: 0.7s;">
+												<a href="" class="mobile__nav_link nav-link">Новости и медиа</a>
+											</li>
+										</ul>
+									</div>
 								</nav>
 								<nav class="mobile__nav">
-									<span class="mobile__nav_title menu_font"><span
-											class="d-flex animated fadeInUp">Зрителям</span></span>
-									<ul class="mobile__nav_list">
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.3s">
-											<a href="" class="mobile__nav_link nav-link">Покупка и возврат билетов</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.4s">
-											<a href="" class="mobile__nav_link nav-link">Посещение зала</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.5s">
-											<a href="" class="mobile__nav_link nav-link">Доступная среда</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.6s">
-											<a href="" class="mobile__nav_link nav-link">Кафе</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.7s">
-											<a href="" class="mobile__nav_link nav-link">Вопрос-ответ</a>
-										</li>
-									</ul>
+									<button class="mobile__nav_title mobile__nav_btn menu_font">
+										<span class="d-flex animate " style="animation-delay: 0.2s;">Зрителям</span>
+										<span class="icon">
+											<svg width="6.001953" height="11.004089" viewBox="0 0 6.00195 11.0041" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path id="Vector" d="M0.501953 0.502045L5.50195 5.50204L0.501953 10.502"
+													stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" stroke-linecap="round" />
+											</svg>
+										</span>
+									</button>
+									<div class="mobile__nav_sublist">
+										<span class="mobile__nav_title menu_font">
+											<span class="icon">
+												<svg width="6.002197" height="11.004089" viewBox="0 0 6.0022 11.0041" fill="none"
+													xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<path id="Vector" d="M5.50024 0.502045L0.500244 5.50204L5.50024 10.502"
+														stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+														stroke-linejoin="round" stroke-linecap="round" />
+												</svg>
+											</span>
+											<span class="d-flex animate ">Зрителям</span></span>
+										<ul class="mobile__nav_list">
+											<li class="mobile__nav_item animate  animate__delay-0.3s"
+												style="animation-delay: 0.3s;">
+												<a href="" class="mobile__nav_link nav-link">Покупка и возврат билетов</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.4s"
+												style="animation-delay: 0.4s;">
+												<a href="" class="mobile__nav_link nav-link">Посещение зала</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.5s"
+												style="animation-delay: 0.5s;">
+												<a href="" class="mobile__nav_link nav-link">Доступная среда</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.6s"
+												style="animation-delay: 0.6s;">
+												<a href="" class="mobile__nav_link nav-link">Кафе</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.7s"
+												style="animation-delay: 0.7s;">
+												<a href="" class="mobile__nav_link nav-link">Вопрос-ответ</a>
+											</li>
+										</ul>
+									</div>
 								</nav>
 								<nav class="mobile__nav">
-									<span class="mobile__nav_title menu_font"><span
-											class="d-flex animated fadeInUp">Информация</span></span>
-									<ul class="mobile__nav_list">
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.3s">
-											<a href="" class="mobile__nav_link nav-link">Партнеры</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.4s">
-											<a href="" class="mobile__nav_link nav-link">Организация мероприятий</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.5s">
-											<a href="" class="mobile__nav_link nav-link">Карьера</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.6s">
-											<a href="" class="mobile__nav_link nav-link">Открытые данные</a>
-										</li>
-									</ul>
+									<button class="mobile__nav_title mobile__nav_btn menu_font">
+										<span class="d-flex animate " style="animation-delay: 0.2s;">Информация</span>
+										<span class="icon">
+											<svg width="6.001953" height="11.004089" viewBox="0 0 6.00195 11.0041" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path id="Vector" d="M0.501953 0.502045L5.50195 5.50204L0.501953 10.502"
+													stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" stroke-linecap="round" />
+											</svg>
+										</span>
+									</button>
+									<div class="mobile__nav_sublist">
+										<span class="mobile__nav_title menu_font">
+											<span class="icon">
+												<svg width="6.002197" height="11.004089" viewBox="0 0 6.0022 11.0041" fill="none"
+													xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<path id="Vector" d="M5.50024 0.502045L0.500244 5.50204L5.50024 10.502"
+														stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+														stroke-linejoin="round" stroke-linecap="round" />
+												</svg>
+											</span>
+											<span class="d-flex animate ">Информация</span></span>
+										<ul class="mobile__nav_list">
+											<li class="mobile__nav_item animate  animate__delay-0.3s"
+												style="animation-delay: 0.3s;">
+												<a href="" class="mobile__nav_link nav-link">Партнеры</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.4s"
+												style="animation-delay: 0.4s;">
+												<a href="" class="mobile__nav_link nav-link">Организация мероприятий</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.5s"
+												style="animation-delay: 0.5s;">
+												<a href="" class="mobile__nav_link nav-link">Карьера</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.6s"
+												style="animation-delay: 0.6s;">
+												<a href="" class="mobile__nav_link nav-link">Открытые данные</a>
+											</li>
+										</ul>
+									</div>
 								</nav>
-								<nav class="mobile__nav">
-									<span class="mobile__nav_title menu_font"><span class="d-flex animated fadeInUp">Программа
-											лояльности</span></span>
-									<ul class="mobile__nav_list">
-										<li class="mobile__nav_item  animated fadeInUp animate__delay-0.3s">
-											<a href="" class="mobile__nav_link nav-link ">#зарядисьмузыкой</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.4s">
-											<a href="" class="mobile__nav_link nav-link">Программа привилегий In Tempo</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.5s">
-											<a href="" class="mobile__nav_link nav-link">Пушкинская карта</a>
-										</li>
-										<li class="mobile__nav_item animated fadeInUp animate__delay-0.6s">
-											<a href="" class="mobile__nav_link nav-link">Подарочный сертификат</a>
-										</li>
-									</ul>
+								<nav class="mobile__nav"><button class="mobile__nav_title mobile__nav_btn menu_font">
+										<span class="d-flex animate " style="animation-delay: 0.2s;">Программа
+											лояльности</span>
+										<span class="icon">
+											<svg width="6.001953" height="11.004089" viewBox="0 0 6.00195 11.0041" fill="none"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<path id="Vector" d="M0.501953 0.502045L5.50195 5.50204L0.501953 10.502"
+													stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+													stroke-linejoin="round" stroke-linecap="round" />
+											</svg>
+										</span>
+									</button>
+									<div class="mobile__nav_sublist">
+										<span class="mobile__nav_title menu_font">
+											<span class="icon">
+												<svg width="6.002197" height="11.004089" viewBox="0 0 6.0022 11.0041" fill="none"
+													xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<path id="Vector" d="M5.50024 0.502045L0.500244 5.50204L5.50024 10.502"
+														stroke="#030650" stroke-opacity="1.000000" stroke-width="1.000000"
+														stroke-linejoin="round" stroke-linecap="round" />
+												</svg>
+											</span>
+											<span class="d-flex animate ">Программа
+												лояльности</span></span>
+										<ul class="mobile__nav_list">
+											<li class="mobile__nav_item  animate  animate__delay-0.3s"
+												style="animation-delay: 0.3s;">
+												<a href="" class="mobile__nav_link nav-link ">#зарядисьмузыкой</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.4s"
+												style="animation-delay: 0.4s;">
+												<a href="" class="mobile__nav_link nav-link">Программа привилегий In Tempo</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.5s"
+												style="animation-delay: 0.5s;">
+												<a href="" class="mobile__nav_link nav-link">Пушкинская карта</a>
+											</li>
+											<li class="mobile__nav_item animate  animate__delay-0.6s"
+												style="animation-delay: 0.6s;">
+												<a href="" class="mobile__nav_link nav-link">Подарочный сертификат</a>
+											</li>
+										</ul>
 								</nav>
 							</div>
 						</div>
-
 					</div>
-				</div>
 
-				<div class="mobile__wave animated fadeInUp">
-					<svg width="1922.000732" height="181.666687" viewBox="0 0 1922 181.667" fill="none"
+				</div>
+				<div class="mobile__wave animate ">
+					<svg class="lg" width="1922.000732" height="181.666687" viewBox="0 0 1922 181.667" fill="none"
 						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<path id="Vector 167" d="M1 74.6667L1 181.667" stroke="#101010" stroke-opacity="1.000000"
 							stroke-width="2.000000" />
@@ -1027,6 +1206,8 @@
 			</div>
 
 		</div>
+
+	</div>
 	</div>
 
 	<script src="/assets/libs/jquery/jquery.js"></script>

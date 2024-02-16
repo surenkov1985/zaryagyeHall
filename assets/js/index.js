@@ -42,13 +42,43 @@ $(document).on("click", ".btn_menu", function(e) {
 
 	if (!$(".mobile").hasClass("show")) {
 
+		$(".mobile .animate").each((_,item) => {
+			// $(item).css({"opacity": 0})
+		});
 		// $(this).addClass("active");
 		$(".mobile").addClass("show");
 		$("body").addClass("hidden");
+
+		setTimeout(() => {
+			$(".mobile__contacts").addClass("animate__animated animate__fadeInUpSm");
+			$(".mobile .animate").each((_,item) => {
+				$(item).addClass("animate__animated animate__fadeInUp")
+			});
+		}, 0);
 	} else {
 
 		// $(this).removeClass("active");
 		$(".mobile").removeClass("show");
 		$("body").removeClass("hidden");
+		$(".mobile__contacts").removeClass("animate__animated animate__fadeInUpSm");
+		$(".mobile .animate").each((_,item) => {
+			$(item).removeClass("animate__animated animate__fadeInUp")
+		});
 	}
+
 });
+
+$(document).on("click", ".mobile__nav_btn", function(){
+
+	const navEl = $(this).closest(".mobile__nav");
+	const subList = $(navEl).find(".mobile__nav_sublist");
+
+	$(subList).addClass("active");
+})
+
+$(document).on("click", ".mobile__nav_sublist .mobile__nav_title", function(){
+
+	const navEl = $(this).closest(".mobile__nav_sublist");
+
+	$(navEl).removeClass("active");
+})

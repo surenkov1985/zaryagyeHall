@@ -60,6 +60,39 @@
   .scls__title {
     font-size: 24px;
   }
+  .mobile__head .head .container {
+    padding-bottom: 6px;
+  }
+  .mobile__head .head__right_content {
+    gap: 100px;
+  }
+  .mobile__nav_title {
+    font-size: 2.875rem;
+  }
+  .mobile__body_cols {
+    padding-top: 140px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 40px;
+  }
 }
 @media (max-width: 1550px) {
   .depkult-logo {
@@ -126,6 +159,40 @@
   .scls__title {
     font-size: 22px;
   }
+  .mobile__head .head .container {
+    padding-bottom: 4px;
+  }
+  .mobile__head .head__right_content {
+    justify-content: flex-end;
+    gap: 90px;
+  }
+  .mobile__nav_title {
+    font-size: 2.625rem;
+  }
+  .mobile__body_cols {
+    padding-top: 140px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    transform: translateX(24px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 40px;
+  }
 }
 @media (max-width: 1440px) {
   .menu_font {
@@ -191,9 +258,14 @@
   .head__languages {
     font-size: 1rem;
   }
+  .btn {
+    font-size: 1rem;
+    padding: 12px 42px;
+  }
   .btn_menu {
     width: 48px;
     height: 48px;
+    padding: 0;
   }
   .btn_menu svg {
     width: 19px;
@@ -254,5 +326,59 @@
   .scls__title {
     max-width: 308px;
     font-size: 20px;
+  }
+  .mobile__head .container {
+    padding-bottom: 8px;
+  }
+  .mobile__head .head__right_content {
+    justify-content: flex-end;
+    gap: 80px;
+    padding-bottom: 22px;
+  }
+  .mobile__nav:nth-child(2) {
+    margin-left: -24px;
+  }
+  .mobile__nav:nth-child(3) {
+    margin-left: -18px;
+  }
+  .mobile__nav:nth-child(4) {
+    margin-right: -24px;
+  }
+  .mobile__nav:nth-child(5) {
+    margin-right: 0px;
+  }
+  .mobile__nav_title {
+    font-size: 2.375rem;
+    margin-bottom: 1.375rem;
+  }
+  .mobile__nav_list {
+    gap: 16px;
+  }
+  .mobile__scls {
+    gap: 8px;
+  }
+  .mobile__body_cols {
+    padding-top: 120px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    transform: translateX(22px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 40px;
   }
 }
