@@ -77,9 +77,11 @@
   label {
     font-size: 0.875rem;
   }
-}
-@media (max-width: 360px) and (max-width: 576px) {
-  .wrapper {
+  .section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .head {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -118,8 +120,6 @@
   .head .col-5 {
     width: 33.3333333333%;
   }
-}
-@media (max-width: 360px) {
   .foot .container {
     padding-top: 40px;
     padding-bottom: 56px;
@@ -240,6 +240,7 @@
   }
   .mobile__nav_list {
     gap: 28px;
+    padding-bottom: 36px;
   }
   .mobile__nav_btn {
     display: flex;

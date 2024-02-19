@@ -1,0 +1,259 @@
+.fs {
+	width: 100%;
+	height: 100%;
+
+	min-height: 100vh;
+	max-height: 1080px;
+	display: flex;
+	position: relative;
+
+	&__images {
+
+		&_slider {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			min-height: 600px;
+			top: 0;
+			left: 0;
+		}
+
+		&_slide {
+			
+
+			&.dark {
+				position: relative;
+				
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background: rgba(16, 16, 16, 0.5);
+					z-index: 1;
+				}
+				
+			}
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+
+	& .container {
+		flex-grow: 1;
+		padding-top: 170px;
+		padding-bottom: 48px;
+	}
+
+	&__content {
+		display: flex;
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		&_slider {
+			width: 100%;
+			
+			& .swiper-nav {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				bottom: 0;
+				right: 0;
+				z-index: 10;
+				gap: 12px;
+
+				& .btn_menu {
+					&:hover {
+
+						& svg path {
+							stroke: var(--clr-white);
+						fill: none;
+						}
+						
+					}
+				}
+			}
+
+			&.light {
+				& .btn_menu {
+
+					background: var(--clr-white-10);
+						& svg path {
+							stroke: var(--clr-white);
+						fill: none;
+						}
+
+					&:hover {
+						background: var(--clr-white);
+
+						& svg path {
+							stroke: var(--clr-black);
+							fill: none;
+						}
+					}
+
+		
+					
+				}
+
+				& .btn {
+					&_color {
+						background: var(--clr-tag-festival);
+						color: var(--clr-white);
+				
+						&:hover {
+							color: var(--clr-black);
+							background: var(--clr-tag-festival-opacity);
+						}
+					}
+				}
+
+				& .date, & .day {
+					color: var(--clr-white);
+				}
+
+				& .fs__slide_desc {
+					color: var(--clr-white);
+				}
+
+				& .tag {
+
+					&_card {
+						border: 1px solid var(--clr-white-40);
+						color: var(--clr-white-40);
+						transition: all 0.5s;
+
+						&:hover {
+							color: var(--clr-white);
+							border-color: var(--clr-white);
+						}
+					}
+				}
+			}
+
+
+		}
+	}
+
+	&__slide {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 64px;
+
+		&_content {
+			display: flex;
+			height: 100%;
+		}
+
+		&_tags {
+			
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+		}
+
+		&_tags-abs {
+			position: absolute;
+			z-index: 10;
+			left: 0;
+			top: 0;
+		}
+
+		&_date {
+			display: flex;
+			// align-items: flex-start;
+			line-height: 1.3;
+			gap: 12px;
+
+			& .day {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				white-space: nowrap;
+				height: auto;
+				font-size: 32px;
+				line-height: 0.8;
+			}
+		}
+
+		& .date {
+			font-size: 4.75rem;
+			line-height: 0.75;
+			
+		}
+
+		&_icon {
+			margin-left: auto;
+			margin-right: auto;
+			height: 724px;
+
+			& img {
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		&_bottom {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+
+		&_date {
+			width: calc((100%) / 24 * 14);
+		}
+
+		&_control {
+			width: calc((100% - 32px) / 24 * 10);
+			display: flex;
+		}
+
+		&_desc {
+			width: calc((100% - 32px) / 24 * 10);
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			justify-content: space-between;
+		}
+
+		&_left {
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			width: calc((100%) / 24 * 14);
+			justify-content: space-between;
+		}
+
+		&_info {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&_text {
+			max-width: 430px;
+
+			& .btn {
+				margin-top: 64px;
+			}
+		}
+	}
+}

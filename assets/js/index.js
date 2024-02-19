@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function(){
+	
+	fsSliders();
+});
+
 $(document).on("click", ".dropdown__value", function () {
 
 	const dropdown = $(this).closest(".dropdown");
@@ -38,7 +43,7 @@ $(document).on("click", function (e) {
 	}
 });
 
-$(document).on("click", ".btn_menu", function(e) {
+$(document).on("click", ".head .btn_menu", function(e) {
 
 	if (!$(".mobile").hasClass("show")) {
 
@@ -60,6 +65,7 @@ $(document).on("click", ".btn_menu", function(e) {
 		// $(this).removeClass("active");
 		$(".mobile").removeClass("show");
 		$("body").removeClass("hidden");
+		$(".mobile__nav_sublist").removeClass("active");
 		$(".mobile__contacts").removeClass("animate__animated animate__fadeInUpSm");
 		$(".mobile .animate").each((_,item) => {
 			$(item).removeClass("animate__animated animate__fadeInUp")

@@ -30,12 +30,12 @@
 	}
 
 	&_color {
-		background: var(--clr-opera);
+		background: var(--clr-tag-opera);
 		color: var(--clr-white);
 
 		&:hover {
 			color: var(--clr-black);
-			background: var(--clr-opera-opacity);
+			background: var(--clr-tag-opera-opacity);
 		}
 	}
 
@@ -433,8 +433,9 @@ label {
 	flex-direction: column;
 	height: 100%;
 	min-height: 100vh;
-	padding: 0 2rem;
+	
 	position: relative;
+	// background: rgb(229, 229, 229);
 }
 
 .container {
@@ -442,6 +443,10 @@ label {
 	max-width: 1792px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.section {
+	padding: 0 2rem;
 }
 
 .row {
@@ -573,4 +578,33 @@ label {
 
 .hidden {
 	overflow: hidden;
+}
+
+.tag {
+	display: flex;
+	padding: 8px 16px;
+	border-radius: 40px;
+	font-size: 18px;
+	
+	&_festival {
+		border: 1px solid var(--clr-tag-festival);
+		color: var(--clr-tag-festival);
+		transition: all 0.5s;
+
+		&:hover {
+			color: var(--clr-tag-festival-opacity);
+			border-color: var(--clr-tag-festival-opacity);
+		}
+	}
+
+	&_card {
+		border: 1px solid var(--clr-black-40);
+		color: var(--clr-black-40);
+		transition: all 0.5s;
+
+		&:hover {
+			color: var(--clr-black);
+			border-color: var(--clr-black);
+		}
+	}
 }
