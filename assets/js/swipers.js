@@ -4,6 +4,7 @@ function fsSliders() {
 	if (!imgSlider) return;
 
 	const imagesSlider = new Swiper(imgSlider, {
+		speed: 1000,
 		navigation: {
 			prevEl: ".fs__content_slider .swiper-prev-btn",
 			nextEl: ".fs__content_slider .swiper-next-btn"
@@ -11,7 +12,7 @@ function fsSliders() {
 	})
 
 	const activeSlide = $(imagesSlider.slides)[imagesSlider.activeIndex];
-		console.log(!!$(".head").hasClass("head_light"))
+		
 
 	if (!!$(activeSlide).find("img").length) {
 		if (!$(".head").hasClass("head_light")) {
@@ -26,9 +27,9 @@ function fsSliders() {
 	};
 
 	imagesSlider.on("slideChange", function(slider){
-		// console.log(slider);
-		const activeSlide = $(slider.slides)[slider.activeIndex]
-		console.log(!!$(".head").hasClass("head_light"))
+		
+		const activeSlide = $(slider.slides)[slider.activeIndex];
+		
 
 		if (!!$(activeSlide).find("img").length) {
 			if (!$(".head").hasClass("head_light")) {
@@ -44,9 +45,17 @@ function fsSliders() {
 	});
 
 	const contentSlider = new Swiper(".fs__content_slider", {
+		speed: 1000,
 		navigation: {
 			prevEl: ".fs__content_slider .swiper-prev-btn",
 			nextEl: ".fs__content_slider .swiper-next-btn"
 		}
+	})
+
+	contentSlider.on("slideChange", function(slider) {
+
+		const activeSlide = slider.activeIndex;
+		
+		imagesSlider.slideTo(activeSlide)
 	})
 }

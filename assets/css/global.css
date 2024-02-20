@@ -468,6 +468,15 @@ label.label_radio {
   color: var(--clr-tag-festival-opacity);
   border-color: var(--clr-tag-festival-opacity);
 }
+.tag_opera {
+  border: 1px solid var(--clr-tag-opera);
+  color: var(--clr-tag-opera);
+  transition: all 0.5s;
+}
+.tag_opera:hover {
+  color: var(--clr-tag-opera-opacity);
+  border-color: var(--clr-tag-opera-opacity);
+}
 .tag_card {
   border: 1px solid var(--clr-black-40);
   color: var(--clr-black-40);
@@ -476,4 +485,9 @@ label.label_radio {
 .tag_card:hover {
   color: var(--clr-black);
   border-color: var(--clr-black);
+}
+
+.time {
+  font-size: 2rem;
+  line-height: 1.4;
 }
