@@ -235,6 +235,21 @@
 			}
 		}
 	}
+
+	&_tab {
+		background: none;
+		color: var(--clr-white);
+
+		&.active {
+			background: var(--clr-white);
+			color: var(--clr-black);
+		}
+
+		&:hover {
+			background: var(--clr-white);
+			color: var(--clr-black);
+		}
+	}
 }
 
 @keyframes slideTo {

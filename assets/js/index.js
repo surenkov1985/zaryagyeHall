@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 	
 	fsSliders();
+	hallsSliders();
 });
 
 $(document).on("click", ".dropdown__value", function () {

@@ -164,6 +164,18 @@
 .btn_outline:hover svg path {
   fill: var(--clr-black);
 }
+.btn_tab {
+  background: none;
+  color: var(--clr-white);
+}
+.btn_tab.active {
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+.btn_tab:hover {
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
 
 @keyframes slideTo {
   from {

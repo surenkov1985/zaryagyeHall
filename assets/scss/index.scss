@@ -404,10 +404,13 @@
 
 .halls {
 	height: 855px;
+	overflow: hidden;
 
 	&__sliders {
-
-		
+		display: flex;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
 	}
 
 	&__slider {
@@ -426,9 +429,14 @@
 			height: 100%;
 			margin-right: 0;
 			margin-left: 0;
+			display: flex;
+			justify-content: center;
 
 			& .swiper-slide {
 				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 
 				& img {
 					width: 100%;
@@ -463,6 +471,15 @@
 				}
 			}
 		}
+
+		&_small {
+			position: absolute;
+			right: -50%;
+			width: 30%;
+			height: 30%;
+			right: 0;
+			transform: translateX(50%);
+		}
 	}
 
 	&__slide {
@@ -471,6 +488,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		background: var(--clr-white);
 
 		&_title {
 			width: calc(100% / 8 * 6);
@@ -486,5 +504,22 @@
 		&_link {
 			display: flex;
 		}
+	}
+}
+
+.pagination {
+
+	&_tabs {
+		display: flex;
+		position: absolute;
+		bottom: 64px !important;
+		z-index: 10;
+		backdrop-filter: var(--bg-filter-blur);
+		width: auto !important;
+		border-radius: 40px;
+		left: auto !important;
+		right: auto;
+		// left: 50% !important;
+		// transform: translateX(-50%);
 	}
 }

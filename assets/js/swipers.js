@@ -59,3 +59,89 @@ function fsSliders() {
 		imagesSlider.slideTo(activeSlide)
 	})
 }
+
+function hallsSliders() {
+
+	const hallSlider = document.querySelector(".halls__slider_images");
+	const hallDescSlider = document.querySelector(".halls__slider_desc");
+	const smSlider = document.querySelector(".halls__slider_small");
+
+	if (!hallSlider) return;
+
+	const imagesSlider = new Swiper(hallSlider, {
+		// loop: true,
+		speed: 700,
+		navigation: {
+			prevEl: ".halls__slider_desc .swiper-prev-btn",
+			nextEl: ".halls__slider_desc .swiper-next-btn"
+		},
+		pagination: {
+			el: ".halls__slider_images .pagination_tabs",
+			type: 'bullets',
+			clickable: true,
+			bulletClass: "btn_tab",
+			bulletActiveClass: "active",
+			renderBullet:function(current, total) {
+				// console.log(imagesSlider);
+				const slide = Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current];
+				console.log(slide.classList.contains("swiper-slide-active"))
+				return `<span class="btn btn_tab ${total} ${slide.classList.contains("swiper-slide-active") ? 'active' : ''}">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name}</span>`;
+			 }
+		}
+	});
+
+	const descSlider = new Swiper(hallDescSlider, {
+		allowTouchMove: false,
+		// loop: true,
+		speed: 700,
+		// navigation: {
+		// 	prevEl: ".halls__slider_desc .swiper-prev-btn",
+		// 	nextEl: ".halls__slider_desc .swiper-next-btn"
+		// },
+		// pagination: {
+		// 	el: ".halls__slider_images .pagination_tabs",
+		// 	type: 'bullets',
+		// 	clickable: true,
+		// 	bulletClass: "btn_tab",
+		// 	bulletActiveClass: "active",
+		// 	renderBullet:function(current, total) {
+		// 		// console.log(imagesSlider);
+		// 		const slide = Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current];
+		// 		console.log(slide.classList.contains("swiper-slide-active"))
+		// 		return `<span class="btn btn_tab ${total} ${slide.classList.contains("swiper-slide-active") ? 'active' : ''}">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name}</span>`;
+		// 	 }
+		// }
+	});
+
+	const smallSlider = new Swiper(smSlider, {
+		allowTouchMove: false,
+		initialSlide: 1,
+		loop: true,
+		speed: 700,
+		// navigation: {
+		// 	prevEl: ".halls__slider_desc .swiper-prev-btn",
+		// 	nextEl: ".halls__slider_desc .swiper-next-btn"
+		// },
+		// pagination: {
+		// 	el: ".halls__slider_images .pagination_tabs",
+		// 	type: 'bullets',
+		// 	clickable: true,
+		// 	bulletClass: "btn_tab",
+		// 	bulletActiveClass: "active",
+		// 	renderBullet:function(current, total) {
+		// 		// console.log(imagesSlider);
+		// 		const slide = Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current];
+		// 		console.log(slide.classList.contains("swiper-slide-active"))
+		// 		return `<span class="btn btn_tab ${total} ${slide.classList.contains("swiper-slide-active") ? 'active' : ''}">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name}</span>`;
+		// 	}
+		// }
+	})
+
+	imagesSlider.on("slideChange", function(slider){
+		
+		const activeSlide = $(slider.slides)[slider.activeIndex];
+		
+		descSlider.slideTo(slider.activeIndex)
+		smallSlider.slideTo(!!(slider.slides.length > slider.activeIndex + 1) ? slider.activeIndex + 1 : 0)
+	});
+}
