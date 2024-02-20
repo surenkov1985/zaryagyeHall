@@ -145,3 +145,20 @@ function hallsSliders() {
 		smallSlider.slideTo(!!(slider.slides.length > slider.activeIndex + 1) ? slider.activeIndex + 1 : 0)
 	});
 }
+
+function newsSlider() {
+
+	const news = document.querySelector(".news__slider");
+
+	if (!news) return;
+
+	const newsSlider = new Swiper(news, {
+		slidesPerView: 3,
+		slidesPerGroup: 1,
+		spaceBetween: 32,
+		navigation:{
+			nextEl: ".news .swiper-next-btn",
+			prevEl: ".news .swiper-prev-btn"
+		}
+	})
+}

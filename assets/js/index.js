@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	
 	fsSliders();
 	hallsSliders();
+	newsSlider();
 });
 
 $(document).on("click", ".dropdown__value", function () {

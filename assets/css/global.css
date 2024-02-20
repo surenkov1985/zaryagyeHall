@@ -503,3 +503,9 @@ label.label_radio {
   font-size: 2rem;
   line-height: 1.4;
 }
+
+.swiper-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
