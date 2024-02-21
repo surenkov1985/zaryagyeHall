@@ -25,6 +25,13 @@
 .btn:disabled svg path {
   fill: var(--clr-gray);
 }
+.btn_dark {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+.btn_dark:hover {
+  background: var(--clr-black-40);
+}
 .btn_color {
   background: var(--clr-tag-opera);
   color: var(--clr-white);

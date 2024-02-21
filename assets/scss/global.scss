@@ -29,6 +29,16 @@
 		}
 	}
 
+	&_dark {
+		background: var(--clr-black);
+		color: var(--clr-white);
+
+		&:hover {
+			background: var(--clr-black-40);
+		}
+
+	}
+
 	&_color {
 		background: var(--clr-tag-opera);
 		color: var(--clr-white);

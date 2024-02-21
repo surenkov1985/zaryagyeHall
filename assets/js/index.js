@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	fsSliders();
 	hallsSliders();
 	newsSlider();
+	locationSliders();
 });
 
 $(document).on("click", ".dropdown__value", function () {
@@ -90,3 +91,19 @@ $(document).on("click", ".mobile__nav_sublist .mobile__nav_title", function(){
 
 	$(navEl).removeClass("active");
 })
+
+
+// $(function() {
+// 	jQuery.scrollSpeed(100, 800, 'easeOutCubic');
+//   })
+
+// $(document).on('mousewheel', function(event) {
+	
+// 	var top = $(window).scrollTop() - (event.originalEvent.wheelDelta );
+
+// 	console.log(event)
+// 	event.preventDefault();
+// 	 $('html, body').stop().animate({
+// 		 scrollTop: top
+// 	}, 200);
+// })

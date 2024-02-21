@@ -31,6 +31,9 @@ video {
   font-size: 100%;
   vertical-align: baseline;
 }
+html {
+	scroll-behavior: smooth;
+ }
 
 address {
   font-style: normal;
@@ -404,4 +407,8 @@ h5,
 
 .light_text {
 	color: var(--clr-black-40);
+}
+
+.white_text {
+	color: var(--clr-white);
 }
