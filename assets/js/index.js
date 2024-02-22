@@ -107,3 +107,21 @@ $(document).on("click", ".mobile__nav_sublist .mobile__nav_title", function(){
 // 		 scrollTop: top
 // 	}, 200);
 // })
+
+// For Vanilla JavaScript
+// var myWave = wavify( document.querySelector('#myId'), {
+// 	height: 60,
+// 	bones: 3,
+// 	amplitude: 30,
+// 	color: 'rgba(150, 97, 255, .8)',
+// 	speed: .25
+//  })
+ 
+ // For jQuery
+//  var myWave = $('#myID').wavify({
+// 	height: 50,
+// 	bones: 5,
+// 	amplitude: 100,
+// 	color: 'rgba(16, 16, 16,, .8)',
+// 	speed: 0.3
+//  });

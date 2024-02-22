@@ -52,7 +52,7 @@
 	& .container {
 		flex-grow: 1;
 		padding-top: 170px;
-		padding-bottom: 48px;
+		padding-bottom: 76px;
 	}
 
 	&__content {
@@ -86,7 +86,7 @@
 			}
 
 			&.light {
-				& .btn_menu {
+				& .btn_slider {
 
 					background: var(--clr-white-10);
 						& svg path {
@@ -119,7 +119,7 @@
 					}
 				}
 
-				& .date, & .day {
+				& .date_xl, & .day {
 					color: var(--clr-white);
 				}
 
@@ -151,11 +151,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		gap: 64px;
+		gap: 27px;
 
 		&_content {
 			display: flex;
-			height: 100%;
+			// height: 100%;
+			height: 85%;
+			flex-grow: 1;
 			gap: 32px;
 			justify-content: space-between;
 		}
@@ -165,7 +167,8 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			gap: 8px;
+			gap: 13px;
+			margin-top: 6px;
 		}
 
 		&_tags-abs {
@@ -192,8 +195,8 @@
 			}
 		}
 
-		& .date {
-			font-size: 4.75rem;
+		& .date_xl {
+			// font-size: 6rem;
 			line-height: 0.75;
 			
 		}
@@ -201,7 +204,7 @@
 		&_icon {
 			margin-left: auto;
 			margin-right: auto;
-			height: 724px;
+			height: 95%;
 
 			& img {
 				height: 100%;
@@ -212,20 +215,21 @@
 		&_bottom {
 			display: flex;
 			align-items: center;
-			gap: 32px;
+			gap: 64px;
+			justify-content: space-between;
 		}
 
-		&_date {
-			width: calc((100%) / 24 * 13);
-		}
+		// &_date {
+		// 	width: calc((100%) / 24 * 13);
+		// }
 
 		&_control {
-			width: calc((100% - 32px) / 24 * 10);
+			width: calc((100% - 45px) / 24 * 10);
 			display: flex;
 		}
 
 		&_desc {
-			width: calc((100% - 32px) / 24 * 10);
+			width: calc((100% - 45px) / 24 * 10);
 			display: flex;
 			flex-direction: column;
 			height: auto;
@@ -236,15 +240,14 @@
 			display: flex;
 			flex-direction: column;
 			height: auto;
-			width: calc(100% / 24 * 13);
+			width: calc((100% - 32px) / 24 * 13);
 			justify-content: space-between;
 		}
 
 		&_info {
-			
 			display: flex;
 			flex-direction: column;
-			gap: 16px;
+			gap: 28px;
 			flex-shrink: 0;
 
 			& img {
@@ -256,6 +259,9 @@
 
 		&_text {
 			max-width: 430px;
+			display: flex;
+			flex-direction: column;
+			align-items: self-start;
 
 			& .btn {
 				margin-top: 64px;
@@ -267,7 +273,7 @@
 // EVENTS
 
 .events {
-	padding-top: 148px;
+	padding-top: 122px;
 	padding-bottom: 160px;
 
 	&__content {
@@ -282,11 +288,31 @@
 			position: relative;
 			gap: 2rem;
 			justify-content: space-between;
-			border-top: 1px solid rgb(219, 219, 219);
+			// border-top: 1px solid rgb(219, 219, 219);
 			padding: 2rem 0;
+
+			&::after {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 1px;
+				left: 0;
+				bottom: 100%;
+				background: rgb(219, 219, 219);
+			}
 			
 			&:last-child {
-				border-bottom: 1px solid rgb(219, 219, 219);
+				// border-bottom: 1px solid rgb(219, 219, 219);
+
+				&::before {
+					position: absolute;
+					content: "";
+					width: 100%;
+					height: 1px;
+					left: 0;
+					bottom: 100%;
+					background: rgb(219, 219, 219);
+				}
 			}
 		}
 	}
@@ -295,7 +321,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 80px;
+		margin-bottom: 77px;
 
 		& .h2 {
 			width: calc(100% / 24 * 13);
@@ -310,13 +336,14 @@
 		display: flex;
 		align-items: flex-start;
 		gap: 12px;
-		width: calc(100% / 24 * 7);
+		width: calc((100% - 64px) / 24 * 7);
 		position: sticky;
 		top: 2rem;
+		margin-top: 1.875rem;
 
-		& .date {
+		& .date_xl {
 			line-height: 0.75;
-			font-size: 6.25rem;
+			// font-size: 6.25rem;
 		}
 
 		& .day {
@@ -332,10 +359,21 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		border-bottom: 1px solid rgb(219, 219, 219);
+		gap: 42px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		// border-bottom: 1px solid rgb(219, 219, 219);
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: rgb(219, 219, 219);
+			left: 0;
+			top: 100%;
+		}
 
 		&:first-child {
 			padding-top: 0;
@@ -344,6 +382,9 @@
 		&:last-child {
 			padding-bottom: 0;
 			border-bottom: none;
+			&::after {
+				display: none;
+			}
 		}
 
 		&_top {
@@ -354,16 +395,16 @@
 		&_control {
 			display: flex;
 			justify-content: space-between;
-			align-items: center;
+			align-items: flex-end;
 
 			&_link {
 				display: flex;
-				width: calc(100% / 17 * 6);
+				width: calc((100% - 64px) / 17 * 6);
 			}
 		}
 
 		&_preview {
-			width: calc(100% / 17 * 6);
+			width: calc((100% - 64px) / 17 * 6);
 
 			& img {
 				width: 100%;
@@ -376,7 +417,7 @@
 			display: flex;
 			flex-direction: column;
 			height: auto;
-			width: calc(100% / 17 * 10);
+			width: calc((100% - 22px) / 17 * 10);
 		}
 
 		&_desc {
@@ -390,12 +431,12 @@
 		}
 
 		&_tags {
-			width: calc(100% / 17 * 10);
+			width: calc((100% - 22px) / 17 * 10);
 		}
 	}
 
 	&__more {
-		margin-top: 2rem;
+		margin-top: 2.5rem;
 		display: flex;
 	}
 }
@@ -475,10 +516,10 @@
 		&_small {
 			position: absolute;
 			right: -50%;
-			width: 30%;
-			height: 30%;
+			width: 19%;
+			height: 28%;
 			right: 0;
-			transform: translateX(50%);
+			transform: translateX(50%) translateY(-11%);
 		}
 	}
 
@@ -498,7 +539,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 60px;
-			width: calc(100% / 8 * 6);
+			width: calc(100% / 8 * 5);
 		}
 
 		&_link {
@@ -512,7 +553,7 @@
 	&_tabs {
 		display: flex;
 		position: absolute;
-		bottom: 64px !important;
+		bottom: 62px !important;
 		z-index: 10;
 		backdrop-filter: var(--bg-filter-blur);
 		width: auto !important;
@@ -528,7 +569,7 @@
 
 .news {
 	padding-top: 216px;
-	padding-bottom: 216px;
+	padding-bottom: 220px;
 
 	& .swiper-nav {
 		
@@ -538,7 +579,7 @@
 
 				& svg path {
 					stroke: var(--clr-white);
-				fill: none;
+					fill: none;
 				}
 				
 			}
@@ -555,15 +596,26 @@
 	&__slide {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 		height: auto;
 		gap: 44px;
 		padding: 2rem 0;
-		border-top: 1px solid rgb(219, 219, 219);
+		// border-top: 1px solid rgb(219, 219, 219);
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			left: 0;
+			bottom: 100%;
+			background: rgb(219, 219, 219);
+		}
 
 		&_date {
 			display: flex;
 			align-items: baseline;
-			gap: 12px;
+			gap: 18px;
 			margin-bottom: 28px;
 
 			& .text {
@@ -594,7 +646,7 @@
 	}
 
 	&__more {
-		margin-top: 2rem;
+		margin-top: 2.125rem;
 		display: flex;
 	}
 }
@@ -604,7 +656,7 @@
 .about {
 	padding-bottom: 161px;
 	position: relative;
-	margin-bottom: 107px;
+	margin-bottom: 106px;
 
 	&__title {
 		display: flex;
@@ -613,7 +665,7 @@
 		margin-bottom: 110px;
 
 		& .h3 {
-			width: calc((100% ) / 24 * 11);
+			width: calc((100% - 32px) / 24 * 11);
 		}
 	}
 
@@ -640,12 +692,14 @@
 	}
 
 	&__more {
-		display: flex;
+		// display: flex;
 		position: absolute;
 		z-index: 10;
 		left: 0;
-		bottom: calc(100% - 22px);
+		bottom: calc(100% - 36px);
+		width: calc((100% - 64px) / 24 * 4);
 	}
+	
 
 	&__nums {
 		position: absolute;
@@ -656,9 +710,16 @@
 		backdrop-filter: var(--bg-filter-blur);
 		padding: 64px 64px 0;
 		display: flex;
+		justify-content: space-between;
 		
 		&_item {
-			display: flex; align-items: flex-start;width: 50%;gap: 25px;
+			display: flex; align-items: flex-start;width: 46%;gap: 40px;
+
+			&:nth-child(2n) {
+				// justify-content: center;
+				gap: 64px;
+			}
+
 		}
 	}
 }
@@ -667,8 +728,14 @@
 
 .location {
 	position: relative;
-	min-height: 1060px;
+	min-height: 1068px;
 	margin-bottom: 117px;
+
+	& .container {
+		// position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
 
 	&__images {
 
@@ -720,25 +787,32 @@
 		width: 100%;
 		// overflow: hidden;
 		height: 135px;
-		bottom: -2px;
+		bottom: -3px;
 		z-index: 2;
 		left: 0;
 		transform: translateX(0%);
 
-		& svg {
+		&_icon {
+			width: calc(2449 / 1920 * 100%);
 			position: absolute;
-			width: auto; 
-			height: auto;
+			height: 100%;
 			bottom: 0;
 			left: 0;
 			transition: all 1s;
+
+			& svg {
+				width: 100%; 
+				height: auto;
+			}
 		}
+
+		
 	}
 
 	&__content {
 		position: relative;
 		z-index: 10;
-		padding: 172px 0;
+		padding: 175px 0;
 		pointer-events: none;
 
 		&_top {
@@ -749,13 +823,13 @@
 		}
 
 		&_title {
-			width: calc(100% / 24 * 11);;
+			width: calc((100% - 32px) / 24 * 11);;
 		}
 
 		&_subtitle {
 			font-size: 1.625rem;
 			line-height: 1.4;
-			width: calc(100% / 24 * 6);
+			width: calc((100% - 32px) / 24 * 6);
 			margin-top: 10px;
 		}
 	}
@@ -763,10 +837,23 @@
 	&__slides {
 		
 		&_navigation {
-			position: relative;
-			z-index: 	10;
-			bottom: 10px;
+			position: absolute;
+			z-index: 10;
+			bottom: 4px;
+			display: flex;
+			align-items: flex-end;
+			width: 54.8%;
+			left: 35.5%;
+			justify-content: space-between;
+			z-index: 10;
 		}
+
+		&_icon {
+			transform: translateX(21%);
+			margin-bottom: 50px;
+		}
+
+
 
 		&_btn {
 			width: 180px;
@@ -778,6 +865,7 @@
 			justify-content: center;
 			overflow: hidden;
 			isolation: isolate;
+			transition: all 0.3s;
 
 			& img {
 				width: 100%;
@@ -797,27 +885,29 @@
 
 	&__ellipse {
 		position: absolute;
-		width: calc((100% - 64px) / 24 * 20);
+		width: calc((100% - 45px) / 24 * 19);
 		height: 0;
-		padding-top:80.4%;
+		padding-top:66%;
 		border-radius: 50%;
 		border: 1px solid var(--clr-white-40);
 		bottom: 0;
-		transform: translateY(59%);
+		transform: translateY(50%);
 		z-index: 4;
 		pointer-events: none;
+		left: 64px;
 
 		&-sm {
 			position: absolute;
 			width: calc(920/ 1920 * 100%);
 			height: 0;
-			padding-top:47.8%;
+			padding-top:42.2%;
 			border-radius: 50%;
 			border: 1px solid var(--clr-white);
 			bottom: 0;
-			transform: translateY(62%);
+			transform: translateY(50%);
 			z-index: 4;
 			pointer-events: none;
+			left: 64px;
 		}
 	}
 }

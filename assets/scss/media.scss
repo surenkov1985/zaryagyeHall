@@ -1,4 +1,12 @@
 @media (max-width: 1650px) {
+
+	.h2 {
+		font-size: 4.75rem;
+	}
+
+	.h3 {
+		font-size: 3.625rem;
+	}
 	.depkult-logo {
 		width: 195px;
 	}
@@ -6,6 +14,10 @@
 	.menu_font {
 		font-family: var(--font-title);
 		font-size: 4.875rem;
+	}
+
+	.main_font {
+		font-size: 1.25rem;
 	}
 
 	.head {
@@ -167,9 +179,43 @@
 		border-radius: 40px;
 	 }
 
+	 .fs {
+
+		& .container {
+			padding-top: 160px;
+			
+		}
+	 }
+
+	 
+	 .events {
+		padding-top: 116px;
+		padding-bottom: 150px;
+	 }
+
+	 .halls {
+		height: 780px;
+	 }
+
+	 .news {
+		padding-top: 200px;
+	 }
+
 }
 
 @media (max-width: 1550px) {
+
+	.h2 {
+		font-size: 4.5rem;
+	}
+
+	.h3 {
+		font-size: 3.325rem;
+	}
+
+	.tag {
+		font-size: 16px;
+	}
 
 	.depkult-logo {
 		width: 170px;
@@ -178,6 +224,10 @@
 	.menu_font {
 		font-family: var(--font-title);
 		font-size: 4.5rem;
+	}
+
+	.main_font {
+		font-size: 1.125rem;
 	}
 
 	.afisha {
@@ -350,13 +400,72 @@
 		border-radius: 40px;
 	 }
 
+	 .fs {
+
+		& .container {
+			padding-top: 145px;
+			
+		}
+	 }
+
+	 .events {
+		padding-top: 104px;
+		padding-bottom: 140px;
+	 }
+
+	 .halls {
+		height: 720px;
+	 }
+
+	 .news {
+		padding-top: 180px;
+	 }
+
 }
 
 @media (max-width: 1440px) {
 
+	.h2 {
+		font-size: 4rem;
+	}
+
+	.h3 {
+		font-size: 3rem;
+	}
+
+	h5 {
+		font-size: 1.5rem;
+	}
+
+	.tag {
+		font-size: 14px;
+		padding: 6px 12px;
+	}
+
+	.date {
+		font-size: 2.625rem;
+		line-height: 1;
+	}
+
+	.date_xl {
+			font-size: 4.75rem;
+			letter-spacing: -2px;
+	}
+
+	.numbers {
+		font-size: 8.75rem;
+	}
 	.menu_font {
 		font-family: var(--font-title);
 		font-size: 4rem;
+	}
+
+	.main_font {
+		font-size: 1rem;
+	}
+
+	.time {
+		font-size: 1.5rem;
 	}
 
 	.afisha {
@@ -450,7 +559,7 @@
 
 	.btn {
 		font-size: 1rem;
-		padding: 12px 42px;
+		padding: 21px 48px;
 		&_menu {
 			width: 48px;
 			height: 48px;
@@ -461,6 +570,11 @@
 				width: 19px;
 				height: 14px;
 			}
+		}
+
+		&_slider {
+			width: 64px;
+			height: 64px;
 		}
 
 		&_social {
@@ -474,6 +588,10 @@
 					width: 15px;
 				}
 			}
+		}
+
+		&_slim {
+			padding: 14px 40px;
 		}
 	}
 
@@ -556,6 +674,10 @@
 		}
 	}
 
+	.tags {
+		gap: 6px;
+	}
+
 	.mobile {
 
 		&__head {
@@ -623,6 +745,10 @@
 		width: 47px;
 		height: 24px;
 	 }
+
+	 .swiper-nav {
+		gap: 8px;
+	 }
 	 
 	 .slider:before {
 		position: absolute;
@@ -639,5 +765,256 @@
 	 /* Rounded sliders */
 	 .slider.round {
 		border-radius: 40px;
+	 }
+
+	 .fs {
+		max-height: 800px;
+
+		& .container {
+			padding-top: 126px;
+			padding-bottom: 48px;	
+		}
+
+		&__slide {
+
+			&_icon {
+				height: 85%;
+			}
+
+			&_tags {
+				gap: 8px;
+			}
+
+			&_left {
+				gap: 60px;
+				width: calc((100% - 24px) / 24 * 13);
+			}
+
+			&_desc {
+				width: calc((100% - 36px) / 24 * 10);
+			}
+
+			&_date {
+				gap: 16px;
+
+				& .day {
+					font-size: 1.5rem;
+				}
+			}
+
+			&_text {
+
+				& .btn {
+					margin-top: 48px;
+				}
+			}
+
+			&_control {
+				width: calc((100% - 36px) / 24 * 10);
+			}
+		}
+
+		&__content {
+
+			&_slider {
+				& .swiper-nav {
+					gap: 8px;
+				}
+			}
+		}
+	 }
+
+	 .events {
+		padding-top: 96px;
+		padding-bottom: 123px;
+
+		&__content {
+
+			&_row {
+				padding: 30px 0;
+			}
+		}
+
+		&__title {
+			margin-bottom: 57px;
+		}
+
+		&__date {
+			margin-top: 0.5rem;
+			width: calc((100% - 75px) / 24 * 7);
+
+			& .date_xl {
+				line-height: 0.9;
+			}
+
+			& .day {
+				font-size: 1.5rem;
+				line-height: 0.75;
+			}
+		}
+
+		&__list {
+			// width: calc((100% - 24px) / 24 * 17);
+		}
+
+		&__item {
+			gap: 42px;
+			padding-top: 32px;
+			padding-bottom: 32px;
+
+			&_preview {
+				width: calc((100% - 48px) / 17 * 6);
+			}
+
+			&_info {
+				width: calc((100% - 16px) / 17 * 10);
+			}
+
+			&_time {
+				gap: 8px;
+			}
+
+			&_desc {
+				width: 61%;
+			}
+		}
+
+		&__more {
+			margin-top: 3rem;
+		}
+	 }
+
+	 .halls {
+		height: 640px;
+
+		&__slider {
+
+			&_desc {
+
+				& .swiper-nav {
+					right: 48px;
+					bottom: 40px;
+					gap: 8px;
+				}
+			}
+		}
+
+		&__slide {
+			padding: 63px 24px 42px 0;
+
+			&_text {
+				gap: 3rem;
+			}
+
+			
+		}
+	 }
+
+	 .news {
+		padding-top: 160px;
+		padding-bottom: 160px;
+
+		&__title {
+			margin-bottom: 3rem;
+		}
+
+		&__slide {
+			padding-top: 1.5rem;
+			gap: 35px;
+
+			&_date {
+				gap: 1rem;
+				margin-bottom: 30px;
+			}
+
+			&_preview {
+				height: 250px;
+			}
+		}
+
+		&__more {
+			margin-top: 1.5rem;
+		}
+	 }
+
+	 .about {
+		margin-bottom: 46px;
+
+		&__title {
+			align-items: center;
+			margin-bottom: 76px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			width: calc((100% - 50px) / 24 * 8);
+		}
+
+		&__nums {
+			transform: translateY(-46%);
+			padding: 51px 48px 0;
+
+			&_item {
+				gap: 36px;
+
+				&:nth-child(2n) {
+					gap: 54px	;
+				}
+			}
+		}
+	 }
+
+	 .location {
+		min-height: 800px;
+		margin-bottom: 0;
+
+		&__path {
+			height: 100px;
+		}
+
+		&__slides {
+
+			&_btn {
+				width: 138px;
+				height: 138px;
+			}
+
+			&_icon {
+				width: 334px;
+				margin-bottom: 36px;
+			}
+		}
+
+		&__ellipse {
+			left: 48px;
+
+			&-sm {
+				left: 48px;
+			}
+		}
+
+		&__content {
+			padding: 130px 0;
+
+			&_top {
+				margin-bottom: 10px;
+			}
+
+			&_title {
+				width: calc((100% - 45px) / 24 * 11);
+			}
+
+			&_subtitle {
+				font-size: 1.25rem;
+			}
+		}
+
+		&__more {
+			width: calc((100% - 64px) / 24 * 4);
+		}
+	 }
+
+	 .pagination_tabs {
+		bottom: 40px;
 	 }
 }

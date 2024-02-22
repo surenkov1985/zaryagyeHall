@@ -4,7 +4,8 @@ function fsSliders() {
 	if (!imgSlider) return;
 
 	const imagesSlider = new Swiper(imgSlider, {
-		speed: 1000,
+		speed: 1000, 
+		spaceBetween: 1,
 		navigation: {
 			prevEl: ".fs__content_slider .swiper-prev-btn",
 			nextEl: ".fs__content_slider .swiper-next-btn"
@@ -155,10 +156,18 @@ function newsSlider() {
 	const newsSlider = new Swiper(news, {
 		slidesPerView: 3,
 		slidesPerGroup: 1,
-		spaceBetween: 32,
+		spaceBetween: 8,
 		navigation:{
 			nextEl: ".news .swiper-next-btn",
 			prevEl: ".news .swiper-prev-btn"
+		},
+		breakpoints: {
+			769: {
+				spaceBetween: 24
+			},
+			1441: {
+				spaceBetween: 32
+			}
 		}
 	})
 }
@@ -174,12 +183,14 @@ function locationSliders() {
 	});
 
 	imagesSlider.on('slideChange', function(slider) {
-		const pos = +$(window).width() - +$(".location__path svg").innerWidth();
+		const pos = +$(window).width() - +$(".location__path_icon").innerWidth();
 		console.log($(".location__path svg").innerWidth(), $(window).width())
 		if (slider.activeIndex == 1) {
-			$(".location__path svg").css({"left": `${pos}px`, "right": 0});
+			$(".location__path_icon").css({"left": `${pos}px`, "right": 0});
+			$(".location__slides_btn.first").css({"visibility": "hidden", "opacity": 0})
 		} else {
-			$(".location__path svg").css({"left": 0, "right": `${pos}px`});
+			$(".location__path_icon").css({"left": 0, "right": `${pos}px`});
+			$(".location__slides_btn.first").css({"visibility": "visible", "opacity": 1})
 		}
 	})
 }
