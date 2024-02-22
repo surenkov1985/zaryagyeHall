@@ -640,6 +640,6 @@
     width: calc((100% - 64px) / 24 * 4);
   }
   .pagination_tabs {
-    bottom: 40px;
+    bottom: 40px !important;
   }
 }

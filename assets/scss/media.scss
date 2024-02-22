@@ -1014,7 +1014,7 @@
 		}
 	 }
 
-	 .pagination_tabs {
-		bottom: 40px;
+	 .pagination{&_tabs {
+		bottom: 40px !important;}
 	 }
 }
