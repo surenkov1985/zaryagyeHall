@@ -190,6 +190,9 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.fs__slide_info .tags {
+  display: none;
+}
 .fs__slide_text {
   max-width: 430px;
   display: flex;
@@ -461,7 +464,7 @@
   width: 100%;
   height: 1px;
   left: 0;
-  bottom: 100%;
+  top: 0;
   background: rgb(219, 219, 219);
 }
 .news__slide_date {
@@ -557,6 +560,9 @@
 .about__nums_item:nth-child(2n) {
   gap: 64px;
 }
+.about__nums .text {
+  width: 120px;
+}
 
 .location {
   position: relative;
@@ -606,7 +612,6 @@
 .location__path_icon {
   width: 127.5520833333%;
   position: absolute;
-  height: 100%;
   bottom: 0;
   left: 0;
   transition: all 1s;
@@ -645,10 +650,12 @@
   left: 35.5%;
   justify-content: space-between;
   z-index: 10;
+  pointer-events: none;
 }
 .location__slides_icon {
   transform: translateX(21%);
   margin-bottom: 50px;
+  pointer-events: all;
 }
 .location__slides_btn {
   width: 180px;
@@ -662,6 +669,7 @@
   overflow: hidden;
   isolation: isolate;
   transition: all 0.3s;
+  pointer-events: all;
 }
 .location__slides_btn img {
   width: 100%;

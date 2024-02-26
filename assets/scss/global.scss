@@ -9,6 +9,7 @@
 	border-radius: 73px;
 	font-size: 1.375rem;
 	line-height: 1.4;
+	white-space: nowrap;
 
 	&:hover {
 		background: var(--clr-black);
@@ -53,7 +54,7 @@
 		transition: all 0.5s;
 	}
 
-	& svg path{
+	& svg path {
 		transition: all 0.5s;
 	}
 
@@ -106,7 +107,7 @@
 				stroke: var(--clr-white);
 				fill: none;
 			}
-			
+
 		}
 	}
 
@@ -213,6 +214,7 @@
 				}
 			}
 		}
+
 		// background: none !important;
 
 		// &:hover {
@@ -276,10 +278,12 @@
 @keyframes slideTo {
 	from {
 		width: 100%;
-	} 
-	50%{
+	}
+
+	50% {
 		width: 60%;
 	}
+
 	to {
 		width: 100%;
 	}
@@ -288,10 +292,12 @@
 @keyframes slideFrom {
 	from {
 		width: 60%;
-	} 
-	50%{
+	}
+
+	50% {
 		width: 100%;
 	}
+
 	to {
 		width: 60%;
 	}
@@ -307,8 +313,9 @@
 		border-color: var(--clr-black);
 	}
 
-	&:disabled, &.disabled {
-		color: var(--clr-black-40) ;
+	&:disabled,
+	&.disabled {
+		color: var(--clr-black-40);
 	}
 }
 
@@ -321,13 +328,13 @@ label {
 	&.label_check {
 		cursor: pointer;
 	}
-	
+
 	& input[type=radio] {
 		position: absolute;
 		visibility: hidden;
 		opacity: 0;
 
-		&:checked + span.radio {
+		&:checked+span.radio {
 			background: var(--clr-black);
 			border: 4px solid var(--clr-black);
 			border-radius: 50%;
@@ -344,7 +351,7 @@ label {
 		visibility: hidden;
 		opacity: 0;
 
-		&:checked + span.checkbox {
+		&:checked+span.checkbox {
 			background: var(--clr-black);
 			border-color: var(--clr-black);
 
@@ -384,7 +391,9 @@ label {
 		color: var(--clr-gray);
 	}
 
-	& input[type=text], & input[type=email], & input[type=tel] {
+	& input[type=text],
+	& input[type=email],
+	& input[type=tel] {
 		width: 100%;
 		display: block;
 		padding: 22px 0 16px;
@@ -423,8 +432,10 @@ label {
 	&.label_text {
 		&:hover {
 			color: var(--clr-black);
+
 			& input {
 				border-color: var(--clr-black);
+
 				&::placeholder {
 					color: transparent;
 				}
@@ -469,7 +480,7 @@ label {
 	flex-direction: column;
 	height: 100%;
 	min-height: 100vh;
-	
+
 	position: relative;
 	// background: rgb(229, 229, 229);
 }
@@ -556,7 +567,7 @@ label {
 		& .icon {
 
 			& svg {
-	
+
 				& path {
 					fill: var(--clr-black-40);
 				}
@@ -579,11 +590,11 @@ label {
 .menu-link {
 	line-height: 0.5;
 	transition: all .5s;
-	
+
 	&:hover {
 		color: var(--clr-black-40);
 	}
-} 
+}
 
 .dropdown {
 	// position: relative;
@@ -595,7 +606,7 @@ label {
 		transform: translateX(-50%) translateY(-30px);
 		transition: all .3s;
 
-		
+
 	}
 
 	&.active {
@@ -622,7 +633,7 @@ label {
 	border-radius: 40px;
 	font-size: 18px;
 	line-height: 1.2;
-	
+
 	&_festival {
 		border: 1px solid var(--clr-tag-festival);
 		color: var(--clr-tag-festival);

@@ -5,6 +5,9 @@
   .h3 {
     font-size: 3.625rem;
   }
+  .numbers {
+    font-size: 10.25rem;
+  }
   .depkult-logo {
     width: 195px;
   }
@@ -115,6 +118,9 @@
   .news {
     padding-top: 200px;
   }
+  .location__path {
+    height: 100px;
+  }
 }
 @media (max-width: 1550px) {
   .h2 {
@@ -125,6 +131,9 @@
   }
   .tag {
     font-size: 16px;
+  }
+  .numbers {
+    font-size: 9.75rem;
   }
   .depkult-logo {
     width: 170px;
@@ -602,6 +611,9 @@
   }
   .about__nums_item:nth-child(2n) {
     gap: 54px;
+  }
+  .about__nums_text {
+    width: 100px;
   }
   .location {
     min-height: 800px;

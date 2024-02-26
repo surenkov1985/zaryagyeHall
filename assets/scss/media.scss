@@ -7,6 +7,11 @@
 	.h3 {
 		font-size: 3.625rem;
 	}
+
+	.numbers {
+		font-size: 10.25rem;
+	}
+
 	.depkult-logo {
 		width: 195px;
 	}
@@ -31,7 +36,7 @@
 			&_content {
 				gap: 72px;
 
-			
+
 			}
 
 			& .links {
@@ -51,7 +56,7 @@
 
 				&.head__left .links:nth-child(2) {
 					margin-left: 20px;
-			  }
+				}
 			}
 		}
 
@@ -107,7 +112,7 @@
 			&_phone {
 				// width: 29%;
 			}
-			
+
 			&_addr {
 				font-size: 1.25rem;
 			}
@@ -124,15 +129,15 @@
 	.mobile {
 
 		&__head {
-	
+
 			& .head {
 
 				& .container {
 					padding-bottom: 6px;
 				}
-	
+
 				&__right {
-	
+
 					&_content {
 						gap: 100px;
 					}
@@ -160,9 +165,9 @@
 		display: inline-block;
 		width: 56px;
 		height: 30px;
-	 }
-	 
-	 .slider:before {
+	}
+
+	.slider:before {
 		position: absolute;
 		content: "";
 		height: 26px;
@@ -172,34 +177,38 @@
 		background-color: white;
 		transition: 0.4s;
 		transform: translateX(26px);
-	 }
-	 
-	 /* Rounded sliders */
-	 .slider.round {
-		border-radius: 40px;
-	 }
+	}
 
-	 .fs {
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 40px;
+	}
+
+	.fs {
 
 		& .container {
 			padding-top: 160px;
-			
-		}
-	 }
 
-	 
-	 .events {
+		}
+	}
+
+
+	.events {
 		padding-top: 116px;
 		padding-bottom: 150px;
-	 }
+	}
 
-	 .halls {
+	.halls {
 		height: 780px;
-	 }
+	}
 
-	 .news {
+	.news {
 		padding-top: 200px;
-	 }
+	}
+
+	.location__path {
+		height: 100px;
+	}
 
 }
 
@@ -215,6 +224,10 @@
 
 	.tag {
 		font-size: 16px;
+	}
+
+	.numbers {
+		font-size: 9.75rem;
 	}
 
 	.depkult-logo {
@@ -241,7 +254,7 @@
 			&_content {
 				gap: 68px;
 
-			
+
 			}
 
 			& .links {
@@ -261,7 +274,7 @@
 
 				&.head__left .links:nth-child(2) {
 					margin-left: 20px;
-			  }
+				}
 			}
 		}
 
@@ -344,15 +357,15 @@
 	.mobile {
 
 		&__head {
-	
+
 			& .head {
 
 				& .container {
 					padding-bottom: 4px;
 				}
-	
+
 				&__right {
-	
+
 					&_content {
 						justify-content: flex-end;
 						gap: 90px;
@@ -381,45 +394,45 @@
 		display: inline-block;
 		width: 50px;
 		height: 26px;
-	 }
-	 
-	 .slider:before {
-		position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    transition: 0.4s;
-    transform: translateX(24px);
-	 }
-	 
-	 /* Rounded sliders */
-	 .slider.round {
-		border-radius: 40px;
-	 }
+	}
 
-	 .fs {
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 22px;
+		width: 22px;
+		left: 2px;
+		bottom: 2px;
+		background-color: white;
+		transition: 0.4s;
+		transform: translateX(24px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 40px;
+	}
+
+	.fs {
 
 		& .container {
 			padding-top: 145px;
-			
-		}
-	 }
 
-	 .events {
+		}
+	}
+
+	.events {
 		padding-top: 104px;
 		padding-bottom: 140px;
-	 }
+	}
 
-	 .halls {
+	.halls {
 		height: 720px;
-	 }
+	}
 
-	 .news {
+	.news {
 		padding-top: 180px;
-	 }
+	}
 
 }
 
@@ -448,13 +461,14 @@
 	}
 
 	.date_xl {
-			font-size: 4.75rem;
-			letter-spacing: -2px;
+		font-size: 4.75rem;
+		letter-spacing: -2px;
 	}
 
 	.numbers {
 		font-size: 8.75rem;
 	}
+
 	.menu_font {
 		font-family: var(--font-title);
 		font-size: 4rem;
@@ -507,7 +521,7 @@
 				gap: 70px;
 				padding-bottom: 8px;
 
-				
+
 			}
 
 			& .links {
@@ -529,7 +543,7 @@
 
 				&:nth-child(2) {
 					margin-left: 0px;
-			  }
+				}
 			}
 		}
 
@@ -560,6 +574,7 @@
 	.btn {
 		font-size: 1rem;
 		padding: 21px 48px;
+
 		&_menu {
 			width: 48px;
 			height: 48px;
@@ -656,7 +671,7 @@
 				&_list {
 					gap: 6px;
 				}
-				
+
 				&_link {
 					font-size: 0.75rem;
 				}
@@ -681,15 +696,16 @@
 	.mobile {
 
 		&__head {
-				& .container {
-					padding-bottom: 8px;
-				}
+			& .container {
+				padding-bottom: 8px;
+			}
+
 			& .head {
 
-				
-	
+
+
 				&__right {
-	
+
 					&_content {
 						justify-content: flex-end;
 						gap: 80px;
@@ -708,11 +724,11 @@
 			&:nth-child(3) {
 				margin-left: -18px;
 			}
-	
+
 			&:nth-child(4) {
 				margin-right: -24px;
 			}
-	
+
 			&:nth-child(5) {
 				margin-right: 0px;
 			}
@@ -744,35 +760,35 @@
 		display: inline-block;
 		width: 47px;
 		height: 24px;
-	 }
+	}
 
-	 .swiper-nav {
+	.swiper-nav {
 		gap: 8px;
-	 }
-	 
-	 .slider:before {
-		position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    transition: 0.4s;
-    transform: translateX(22px);
-	 }
-	 
-	 /* Rounded sliders */
-	 .slider.round {
-		border-radius: 40px;
-	 }
+	}
 
-	 .fs {
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 20px;
+		width: 20px;
+		left: 2px;
+		bottom: 2px;
+		background-color: white;
+		transition: 0.4s;
+		transform: translateX(22px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 40px;
+	}
+
+	.fs {
 		max-height: 800px;
 
 		& .container {
 			padding-top: 126px;
-			padding-bottom: 48px;	
+			padding-bottom: 48px;
 		}
 
 		&__slide {
@@ -822,9 +838,9 @@
 				}
 			}
 		}
-	 }
+	}
 
-	 .events {
+	.events {
 		padding-top: 96px;
 		padding-bottom: 123px;
 
@@ -882,9 +898,9 @@
 		&__more {
 			margin-top: 3rem;
 		}
-	 }
+	}
 
-	 .halls {
+	.halls {
 		height: 640px;
 
 		&__slider {
@@ -906,11 +922,11 @@
 				gap: 3rem;
 			}
 
-			
-		}
-	 }
 
-	 .news {
+		}
+	}
+
+	.news {
 		padding-top: 160px;
 		padding-bottom: 160px;
 
@@ -935,9 +951,9 @@
 		&__more {
 			margin-top: 1.5rem;
 		}
-	 }
+	}
 
-	 .about {
+	.about {
 		margin-bottom: 46px;
 
 		&__title {
@@ -958,13 +974,17 @@
 				gap: 36px;
 
 				&:nth-child(2n) {
-					gap: 54px	;
+					gap: 54px;
 				}
 			}
-		}
-	 }
 
-	 .location {
+			&_text {
+				width: 100px;
+			}
+		}
+	}
+
+	.location {
 		min-height: 800px;
 		margin-bottom: 0;
 
@@ -1012,9 +1032,11 @@
 		&__more {
 			width: calc((100% - 64px) / 24 * 4);
 		}
-	 }
+	}
 
-	 .pagination{&_tabs {
-		bottom: 40px !important;}
-	 }
+	.pagination {
+		&_tabs {
+			bottom: 40px !important;
+		}
+	}
 }

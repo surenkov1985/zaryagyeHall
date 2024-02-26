@@ -8,13 +8,21 @@
 		display: none !important;
 	}
 
+	.date_xl {
+		font-size: 4.375rem;
+	}
+
+	.numbers {
+		line-height: 0.6;
+	}
+
 	.row {
 		// width: 100%;
 		display: flex;
 		margin-left: -0.625rem;
 		margin-right: -0.625rem;
 	}
-	
+
 	.col {
 		width: calc(100% / 12);
 		padding-left: 0.625rem;
@@ -37,27 +45,27 @@
 			}
 		}
 	}
-	
+
 	.col-2 {
 		width: calc(100% / 12 * 2);
 	}
-	
+
 	.col-3 {
 		width: calc(100% / 12 * 3);
 	}
-	
+
 	.col-4 {
 		width: calc(100% / 12 * 4);
 	}
-	
+
 	.col-5 {
 		width: calc(100% / 12 * 5);
 	}
-	
+
 	.col-6 {
 		width: calc(100% / 12 * 6);
 	}
-	
+
 	.links {
 		gap: 0.875rem;
 
@@ -77,7 +85,7 @@
 		}
 	}
 
-	
+
 	.depkult-logo {
 		width: 140px;
 	}
@@ -85,7 +93,7 @@
 	.head {
 
 		&__top {
-			display: flex !important; 
+			display: flex !important;
 		}
 
 		&__bottom {
@@ -99,7 +107,7 @@
 				padding-bottom: 20px;
 			}
 
-			
+
 		}
 
 		&__right {
@@ -138,21 +146,22 @@
 			margin-bottom: 0;
 		}
 
-		
+
 	}
 
 	.mobile {
 
 		&__head {
-				& .container {
-					padding-bottom: 8px;
-				}
+			& .container {
+				padding-bottom: 8px;
+			}
+
 			& .head {
 
-				
-	
+
+
 				&__right {
-	
+
 					&_content {
 						justify-content: flex-end;
 						gap: 80px;
@@ -172,11 +181,11 @@
 			&:nth-child(3) {
 				margin-left: 0px;
 			}
-	
+
 			&:nth-child(4) {
 				margin-right: 0px;
 			}
-	
+
 			&:nth-child(5) {
 				margin-right: 0px;
 			}
@@ -201,6 +210,229 @@
 				padding-top: 80px;
 				gap: 28px;
 				flex-wrap: wrap;
+			}
+		}
+	}
+
+	.fs {
+		max-height: 1080px;
+
+		& .container {
+			padding-top: 176px;
+		}
+
+		&__slide {
+
+			&_icon {
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+		}
+	}
+
+	.events {
+
+		&__content {
+			&_row {
+				flex-direction: column;
+				padding-top: 10px;
+
+				&:last-child {
+
+					&::after {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 1px;
+						background: rgb(219, 219, 219);
+						top: 100%;
+					}
+				}
+			}
+		}
+
+		&__list {
+			width: 100%;
+		}
+
+		&__item {
+
+			&_preview {
+				width: calc(100% / 12 * 5);
+			}
+
+			&_info {
+				width: calc(100% / 12 * 6);
+			}
+
+			&_control {
+
+				&_link {
+					width: calc(100% / 12 * 5);
+				}
+			}
+
+			&_tags {
+				width: calc(100% / 12 * 6);
+			}
+		}
+
+		&__date {
+			z-index: 1;
+			background: #fff;
+			width: 100%;
+			top: 0;
+			padding: 20px 0;
+			margin-top: 0;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				background: rgb(219, 219, 219);
+				top: 100%;
+			}
+
+			// border-bottom: 1px solid rgb(219, 219, 219);
+		}
+
+		&__more {
+			margin-top: 2.5rem;
+		}
+	}
+
+	.halls {
+		height: auto;
+
+		&__slider {
+
+			&_view {
+				flex-direction: column;
+			}
+
+			&_images {
+				width: 100%;
+			}
+
+			&_desc {
+				width: 100%;
+
+				& .swiper-nav {
+					bottom: 0;
+					right: 32px;
+				}
+			}
+
+			&_small {
+				visibility: hidden;
+			}
+		}
+
+		&__slide {
+			padding: 64px 32px 0;
+			gap: 40px;
+
+			&_title {
+				width: calc(100% / 12 * 7);
+			}
+
+			&_text {
+				width: calc(100% / 12 * 7);
+				gap: 4rem;
+			}
+		}
+	}
+
+	.news {
+
+		&_title {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	.about {
+		margin-bottom: 0;
+		padding-bottom: 120px;
+
+		&__title {
+
+			& .h3 {
+				width: calc((100% - 24px) / 24 * 14);
+			}
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			width: calc((100% - 16px) / 24 * 9);
+		}
+
+		&__more {
+			width: calc((100% - 64px) / 24 * 5);
+		}
+
+		&__nums {
+			// padding-top: 24px;
+			position: static;
+			transform: translateY(0);
+			width: 100%;
+			justify-content: flex-start;
+			padding: 20px 0 0;
+
+			&_item {
+				flex-direction: column;
+				gap: 20px;
+
+				& .numbers {
+					line-height: 1;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				& .text {
+					width: 143px;
+				}
+
+				&:nth-child(2n) {
+					gap: 20px;
+				}
+			}
+		}
+	}
+
+	.location {
+
+		&__content {
+			padding: 98px 0;
+
+			&_title {
+				width: calc((100% - 45px) / 24 * 12);
+
+			}
+
+			&_top {
+				margin-bottom: 20px;
+			}
+
+			&_subtitle {
+				width: calc((100% - 16px) / 24 * 10);
+			}
+		}
+
+		&__more {
+			width: calc((100% - 32px) / 24 * 6);
+		}
+
+		&__slides {
+
+			&_navigation {
+				left: 34%;
+				width: 62%;
+			}
+
+			&_btn {
+				width: 108px;
+				height: 108px;
 			}
 		}
 	}

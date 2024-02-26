@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  .date_xl {
+    font-size: 4rem;
+  }
   .section {
     padding-left: 24px;
     padding-right: 24px;
@@ -188,6 +191,62 @@
   }
   .mobile__wave {
     height: 165px;
+  }
+  .fs {
+    max-height: 1024px;
+  }
+  .fs .container {
+    padding-top: 164px;
+    padding-bottom: 4rem;
+  }
+  .fs__slide_content {
+    flex-direction: column-reverse;
+    height: 70%;
+  }
+  .fs__slide_preview {
+    min-height: 360px;
+  }
+  .fs__slide_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .fs__slide_bottom .btn {
+    order: 1;
+  }
+  .fs__slide_control {
+    order: 2;
+  }
+  .fs__slide_tags {
+    flex-direction: row;
+    position: relative;
+  }
+  .fs__slide_desc {
+    width: 100%;
+  }
+  .fs__slide_left {
+    width: 100%;
+    order: 1;
+    flex-direction: column-reverse;
+  }
+  .fs__slide_left .tags {
+    display: none;
+  }
+  .fs__slide_info {
+    flex-direction: column-reverse;
+  }
+  .fs__slide_info .tags {
+    display: flex;
+  }
+  .fs__slide_icon.sm_icon {
+    height: 50%;
+    margin-right: 0;
+  }
+  .fs__content_slide {
+    flex-direction: column;
+  }
+  .events {
+    padding-top: 16px;
   }
 }
 @media (max-width: 700px) {
