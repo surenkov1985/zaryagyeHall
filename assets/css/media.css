@@ -275,6 +275,9 @@
   .numbers {
     font-size: 8.75rem;
   }
+  .numbers_xl {
+    font-size: 21rem;
+  }
   .menu_font {
     font-family: var(--font-title);
     font-size: 4rem;
