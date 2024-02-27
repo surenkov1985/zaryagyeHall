@@ -633,6 +633,9 @@
     width: 334px;
     margin-bottom: 36px;
   }
+  .location__slides_icon .text {
+    margin-top: 0;
+  }
   .location__ellipse {
     left: 48px;
   }
