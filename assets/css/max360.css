@@ -33,12 +33,16 @@
   }
   .date_xl {
     font-family: var(--font-accent);
-    font-size: 4.75rem;
+    font-size: 3rem;
     line-height: 1.3;
     letter-spacing: -3%;
   }
   .date {
     font-size: 2rem;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 4px 8px;
   }
   .lead {
     font-size: 1.125rem;
@@ -60,8 +64,7 @@
   }
   .btn {
     font-size: 0.875rem;
-    justify-content: space-between;
-    padding: 12px 28px;
+    padding: 18px 28px;
   }
   .btn_menu {
     justify-content: center;
@@ -69,6 +72,10 @@
     height: 40px !important;
   }
   .btn_social {
+    justify-content: center;
+  }
+  .btn_slider {
+    padding: 0 !important;
     justify-content: center;
   }
   .link {
@@ -257,6 +264,57 @@
   }
   .mobile__body_cols {
     margin-bottom: 56px;
+  }
+  .fs .container {
+    padding-top: 130px;
+  }
+  .fs__slide {
+    gap: 20px;
+  }
+  .fs__slide_content {
+    height: auto;
+    gap: 1rem;
+  }
+  .fs__slide_icon {
+    order: 2;
+  }
+  .fs__slide_icon.sm_icon {
+    margin-right: auto;
+  }
+  .fs__slide_tags {
+    margin-top: 0px;
+  }
+  .fs__slide_info {
+    gap: 1.5rem;
+  }
+  .fs__slide_preview {
+    min-height: 165px;
+  }
+  .fs__slide_date {
+    gap: 12px;
+  }
+  .fs__slide_date .day {
+    font-size: 0.875rem;
+  }
+  .fs__slide_desc {
+    margin-bottom: auto;
+  }
+  .fs__slide_text {
+    margin-top: 24px;
+  }
+  .fs__slide_text .btn {
+    margin-top: 12px;
+    width: 100%;
+  }
+  .fs__slide_control {
+    width: 100%;
+    display: block;
+  }
+  .fs .swiper-nav {
+    visibility: hidden;
+  }
+  .fs .swiper-pagination {
+    visibility: visible;
   }
 }
 @media (max-width: 350px) {

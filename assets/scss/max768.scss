@@ -303,7 +303,7 @@
 	}
 
 	.fs {
-		max-height: auto;
+		max-height: 1080px;
 
 		& .container {
 			padding-top: 164px;
@@ -311,6 +311,8 @@
 		}
 
 		&__slide {
+
+
 
 			&_content {
 				flex-direction: column-reverse;

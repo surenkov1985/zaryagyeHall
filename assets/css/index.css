@@ -77,6 +77,9 @@
   stroke: var(--clr-black);
   fill: none;
 }
+.fs__content_slider.light .swiper-pagination-bullet {
+  background: var(--clr-white);
+}
 .fs__content_slider.light .btn_color {
   background: var(--clr-tag-festival);
   color: var(--clr-white);

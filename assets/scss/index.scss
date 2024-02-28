@@ -108,6 +108,10 @@
 
 				}
 
+				& .swiper-pagination-bullet {
+					background: var(--clr-white);
+				}
+
 				& .btn {
 					&_color {
 						background: var(--clr-tag-festival);

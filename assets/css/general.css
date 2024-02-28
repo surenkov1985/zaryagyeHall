@@ -411,3 +411,13 @@ h5,
 .white_text {
   color: var(--clr-white);
 }
+
+.swiper-pagination {
+  top: calc(100% + 24px) !important;
+  bottom: auto !important;
+  visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(16, 16, 16);
+}

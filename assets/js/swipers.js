@@ -40,9 +40,14 @@ function fsSliders() {
 
 	const contentSlider = new Swiper(".fs__content_slider", {
 		speed: 1000,
+		spaceBetween: 16,
 		navigation: {
 			prevEl: ".fs__content_slider .swiper-prev-btn",
 			nextEl: ".fs__content_slider .swiper-next-btn",
+		},
+		pagination: {
+			el: ".fs__content_slider .swiper-pagination",
+			type: "bullets",
 		},
 	});
 
