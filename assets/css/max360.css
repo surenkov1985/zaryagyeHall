@@ -12,7 +12,7 @@
   h3,
   .h3,
   .text-content h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   h4,
   .h4,
@@ -40,9 +40,12 @@
   .date {
     font-size: 2rem;
   }
+  .time {
+    font-size: 1rem;
+  }
   .tag {
     font-size: 12px;
-    padding: 4px 8px;
+    padding: 3px 8px 4px;
   }
   .lead {
     font-size: 1.125rem;
@@ -66,6 +69,9 @@
     font-size: 0.875rem;
     padding: 18px 28px;
   }
+  .btn_slim {
+    padding: 10px 24px;
+  }
   .btn_menu {
     justify-content: center;
     width: 40px !important;
@@ -75,6 +81,8 @@
     justify-content: center;
   }
   .btn_slider {
+    width: 56px;
+    height: 56px;
     padding: 0 !important;
     justify-content: center;
   }
@@ -265,6 +273,9 @@
   .mobile__body_cols {
     margin-bottom: 56px;
   }
+  .fs {
+    max-height: 748px;
+  }
   .fs .container {
     padding-top: 130px;
   }
@@ -272,7 +283,6 @@
     gap: 20px;
   }
   .fs__slide_content {
-    height: auto;
     gap: 1rem;
   }
   .fs__slide_icon {
@@ -315,6 +325,90 @@
   }
   .fs .swiper-pagination {
     visibility: visible;
+  }
+  .events {
+    padding-top: 10px;
+    padding-bottom: 63px;
+  }
+  .events__title {
+    margin-bottom: 22px;
+  }
+  .events__title .h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .events__content_row {
+    gap: 24px;
+    padding-bottom: 25px;
+  }
+  .events__date {
+    padding: 7px 0 11px;
+  }
+  .events__date .day {
+    font-size: 1.25rem;
+  }
+  .events__item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .events__item:first-child {
+    padding-top: 0;
+  }
+  .events__item:last-child {
+    padding-bottom: 0;
+  }
+  .events__item_top {
+    height: auto;
+    flex-direction: column;
+  }
+  .events__item_preview {
+    order: 1;
+    width: 100%;
+  }
+  .events__item_info {
+    width: 100%;
+    gap: 12px;
+  }
+  .events__item_desc {
+    margin-top: 14px;
+  }
+  .events__item_control {
+    display: none;
+  }
+  .events__item_control.top_control {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 18px;
+  }
+  .events__item_tags {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+  }
+  .events__more {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .events__more .btn {
+    width: 216px;
+  }
+  .halls__slider_images {
+    height: 320px;
+  }
+  .halls__slider_desc .swiper-nav {
+    bottom: 40px;
+    right: 16px;
+  }
+  .halls__slide {
+    padding: 40px 16px;
+    gap: 32px;
+  }
+  s .halls__slide_title {
+    width: 75%;
+  }
+  .halls__slide_text {
+    width: 83.3333333333%;
+    gap: 3.5rem;
   }
 }
 @media (max-width: 350px) {

@@ -61,6 +61,69 @@
 		width: 100%;
 		height: 100%;
 
+		&.light {
+			& .btn_slider {
+
+				background: var(--clr-white-10);
+
+				& svg path {
+					stroke: var(--clr-white);
+					fill: none;
+				}
+
+				&:hover {
+					background: var(--clr-white);
+
+					& svg path {
+						stroke: var(--clr-black);
+						fill: none;
+					}
+				}
+
+
+
+			}
+
+			& .swiper-pagination-bullet {
+				background: var(--clr-white);
+			}
+
+			& .btn {
+				&_color {
+					background: var(--clr-tag-festival);
+					color: var(--clr-white);
+
+					&:hover {
+						color: var(--clr-black);
+						background: var(--clr-tag-festival-opacity);
+					}
+				}
+			}
+
+			& .date_xl,
+			& .day {
+				color: var(--clr-white);
+			}
+
+			& .fs__slide_desc {
+				color: var(--clr-white);
+			}
+
+			& .tag {
+
+				&_card {
+					border: 1px solid var(--clr-white-40);
+					color: var(--clr-white-40);
+					transition: all 0.5s;
+
+					&:hover {
+						color: var(--clr-white);
+						border-color: var(--clr-white);
+					}
+				}
+			}
+		}
+
 		&_slider {
 			width: 100%;
 
@@ -411,6 +474,10 @@
 			&_link {
 				display: flex;
 				width: calc((100% - 64px) / 17 * 6);
+			}
+
+			&.top_control {
+				display: none;
 			}
 		}
 

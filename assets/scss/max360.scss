@@ -15,7 +15,7 @@
 	h3,
 	.h3,
 	.text-content h3 {
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 
 	h4,
@@ -50,9 +50,13 @@
 		font-size: 2rem;
 	}
 
+	.time {
+		font-size: 1rem;
+	}
+
 	.tag {
 		font-size: 12px;
-		padding: 4px 8px;
+		padding: 3px 8px 4px;
 	}
 
 	.lead {
@@ -84,6 +88,10 @@
 		// justify-content: space-between;
 		padding: 18px 28px;
 
+		&_slim {
+			padding: 10px 24px;
+		}
+
 		&_menu {
 			justify-content: center;
 			width: 40px !important;
@@ -95,6 +103,8 @@
 		}
 
 		&_slider {
+			width: 56px;
+			height: 56px;
 			padding: 0 !important;
 			justify-content: center;
 		}
@@ -383,8 +393,7 @@
 	}
 
 	.fs {
-		// max-height: 640px;
-
+		max-height: 748px;
 		& .container {
 			padding-top: 130px;
 		}
@@ -393,7 +402,7 @@
 			gap: 20px;
 
 			&_content {
-				height: auto;
+				// height: auto;
 				gap: 1rem;
 			}
 
@@ -451,6 +460,129 @@
 
 		& .swiper-pagination {
 			visibility: visible;
+		}
+	}
+
+	.events {
+		padding-top: 10px;
+		padding-bottom: 63px;
+
+		&__title {
+			margin-bottom: 22px;
+
+			& .h2 {
+				font-size: 2rem;
+				width: 100%;
+			}
+		}
+
+		&__content {
+
+			&_row {
+				gap: 24px;
+				padding-bottom: 25px;
+			}
+		}
+
+		&__date {
+			padding: 7px 0 11px;
+
+			& .day {
+				font-size: 1.25rem;
+			}
+		}
+
+		&__item {
+			padding-top: 24px;
+			padding-bottom: 24px; 
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			
+
+			&_top {
+				height: auto;
+				flex-direction: column;
+				// gap: 24px;
+				
+			}
+
+			&_preview {
+				order: 1;
+				width: 100%;
+			}
+
+			&_info {
+				width: 100%;
+				gap: 12px;
+			}
+
+			&_desc {
+				margin-top: 14px;
+			}
+
+			&_control {
+				display: none;
+
+				&.top_control {
+					display: flex;
+					margin-top: 32px;
+					margin-bottom: 18px;
+				}
+			}
+
+			&_tags {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 9px;
+			}
+		}
+
+		&__more {
+			margin-top: 1rem;
+			justify-content: center;
+
+			& .btn {
+				width: 216px;
+			}
+		}
+
+	}
+
+	.halls {
+
+		&__slider {
+
+			&_images {
+				height: 320px;
+			}
+
+			&_desc {
+
+				& .swiper-nav {
+					bottom: 40px;
+					right: 16px;
+				}
+			}
+		}
+
+		&__slide {
+			padding: 40px 16px;
+			gap: 32px;s
+			
+			&_title {
+				width: calc(100% / 12 * 9);
+			}
+
+			&_text {
+				width: calc(100% / 12 * 10);
+				gap: 3.5rem;
+			}
 		}
 	}
 }
