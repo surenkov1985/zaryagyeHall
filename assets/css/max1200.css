@@ -89,6 +89,9 @@
   .btn_social svg.tg {
     width: 15px;
   }
+  .btn_tab {
+    padding: 21px 18px;
+  }
   .nav-link {
     font-size: 1rem;
   }

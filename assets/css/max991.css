@@ -165,6 +165,7 @@
   }
   .events__item_control_link {
     width: 41.6666666667%;
+    display: block;
   }
   .events__item_tags {
     width: 50%;

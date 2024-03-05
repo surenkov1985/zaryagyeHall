@@ -91,6 +91,10 @@
 			width: 160px;
 			height: 160px;
 		}
+
+		&_tab {
+			font-size: 1.125rem;
+		}
 	}
 
 	.nav-link {
@@ -200,6 +204,12 @@
 
 	.halls {
 		height: 780px;
+
+		& .dropdown {
+			width: calc(100% - 64px) !important;
+
+			
+		}
 	}
 
 	.news {
@@ -612,6 +622,10 @@
 		&_slim {
 			padding: 14px 40px;
 		}
+
+		&_tab {
+			padding: 21px 36px;
+		}
 	}
 
 	.nav-link {
@@ -927,6 +941,10 @@
 			}
 
 
+		}
+
+		& .dropdown {
+			bottom: 40px !important;
 		}
 	}
 

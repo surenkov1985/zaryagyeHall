@@ -1,4 +1,23 @@
-.dark-theme {
+.dark {
+		color: var(--clr-white);
+		background: var(--clr-black);
+
+		// :root {
+		// 	--font-accent: #fff;
+		// }
+
+		& a {
+			color: var(--clr-white);
+
+			&:hover {
+				color: var(--clr-white-40);
+			}
+		}
+
+		& .light_text {
+			color: var(--clr-white-40);
+		}
+	
 	& .btn {
 		background: var(--clr-white-10);
 		color: var(--clr-white);
@@ -12,7 +31,24 @@
 			background: var(--clr-white);
 
 			& svg path {
-				fill: var(--clr-black);;
+				fill: var(--clr-black);
+			}
+		}
+
+		&_slider {
+			& svg path {
+				fill: none;
+				stroke: var(--clr-white);
+			}
+
+			&:hover {
+				color: var(--clr-gray);
+				background: var(--clr-white);
+	
+				& svg path {
+					fill: none;
+					stroke: var(--clr-black);
+				}
 			}
 		}
 
@@ -33,6 +69,20 @@
 
 			&:hover {
 				border-color: var(--clr-white);
+			}
+		}
+
+		&_menu {
+
+			& .line {
+				background: var(--clr-white);
+			}
+		}
+
+		&_tab {
+
+			&.active {
+				color: var(--clr-black);
 			}
 		}
 	}
@@ -118,6 +168,135 @@
 	
 		&.disabled {
 			color: var(--clr-white-10);
+		}
+	}
+
+	& .tag {
+
+		&_card {
+			border-color: var(--clr-white-40);
+		}
+	}
+
+	& .mobile {
+		background: var(--clr-black);
+
+		&__wave {
+
+			& svg path {
+
+				&:not(:last-child) {
+					stroke: #FBFBFB;
+				}
+
+				&:last-child {
+					fill: #101010;
+				}
+			}
+		}
+	}
+
+	& .head{
+		&__left .links__item svg path {
+			stroke: #FBFBFB;
+		}
+
+		& .light-logo {
+			display: flex;
+		}
+
+		& .dark-logo {
+			display: none;
+		}
+
+		&__languages {
+			color: var(--clr-white-40);
+
+			& .dropdown{
+				&__list {
+					background: var(--clr-black);
+				}
+
+				&__item a{
+					color: var(--clr-white-40);
+				}
+			}
+		}
+	}
+
+	& .halls {
+
+		&__slide {
+			background: var(--clr-black);
+		}
+	}
+
+	& .about {
+
+		&__img {
+
+			& .dark {
+				opacity: 1;
+			}
+		}
+	}
+
+	& .location {
+		&__path {
+
+			&_icon {
+
+				& svg path {
+					fill: #101010;
+				}
+			}
+		}
+	}
+
+	& .scls {
+
+		&__title {
+			color: var(--clr-white);
+		}
+	}
+
+	& .scroll_top {
+
+		& .icon {
+
+			& svg path {
+				fill: var(--clr-white);
+			}
+		}
+
+		&_btn {
+			width: 54px;
+			height: 54px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: all 0.5s;
+			pointer-events: all;
+	
+			& svg path {
+				fill: var(--clr-white);
+				transition: all 0.5s;
+			}
+	
+			&:hover {
+				transform: translateY(-5px);
+				& svg path {
+					fill: var(--clr-black);
+				}
+	
+				& + .icon svg {
+					transform: scaleY(1.2);
+					 & path {
+						fill-opacity: 0.9 !important;
+					}
+				}
+			}
 		}
 	}
 }

@@ -57,6 +57,9 @@
     width: 160px;
     height: 160px;
   }
+  .btn_tab {
+    font-size: 1.125rem;
+  }
   .nav-link {
     font-size: 1.25rem;
   }
@@ -114,6 +117,9 @@
   }
   .halls {
     height: 780px;
+  }
+  .halls .dropdown {
+    width: calc(100% - 64px) !important;
   }
   .news {
     padding-top: 200px;
@@ -377,6 +383,9 @@
   .btn_slim {
     padding: 14px 40px;
   }
+  .btn_tab {
+    padding: 21px 36px;
+  }
   .nav-link {
     font-size: 1rem;
   }
@@ -572,6 +581,9 @@
   }
   .halls__slide_text {
     gap: 3rem;
+  }
+  .halls .dropdown {
+    bottom: 40px !important;
   }
   .news {
     padding-top: 160px;

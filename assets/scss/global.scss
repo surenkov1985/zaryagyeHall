@@ -261,10 +261,11 @@
 
 	&_tab {
 		background: none;
+		padding: 26px 48px;
 		color: var(--clr-white);
 
 		&.active {
-			background: var(--clr-white);
+			// background: var(--clr-white);
 			color: var(--clr-black);
 		}
 

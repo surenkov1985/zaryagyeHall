@@ -20,6 +20,53 @@ $(document).on("click", ".dropdown__value", function () {
 	$(dropdown).toggleClass("active");
 });
 
+// if ($(".head__theme input").prop("checked")) {
+// 	console.log($(this).val());
+
+// 	$("body").addClass("dark")
+// }
+
+$(document).on("change", ".head__theme input", function(){
+	if ($(this).prop("checked")) {
+		// console.log($(this).val());
+
+		$("body").addClass("dark");
+
+		localStorage.colorTheme = "dark";
+	} else {
+		localStorage.colorTheme = "light";
+		$("body").removeClass("dark");
+	}
+	
+});
+
+if(!localStorage.hasOwnProperty("colorTheme") || localStorage.colorTheme === "light") {
+
+	$("body").removeClass("dark");
+
+	$(".head__theme input").prop("checked", false)
+
+} else if (localStorage.colorTheme === "dark") {
+	$("body").addClass("dark")
+
+	$(".head__theme input").prop("checked", true)
+}
+
+$(document).on("click", ".scroll_top_btn", function(){
+	// $('html, body').animate({
+	// 	scrollTop: 0
+	//  }, {duration: 2000, easing: "linear"})
+
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+  });
+
+	// $(document).scrollTop(0)
+})
+
+console.log(localStorage.colorTheme)
+
 $(document).on("click", ".dropdown__item", function () {
 
 	const dropdown = $(this).closest(".dropdown");

@@ -186,9 +186,6 @@ body {
   line-height: 0.4;
   background: var(--clr-white);
 }
-body.dark {
-  color: var(--clr-white);
-}
 
 a {
   color: var(--clr-black);

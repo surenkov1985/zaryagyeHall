@@ -4,6 +4,10 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	.numbers {
+		font-size: 6rem;
+	}
 	.menu_font {
 		font-size: 3rem;
 	}
@@ -204,6 +208,373 @@
 			// height: 80px;
 			& .lg	{
 				// display: none;
+			}
+		}
+	}
+
+	.fs {
+		max-height: 748px;
+		& .container {
+			padding-top: 154px;
+		}
+
+		&__slide {
+			gap: 20px;
+
+			&_content {
+				// height: auto;
+				gap: 1rem;
+			}
+
+			&_icon {
+				order: 2;
+
+				&.sm_icon {
+					margin-right: auto;
+				}
+			}
+
+			&_tags {
+				margin-top: 0px;
+			}
+
+			&_info {
+				gap: 1.5rem;
+			}
+
+			&_preview {
+				min-height: 165px;
+			}
+
+			&_date {
+				gap: 12px;
+
+				& .day {
+					font-size: 0.875rem;
+				}
+			}
+
+			&_desc {
+				margin-bottom: auto;
+			}
+
+			&_text {
+				margin-top: 24px;
+				// width: 80%;
+
+				& .btn {
+					margin-top: 12px;
+					width: 100%;
+				}
+			}
+
+			&_control {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		& .swiper-nav {
+			visibility: hidden;
+		}
+
+		& .swiper-pagination {
+			visibility: visible;
+		}
+	}
+
+	.events {
+		padding-top: 10px;
+		padding-bottom: 63px;
+
+		&__title {
+			margin-bottom: 22px;
+
+			& .h2 {
+				font-size: 2rem;
+				width: 100%;
+			}
+		}
+
+		&__content {
+
+			&_row {
+				gap: 24px;
+				padding-bottom: 25px;
+			}
+		}
+
+		&__date {
+			padding: 7px 0 11px;
+
+			& .day {
+				font-size: 1.25rem;
+			}
+		}
+
+		&__item {
+			padding-top: 24px;
+			padding-bottom: 24px; 
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			
+
+			&_top {
+				height: auto;
+				flex-direction: column;
+				// gap: 24px;
+				
+			}
+
+			&_preview {
+				order: 1;
+				width: 100%;
+			}
+
+			&_info {
+				width: 100%;
+				gap: 12px;
+			}
+
+			&_desc {
+				margin-top: 14px;
+			}
+
+			&_control {
+				display: none;
+
+				&.top_control {
+					display: flex;
+					margin-top: 32px;
+					margin-bottom: 18px;
+				}
+			}
+
+			&_tags {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 9px;
+			}
+		}
+
+		&__more {
+			margin-top: 1rem;
+			justify-content: center;
+
+			& .btn {
+				width: 216px;
+			}
+		}
+
+	}
+
+	.halls {
+
+		&__slider {
+
+			&_images {
+				height: 320px;
+			}
+
+			&_desc {
+
+				& .swiper-nav {
+					// visibility: hidden;
+					bottom: 40px;
+					right: 16px;
+				}
+			}
+		}
+
+		&__slide {
+			padding: 40px 16px;
+			gap: 32px;
+			
+			&_title {
+				width: calc(100% / 12 * 9);
+			}
+
+			&_text {
+				width: calc(100% / 12 * 10);
+				gap: 3.5rem;
+			}
+
+			&_link {
+
+				& .btn {
+					width: 216px;
+				}
+			}
+		}
+		
+
+		& .dropdown {
+			width: calc(100% - 40px) !important;
+			bottom: 24px !important;
+		}
+	}
+
+	.news {
+		padding-top: 29px;
+		padding-bottom: 80px;
+
+		& .h2 {
+			font-size: 2rem;
+		}
+
+		&__title {
+			margin-bottom: 0.625rem;
+		}
+
+		& .swiper-nav {
+			visibility: hidden;
+		}
+
+		&__slide {
+			gap: 22px;
+
+			&_preview {
+				height: 200px;
+			}
+		}
+
+		&__content {
+
+			& .swiper-pagination {
+				position: relative;
+				visibility: visible;
+			}
+		}
+
+		&__more {
+			justify-content: center;
+			margin-top: 2.5rem;
+			& .btn {
+				font-size: .875rem;
+				padding: 18px 28px;
+				width: 216px;
+			}
+		}
+	}
+
+	.about {
+		padding-bottom: 126px;
+
+		& .h3 {
+			width: 100%;
+		}
+
+		&__title {
+			gap: 1.375rem;
+			margin-bottom: 25px;
+		}
+
+		&__subtitle {
+			width: 100%;
+			font-size: 18px;
+			& p {
+				width: 100%;
+			}
+		}
+
+		&__more {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 57px;
+		}
+
+		&__nums {
+			padding-top: 8px;
+
+			&_item {
+				width: calc((100% - 8px) / 12 * 6);
+				position: relative;
+
+				&:nth-child(2n) {
+					width: calc((100% - 8px) / 12 * 6);
+			  }
+
+				& .numbers {
+					position: absolute;
+					top: 72%;
+					left: 30%;
+				}
+
+				& .text {
+					width: 90px;
+				}
+			}
+		}
+	}
+
+	.location {
+		min-height: 630px;
+		&__content {
+			padding: 56px 0;
+
+			& .h2 {
+				font-size: 2rem;
+			}
+
+			&_top {
+				gap: 1rem;
+				margin-bottom: 23px;
+			}
+
+			&_subtitle {
+				font-size: 1.125rem;
+				width: 100%;
+			}
+		}
+
+		&__more {
+			margin-left: auto;
+			margin-right: auto;
+			width: 217px;
+		}
+
+		&__slides {
+
+			&_navigation {
+				// left: 2%;
+				left: 18%;
+    			width: 70%;
+			}
+
+			&_btn {
+				width: 86px;
+				height: 86px;
+				margin-bottom: 0;
+			}
+
+			&_icon {
+				margin-bottom: 0;
+				transform: translateX(-14%);
+
+				& .numbers_xl {
+					line-height: 0.6;
+				}
+
+				& .time {
+					font-size: 1.25rem;
+					position: absolute;
+					left: 100%;
+					bottom: calc(100% + 8px);
+				}
+
+				& .text {
+					left: auto;
+					right: calc(100% + 33px);
+					bottom: calc(100% + 25px);
+					font-size: 0.875rem;
+					
+				}
 			}
 		}
 	}
