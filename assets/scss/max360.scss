@@ -585,6 +585,49 @@
 			}
 		}
 	}
+
+	.news {
+		padding-top: 29px;
+		padding-bottom: 80px;
+
+		& .h2 {
+			font-size: 2rem;
+		}
+
+		&__title {
+			margin-bottom: 0.625rem;
+		}
+
+		& .swiper-nav {
+			visibility: hidden;
+		}
+
+		&__slide {
+			gap: 22px;
+
+			&_preview {
+				height: 200px;
+			}
+		}
+
+		&__content {
+
+			& .swiper-pagination {
+				position: relative;
+				visibility: visible;
+			}
+		}
+
+		&__more {
+			justify-content: center;
+			margin-top: 2.5rem;
+			& .btn {
+				font-size: .875rem;
+				padding: 18px 28px;
+				width: 216px;
+			}
+		}
+	}
 }
 
 @media (max-width: 350px) {

@@ -410,38 +410,6 @@
     width: 83.3333333333%;
     gap: 3.5rem;
   }
-  .news {
-    padding-top: 29px;
-    padding-bottom: 80px;
-  }
-  .news .h2 {
-    font-size: 2rem;
-  }
-  .news__title {
-    margin-bottom: 0.625rem;
-  }
-  .news .swiper-nav {
-    visibility: hidden;
-  }
-  .news__slide {
-    gap: 22px;
-  }
-  .news__slide_preview {
-    height: 200px;
-  }
-  .news__content .swiper-pagination {
-    position: relative;
-    visibility: visible;
-  }
-  .news__more {
-    justify-content: center;
-    margin-top: 2.5rem;
-  }
-  .news__more .btn {
-    font-size: 0.875rem;
-    padding: 18px 28px;
-    width: 216px;
-  }
 }
 @media (max-width: 350px) {
   .btn_social {

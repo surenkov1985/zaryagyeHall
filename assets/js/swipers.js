@@ -86,9 +86,8 @@ function hallsSliders() {
 				// console.log(imagesSlider);
 				const slide = Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current];
 				console.log(slide.classList.contains("swiper-slide-active"));
-				return `<span class="btn btn_tab ${total} ${slide.classList.contains("swiper-slide-active") ? "active" : ""}">${
-					Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name
-				}</span>`;
+				return `<span class="btn btn_tab ${total} ${slide.classList.contains("swiper-slide-active") ? "active" : ""}">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name
+					}</span>`;
 			},
 		},
 	});
@@ -160,6 +159,10 @@ function newsSlider() {
 		navigation: {
 			nextEl: ".news .swiper-next-btn",
 			prevEl: ".news .swiper-prev-btn",
+		},
+		pagination: {
+			el: ".news__content .swiper-pagination",
+			type: "bullets",
 		},
 		breakpoints: {
 			576: {

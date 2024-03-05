@@ -66,7 +66,7 @@
     font-size: 0.75rem;
   }
   .btn {
-    font-size: 0.875rem;
+    font-size: .875rem;
     padding: 18px 28px;
   }
   .btn_slim {
@@ -130,10 +130,10 @@
     padding-bottom: 16px;
   }
   .head .col-2 {
-    width: 33.3333333333%;
+    width: calc(100% / 12 * 4);
   }
   .head .col-5 {
-    width: 33.3333333333%;
+    width: calc(100% / 12 * 4);
   }
   .foot .container {
     padding-top: 40px;
@@ -165,7 +165,9 @@
     flex-direction: column;
     gap: 40px;
   }
-  .foot .col-2, .foot .col-4, .foot .col-5 {
+  .foot .col-2,
+  .foot .col-4,
+  .foot .col-5 {
     width: 100%;
   }
   .foot .scls {
@@ -250,7 +252,7 @@
   .mobile__nav_title {
     font-size: 2rem;
     padding: 20px 0 19px;
-    border-bottom: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid #d8d8d8;
     margin-bottom: 36px;
   }
   .mobile__nav_list {
@@ -403,11 +405,12 @@
     padding: 40px 16px;
     gap: 32px;
   }
-  s .halls__slide_title {
-    width: 75%;
+  s
+.halls__slide_title {
+    width: calc(100% / 12 * 9);
   }
   .halls__slide_text {
-    width: 83.3333333333%;
+    width: calc(100% / 12 * 10);
     gap: 3.5rem;
   }
   .news {
@@ -438,11 +441,12 @@
     margin-top: 2.5rem;
   }
   .news__more .btn {
-    font-size: 0.875rem;
+    font-size: .875rem;
     padding: 18px 28px;
     width: 216px;
   }
 }
+
 @media (max-width: 350px) {
   .btn_social {
     width: 90px;
