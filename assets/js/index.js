@@ -119,6 +119,8 @@ let timer;
 let last;
 let isAnim = false;
 let lastScrollTop = 0;
+let eventsDatePos;
+if ($(".events__date").length) eventsDatePos = parseFloat($(".events__date").css("top"));
 $(document).bind('scroll', function(e){
 	 var current = $(window).scrollTop();
 		// console.log(e)
@@ -135,14 +137,17 @@ $(document).bind('scroll', function(e){
 				$(".head.fixed").removeClass("hide");
 			}
 
-			$(".events__date").css({"top": $(".head.fixed").innerHeight() / 16 + 2 + "rem"})
+			if ($(".events__date").length) {
+				$(".events__date").css({"top": $(".head.fixed").innerHeight() + eventsDatePos + "px"})
+			}
+			// 
 			
 			// gsap.to(".head.fixed", {
 			// 	translateY: 0, duration:0.5
 			// })
 			// clearTimeout(timer);
 		} else if(current > last){
-			console.log('Вниз');
+			console.log($(".events__date").css("top"));
 			// gsap.to(".head.fixed", {
 			// 	translateY: -$(".head.fixed").innerHeight(), duration:0.5
 			// })
@@ -150,7 +155,11 @@ $(document).bind('scroll', function(e){
 
 			$(".head.fixed").removeClass("show")
 			$(".head.fixed").addClass("hide")
-			// $(".events__date").css({"top": "2rem"})
+			// $(".events__date").css({"top": "32px"})
+
+			if ($(".events__date").length) {
+				$(".events__date").css({"top": eventsDatePos + "px"})
+			}
 		}	
 	 
 		// timer = window.setTimeout(function(){
