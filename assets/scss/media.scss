@@ -802,7 +802,11 @@
 	}
 
 	.fs {
-		max-height: 800px;
+
+		&_index {
+			max-height: 800px;
+		}
+		
 
 		& .container {
 			padding-top: 126px;

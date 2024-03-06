@@ -61,6 +61,28 @@
 .btn_social:hover svg path {
   fill: var(--clr-white);
 }
+.btn_filter {
+  background: none;
+  padding: 0;
+  width: 85px;
+  height: 85px;
+  border: 1px solid rgb(16, 16, 16);
+}
+.btn_filter:hover {
+  background: var(--clr-black-5);
+  -webkit-backdrop-filter: var(--bg-filter-blur);
+          backdrop-filter: var(--bg-filter-blur);
+  color: var(--clr-black);
+}
+.btn_filter:hover svg path {
+  fill: var(--clr-black);
+}
+.btn_filter_icon {
+  padding: 27px 44px;
+  width: auto;
+  height: auto;
+  gap: 20px;
+}
 .btn_with-icon {
   gap: 10px;
   padding: 20px 24px 20px 32px;
@@ -374,6 +396,14 @@ label.label_radio {
   padding: 0 2rem;
 }
 
+.section_pt_sm {
+  padding-top: 2rem !important;
+}
+
+.section_pb_sm {
+  padding-bottom: 4rem !important;
+}
+
 .row {
   display: flex;
   margin-left: -1rem;
@@ -469,6 +499,9 @@ label.label_radio {
   visibility: visible;
   opacity: 1;
   transform: translateX(-50%) translateY(0px);
+  max-height: 220px;
+  overflow: auto;
+  z-index: 10;
 }
 
 .max991 {
@@ -492,17 +525,39 @@ label.label_radio {
   transition: all 0.5s;
 }
 .tag_festival:hover {
-  color: var(--clr-tag-festival-opacity);
-  border-color: var(--clr-tag-festival-opacity);
+  background: var(--clr-tag-festival-opacity);
+}
+.tag_lectures {
+  border: 1px solid var(--clr-tag-lectures);
+  color: var(--clr-tag-lectures);
+  transition: all 0.5s;
+}
+.tag_lectures:hover {
+  background: var(--clr-tag-lectures-opacity);
+}
+.tag_children {
+  border: 1px solid var(--clr-tag-children);
+  color: var(--clr-tag-children);
+  transition: all 0.5s;
+}
+.tag_children:hover {
+  background: var(--clr-tag-children-opacity);
+}
+.tag_theaters {
+  border: 1px solid var(--clr-tag-theaters);
+  color: var(--clr-tag-theaters);
+  transition: all 0.5s;
+}
+.tag_theaters:hover {
+  background: var(--clr-tag-theaters-opacity);
 }
 .tag_opera {
   border: 1px solid var(--clr-tag-opera);
   color: var(--clr-tag-opera);
   transition: all 0.5s;
 }
-.tag_opera:hover {
-  color: var(--clr-tag-opera-opacity);
-  border-color: var(--clr-tag-opera-opacity);
+.tag_opera:hover, .tag_opera.active {
+  background: var(--clr-tag-opera-opacity);
 }
 .tag_card {
   border: 1px solid var(--clr-black-40);

@@ -116,6 +116,22 @@ let timer;
 	
 // });
 
+$(document).on("click", ".events__nav_tool", function(){
+
+	const targetEl = $(this).data("target");
+
+	if (!$(targetEl).hasClass("open")) {
+		$(targetEl).addClass("open");
+		$(targetEl).css({"max-height": $(targetEl).find("form").innerHeight() + "px"})
+	} else {
+		$(targetEl).removeClass("open");
+		$(targetEl).css({"max-height": 0})
+	}
+	
+
+	
+})
+
 let last;
 let isAnim = false;
 let lastScrollTop = 0;
@@ -123,7 +139,7 @@ let eventsDatePos;
 if ($(".events__date").length) eventsDatePos = parseFloat($(".events__date").css("top"));
 $(document).bind('scroll', function(e){
 	 var current = $(window).scrollTop();
-		// console.log(e)
+		
 	 if (window.pageYOffset >= 300) {
 		const head = $(".head").not(".mobile__head");
 		$(head).addClass("fixed");
@@ -140,39 +156,19 @@ $(document).bind('scroll', function(e){
 			if ($(".events__date").length) {
 				$(".events__date").css({"top": $(".head.fixed").innerHeight() + eventsDatePos + "px"})
 			}
-			// 
-			
-			// gsap.to(".head.fixed", {
-			// 	translateY: 0, duration:0.5
-			// })
-			// clearTimeout(timer);
 		} else if(current > last){
-			console.log($(".events__date").css("top"));
-			// gsap.to(".head.fixed", {
-			// 	translateY: -$(".head.fixed").innerHeight(), duration:0.5
-			// })
-			// clearTimeout(timer);
+			
 
 			$(".head.fixed").removeClass("show")
 			$(".head.fixed").addClass("hide")
-			// $(".events__date").css({"top": "32px"})
 
 			if ($(".events__date").length) {
 				$(".events__date").css({"top": eventsDatePos + "px"})
 			}
 		}	
-	 
-		// timer = window.setTimeout(function(){
-		// 	console.log('Остановлено');
-		// }, 500);
 	} else {
 		$(".head").not(".mobile__head").removeClass("fixed");
 	}
-	//  if(current > last){
-	// 	 console.log('Движение пальцем вниз');
-	//  } else if(current < last){
-	// 	console.log('Движение пальцем вверх');
-	//  }
 	 last = current;
 });
 

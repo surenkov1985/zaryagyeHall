@@ -585,13 +585,16 @@
   width: 27px;
   left: 3px;
   bottom: 3px;
+  background-image: url(/assets/img/icons/check_dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: white;
   transition: 0.4s;
   transform: translateX(28px);
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
+input:checked + .slider::before {
+  background-image: url(/assets/img/icons/close-sm.svg);
 }
 
 input:focus + .slider {
@@ -615,4 +618,27 @@ input:checked + .slider:before {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.breadcrumbs__item {
+  display: flex;
+}
+.breadcrumbs__item .back_link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--clr-black-40);
+  transition: all 0.5s;
+}
+.breadcrumbs__item .back_link:hover {
+  color: var(--clr-black);
+}
+.breadcrumbs__item .back_link:hover .btn {
+  background: var(--clr-black);
+}
+.breadcrumbs__item .back_link:hover .btn svg path {
+  fill: var(--clr-white);
 }

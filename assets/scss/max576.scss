@@ -213,7 +213,11 @@
 	}
 
 	.fs {
-		max-height: 748px;
+
+		&_index {
+			max-height: 748px;
+		}
+		
 		& .container {
 			padding-top: 154px;
 		}

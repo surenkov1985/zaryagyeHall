@@ -75,6 +75,30 @@
 		}
 	}
 
+	&_filter {
+		background: none;
+		padding: 0;
+		width: 85px;
+		height: 85px;
+		border: 1px solid rgb(16, 16, 16);
+
+		&:hover {
+			background: var(--clr-black-5);
+			backdrop-filter: var(--bg-filter-blur);
+			color: var(--clr-black);
+
+			& svg path {
+				fill: var(--clr-black);
+			}
+
+		}
+
+		&_icon {
+			padding: 27px 44px;
+			width: auto;height: auto;gap: 20px;
+		}
+	}
+
 	&_with-icon {
 		gap: 10px;
 		padding: 20px 24px 20px 32px;
@@ -497,6 +521,14 @@ label {
 	padding: 0 2rem;
 }
 
+.section_pt_sm {
+	padding-top: 2rem !important;
+}
+
+.section_pb_sm {
+	padding-bottom: 4rem !important;
+}
+
 .row {
 	// width: 100%;
 	display: flex;
@@ -616,6 +648,9 @@ label {
 			visibility: visible;
 			opacity: 1;
 			transform: translateX(-50%) translateY(0px);
+			max-height: 220px;
+			overflow: auto;
+			z-index: 10;
 		}
 	}
 }
@@ -641,8 +676,41 @@ label {
 		transition: all 0.5s;
 
 		&:hover {
-			color: var(--clr-tag-festival-opacity);
-			border-color: var(--clr-tag-festival-opacity);
+			// color: var(--clr-tag-festival-opacity);
+			background: var(--clr-tag-festival-opacity);
+		}
+	}
+
+	&_lectures {
+		border: 1px solid var(--clr-tag-lectures);
+		color: var(--clr-tag-lectures);
+		transition: all 0.5s;
+
+		&:hover {
+			// color: var(--clr-tag-festival-opacity);
+			background: var(--clr-tag-lectures-opacity);
+		}
+	}
+
+	&_children {
+		border: 1px solid var(--clr-tag-children);
+		color: var(--clr-tag-children);
+		transition: all 0.5s;
+
+		&:hover {
+			// color: var(--clr-tag-festival-opacity);
+			background: var(--clr-tag-children-opacity);
+		}
+	}
+	
+	&_theaters {
+		border: 1px solid var(--clr-tag-theaters);
+		color: var(--clr-tag-theaters);
+		transition: all 0.5s;
+
+		&:hover {
+			// color: var(--clr-tag-festival-opacity);
+			background: var(--clr-tag-theaters-opacity);
 		}
 	}
 
@@ -651,9 +719,9 @@ label {
 		color: var(--clr-tag-opera);
 		transition: all 0.5s;
 
-		&:hover {
-			color: var(--clr-tag-opera-opacity);
-			border-color: var(--clr-tag-opera-opacity);
+		&:hover, &.active {
+			// color: var(--clr-tag-opera-opacity);
+			background: var(--clr-tag-opera-opacity);
 		}
 	}
 
