@@ -130,10 +130,12 @@ $(document).bind('scroll', function(e){
 			console.log('Вверх');
 
 			if (!$(".head.fixed").hasClass("show")) {
-				$(".head.fixed").css({"transition": "all 0.7s"})
-				$(".head.fixed").addClass("show")
-				$(".head.fixed").removeClass("hide")
+				$(".head.fixed").css({"transition": "all 0.7s"});
+				$(".head.fixed").addClass("show");
+				$(".head.fixed").removeClass("hide");
 			}
+
+			$(".events__date").css({"top": $(".head.fixed").innerHeight() / 16 + 2 + "rem"})
 			
 			// gsap.to(".head.fixed", {
 			// 	translateY: 0, duration:0.5
@@ -148,6 +150,7 @@ $(document).bind('scroll', function(e){
 
 			$(".head.fixed").removeClass("show")
 			$(".head.fixed").addClass("hide")
+			// $(".events__date").css({"top": "2rem"})
 		}	
 	 
 		// timer = window.setTimeout(function(){
