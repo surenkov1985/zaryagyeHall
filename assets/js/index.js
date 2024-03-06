@@ -85,6 +85,75 @@ $(document).on("click", ".dropdown__item", function () {
 	$(dropdown).removeClass("active");
 });
 
+let timer;
+$(window).on('wheel', function(e){
+	if (window.pageYOffset >= 300) {
+		const head = $(".head").not(".mobile__head");
+		$(head).addClass("fixed");
+
+		if (e.originalEvent.wheelDelta >= 0){
+			console.log('Вверх');
+
+			gsap.to(".head.fixed", {
+				translateY: 0, duration:0.5
+			})
+			clearTimeout(timer);
+		} else {
+			console.log('Вниз');
+			gsap.to(".head.fixed", {
+				translateY: -$(".head.fixed").innerHeight(), duration:0.5
+			})
+			clearTimeout(timer);
+		}	
+	 
+		timer = window.setTimeout(function(){
+			console.log('Остановлено');
+		}, 500);
+	} else {
+		$(".head").not(".mobile__head").removeClass("fixed");
+	}
+	console.log(window.pageYOffset)
+	
+});
+
+let last;
+let isAnim = false;
+$(document).bind('touchmove', function(e){
+	 var current = e.originalEvent.touches[0].clientY;
+
+	 if (window.pageYOffset >= 300) {
+		const head = $(".head").not(".mobile__head");
+		$(head).addClass("fixed");
+
+		if (current < last){
+			// console.log('Вверх');
+			
+			gsap.to(".head.fixed", {
+				translateY: 0, duration:0.5
+			})
+			// clearTimeout(timer);
+		} else if(current > last){
+			// console.log('Вниз');
+			gsap.to(".head.fixed", {
+				translateY: -$(".head.fixed").innerHeight(), duration:0.5
+			})
+			// clearTimeout(timer);
+		}	
+	 
+		// timer = window.setTimeout(function(){
+		// 	console.log('Остановлено');
+		// }, 500);
+	} else {
+		$(".head").not(".mobile__head").removeClass("fixed");
+	}
+	//  if(current > last){
+	// 	 console.log('Движение пальцем вниз');
+	//  } else if(current < last){
+	// 	console.log('Движение пальцем вверх');
+	//  }
+	 last = current;
+});
+
 $(document).on("click", function (e) {
 
 	if (!e.target.closest(".dropdown")) {

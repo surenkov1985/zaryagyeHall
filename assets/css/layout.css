@@ -1,3 +1,12 @@
+#canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--clr-white);
+}
+
 .depkult-logo {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -10,9 +19,49 @@
   width: 100%;
   top: 0;
   left: 0;
-  transition: all 0.5s;
   padding-right: 2rem;
   padding-left: 2rem;
+}
+.head.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+.head.fixed svg path {
+  stroke: var(--clr-black);
+}
+.head.fixed .light-logo {
+  display: none;
+}
+.head.fixed .dark-logo {
+  display: flex;
+}
+.head.fixed .btn_menu {
+  background: var(--clr-black-10);
+}
+.head.fixed .btn_menu:hover {
+  background: var(--clr-black);
+}
+.head.fixed .btn_menu:hover .line {
+  background-color: var(--clr-white);
+}
+.head.fixed .btn_menu .line {
+  background-color: var(--clr-black);
+}
+.head.fixed .nav-link {
+  color: var(--clr-black);
+}
+.head.fixed .nav-link:hover {
+  color: var(--clr-black-40);
+}
+.head.fixed .head__languages {
+  color: var(--clr-black-40);
+}
+.head.fixed .head__languages .dropdown__value:hover {
+  color: var(--clr-black);
 }
 .head .light-logo {
   display: none;
@@ -379,10 +428,44 @@
 }
 .mobile__head .head {
   position: static;
+  color: var(--clr-black);
 }
 .mobile__head .head__right_content {
   justify-content: flex-end;
   gap: 105px;
+}
+.mobile__head .head svg path {
+  stroke: var(--clr-black);
+}
+.mobile__head .head .light-logo {
+  display: none;
+}
+.mobile__head .head .dark-logo {
+  display: flex;
+}
+.mobile__head .head .btn_menu {
+  background: var(--clr-black-10);
+}
+.mobile__head .head .btn_menu:hover {
+  background: var(--clr-black);
+}
+.mobile__head .head .btn_menu:hover .line {
+  background-color: var(--clr-white);
+}
+.mobile__head .head .btn_menu .line {
+  background-color: var(--clr-black);
+}
+.mobile__head .head .nav-link {
+  color: var(--clr-black);
+}
+.mobile__head .head .nav-link:hover {
+  color: var(--clr-black-40);
+}
+.mobile__head .head .head__languages {
+  color: var(--clr-black-40);
+}
+.mobile__head .head .head__languages .dropdown__value:hover {
+  color: var(--clr-black);
 }
 .mobile__scls {
   display: flex;

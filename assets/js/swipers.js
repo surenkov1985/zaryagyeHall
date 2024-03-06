@@ -30,13 +30,13 @@ function fsSliders() {
 		const activeSlide = $(slider.slides)[slider.activeIndex];
 
 		if (!!$(activeSlide).find("img").length) {
-			if (!$(".head").hasClass("head_light")) {
-				$(".head").addClass("head_light");
+			if (!$(".head").not(".mobile__head").hasClass("head_light")) {
+				$(".head").not(".mobile__head").addClass("head_light");
 				$(".fs__content_slider").addClass("light");
 				$(".fs__content").addClass("light");
 			}
 		} else {
-			$(".head").removeClass("head_light");
+			$(".head").not(".mobile__head").removeClass("head_light");
 			$(".fs__content_slider").removeClass("light");
 			$(".fs__content").removeClass("light");
 		}

@@ -1,5 +1,7 @@
 .dark {
   color: var(--clr-white);
+}
+.dark #canvas {
   background: var(--clr-black);
 }
 .dark a {
@@ -36,6 +38,14 @@
 .dark .btn_slider:hover svg path {
   fill: none;
   stroke: var(--clr-black);
+}
+.dark .btn_color {
+  background: var(--clr-tag-opera);
+  color: var(--clr-white);
+}
+.dark .btn_color:hover {
+  color: var(--clr-black);
+  background: var(--clr-white);
 }
 .dark .btn:disabled {
   border-color: var(--clr-white-20);
@@ -133,6 +143,43 @@
 }
 .dark .mobile__wave svg path:last-child {
   fill: #101010;
+}
+.dark .head.fixed {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+.dark .head.fixed svg path {
+  stroke: var(--clr-white);
+}
+.dark .head.fixed .light-logo {
+  display: flex;
+}
+.dark .head.fixed .dark-logo {
+  display: none;
+}
+.dark .head.fixed .btn_menu {
+  background: var(--clr-white-10);
+}
+.dark .head.fixed .btn_menu:hover {
+  background: var(--clr-white);
+}
+.dark .head.fixed .btn_menu:hover .line {
+  background-color: var(--clr-black);
+}
+.dark .head.fixed .btn_menu .line {
+  background-color: var(--clr-white);
+}
+.dark .head.fixed .nav-link {
+  color: var(--clr-white);
+}
+.dark .head.fixed .nav-link:hover {
+  color: var(--clr-white-40);
+}
+.dark .head.fixed .head__languages {
+  color: var(--clr-white-40);
+}
+.dark .head.fixed .head__languages .dropdown__value:hover {
+  color: var(--clr-white);
 }
 .dark .head__left .links__item svg path {
   stroke: #FBFBFB;

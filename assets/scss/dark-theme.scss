@@ -1,10 +1,14 @@
 .dark {
 		color: var(--clr-white);
-		background: var(--clr-black);
+		// background: var(--clr-black);
 
 		// :root {
 		// 	--font-accent: #fff;
 		// }
+		
+		& #canvas {
+			background: var(--clr-black);
+		}
 
 		& a {
 			color: var(--clr-white);
@@ -49,6 +53,16 @@
 					fill: none;
 					stroke: var(--clr-black);
 				}
+			}
+		}
+
+		&_color {
+			background: var(--clr-tag-opera);
+			color: var(--clr-white);
+	
+			&:hover {
+				color: var(--clr-black);
+				background: var(--clr-white);
 			}
 		}
 
@@ -197,6 +211,67 @@
 	}
 
 	& .head{
+
+		&.fixed {
+			background: var(--clr-black);
+
+			color: var(--clr-white);
+
+		& svg path {
+			stroke: var(--clr-white);
+		}
+
+		& .light-logo {
+			display: flex;
+		}
+
+		& .dark-logo {
+			display: none;
+		}
+
+		& .btn {
+
+			&_menu {
+				background: var(--clr-white-10);
+
+				&:hover {
+					background: var(--clr-white);
+
+					& .line {
+						background-color: var(--clr-black);
+					}
+				}
+
+				& .line {
+					background-color: var(--clr-white);
+				}
+			}
+		}
+
+		& .nav-link {
+			color: var(--clr-white);
+
+			&:hover {
+				color: var(--clr-white-40);
+			}
+		}
+
+		& .head {
+			&__languages {
+				color: var(--clr-white-40);
+		
+				& .dropdown {
+		
+					&__value {
+		
+						&:hover {
+							color: var(--clr-white);
+						}
+					}
+				}
+			}
+		}
+		}
 		&__left .links__item svg path {
 			stroke: #FBFBFB;
 		}
@@ -297,6 +372,7 @@
 					}
 				}
 			}
+			
 		}
 	}
 }
