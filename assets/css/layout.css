@@ -27,6 +27,9 @@
   top: 0;
   left: 0;
   transform: translateY(-100%);
+  -webkit-backdrop-filter: var(--bg-filter-blurs);
+          backdrop-filter: var(--bg-filter-blurs);
+  box-shadow: var(--box-shadow);
   background: var(--clr-white);
   color: var(--clr-black);
 }

@@ -86,50 +86,51 @@ $(document).on("click", ".dropdown__item", function () {
 });
 
 let timer;
-$(window).on('wheel', function(e){
-	if (window.pageYOffset >= 300) {
-		const head = $(".head").not(".mobile__head");
-		$(head).addClass("fixed");
+// $(window).on('wheel', function(e){
+// 	if (window.pageYOffset >= 300) {
+// 		const head = $(".head").not(".mobile__head");
+// 		$(head).addClass("fixed");
 
-		if (e.originalEvent.wheelDelta >= 0){
-			console.log('Вверх');
+// 		if (e.originalEvent.wheelDelta >= 0){
+// 			console.log('Вверх');
 
-			gsap.to(".head.fixed", {
-				translateY: 0, duration:0.5
-			})
-			clearTimeout(timer);
-		} else {
-			console.log('Вниз');
-			gsap.to(".head.fixed", {
-				translateY: -$(".head.fixed").innerHeight(), duration:0.5
-			})
-			clearTimeout(timer);
-		}	
+// 			gsap.to(".head.fixed", {
+// 				translateY: 0, duration:0.5
+// 			})
+// 			clearTimeout(timer);
+// 		} else {
+// 			console.log('Вниз');
+// 			gsap.to(".head.fixed", {
+// 				translateY: -$(".head.fixed").innerHeight(), duration:0.5
+// 			})
+// 			clearTimeout(timer);
+// 		}	
 	 
-		timer = window.setTimeout(function(){
-			console.log('Остановлено');
-		}, 500);
-	} else {
-		$(".head").not(".mobile__head").removeClass("fixed");
-	}
-	console.log(window.pageYOffset)
+// 		timer = window.setTimeout(function(){
+// 			console.log('Остановлено');
+// 		}, 500);
+// 	} else {
+// 		$(".head").not(".mobile__head").removeClass("fixed");
+// 	}
+// 	console.log(window.pageYOffset)
 	
-});
+// });
 
 let last;
 let isAnim = false;
-$(document).bind('touchmove', function(e){
-	 var current = e.originalEvent.touches[0].clientY;
-
+let lastScrollTop = 0;
+$(document).bind('scroll', function(e){
+	 var current = $(window).scrollTop();
+		// console.log(e)
 	 if (window.pageYOffset >= 300) {
 		const head = $(".head").not(".mobile__head");
 		$(head).addClass("fixed");
-
-		if (current > last){
-			// console.log('Вверх');
+		
+		if (current < last){
+			console.log('Вверх');
 
 			if (!$(".head.fixed").hasClass("show")) {
-				$(".head.fixed").css({"transition": "all 1s"})
+				$(".head.fixed").css({"transition": "all 0.7s"})
 				$(".head.fixed").addClass("show")
 				$(".head.fixed").removeClass("hide")
 			}
