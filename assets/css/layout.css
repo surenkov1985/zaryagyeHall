@@ -63,6 +63,14 @@
 .head.fixed .head__languages .dropdown__value:hover {
   color: var(--clr-black);
 }
+.head.fixed.show {
+  transition: all 0.7s;
+  transform: translateY(0);
+}
+.head.fixed.hide {
+  transition: transform 0.7s;
+  transform: translateY(-100%);
+}
 .head .light-logo {
   display: none;
 }

@@ -4,7 +4,7 @@
     padding-right: 20px;
   }
   .numbers {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .menu_font {
     font-size: 3rem;
@@ -278,9 +278,6 @@
   .halls__slide_text {
     width: 83.3333333333%;
     gap: 3.5rem;
-  }
-  .halls__slide_link .btn {
-    width: 216px;
   }
   .halls .dropdown {
     width: calc(100% - 40px) !important;

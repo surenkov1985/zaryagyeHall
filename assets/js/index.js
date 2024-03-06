@@ -125,19 +125,28 @@ $(document).bind('touchmove', function(e){
 		const head = $(".head").not(".mobile__head");
 		$(head).addClass("fixed");
 
-		if (current < last){
+		if (current > last){
 			// console.log('Вверх');
+
+			if (!$(".head.fixed").hasClass("show")) {
+				$(".head.fixed").css({"transition": "all 1s"})
+				$(".head.fixed").addClass("show")
+				$(".head.fixed").removeClass("hide")
+			}
 			
-			gsap.to(".head.fixed", {
-				translateY: 0, duration:0.5
-			})
+			// gsap.to(".head.fixed", {
+			// 	translateY: 0, duration:0.5
+			// })
 			// clearTimeout(timer);
 		} else if(current > last){
-			// console.log('Вниз');
-			gsap.to(".head.fixed", {
-				translateY: -$(".head.fixed").innerHeight(), duration:0.5
-			})
+			console.log('Вниз');
+			// gsap.to(".head.fixed", {
+			// 	translateY: -$(".head.fixed").innerHeight(), duration:0.5
+			// })
 			// clearTimeout(timer);
+
+			$(".head.fixed").removeClass("show")
+			$(".head.fixed").addClass("hide")
 		}	
 	 
 		// timer = window.setTimeout(function(){

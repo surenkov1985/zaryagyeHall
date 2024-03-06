@@ -86,7 +86,18 @@
 				}
 			}
 		}
+		&.show {
+			transition: all .7s;
+			transform: translateY(0);
+		}
+
+		&.hide {
+			transition: transform .7s;
+			transform: translateY(-100%);
+		}
 	}
+
+	
 
 	& .light-logo {
 		display: none;
@@ -592,60 +603,60 @@
 
 			color: var(--clr-black);
 
-		& svg path {
-			stroke: var(--clr-black);
-		}
+			& svg path {
+				stroke: var(--clr-black);
+			}
 
-		& .light-logo {
-			display: none;
-		}
+			& .light-logo {
+				display: none;
+			}
 
-		& .dark-logo {
-			display: flex;
-		}
+			& .dark-logo {
+				display: flex;
+			}
 
-		& .btn {
+			& .btn {
 
-			&_menu {
-				background: var(--clr-black-10);
+				&_menu {
+					background: var(--clr-black-10);
 
-				&:hover {
-					background: var(--clr-black);
+					&:hover {
+						background: var(--clr-black);
+
+						& .line {
+							background-color: var(--clr-white);
+						}
+					}
 
 					& .line {
-						background-color: var(--clr-white);
+						background-color: var(--clr-black);
 					}
 				}
+			}
 
-				& .line {
-					background-color: var(--clr-black);
+			& .nav-link {
+				color: var(--clr-black);
+
+				&:hover {
+					color: var(--clr-black-40);
 				}
 			}
-		}
 
-		& .nav-link {
-			color: var(--clr-black);
-
-			&:hover {
-				color: var(--clr-black-40);
-			}
-		}
-
-		& .head {
-			&__languages {
-				color: var(--clr-black-40);
-		
-				& .dropdown {
-		
-					&__value {
-		
-						&:hover {
-							color: var(--clr-black);
+			& .head {
+				&__languages {
+					color: var(--clr-black-40);
+			
+					& .dropdown {
+			
+						&__value {
+			
+							&:hover {
+								color: var(--clr-black);
+							}
 						}
 					}
 				}
 			}
-		}
 		}
 	}
 
