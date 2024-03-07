@@ -585,16 +585,16 @@
   width: 27px;
   left: 3px;
   bottom: 3px;
-  background-image: url(/assets/img/icons/check_dark.svg);
+  background-image: url(/assets/img/icons/close-sm.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
   transition: 0.4s;
-  transform: translateX(28px);
+  transform: translateX(0);
 }
 
 input:checked + .slider::before {
-  background-image: url(/assets/img/icons/close-sm.svg);
+  background-image: url(/assets/img/icons/check_dark.svg);
 }
 
 input:focus + .slider {
@@ -602,7 +602,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(0);
+  transform: translateX(28px);
 }
 
 /* Rounded sliders */

@@ -241,3 +241,19 @@ function locationSliders() {
 		}
 	});
 }
+
+function calendarSliders() {
+
+	const months = document.querySelector(".calendar__months_slider");
+	const calendar = document.querySelector(".calendar__dates_slider");
+
+	if (!months || !calendar) return;
+
+	const monthsSlider = new Swiper(months, {
+		speed: 1000,
+		navigation: {
+			prevEl: ".calendar__months .swiper_prev",
+			nextEl: ".calendar__months .swiper_next"
+		}
+	})
+}

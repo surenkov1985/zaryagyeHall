@@ -77,6 +77,10 @@
 .btn_filter:hover svg path {
   fill: var(--clr-black);
 }
+.btn_filter svg {
+  width: 24px;
+  height: 24px;
+}
 .btn_filter_icon {
   padding: 27px 44px;
   width: auto;
@@ -453,11 +457,11 @@ label.label_radio {
 }
 
 .justify-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .justify-between {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 
 .nav-link {
@@ -486,6 +490,42 @@ label.label_radio {
 }
 .menu-link:hover {
   color: var(--clr-black-40);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--clr-info);
+}
+.info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--clr-info);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--clr-error);
+}
+.error .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--clr-error);
 }
 
 .dropdown__list {

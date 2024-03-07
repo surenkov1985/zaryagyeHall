@@ -1,4 +1,9 @@
 @media (max-width: 1650px) {
+  h1,
+  .h1,
+  .text-content h1 {
+    font-size: 9.125rem;
+  }
   .h2 {
     font-size: 4.75rem;
   }
@@ -60,6 +65,28 @@
   .btn_tab {
     font-size: 1.125rem;
   }
+  .btn_filter {
+    background: none;
+    padding: 0;
+    width: 81px;
+    height: 81px;
+  }
+  .btn_filter:hover {
+    background: var(--clr-black-5);
+    -webkit-backdrop-filter: var(--bg-filter-blur);
+            backdrop-filter: var(--bg-filter-blur);
+    color: var(--clr-black);
+  }
+  .btn_filter:hover svg path {
+    fill: var(--clr-black);
+  }
+  .btn_filter_icon {
+    padding: 24px 42px;
+    font-size: 1.25rem;
+    width: auto;
+    height: auto;
+    gap: 16px;
+  }
   .nav-link {
     font-size: 1.25rem;
   }
@@ -102,6 +129,9 @@
     bottom: 2px;
     background-color: white;
     transition: 0.4s;
+    transform: translateX(0);
+  }
+  input:checked + .slider:before {
     transform: translateX(26px);
   }
   /* Rounded sliders */
@@ -114,6 +144,171 @@
   .events {
     padding-top: 116px;
     padding-bottom: 150px;
+  }
+  .events__nav_item {
+    padding: 25px 28px 24px;
+    font-size: 1.25rem;
+  }
+  .events__nav_tools {
+    gap: 22px;
+  }
+  .events__pagination {
+    gap: 74px;
+  }
+  .events__pagination_list {
+    gap: 26px;
+  }
+  .events__pagination_item {
+    padding: 7px;
+    font-size: 1.25rem;
+  }
+  .events__filter.open {
+    border-top: 1px solid rgb(219, 219, 219);
+  }
+  .events__filter_form {
+    padding: 1.5rem 0;
+  }
+  .filter__form_fields {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter__form_field {
+    padding: 36px 0;
+  }
+  .filter__form_field .title {
+    font-size: 1.25rem;
+  }
+  .filter__form_field_cols {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .filter__form_field_col {
+    width: calc((100% - 52px) / 24 * 8);
+    height: auto;
+  }
+  .filter__form_field_col:nth-child(2) {
+    width: calc((100% - 52px) / 24 * 10);
+  }
+  .filter__form_field_col:last-child {
+    width: calc((100% - 52px) / 24 * 6);
+  }
+  .filter__form_dropdown {
+    margin-top: 1rem;
+  }
+  .filter__form .dropdown {
+    padding: 20px;
+  }
+  .filter__form .dropdown__value {
+    font-size: 1.25rem;
+  }
+  .filter__form .dropdown__value .values {
+    gap: 12px;
+  }
+  .filter__form .dropdown__value .value {
+    gap: 12px;
+    padding: 5px 20px;
+  }
+  .filter__form .dropdown__value > .icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter__form .dropdown__list {
+    padding: 20px;
+    font-size: 1.25rem;
+  }
+  .filter__form_slider {
+    gap: 20px;
+    font-size: 1.25rem;
+    padding: 25px 0;
+  }
+  .filter__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 38px;
+  }
+  .calendar__form_control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  .calendar__form_events {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .calendar__months {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    gap: 10px;
+  }
+  .calendar__months_slide {
+    text-align: center;
+  }
+  .calendar__months .swiper_prev, .calendar__months .swiper_next {
+    width: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .calendar__months .swiper_prev svg path, .calendar__months .swiper_next svg path {
+    transition: all 0.5s;
+  }
+  .calendar__months .swiper_prev:hover svg path, .calendar__months .swiper_next:hover svg path {
+    stroke-opacity: 0.4;
+  }
+  .calendar__weekdays {
+    width: 100%;
+    display: grid;
+    padding: 0.5rem 0;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+  }
+  .calendar__days {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1.25rem 1rem;
+  }
+  .calendar__day {
+    padding-top: 1rem;
+    border-top: 1px solid rgb(219, 219, 219);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .calendar__day:hover {
+    color: var(--clr-black-40);
+  }
+  .calendar__day.no_events {
+    color: rgb(219, 219, 219);
+  }
+  .calendar__day .events_num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--clr-black-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.5s;
+  }
+  .calendar__day input:checked + .events_num {
+    background: var(--clr-black);
+    color: var(--clr-white);
   }
   .halls {
     height: 780px;
@@ -129,6 +324,11 @@
   }
 }
 @media (max-width: 1550px) {
+  h1,
+  .h1,
+  .text-content h1 {
+    font-size: 8.25rem;
+  }
   .h2 {
     font-size: 4.5rem;
   }
@@ -190,6 +390,18 @@
     width: 140px;
     height: 140px;
   }
+  .btn_filter {
+    width: 69px;
+    height: 69px;
+    padding: 0;
+  }
+  .btn_filter_icon {
+    width: auto;
+    height: auto;
+    padding: 21px 44px;
+    font-size: 1.125rem;
+    gap: 14px;
+  }
   .nav-link {
     font-size: 1.125rem;
   }
@@ -236,6 +448,9 @@
     bottom: 2px;
     background-color: white;
     transition: 0.4s;
+    transform: translateX(0);
+  }
+  input:checked + .slider:before {
     transform: translateX(24px);
   }
   /* Rounded sliders */
@@ -249,6 +464,87 @@
     padding-top: 104px;
     padding-bottom: 140px;
   }
+  .events__nav_item {
+    padding: 23px 24px 21px;
+    font-size: 1.125rem;
+  }
+  .events__nav_tools {
+    gap: 22px;
+  }
+  .events__pagination {
+    gap: 68px;
+  }
+  .events__pagination_list {
+    gap: 22px;
+  }
+  .events__pagination_item {
+    padding: 7px;
+    font-size: 1.125rem;
+  }
+  .events__filter.open {
+    border-top: 1px solid rgb(219, 219, 219);
+  }
+  .events__filter_form {
+    padding: 1rem 0;
+  }
+  .filter__form_field {
+    padding: 34px 0;
+  }
+  .filter__form_field .title {
+    font-size: 1.125rem;
+  }
+  .filter__form_field_cols {
+    gap: 24px;
+  }
+  .filter__form_field_col {
+    width: calc((100% - 52px) / 24 * 8);
+    height: auto;
+  }
+  .filter__form_field_col:nth-child(2) {
+    width: calc((100% - 52px) / 24 * 11);
+  }
+  .filter__form_field_col:last-child {
+    width: calc((100% - 52px) / 24 * 5);
+  }
+  .filter__form_dropdown {
+    margin-top: 1rem;
+  }
+  .filter__form .dropdown {
+    padding: 18px;
+  }
+  .filter__form .dropdown__value {
+    font-size: 1.125rem;
+  }
+  .filter__form .dropdown__value .values {
+    gap: 10px;
+  }
+  .filter__form .dropdown__value .value {
+    gap: 10px;
+    padding: 5px 20px;
+  }
+  .filter__form .dropdown__value > .icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter__form .dropdown__list {
+    padding: 18px;
+    font-size: 1.125rem;
+  }
+  .filter__form_slider {
+    gap: 18px;
+    font-size: 1.125rem;
+    padding: 23px 0;
+  }
+  .filter__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 34px;
+  }
   .halls {
     height: 720px;
   }
@@ -257,6 +553,11 @@
   }
 }
 @media (max-width: 1440px) {
+  h1,
+  .h1,
+  .text-content h1 {
+    font-size: 7.5rem;
+  }
   .h2 {
     font-size: 4rem;
   }
@@ -307,6 +608,13 @@
   .col {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+  .info, .error {
+    font-size: 1rem;
+  }
+  .info .icon, .error .icon {
+    width: 1.75rem;
+    height: 1.75rem;
   }
   .depkult-logo {
     width: 155px;
@@ -385,6 +693,18 @@
   }
   .btn_tab {
     padding: 21px 36px;
+  }
+  .btn_filter {
+    width: 64px;
+    height: 64px;
+    padding: 0;
+  }
+  .btn_filter_icon {
+    width: auto;
+    height: auto;
+    padding: 20px 48px;
+    font-size: 1rem;
+    gap: 10px;
   }
   .nav-link {
     font-size: 1rem;
@@ -486,6 +806,9 @@
     bottom: 2px;
     background-color: white;
     transition: 0.4s;
+    transform: translateX(0);
+  }
+  input:checked + .slider:before {
     transform: translateX(22px);
   }
   /* Rounded sliders */
@@ -495,8 +818,12 @@
   .fs_index {
     max-height: 800px;
   }
-  .fs .container {
+  .fs_index .container {
     padding-top: 126px;
+    padding-bottom: 48px;
+  }
+  .fs .container {
+    padding-top: 124px;
     padding-bottom: 48px;
   }
   .fs__slide_icon {
@@ -527,12 +854,21 @@
   .fs__content_slider .swiper-nav {
     gap: 8px;
   }
+  .breadcrumbs {
+    margin-bottom: 16px;
+  }
+  .breadcrumbs__item .back_link {
+    gap: 16px;
+  }
   .events {
     padding-top: 96px;
     padding-bottom: 123px;
   }
   .events__content_row {
     padding: 30px 0;
+  }
+  .events__top {
+    margin-bottom: 36px;
   }
   .events__title {
     margin-bottom: 57px;
@@ -567,6 +903,92 @@
   }
   .events__more {
     margin-top: 3rem;
+  }
+  .events__nav_item {
+    padding: 20px 20px 22px;
+    font-size: 1rem;
+  }
+  .events__nav_tools {
+    gap: 16px;
+  }
+  .events__pagination {
+    gap: 56px;
+  }
+  .events__pagination_list {
+    gap: 8px;
+  }
+  .events__pagination_item {
+    padding: 7px;
+    font-size: 1rem;
+  }
+  .events__filter.open {
+    border-top: none;
+  }
+  .events__filter_form {
+    padding: 0;
+  }
+  .filter__form_field {
+    padding: 32px 0;
+  }
+  .filter__form_field:last-child {
+    padding-bottom: 54px;
+  }
+  .filter__form_field .title {
+    font-size: 1rem;
+  }
+  .filter__form_field_cols {
+    gap: 24px;
+  }
+  .filter__form_field_col {
+    width: calc((100% - 52px) / 24 * 8);
+    height: auto;
+  }
+  .filter__form_field_col:nth-child(2) {
+    width: calc((100% - 94px) / 24 * 11);
+  }
+  .filter__form_field_col:last-child {
+    width: calc((100% - 52px) / 24 * 5);
+  }
+  .filter__form_dropdown {
+    margin-top: 1rem;
+  }
+  .filter__form .dropdown {
+    padding: 16px;
+  }
+  .filter__form .dropdown__value {
+    font-size: 1rem;
+  }
+  .filter__form .dropdown__value .values {
+    gap: 10px;
+  }
+  .filter__form .dropdown__value .value {
+    gap: 10px;
+    padding: 5px 20px;
+  }
+  .filter__form .dropdown__value > .icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter__form .dropdown__value > .icon svg {
+    width: 12px;
+  }
+  .filter__form .dropdown__list {
+    padding: 16px;
+    font-size: 1rem;
+  }
+  .filter__form_slider {
+    gap: 16px;
+    font-size: 1rem;
+    padding: 23px 0;
+  }
+  .filter__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 34px;
   }
   .halls {
     height: 640px;

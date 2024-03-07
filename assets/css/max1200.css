@@ -183,6 +183,9 @@
     bottom: 2px;
     background-color: white;
     transition: 0.4s;
+    transform: translateX(0);
+  }
+  input:checked + .slider:before {
     transform: translateX(22px);
   }
   /* Rounded sliders */

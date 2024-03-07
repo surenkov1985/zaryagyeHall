@@ -93,6 +93,11 @@
 
 		}
 
+		& svg	{
+			width: 24px;
+			height: 24px;
+		}
+
 		&_icon {
 			padding: 27px 44px;
 			width: auto;height: auto;gap: 20px;
@@ -579,11 +584,11 @@ label {
 }
 
 .justify-center {
-	justify-content: center;
+	justify-content: center !important;
 }
 
 .justify-between {
-	justify-content: space-between;
+	justify-content: space-between !important;
 }
 
 
@@ -626,6 +631,44 @@ label {
 
 	&:hover {
 		color: var(--clr-black-40);
+	}
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	color: var(--clr-info);
+
+	& .icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background: var(--clr-info);
+	}
+}
+
+.error {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	color: var(--clr-error);
+
+	& .icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background: var(--clr-error);
 	}
 }
 

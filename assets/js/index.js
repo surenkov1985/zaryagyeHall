@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	hallsSliders();
 	newsSlider();
 	locationSliders();
+	calendarSliders();
 });
 
 $(document).on("click", ".dropdown__value", function () {
