@@ -1,5 +1,11 @@
 @media (max-width:991px) {
 
+	h1,
+	.h1,
+	.text-content h1 {
+		font-size: 6.75rem;
+	}
+
 	.max991 {
 		display: flex !important;
 	}

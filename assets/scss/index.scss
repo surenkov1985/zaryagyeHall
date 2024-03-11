@@ -378,6 +378,22 @@
 			display: flex;
 			border-radius: 50px;
 			border: 1px solid rgb(16, 16, 16);
+
+			&.dropdown {
+				display: none;
+				width: 420px;
+
+				&__value {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+
+					& svg {
+						width: 14px;
+					}
+				}
+			}
 		}
 
 		&_item {
@@ -678,6 +694,10 @@
 			}
 		}
 
+		&_submit {
+			display: none;
+		}
+
 		&_dropdown {
 			margin-top: 1rem;
 
@@ -836,6 +856,7 @@
 			align-items: center;
 			justify-content: center;
 			cursor: pointer;
+			flex-shrink: 0;
 
 			& svg path {
 				transition: all .5s;
@@ -862,6 +883,7 @@
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(5, 1fr);
 		grid-gap: 1.25rem 1rem;
 	}
 

@@ -31,6 +31,12 @@
   .numbers_xl {
     font-size: 16.25rem;
   }
+  .numbers_xs {
+    font-size: 1.75rem;
+  }
+  .numbers_sm {
+    font-size: 2rem;
+  }
   .date_xl {
     font-family: var(--font-accent);
     font-size: 3rem;
@@ -81,16 +87,39 @@
     justify-content: center;
   }
   .btn_slider {
-    width: 56px;
-    height: 56px;
+    width: 56px !important;
+    height: 56px !important;
     padding: 0 !important;
     justify-content: center;
+  }
+  .btn_filter {
+    padding: 0;
+    width: 56px;
+    height: 56px;
+  }
+  .btn_filter_icon {
+    justify-content: space-between;
+    padding: 16px 32px;
   }
   .link {
     font-size: 0.875rem;
   }
+  .info, .error {
+    font-size: 0.75rem;
+  }
+  .info .icon, .error .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+  }
+  .info .icon svg, .error .icon svg {
+    height: 12px;
+  }
   label {
     font-size: 0.875rem;
+  }
+  .section_pt_sm {
+    padding-top: 1.5rem !important;
   }
   .section {
     padding-left: 16px;
@@ -276,8 +305,12 @@
   .fs_index {
     max-height: 748px;
   }
-  .fs .container {
+  .fs_index .container {
     padding-top: 130px;
+  }
+  .fs .container {
+    padding-top: 137px;
+    padding-bottom: 16px;
   }
   .fs__slide {
     gap: 20px;
@@ -326,6 +359,12 @@
   .fs .swiper-pagination {
     visibility: visible;
   }
+  .breadcrumbs {
+    margin-bottom: 32px;
+  }
+  .breadcrumbs__item .back_link {
+    gap: 10px;
+  }
   .events {
     padding-top: 10px;
     padding-bottom: 63px;
@@ -337,9 +376,18 @@
     font-size: 2rem;
     width: 100%;
   }
+  .events__top {
+    margin-bottom: 22px;
+  }
   .events__content_row {
     gap: 24px;
     padding-bottom: 25px;
+  }
+  .events__nav {
+    gap: 0.875rem;
+  }
+  .events__nav_list.dropdown {
+    padding: 16px 22px 20px 30px;
   }
   .events__date {
     padding: 7px 0 11px;
@@ -380,10 +428,14 @@
     margin-top: 32px;
     margin-bottom: 18px;
   }
+  .events__item_control_link {
+    width: auto;
+  }
   .events__item_tags {
     flex-direction: column;
     align-items: flex-start;
     gap: 9px;
+    width: auto;
   }
   .events__more {
     margin-top: 1rem;
@@ -391,6 +443,77 @@
   }
   .events__more .btn {
     width: 216px;
+  }
+  .events__pagination {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .events__pagination_list {
+    gap: 18px;
+  }
+  .filter__form_field {
+    padding: 20px 0;
+  }
+  .filter__form_field .title {
+    font-size: 0.875rem;
+  }
+  .filter__form_field .btn_filter_icon {
+    justify-content: center;
+    padding: 16px 32px;
+    width: 100%;
+  }
+  .filter__form_field:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-bottom: 24px;
+  }
+  .filter__form_submit {
+    display: flex;
+    width: 100%;
+  }
+  .filter__form .dropdown {
+    padding: 14px;
+  }
+  .filter__form .dropdown__value .values {
+    gap: 4px;
+  }
+  .filter__form .dropdown__value .value {
+    font-size: 0.875rem;
+    padding: 5px 18px;
+    gap: 8px;
+  }
+  .filter__form .dropdown__value .icon svg {
+    width: 10px;
+  }
+  .filter__form_slider {
+    font-size: 0.875rem;
+  }
+  .filter__tags {
+    margin-top: 22px;
+    gap: 0.9rem 1rem;
+  }
+  .filter__tags .tag {
+    padding: 5px 10px;
+  }
+  .calendar__form {
+    padding: 16px 0 24px;
+  }
+  .calendar__weekdays {
+    padding: 1rem 0 0.5rem;
+  }
+  .calendar__days {
+    grid-gap: 1rem;
+  }
+  .calendar__day {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-top: 1rem;
+    gap: 7px;
+  }
+  .calendar__day .events_num {
+    width: 24px;
+    height: 24px;
   }
   .halls__slider_images {
     height: 320px;
@@ -547,6 +670,9 @@
   .btn_social {
     width: 90px;
     height: 90px;
+  }
+  .events__pagination_list {
+    gap: 8px;
   }
   .halls__slider_images {
     height: 320px;

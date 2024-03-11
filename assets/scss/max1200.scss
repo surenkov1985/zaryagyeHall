@@ -1,5 +1,11 @@
 @media (max-width: 1200px) {
 
+	h1,
+	.h1,
+	.text-content h1 {
+		font-size: 7.25rem;
+	}
+
 	.container {
 		max-width: 1344px;
 	}
@@ -287,6 +293,11 @@
 	.fs {
 		&_index {
 			max-height: 750px;
+
+			& .container {
+				padding-top: 120px;
+				padding-bottom: 36px;
+			}
 		}
 		
 
@@ -352,6 +363,44 @@
 
 			&_row {
 				padding: 30px 0;
+			}
+		}
+
+		&__nav {
+
+			&_list {
+				display: none;
+				&.dropdown {
+					display: flex;
+					line-height: 1.4;
+					padding: 20px 20px 22px;
+					position: relative;
+
+					& .dropdown{
+						&__value {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							width: 100%;
+		
+							& svg {
+								width: 14px;
+							}
+						}
+
+						&__list {
+							// padding: 18px 24px 18px 32px;
+							width: 100%;
+							display: flex;
+							flex-direction: column;
+							background: var(--clr-black-5);
+							backdrop-filter: var(--bg-filter-blur);
+							left: 50%;
+							top: calc(100% + 10px);
+							border-radius: 30px;
+						}
+					}
+				}
 			}
 		}
 

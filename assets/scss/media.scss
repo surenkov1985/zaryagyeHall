@@ -898,6 +898,14 @@
 		}
 	}
 
+	.numbers_xs {
+		font-size: 3rem;
+	}
+
+	.numbers_sm {
+		font-size: 4rem;
+	}
+
 	.menu_font {
 		font-family: var(--font-title);
 		font-size: 4rem;
@@ -1508,6 +1516,39 @@
 			align-items: center;
 			// gap: 1rem;
 			margin-top: 34px;
+		}
+	}
+
+	.calendar {
+
+		&__form {
+			padding: 36px 0 30px;
+
+			&_control {
+				margin-bottom: 1rem;
+			}
+		}
+
+		&__months {
+			width: 215px;
+		}
+
+		&__weekdays {
+			padding: 0.25rem 0 0.5rem;
+			grid-gap: 1.5rem;
+		}
+
+		&__days {
+			grid-gap: 1rem 1.5rem;
+		}
+
+		&__day {
+
+			& .events_num {
+				width: 32px;
+				height: 32px;
+				font-size: 14px;
+			}
 		}
 	}
 

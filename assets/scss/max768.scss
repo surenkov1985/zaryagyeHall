@@ -1,5 +1,11 @@
 @media (max-width:768px) {
 
+	h1,
+	.h1,
+	.text-content h1 {
+		font-size: 6.25rem;
+	}
+
 	.date_xl {
 		font-size: 4rem;
 	}
@@ -42,6 +48,20 @@
 
 		&_slim {
 			padding: 14px 40px;
+		}
+
+		&_filter {
+			width: 64px;
+			height: 64px;
+			padding: 0;
+	
+			&_icon {
+				width: auto;
+				height: auto;
+				padding: 20px 31px;
+				font-size: 1rem;
+				gap: 10px;
+			}
 		}
 	}
 
@@ -302,12 +322,23 @@
 		}
 	}
 
-	.fs {
-		max-height: 1080px;
+	.breadcrumbs {
+		margin-bottom: 11px;
+	}
 
+	.fs {
+
+		&_index {
+			max-height: 1080px;
+
+			& .container {
+				padding-top: 164px;
+				padding-bottom: 56px;
+			}
+		}
 		& .container {
-			padding-top: 164px;
-			padding-bottom: 56px;
+			padding-top: 172px;
+			padding-bottom: 31px;
 		}
 
 		&__slide {
@@ -415,6 +446,21 @@
 			}
 		}
 
+		&__top {
+			margin-bottom: 32px;
+		}
+
+		&__nav {
+
+			&_list {
+
+				&.dropdown {
+					padding: 20px 24px 20px 32px;
+					width: calc(100% / 12 * 7);
+				}
+			}
+		}
+
 		&__date {
 			padding: 30px 0;
 		}
@@ -447,6 +493,49 @@
 		}
 
 
+	}
+
+	.filter {
+
+		&__form {
+
+			&_field {
+
+				&_col {
+					width: 100% !important;
+
+					
+				}
+			}
+
+			&_slider {
+				justify-content: flex-start;
+				padding: 4px 0;
+			}
+		}
+	}
+
+	.calendar {
+
+		&__form {
+			padding: 32px 0 36px;
+
+			&_control {
+				margin-bottom: 1.75rem;
+			}
+		}
+
+		&__weekdays {
+			grid-gap: 1rem;
+		}
+
+		&__days {
+			grid-gap: 1rem;
+		}
+
+		&__day {
+			padding-top: 0.875rem;
+		}
 	}
 
 	.halls {
@@ -688,6 +777,43 @@
 
 		&__right {
 			padding-left: 1.5rem;
+		}
+	}
+}
+
+@media (max-width:650px) {
+
+	.events {
+
+		&__nav {
+			flex-wrap: wrap;
+			gap: 1rem;
+
+			&_list {
+
+				&.dropdown {
+					width: 100%;
+				}
+			}
+
+			&_tools {
+				flex-grow: 1;
+
+				& .btn_filter_icon {
+					flex-grow: 1;
+				}
+			}
+		}
+
+		&__more {
+			flex-wrap: wrap;
+			gap: 40px;
+			justify-content: center;
+		}
+
+		&__pagination {
+			width: 100%;
+			justify-content: space-between;
 		}
 	}
 }

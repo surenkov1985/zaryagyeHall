@@ -6,6 +6,12 @@
   .numbers {
     font-size: 5rem;
   }
+  .numbers_xs {
+    font-size: 2.25rem;
+  }
+  .numbers_sm {
+    font-size: 3rem;
+  }
   .menu_font {
     font-size: 3rem;
   }
@@ -260,6 +266,21 @@
   }
   .events__more .btn {
     width: 216px;
+  }
+  .calendar__form {
+    padding: 16px 0 24px;
+  }
+  .calendar__form_control {
+    flex-direction: column;
+    gap: 34px;
+    margin-bottom: 1.5rem;
+  }
+  .calendar__form_events {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .calendar__months {
+    width: 100%;
   }
   .halls__slider_images {
     height: 320px;

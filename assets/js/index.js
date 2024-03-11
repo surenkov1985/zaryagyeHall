@@ -119,15 +119,25 @@ let timer;
 
 $(document).on("click", ".events__nav_tool", function(){
 
-	const targetEl = $(this).data("target");
+	$(".events__filter").each((i, item) => {
 
-	if (!$(targetEl).hasClass("open")) {
-		$(targetEl).addClass("open");
-		$(targetEl).css({"max-height": $(targetEl).find("form").innerHeight() + "px"})
-	} else {
-		$(targetEl).removeClass("open");
-		$(targetEl).css({"max-height": 0})
-	}
+		if ($(item).attr("id") != $(this).data("target").replace("#", "")) {
+			$(item).removeClass("open")
+		} else {
+			const targetEl = $(this).data("target");
+			$(".events__filter").css({"max-height": 0})
+
+			if (!$(targetEl).hasClass("open")) {
+				$(targetEl).addClass("open");
+				$(targetEl).css({"max-height": $(targetEl).find("form").innerHeight() + "px"});
+			} else {
+				$(targetEl).removeClass("open");
+				$(targetEl).css({"max-height": 0})
+			}
+		}
+	})
+
+	
 	
 
 	

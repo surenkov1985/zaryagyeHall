@@ -275,6 +275,19 @@
   border-radius: 50px;
   border: 1px solid rgb(16, 16, 16);
 }
+.events__nav_list.dropdown {
+  display: none;
+  width: 420px;
+}
+.events__nav_list.dropdown__value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.events__nav_list.dropdown__value svg {
+  width: 14px;
+}
 .events__nav_item {
   padding: 27px 32px 27px;
   border-radius: 50px;
@@ -516,6 +529,9 @@
   width: calc((100% - 52px) / 24 * 8);
   height: auto;
 }
+.filter__form_submit {
+  display: none;
+}
 .filter__form_dropdown {
   margin-top: 1rem;
 }
@@ -646,6 +662,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .calendar__months .swiper_prev svg path, .calendar__months .swiper_next svg path {
   transition: all 0.5s;
@@ -664,6 +681,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 1.25rem 1rem;
 }
 .calendar__day {

@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+  h1,
+  .h1,
+  .text-content h1 {
+    font-size: 6.25rem;
+  }
   .date_xl {
     font-size: 4rem;
   }
@@ -32,6 +37,18 @@
   }
   .btn_slim {
     padding: 14px 40px;
+  }
+  .btn_filter {
+    width: 64px;
+    height: 64px;
+    padding: 0;
+  }
+  .btn_filter_icon {
+    width: auto;
+    height: auto;
+    padding: 20px 31px;
+    font-size: 1rem;
+    gap: 10px;
   }
   .depkult-logo {
     height: 28px;
@@ -198,12 +215,19 @@
   .mobile__wave {
     height: 165px;
   }
-  .fs {
+  .breadcrumbs {
+    margin-bottom: 11px;
+  }
+  .fs_index {
     max-height: 1080px;
   }
-  .fs .container {
+  .fs_index .container {
     padding-top: 164px;
     padding-bottom: 56px;
+  }
+  .fs .container {
+    padding-top: 172px;
+    padding-bottom: 31px;
   }
   .fs__slide_content {
     flex-direction: column-reverse;
@@ -277,6 +301,13 @@
   .events__content_row:last-child {
     padding-bottom: 23px;
   }
+  .events__top {
+    margin-bottom: 32px;
+  }
+  .events__nav_list.dropdown {
+    padding: 20px 24px 20px 32px;
+    width: 58.3333333333%;
+  }
   .events__date {
     padding: 30px 0;
   }
@@ -300,6 +331,28 @@
   }
   .events__item_top {
     height: 193px;
+  }
+  .filter__form_field_col {
+    width: 100% !important;
+  }
+  .filter__form_slider {
+    justify-content: flex-start;
+    padding: 4px 0;
+  }
+  .calendar__form {
+    padding: 32px 0 36px;
+  }
+  .calendar__form_control {
+    margin-bottom: 1.75rem;
+  }
+  .calendar__weekdays {
+    grid-gap: 1rem;
+  }
+  .calendar__days {
+    grid-gap: 1rem;
+  }
+  .calendar__day {
+    padding-top: 0.875rem;
   }
   .halls__slide {
     padding: 64px 26px;
@@ -479,5 +532,29 @@
   }
   .head__right {
     padding-left: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .events__nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .events__nav_list.dropdown {
+    width: 100%;
+  }
+  .events__nav_tools {
+    flex-grow: 1;
+  }
+  .events__nav_tools .btn_filter_icon {
+    flex-grow: 1;
+  }
+  .events__more {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  .events__pagination {
+    width: 100%;
+    justify-content: space-between;
   }
 }
