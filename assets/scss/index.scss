@@ -15,12 +15,72 @@
 		}
 	}
 
-	
 	display: flex;
 	position: relative;
 
 	&__page-title {
 		text-align: center;
+	}
+	&__event-title {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-top: 80px;
+		margin-bottom: 64px;
+	}
+
+	&__date {
+		width: calc((100% - 56px) / 12 * 3);
+		gap: 16px !important;
+
+		& .date {
+			line-height: 0.8;
+		}
+
+		& .day {
+			font-size: 22px !important;
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 64px;
+
+		&_btn {
+			width: calc((100% - 56px) / 12 * 3);
+			display: flex;
+		}
+		
+		&_left {
+			width: calc((100% - 16px) / 24 * 17);
+			margin-left: -16px;
+		}
+
+		&_tags {
+			margin-left: -16px;
+		}
+
+		&_time {
+			padding-left: 46px;
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			font-size: 1.125rem;
+
+			& .icon {
+
+				& svg {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	&__title {
+		width: calc((100% - 16px) / 24 * 17);
 	}
 
 	&__images {
@@ -60,6 +120,42 @@
 				object-fit: cover;
 				object-position: center;
 			}
+		}
+	}
+
+	&__picture {
+		// height: 800px;
+
+		&_slider {
+
+			& .swiper-nav {
+				position: absolute;
+				right: 42px;
+				bottom: 42px;
+				z-index: 10;
+
+				& .btn_slider {
+					background: var(--clr-white-20);
+
+					& svg path {
+						stroke: var(--clr-white);
+					}
+
+					&:hover {
+						background: var(--clr-white-10);
+					}
+				}
+			}
+		}
+
+		&_img {
+
+			& img {
+				width: 100%;
+			height: 100%;
+			object-fit: cover;
+			}
+			
 		}
 	}
 
@@ -587,6 +683,14 @@
 		&_tags {
 			width: calc((100% - 22px) / 17 * 10);
 		}
+
+		&_title a {
+			transition: all 0.5s;
+
+			&:hover {
+				color: var(--clr-black-40);
+			}
+		}
 	}
 
 	&__more {
@@ -926,6 +1030,107 @@
 			background: var(--clr-black);
 				color: var(--clr-white);
 		}
+	}
+}
+
+// EVENT
+
+.event {
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	& .container {
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__aside {
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 58px;
+		position: sticky;
+		top: 0;
+		width: calc((100% - 105px) / 12 * 3);
+
+		&_date {
+			padding-bottom: 42px;
+			border-bottom: 1px solid rgb(219, 219, 219);
+			gap: 16px !important;
+			display: flex;
+
+			& .date {
+				line-height: 0.8;
+			}
+
+			& .day {
+				font-size: 22px !important;
+			}
+		}
+	}
+
+	&__content {
+		width: calc((100% - 16px) / 24 * 17);
+	}
+
+	&__share {
+
+		&_control {
+			display: flex;
+			gap: 10px;
+
+			& >.btn_slider {
+				// background: var(--clr-white);
+	
+				&:hover {
+					// background: var(--clr-black-5);
+	
+					& svg path {
+						fill: var(--clr-white);
+						stroke: none;
+					}
+				}
+			}
+		}
+
+		&_title {
+			margin-bottom: 2rem;
+		}
+
+		&_list {
+			display: flex;
+			border-radius: 50px;
+			border: 1px solid rgb(16, 16, 16);
+		}
+
+		&_item {
+			background: var(--clr-white);
+
+			&:hover {
+				background: var(--clr-black-5);
+
+				& svg path {
+					fill: var(--clr-black);
+					stroke: none;
+				}
+			}
+		}
+
+		
+
+		& .btn {
+
+			& svg {
+				width: 22px;
+				height: 22px;
+			}
+		}
+	}
+
+	&__calendar_btn {
+		margin-top: 256px;
 	}
 }
 

@@ -16,6 +16,54 @@
 .fs__page-title {
   text-align: center;
 }
+.fs__event-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 64px;
+}
+.fs__date {
+  width: calc((100% - 56px) / 12 * 3);
+  gap: 16px !important;
+}
+.fs__date .date {
+  line-height: 0.8;
+}
+.fs__date .day {
+  font-size: 22px !important;
+}
+.fs__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.fs__info_btn {
+  width: calc((100% - 56px) / 12 * 3);
+  display: flex;
+}
+.fs__info_left {
+  width: calc((100% - 16px) / 24 * 17);
+  margin-left: -16px;
+}
+.fs__info_tags {
+  margin-left: -16px;
+}
+.fs__info_time {
+  padding-left: 46px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.125rem;
+}
+.fs__info_time .icon svg {
+  width: 20px;
+  height: 20px;
+}
+.fs__title {
+  width: calc((100% - 16px) / 24 * 17);
+}
 .fs__images_slider {
   position: absolute;
   width: 100%;
@@ -45,6 +93,27 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.fs__picture_slider .swiper-nav {
+  position: absolute;
+  right: 42px;
+  bottom: 42px;
+  z-index: 10;
+}
+.fs__picture_slider .swiper-nav .btn_slider {
+  background: var(--clr-white-20);
+}
+.fs__picture_slider .swiper-nav .btn_slider svg path {
+  stroke: var(--clr-white);
+}
+.fs__picture_slider .swiper-nav .btn_slider:hover {
+  background: var(--clr-white-10);
+}
+.fs__picture_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .fs .container {
   flex-grow: 1;
@@ -444,6 +513,12 @@
 .events__item_tags {
   width: calc((100% - 22px) / 17 * 10);
 }
+.events__item_title a {
+  transition: all 0.5s;
+}
+.events__item_title a:hover {
+  color: var(--clr-black-40);
+}
 .events__more {
   margin-top: 2.5rem;
   display: flex;
@@ -713,6 +788,74 @@
 .calendar__day input:checked + .events_num {
   background: var(--clr-black);
   color: var(--clr-white);
+}
+
+.event {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.event .container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.event__aside {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  position: sticky;
+  top: 0;
+  width: calc((100% - 105px) / 12 * 3);
+}
+.event__aside_date {
+  padding-bottom: 42px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  gap: 16px !important;
+  display: flex;
+}
+.event__aside_date .date {
+  line-height: 0.8;
+}
+.event__aside_date .day {
+  font-size: 22px !important;
+}
+.event__content {
+  width: calc((100% - 16px) / 24 * 17);
+}
+.event__share_control {
+  display: flex;
+  gap: 10px;
+}
+.event__share_control > .btn_slider:hover svg path {
+  fill: var(--clr-white);
+  stroke: none;
+}
+.event__share_title {
+  margin-bottom: 2rem;
+}
+.event__share_list {
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid rgb(16, 16, 16);
+}
+.event__share_item {
+  background: var(--clr-white);
+}
+.event__share_item:hover {
+  background: var(--clr-black-5);
+}
+.event__share_item:hover svg path {
+  fill: var(--clr-black);
+  stroke: none;
+}
+.event__share .btn svg {
+  width: 22px;
+  height: 22px;
+}
+.event__calendar_btn {
+  margin-top: 256px;
 }
 
 .halls {

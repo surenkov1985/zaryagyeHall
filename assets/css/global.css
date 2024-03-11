@@ -99,6 +99,24 @@
 .btn_with-icon:hover {
   border-color: var(--clr-black);
 }
+.btn_trans {
+  gap: 10px;
+  padding: 20px 24px 20px 32px;
+  background: var(--clr-white);
+  border: 1px solid rgb(219, 219, 219);
+}
+.btn_trans svg {
+  width: 22px;
+  flex-shrink: 0;
+}
+.btn_trans svg path {
+  fill: var(--clr-black-40) !important;
+}
+.btn_trans:hover {
+  background: var(--clr-white);
+  border-color: var(--clr-black);
+  color: var(--clr-black-40);
+}
 .btn_slim {
   padding: 18px 48px;
   border-radius: 40px;

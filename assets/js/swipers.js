@@ -257,3 +257,18 @@ function calendarSliders() {
 		}
 	})
 }
+
+function eventSlider() {
+
+	const eventPicture = document.querySelector(".fs__picture_slider");
+
+	if (!eventPicture) return;
+
+	const slider = new Swiper(eventPicture, {
+		speed: 1000,
+		navigation: {
+			prevEl: ".fs__picture_slider .swiper-prev-btn",
+			nextEl: ".fs__picture_slider .swiper-next-btn"
+		}
+	})
+}
