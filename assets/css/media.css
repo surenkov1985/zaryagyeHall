@@ -23,6 +23,33 @@
   .main_font {
     font-size: 1.25rem;
   }
+  .text_content h6 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .text_content p {
+    font-size: 1.25rem;
+  }
+  .text_content p:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+  .text_content ul {
+    margin-top: 28px;
+  }
+  .text_content li {
+    font-size: 1.25rem;
+  }
+  .desc_content p {
+    font-size: 1.25rem;
+    padding-left: 40px;
+  }
+  .desc_content blockquote {
+    font-size: 1.25rem;
+    padding-left: 40px;
+  }
+  .text_content mark {
+    font-size: 1.25rem;
+  }
   .head .btn_menu {
     margin-right: -16px;
   }
@@ -140,6 +167,16 @@
   }
   .fs .container {
     padding-top: 160px;
+  }
+  .fs__date .day {
+    font-size: 1.25rem !important;
+  }
+  .fs__event-title {
+    margin-top: 72px;
+    margin-bottom: 58px;
+  }
+  .event {
+    padding-top: 24px;
   }
   .events {
     padding-top: 116px;
@@ -335,6 +372,33 @@
   .h3 {
     font-size: 3.325rem;
   }
+  .text_content h6 {
+    font-size: 1.125rem;
+    margin-bottom: 1.125rem;
+  }
+  .text_content p {
+    font-size: 1.125rem;
+  }
+  .text_content p:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+  .text_content ul {
+    margin-top: 24px;
+  }
+  .text_content li {
+    font-size: 1.125rem;
+  }
+  .desc_content p {
+    font-size: 1.125rem;
+    padding-left: 32px;
+  }
+  .desc_content blockquote {
+    font-size: 1.125rem;
+    padding-left: 32px;
+  }
+  .text_content mark {
+    font-size: 1.125rem;
+  }
   .tag {
     font-size: 16px;
   }
@@ -460,6 +524,19 @@
   .fs .container {
     padding-top: 145px;
   }
+  .fs__date .day {
+    font-size: 1.125rem !important;
+  }
+  .fs__event-title {
+    margin-top: 65px;
+    margin-bottom: 52px;
+  }
+  .event {
+    padding-top: 16px;
+  }
+  .event .h2 {
+    font-size: 3.25rem;
+  }
   .events {
     padding-top: 104px;
     padding-bottom: 140px;
@@ -566,6 +643,40 @@
   }
   h5 {
     font-size: 1.5rem;
+  }
+  .text_content h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .text_content p {
+    font-size: 1rem;
+  }
+  .text_content p:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  .text_content ul {
+    margin-top: 25px;
+  }
+  .text_content li {
+    font-size: 1rem;
+  }
+  .text_content li:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .desc_content p {
+    font-size: 1rem;
+    padding-left: 0;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  .desc_content blockquote {
+    font-size: 1rem;
+    padding-left: 24px;
+    margin-left: -26px;
+    line-height: 1.6;
+  }
+  .text_content mark {
+    font-size: 1rem;
   }
   .tag {
     font-size: 14px;
@@ -828,9 +939,31 @@
     padding-top: 126px;
     padding-bottom: 48px;
   }
+  .fs__date .day {
+    font-size: 1rem !important;
+  }
+  .fs__event-title {
+    margin-top: 58px;
+    margin-bottom: 46px;
+  }
   .fs .container {
     padding-top: 124px;
     padding-bottom: 48px;
+  }
+  .fs__info {
+    margin-bottom: 49px;
+  }
+  .fs__info_tags {
+    margin-left: 0;
+  }
+  .fs__info_time {
+    padding-left: 32px;
+    gap: 10px;
+    font-size: 0.875rem;
+  }
+  .fs__info_time .icon svg {
+    width: 12px;
+    height: 12px;
   }
   .fs__slide_icon {
     height: 85%;
@@ -865,6 +998,73 @@
   }
   .breadcrumbs__item .back_link {
     gap: 16px;
+  }
+  .event {
+    padding-top: 8px;
+    padding-bottom: 22px;
+  }
+  .event .h2 {
+    font-size: 3rem;
+  }
+  .event__aside {
+    padding-top: 4px;
+    gap: 38px;
+  }
+  .event__aside_date {
+    padding-bottom: 34px;
+  }
+  .event__aside_date .day {
+    font-size: 1rem !important;
+  }
+  .event__share_title {
+    margin-bottom: 1.5rem;
+  }
+  .event__share_control {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .event__calendar_btn {
+    margin-top: 274px;
+  }
+  .event__title {
+    padding-bottom: 1.5rem;
+  }
+  .event__subtitle {
+    width: calc((100% - 12px) / 17 * 10);
+  }
+  .event__section_row {
+    padding: 23px 0;
+  }
+  .event__section_col {
+    width: calc((100% - 12px) / 17 * 10);
+  }
+  .event__section_item:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+  .event__section_item:last-child {
+    padding-top: 1rem;
+  }
+  .event__section_item:first-child {
+    padding-top: 0;
+  }
+  .event__desc {
+    padding: 64px 0;
+  }
+  .accordion__item {
+    padding: 24px 0;
+  }
+  .accordion__content_desc {
+    padding-top: 50px;
+  }
+  .accordion__content .text_content {
+    padding: 65px 0 44px;
+  }
+  .accordion__content .text_content h5 {
+    margin-top: 46px;
+    margin-bottom: 1.75rem;
+  }
+  .accordion__content .text_content div {
+    margin-bottom: 64px;
   }
   .events {
     padding-top: 96px;

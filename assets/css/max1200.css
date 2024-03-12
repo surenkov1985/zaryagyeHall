@@ -236,6 +236,15 @@
   .fs__content_slider .swiper-nav {
     gap: 8px;
   }
+  .event__aside {
+    width: calc((100% - 16px) / 12 * 3);
+  }
+  .event__subtitle {
+    width: 58.8235294118%;
+  }
+  .event__section_col {
+    width: 58.8235294118%;
+  }
   .events {
     padding-top: 88px;
     padding-bottom: 100px;

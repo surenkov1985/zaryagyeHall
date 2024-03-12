@@ -6,6 +6,16 @@
 		font-size: 6.75rem;
 	}
 
+	.desc_content p {
+		padding-left: 60px;
+		margin-bottom: 46px;
+	}
+
+	.desc_content blockquote {
+		margin-left: 0;
+		padding-left: 60px;
+	}
+
 	.max991 {
 		display: flex !important;
 	}
@@ -226,6 +236,21 @@
 			max-height: 1080px;
 		}
 		
+		&__event-title {
+		flex-direction: column;
+		gap: 2rem;
+		}
+
+		&__info {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+			gap: 40px;
+			margin-bottom: 44px;
+
+			&_left {
+				margin-left: 0;
+			}
+		}
 
 		& .container {
 			padding-top: 176px;
@@ -236,6 +261,73 @@
 			&_icon {
 				margin-top: auto;
 				margin-bottom: auto;
+			}
+		}
+	}
+
+	.event {
+
+		& .container {
+			flex-direction: column-reverse;
+		}
+
+		&__aside {
+			width: 100%;
+			padding-top: 40px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 40px;
+
+			&_date {
+				width: 100%;
+				border: none;
+				padding-bottom: 0;
+			}
+		}
+
+		&__share {
+		margin-left: auto;
+
+			&_title {
+				display: none;
+			}
+		}
+
+		&__calendar_btn {
+			margin-top: 0;
+			display: flex;
+			width: 100%;
+			padding-top: 40px;
+			border-top: 1px solid rgb(219, 219, 219);
+		}
+
+		&__content {
+			width: 100%;
+		}
+
+		&__subtitle {
+			width: calc(100% / 12 * 7);
+		}
+
+		&__section {
+
+			&_col {
+				width: calc(100% / 12 * 7);	
+			}
+		}
+	}
+
+	.accordion {
+
+		&__content {
+
+			&_desc{
+				padding-top: 32px;
+			}
+
+			& .text_content {
+				padding: 56px 0 40px;
+				width: calc(100% / 12 * 11);
 			}
 		}
 	}

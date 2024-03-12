@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function(){
 	newsSlider();
 	locationSliders();
 	calendarSliders();
-	eventSlider()
+	eventSlider();
+	personSliders();
 });
 
 $(document).on("click", ".dropdown__value", function () {
@@ -229,15 +230,37 @@ $(document).on("click", ".mobile__nav_btn", function(){
 	const subList = $(navEl).find(".mobile__nav_sublist");
 
 	$(subList).addClass("active");
-})
+});
 
 $(document).on("click", ".mobile__nav_sublist .mobile__nav_title", function(){
 
 	const navEl = $(this).closest(".mobile__nav_sublist");
 
 	$(navEl).removeClass("active");
-})
+});
 
+
+// accordion
+
+$(document).on("click", ".accordion__title", function(){
+
+	const accItem = $(this).closest(".accordion__item");
+	
+	if (!$(accItem).hasClass("active")) {
+
+		$(".accordion__item").each((i, item) => {
+
+			$(item).removeClass("active");
+			$(item).find(".accordion__content").css({"max-height": "0px"});
+		})
+		$(accItem).addClass("active");
+		$(accItem).find(".accordion__content").css({"max-height": $(accItem).find(".accordion__content_desc").innerHeight() + "px"});
+	} else {
+		$(accItem).removeClass("active");
+		$(accItem).find(".accordion__content").css({"max-height": "0px"});
+	}
+	
+})
 
 // $(function() {
 // 	jQuery.scrollSpeed(100, 800, 'easeOutCubic');

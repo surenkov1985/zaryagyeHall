@@ -31,6 +31,52 @@
 		line-height: 1.4;
 	}
 
+	.text_content h6 {
+		font-size: 0.875rem;
+		margin-bottom: 0.875rem;
+	}
+	
+	.text_content p {
+		font-size: 0.875rem;
+	
+		&:not(:last-child) {
+			margin-bottom: 0.75rem;
+		}
+	}
+
+	.text_content ul {
+		margin-top: 22px;
+	}
+	
+	.text_content li {
+		font-size: 0.875rem;
+		line-height: 1.45;
+	
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+
+	.desc_content p {
+		font-size: 0.875rem;
+		padding-left: 0;
+		line-height: 1.45;
+		margin-bottom: 32px;
+		width: 100%;
+	}
+
+	.desc_content blockquote {
+		font-size: 0.875rem;
+		padding-left: 16px;
+		margin-left: 0px;
+		line-height: 1.45;
+		width: 98%;
+	}
+
+	.text_content mark {
+		font-size: 1rem;
+	}
+
 	.numbers {
 		font-size: 4rem;
 	}
@@ -61,6 +107,14 @@
 
 	.time {
 		font-size: 1rem;
+	}
+
+	.max360 {
+		display: flex !important;
+	}
+
+	.min360 {
+		display: none !important;
 	}
 
 	.tag {
@@ -440,7 +494,45 @@
 		
 		& .container {
 			padding-top: 137px;
-			padding-bottom: 16px;
+			padding-bottom: 4px;
+		}
+
+		&__event-title {
+			margin-top: 33px;
+			margin-bottom: 12px;
+			gap: 22px;
+
+			& .h2 {
+				font-size: 2rem;
+			}
+		}
+
+		&__info {
+			flex-direction: column;
+			margin-bottom: 24px;
+
+			&_btn {
+				width: 100%;
+
+				& .btn {
+					width: 100%;
+				}
+			}
+
+			&_tags {
+				gap: 16px 6px	;
+			}
+
+			&_time {
+				padding-left: 0;
+			}
+		}
+
+		&__picture {
+
+			& .swiper-pagination {
+				visibility: visible;
+			}
 		}
 
 		&__slide {
@@ -505,6 +597,7 @@
 
 		& .swiper-pagination {
 			visibility: visible;
+			position: relative;
 		}
 	}
 
@@ -515,6 +608,60 @@
 
 			& .back_link {
 				gap: 10px;
+			}
+		}
+	}
+
+	.event {
+		padding-top: 0;
+
+		& .h2 {
+			font-size: 1.75rem;
+		}
+
+		&__title {
+			gap: 0.25rem;
+		}
+
+		&__section {
+			&_item {
+
+				&:not(:last-child) {
+					padding-bottom: 0.625rem;
+				}
+	
+				&:last-child {
+					padding-top: 0.625rem;
+				}
+	
+				&:first-child {
+					padding-top: 0;
+				}
+			}
+		}
+
+		&__desc {
+			padding: 18px 0;
+		}
+
+		&__person {
+
+			& .swiper-pagination {
+				position: relative;
+				visibility: visible;
+			}
+
+			& .swiper-nav {
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			&_slider {
+
+				&_control {
+					margin-top: 1rem;
+				}
 			}
 		}
 	}

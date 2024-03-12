@@ -131,6 +131,23 @@
   stroke: var(--clr-white);
   fill: none;
 }
+.btn_slider .lines {
+  position: relative;
+  display: block;
+}
+.btn_slider .lines .line {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--clr-black);
+  transition: all 0.5s;
+}
+.btn_slider .lines .line:last-child {
+  transform: rotate(90deg);
+}
+.btn_slider:hover .line {
+  background: var(--clr-white);
+}
 .btn_menu {
   position: relative;
   padding: 0px;
@@ -563,6 +580,10 @@ label.label_radio {
 }
 
 .max991 {
+  display: none !important;
+}
+
+.max360 {
   display: none !important;
 }
 

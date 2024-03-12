@@ -295,6 +295,135 @@
 		}
 	}
 
+	.event {
+		padding-bottom: 56px;
+
+		&__title {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		&__subtitle {
+			width: 100%;
+		}
+
+		&__section {
+			&_row {
+				flex-direction: column;
+				gap: 1.25rem;
+				padding: 20px 0;
+			}
+
+			&_col {
+				width: 100%;	
+			}
+
+			&_item {
+
+				&:not(:last-child) {
+					padding-bottom: 0.75rem;
+				}
+	
+				&:last-child {
+					padding-top: 0.75rem;
+				}
+	
+				&:first-child {
+					padding-top: 0;
+				}
+			}
+		}
+
+		&__desc {
+			padding: 32px 0;
+		}
+
+		&__person {
+
+			& .swiper-pagination {
+				position: relative;
+				visibility: visible;
+			}
+
+			& .swiper-nav {
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			&_slider {
+
+				&_control {
+					margin-top: 1rem;
+				}
+			}
+		}
+
+		&__aside {
+			padding-top: 54px;
+			gap: 22px;
+
+			&_date {
+				gap: 8px !important;
+			}
+
+			&_btn {
+				width: 100%;
+			}
+		}
+
+		&__share {
+			margin-left: 0;
+			padding-top: 24px;
+			width: 100%;
+			border-top: 1px solid rgb(216, 216, 216);
+		}
+
+		&__calendar_btn {
+			border-top: none;
+			padding-top: 4px;
+
+			& .btn {
+				width: 100%;
+			}
+		}
+
+
+	}
+
+	.accordion {
+
+		&__item {
+			padding: 16px 0;
+		}
+
+		&__content {
+
+			&_desc {
+				padding-top: 16px;
+			}
+
+			& .text_content {
+				padding: 39px 0 24px;
+				width: 95%;
+
+				& div {
+					margin-bottom: 38px;
+				}
+
+				& p {
+					line-height: 1.45;
+				}
+
+				& h5 {
+					margin-top: 36px;
+					margin-bottom: 1.625rem;
+				}
+			}
+		}
+		
+	}
+
 	.events {
 		padding-top: 10px;
 		padding-bottom: 63px;

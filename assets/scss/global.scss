@@ -160,6 +160,33 @@
 			}
 
 		}
+
+		& .lines {
+			position: relative;
+			display: block;
+
+
+			& .line {
+				display: block;
+				width: 24px;
+				height: 1px;
+				background: var(--clr-black);
+				transition: all .5s;
+
+				&:last-child {
+					transform: rotate(90deg);
+				}
+			}
+		}
+
+		&:hover {
+
+			& .line {
+				background: var(--clr-white);
+			}
+		}
+
+
 	}
 
 	&_menu {
@@ -721,6 +748,10 @@ label {
 }
 
 .max991 {
+	display: none !important;
+}
+
+.max360 {
 	display: none !important;
 }
 

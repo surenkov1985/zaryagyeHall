@@ -269,6 +269,43 @@ function eventSlider() {
 		navigation: {
 			prevEl: ".fs__picture_slider .swiper-prev-btn",
 			nextEl: ".fs__picture_slider .swiper-next-btn"
+		},
+		pagination: {
+			el: ".fs__picture .swiper-pagination",
+			type: "bullets",
 		}
 	})
+}
+
+function personSliders() {
+
+	const persons = document.querySelectorAll(".event__person_slider");
+
+	if (!persons.length) return;
+
+	for (let person of persons) {
+
+		const personCont = person.closest(".event__person_slider-cont")
+
+
+		const slider = new Swiper(person, {
+			speed: 1000,
+			navigation: {
+				prevEl: personCont.querySelector(".swiper-prev-btn"),
+				nextEl: personCont.querySelector(".swiper-next-btn"),
+			},
+			pagination: {
+				el: personCont.querySelector(".swiper-pagination"),
+				type: "bullets",
+			}
+		})
+
+		// person.querySelector(".swiper-prev-btn").addEventListener("click", function () {
+		// 	slider.slidePrev(1000)
+		// })
+
+		// person.querySelector(".swiper-next-btn").addEventListener("click", function () {
+		// 	slider.slideNext(1000)
+		// })
+	}
 }

@@ -4,6 +4,13 @@
   .text-content h1 {
     font-size: 6.25rem;
   }
+  .desc_content p {
+    width: 91.6666666667%;
+    margin-bottom: 36px;
+  }
+  .desc_content blockquote {
+    width: 91.6666666667%;
+  }
   .date_xl {
     font-size: 4rem;
   }
@@ -229,6 +236,21 @@
     padding-top: 172px;
     padding-bottom: 31px;
   }
+  .fs__event-title {
+    margin-top: 68px;
+    margin-bottom: 64px;
+    gap: 2.8rem;
+  }
+  .fs__picture_slider .swiper-nav {
+    right: 24px;
+    bottom: 24px;
+  }
+  .fs__info {
+    margin-bottom: 40px;
+  }
+  .fs__title {
+    width: 100%;
+  }
   .fs__slide_content {
     flex-direction: column-reverse;
     height: 70%;
@@ -283,12 +305,38 @@
   .fs__content_slide {
     flex-direction: column;
   }
+  .event {
+    padding-bottom: 68px;
+  }
+  .event__title {
+    padding-bottom: 1.25rem;
+  }
+  .event__section_row {
+    padding: 19px 0;
+  }
+  .event__desc {
+    padding: 55px 0;
+  }
+  .event__aside {
+    padding-top: 45px;
+    gap: 37px;
+  }
+  .accordion__content_desc {
+    padding-top: 24px;
+  }
+  .accordion__content .text_content {
+    padding: 56px 0 32px;
+  }
+  .accordion__content .text_content div {
+    margin-bottom: 58px;
+  }
   .events {
     padding-top: 24px;
     padding-bottom: 95px;
   }
   .events__title {
     margin-bottom: 40px;
+    width: 100%;
   }
   .events__title .h2 {
     width: 58.3333333333%;

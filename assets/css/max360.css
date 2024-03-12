@@ -25,6 +25,43 @@
     font-size: 1.25rem;
     line-height: 1.4;
   }
+  .text_content h6 {
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+  .text_content p {
+    font-size: 0.875rem;
+  }
+  .text_content p:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+  .text_content ul {
+    margin-top: 22px;
+  }
+  .text_content li {
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+  .text_content li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .desc_content p {
+    font-size: 0.875rem;
+    padding-left: 0;
+    line-height: 1.45;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  .desc_content blockquote {
+    font-size: 0.875rem;
+    padding-left: 16px;
+    margin-left: 0px;
+    line-height: 1.45;
+    width: 98%;
+  }
+  .text_content mark {
+    font-size: 1rem;
+  }
   .numbers {
     font-size: 4rem;
   }
@@ -48,6 +85,12 @@
   }
   .time {
     font-size: 1rem;
+  }
+  .max360 {
+    display: flex !important;
+  }
+  .min360 {
+    display: none !important;
   }
   .tag {
     font-size: 12px;
@@ -310,7 +353,34 @@
   }
   .fs .container {
     padding-top: 137px;
-    padding-bottom: 16px;
+    padding-bottom: 4px;
+  }
+  .fs__event-title {
+    margin-top: 33px;
+    margin-bottom: 12px;
+    gap: 22px;
+  }
+  .fs__event-title .h2 {
+    font-size: 2rem;
+  }
+  .fs__info {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .fs__info_btn {
+    width: 100%;
+  }
+  .fs__info_btn .btn {
+    width: 100%;
+  }
+  .fs__info_tags {
+    gap: 16px 6px;
+  }
+  .fs__info_time {
+    padding-left: 0;
+  }
+  .fs__picture .swiper-pagination {
+    visibility: visible;
   }
   .fs__slide {
     gap: 20px;
@@ -358,12 +428,46 @@
   }
   .fs .swiper-pagination {
     visibility: visible;
+    position: relative;
   }
   .breadcrumbs {
     margin-bottom: 32px;
   }
   .breadcrumbs__item .back_link {
     gap: 10px;
+  }
+  .event {
+    padding-top: 0;
+  }
+  .event .h2 {
+    font-size: 1.75rem;
+  }
+  .event__title {
+    gap: 0.25rem;
+  }
+  .event__section_item:not(:last-child) {
+    padding-bottom: 0.625rem;
+  }
+  .event__section_item:last-child {
+    padding-top: 0.625rem;
+  }
+  .event__section_item:first-child {
+    padding-top: 0;
+  }
+  .event__desc {
+    padding: 18px 0;
+  }
+  .event__person .swiper-pagination {
+    position: relative;
+    visibility: visible;
+  }
+  .event__person .swiper-nav {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .event__person_slider_control {
+    margin-top: 1rem;
   }
   .events {
     padding-top: 10px;

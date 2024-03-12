@@ -201,6 +201,91 @@
   .fs .swiper-pagination {
     visibility: visible;
   }
+  .event {
+    padding-bottom: 56px;
+  }
+  .event__title {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .event__subtitle {
+    width: 100%;
+  }
+  .event__section_row {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 20px 0;
+  }
+  .event__section_col {
+    width: 100%;
+  }
+  .event__section_item:not(:last-child) {
+    padding-bottom: 0.75rem;
+  }
+  .event__section_item:last-child {
+    padding-top: 0.75rem;
+  }
+  .event__section_item:first-child {
+    padding-top: 0;
+  }
+  .event__desc {
+    padding: 32px 0;
+  }
+  .event__person .swiper-pagination {
+    position: relative;
+    visibility: visible;
+  }
+  .event__person .swiper-nav {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .event__person_slider_control {
+    margin-top: 1rem;
+  }
+  .event__aside {
+    padding-top: 54px;
+    gap: 22px;
+  }
+  .event__aside_date {
+    gap: 8px !important;
+  }
+  .event__aside_btn {
+    width: 100%;
+  }
+  .event__share {
+    margin-left: 0;
+    padding-top: 24px;
+    width: 100%;
+    border-top: 1px solid rgb(216, 216, 216);
+  }
+  .event__calendar_btn {
+    border-top: none;
+    padding-top: 4px;
+  }
+  .event__calendar_btn .btn {
+    width: 100%;
+  }
+  .accordion__item {
+    padding: 16px 0;
+  }
+  .accordion__content_desc {
+    padding-top: 16px;
+  }
+  .accordion__content .text_content {
+    padding: 39px 0 24px;
+    width: 95%;
+  }
+  .accordion__content .text_content div {
+    margin-bottom: 38px;
+  }
+  .accordion__content .text_content p {
+    line-height: 1.45;
+  }
+  .accordion__content .text_content h5 {
+    margin-top: 36px;
+    margin-bottom: 1.625rem;
+  }
   .events {
     padding-top: 10px;
     padding-bottom: 63px;

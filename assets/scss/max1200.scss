@@ -1,3 +1,32 @@
+@media (max-width: 1300px) {
+
+// 	.fs {
+
+// 		&__title {
+// 			width: calc((100% - 12px) / 24 * 16);
+// 		}
+
+// 		&__info {
+
+// 			&_left {
+// 				width: calc((100% - 12px) / 24 * 16);
+// 			}
+// 		}
+// 	}
+
+// 	.event {
+
+// 		&__aside {
+// 			width: calc((100% - 105px) / 12* 4);
+
+// 		}
+
+// 		&__content {
+// 			width: calc((100% - 12px) / 24 * 16);
+// 	  }
+// 	}
+}
+
 @media (max-width: 1200px) {
 
 	h1,
@@ -351,6 +380,24 @@
 				& .swiper-nav {
 					gap: 8px;
 				}
+			}
+		}
+	}
+
+	.event {
+
+		&__aside {
+			width: calc((100% - 16px) / 12 * 3);
+		}
+
+		&__subtitle {
+			width: calc(100% / 17* 10);
+		}
+
+		&__section {
+
+			&_col {
+				width: calc(100% / 17* 10);
 			}
 		}
 	}

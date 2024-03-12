@@ -31,6 +31,42 @@
 		font-size: 1.25rem;
 	}
 
+	.text_content h6 {
+		font-size: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+	
+	.text_content p {
+		font-size: 1.25rem;
+	
+		&:not(:last-child) {
+			margin-bottom: 0.75rem;
+		}
+	}
+	
+	.text_content ul {
+		margin-top: 28px;
+	}
+	
+	.text_content li {
+		font-size: 1.25rem;
+	}
+
+	.desc_content p {
+		font-size: 1.25rem;
+		padding-left: 40px;
+		
+	}
+
+	.desc_content blockquote {
+		font-size: 1.25rem;
+		padding-left: 40px;
+	}
+
+	.text_content mark {
+		font-size: 1.25rem;
+	}
+
 	.head {
 
 		& .btn_menu {
@@ -228,8 +264,23 @@
 			padding-top: 160px;
 
 		}
+
+		&__date {
+
+			& .day {
+				font-size: 1.25rem !important;
+			}
+		}
+
+		&__event-title {
+			margin-top: 72px;
+			margin-bottom: 58px;
+	  }
 	}
 
+.event {
+		padding-top: 24px;
+	}
 
 	.events {
 		padding-top: 116px;
@@ -504,6 +555,43 @@
 		font-size: 3.325rem;
 	}
 
+	
+	.text_content h6 {
+		font-size: 1.125rem;
+		margin-bottom: 1.125rem;
+	}
+	
+	.text_content p {
+		font-size: 1.125rem;
+	
+		&:not(:last-child) {
+			margin-bottom: 0.625rem;
+		}
+	}
+
+	.text_content ul {
+		margin-top: 24px;
+	}
+	
+	.text_content li {
+		font-size: 1.125rem;
+	}
+
+	.desc_content p {
+		font-size: 1.125rem;
+		padding-left: 32px;
+		
+	}
+
+	.desc_content blockquote {
+		font-size: 1.125rem;
+		padding-left: 32px;
+	}
+
+	.text_content mark {
+		font-size: 1.125rem;
+	}
+
 	.tag {
 		font-size: 16px;
 	}
@@ -719,6 +807,26 @@
 			padding-top: 145px;
 
 		}
+
+		&__date {
+
+			& .day {
+				font-size: 1.125rem !important;
+			}
+		}
+
+		&__event-title {
+			margin-top: 65px;
+			margin-bottom: 52px;
+	  }
+	}
+
+	.event {
+		padding-top: 16px;
+
+		& .h2 {
+		font-size: 3.25rem;
+		}
 	}
 
 	.events {
@@ -873,6 +981,50 @@
 
 	h5 {
 		font-size: 1.5rem;
+	}
+
+	
+	.text_content h6 {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	
+	.text_content p {
+		font-size: 1rem;
+	
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	.text_content ul {
+		margin-top: 25px;
+	}
+	
+	.text_content li {
+		font-size: 1rem;
+	
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+	}
+
+	.desc_content p {
+		font-size: 1rem;
+		padding-left: 0;
+		line-height: 1.6;
+		margin-bottom: 50px;
+	}
+
+	.desc_content blockquote {
+		font-size: 1rem;
+		padding-left: 24px;
+		margin-left: -26px;
+		line-height: 1.6;
+	}
+
+	.text_content mark {
+		font-size: 1rem;
 	}
 
 	.tag {
@@ -1262,10 +1414,42 @@
 			}
 		}
 		
+		&__date {
+
+			& .day {
+				font-size: 1rem !important;
+			}
+		}
+		&__event-title {
+			margin-top: 58px;
+			margin-bottom: 46px;
+	  }
 
 		& .container {
 			padding-top: 124px;
 			padding-bottom: 48px;
+		}
+
+		&__info {
+		margin-bottom: 49px;
+
+			&_tags {
+				margin-left: 0;
+			}
+
+			&_time {
+				padding-left: 32px;
+				gap: 10px;
+				font-size: 0.875rem;
+
+				& .icon {
+
+				 & svg {
+					width: 12px;
+					height: 12px;
+				 }
+				 }
+			}
 		}
 
 		&__slide {
@@ -1324,6 +1508,118 @@
 
 			& .back_link {
 				gap: 16px;
+			}
+		}
+	}
+
+	.event {
+		padding-top: 8px;
+		padding-bottom: 22px;
+
+		& .h2 {
+		font-size: 3rem;
+		}
+
+		&__aside {
+		padding-top: 4px;
+		gap: 38px;
+
+			&_date {
+				padding-bottom: 34px;	
+
+				& .day {
+					font-size: 1rem !important;
+				}
+			}
+		}
+
+		&__share {
+			
+			&_title {
+				margin-bottom: 1.5rem;
+			}
+
+			&_control {
+				gap: 6px;
+				flex-wrap: wrap;
+			}
+		}
+
+		&__calendar {
+
+			&_btn {
+				margin-top: 274px;
+			}
+		}
+
+		&__title {
+			padding-bottom: 1.5rem;
+		}
+
+		&__subtitle {
+			width: calc((100% - 12px) / 17* 10);
+		}
+
+		&__section {
+
+			&_row {
+				padding: 23px 0;
+			}
+			
+			&_col {
+				width: calc((100% - 12px) / 17* 10);
+		   }
+
+			&_item {
+
+				&:not(:last-child) {
+					padding-bottom: 1rem;
+				}
+	
+				&:last-child {
+					padding-top: 1rem;
+				}
+	
+				&:first-child {
+					padding-top: 0;
+				}
+			}
+		}
+
+		&__desc {
+			padding: 64px 0;
+		}
+
+		&__person {
+
+			
+		}
+	}
+
+	.accordion {
+
+		&__item {
+			padding: 24px 0;
+		}
+
+		&__content {
+
+			&_desc {
+
+				padding-top: 50px;
+			}
+
+			& .text_content {
+				padding: 65px 0 44px;
+
+				& h5 {
+					margin-top: 46px;
+					margin-bottom: 1.75rem;
+				}
+
+				& div {
+					margin-bottom: 64px;
+				}
 			}
 		}
 	}

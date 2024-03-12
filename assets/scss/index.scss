@@ -80,7 +80,7 @@
 	}
 
 	&__title {
-		width: calc((100% - 16px) / 24 * 17);
+		width: calc((100% - 12px) / 24 * 17);
 	}
 
 	&__images {
@@ -156,6 +156,12 @@
 			object-fit: cover;
 			}
 			
+		}
+
+		& .swiper-pagination {
+			position: absolute;
+			margin-top: 24px;
+			visibility: hidden;
 		}
 	}
 
@@ -1037,7 +1043,7 @@
 
 .event {
 	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-bottom: 64px;
 
 	& .container {
 		position: relative;
@@ -1072,7 +1078,7 @@
 	}
 
 	&__content {
-		width: calc((100% - 16px) / 24 * 17);
+		width: calc((100% - 12px) / 24 * 17);
 	}
 
 	&__share {
@@ -1103,6 +1109,7 @@
 			display: flex;
 			border-radius: 50px;
 			border: 1px solid rgb(16, 16, 16);
+			gap: 10px;
 		}
 
 		&_item {
@@ -1132,6 +1139,203 @@
 	&__calendar_btn {
 		margin-top: 256px;
 	}
+
+	&__title {
+		display: flex;
+		align-items: baseline;
+		padding-bottom: 2rem;
+		position: relative;
+		justify-content: space-between;
+		gap: 2rem;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 100%;
+			background: rgb(16, 16, 16);
+		}
+	}
+
+	&__subtitle {
+		width: calc((100% - 24px) / 17 * 11.5);
+	}
+
+	&__section {
+
+		&_row {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			padding: 2rem 0;
+			position: relative;
+			gap: 2rem;
+
+
+			&::after {
+				position: absolute;
+			content: "";
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 100%;
+			background: rgb(219, 219, 219);
+			}
+		}
+
+		&_col {
+			width: calc((100% - 24px) / 17 * 11.5);
+		}
+
+		&_item {
+			position: relative;
+
+			&:not(:last-child) {
+				padding-bottom: 1.5rem;
+
+				&::after {
+					position: absolute;
+					content: "";
+					width: 100%;
+					height: 1px;
+					left: 0;
+					top: 100%;
+					background: rgb(219, 219, 219);
+				}
+			}
+
+			&:last-child {
+				padding-top: 1.5rem;
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+
+	&__desc {
+		padding: 85px 0;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 100%;
+			background: rgb(16, 16, 16);
+		}
+	}
+
+	&__person {
+
+		&_slider {
+
+			&_control {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 1.5rem;
+			}
+		}
+
+		& .swiper-pagination {
+			position: absolute;
+			margin-top: 1.375rem;
+		}
+		
+	}
+}
+
+// ACCORDION
+
+.accordion {
+	
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		position: relative;
+		padding: 45px 0;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 100%;
+			background: rgb(219, 219, 219);
+		}
+
+		&.active {
+
+			& .accordion__title .btn_slider {
+				background: var(--clr-black);
+
+				& .line {
+					background: var(--clr-white);
+
+					&:last-child {
+						transform: rotate(0);
+					}
+				}
+			}
+
+			& .accordion__content {
+				max-height: 2000px;
+			}
+		}
+		
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__content {
+		height: auto;
+		max-height: 0;
+		overflow: hidden;
+		transition: all 1s;
+
+		&_desc {
+			padding-top: 45px;
+		}
+
+		& .text_content {
+			padding: 82px 0 30px;
+			width: calc(100% / 17 * 12);
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			& div {
+				margin-bottom: 84px;
+			}
+
+			& h5 {
+				margin-bottom: 2rem;
+				margin-top: 64px;
+			}
+
+			& p {
+				line-height: 1.6;
+			}
+
+
+		}
+	}
+
+
 }
 
 // HALLS

@@ -6,6 +6,15 @@
 		font-size: 6.25rem;
 	}
 
+	.desc_content p {
+		width: calc(100% / 12 * 11);
+		margin-bottom: 36px;
+	}
+
+	.desc_content blockquote {
+		width: calc(100% / 12 * 11);
+	}
+
 	.date_xl {
 		font-size: 4rem;
 	}
@@ -341,6 +350,31 @@
 			padding-bottom: 31px;
 		}
 
+		&__event-title {
+			margin-top: 68px;
+			margin-bottom: 64px;
+			gap: 2.8rem	;
+		}
+
+		&__picture {
+
+			&_slider {
+
+				& .swiper-nav {
+					right: 24px;
+					bottom: 24px;
+				}
+			}
+		}
+
+		&__info {
+			margin-bottom: 40px;
+		}
+
+		&__title {
+			width: 100%;
+		}
+
 		&__slide {
 
 
@@ -421,12 +455,56 @@
 		}
 	}
 
+	.event {
+		padding-bottom: 68px;
+
+		&__title {
+			padding-bottom: 1.25rem;
+			// margin-bottom: 1.25rem;
+		}
+
+		&__section {
+
+			&_row {
+				padding: 19px 0;
+			}
+		}
+
+		&__desc {
+			padding: 55px 0;
+		}
+
+		&__aside {
+			padding-top: 45px;
+			gap: 37px;
+		}
+	}
+
+	.accordion {
+
+		&__content {
+
+			&_desc {
+				padding-top: 24px;
+			}
+
+			& .text_content {
+				padding: 56px 0 32px;
+
+				& div {
+					margin-bottom: 58px;
+				}
+			}
+		}
+	}
+
 	.events {
 		padding-top: 24px;
 		padding-bottom: 95px;
 
 		&__title {
 			margin-bottom: 40px;
+			width: 100%;
 
 			& .h2 {
 				width: calc(100% / 12 * 7);
