@@ -385,6 +385,18 @@
   align-items: center;
   gap: 22px;
 }
+.events__excursion {
+  margin-bottom: 96px;
+}
+.events__excursion .accordion__item:last-child:after {
+  position: absolute;
+  content: none;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 100%;
+  background: rgb(219, 219, 219);
+}
 .events__content {
   position: relative;
   display: flex;
@@ -1196,6 +1208,14 @@
 .news__more {
   margin-top: 2.125rem;
   display: flex;
+}
+.news__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(431px, 1fr));
+  grid-gap: 24px;
+}
+.news__list .news__slide {
+  padding: 2rem 0 2.125rem;
 }
 
 .about {

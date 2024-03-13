@@ -711,6 +711,14 @@
 				padding: 27px 62px;
 			}
 		}
+
+		&__list  {
+			// grid-gap: 4px;
+			// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			// & .news__slide {
+			// 	padding: 1.5rem 0 2rem;
+			// }
+		}
 	}
 
 	.about {

@@ -553,6 +553,14 @@
 		&__more {
 			margin-top: 1.5rem;
 		}
+
+		&__list  {
+			grid-gap: 12px;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			& .news__slide {
+				padding: 1.5rem 0 2rem;
+			}
+		}
 	}
 
 	.about {

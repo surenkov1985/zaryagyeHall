@@ -1255,6 +1255,9 @@
   .news__more {
     margin-top: 1.5rem;
   }
+  .news__list .news__slide {
+    padding: 1.5rem 0 2.375rem;
+  }
   .about {
     margin-bottom: 46px;
   }

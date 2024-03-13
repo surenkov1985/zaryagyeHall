@@ -525,6 +525,20 @@
 		}
 	}
 
+	&__excursion {
+		margin-bottom: 96px;
+
+		& .accordion__item:last-child:after {
+			position: absolute;
+			content: none;
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 100%;
+			background: rgb(219, 219, 219);
+	  }
+	}
+
 	&__content {
 		position: relative;
 		display: flex;
@@ -1593,6 +1607,16 @@
 	&__more {
 		margin-top: 2.125rem;
 		display: flex;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(431px, 1fr));
+		grid-gap: 24px;
+
+		& .news__slide {
+			padding: 2rem 0 2.125rem;
+		}
 	}
 }
 

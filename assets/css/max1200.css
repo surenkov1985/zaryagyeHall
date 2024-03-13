@@ -354,6 +354,13 @@
   .news__more {
     margin-top: 1.5rem;
   }
+  .news__list {
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .news__list .news__slide {
+    padding: 1.5rem 0 2rem;
+  }
   .about {
     margin-bottom: 36px;
     padding-bottom: 150px;

@@ -292,6 +292,9 @@
   .news_title {
     margin-bottom: 2.5rem;
   }
+  .news__list {
+    grid-gap: 8px;
+  }
   .about {
     margin-bottom: 0;
     padding-bottom: 120px;
