@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	calendarSliders();
 	eventSlider();
 	personSliders();
+	festSlider();
 });
 
 $(document).on("click", ".dropdown__value", function () {

@@ -309,3 +309,21 @@ function personSliders() {
 		// })
 	}
 }
+
+function festSlider() {
+	const fest = document.querySelector(".festival__slider");
+
+	if (!fest) return;
+
+	const festSlider = new Swiper(fest, {
+		speed: 1000,
+		navigation: {
+			prevEl: ".festival__slider .swiper-prev-btn",
+			nextEl: ".festival__slider .swiper-next-btn"
+		},
+		pagination: {
+			el: ".festival__slider .swiper-pagination",
+			type: "bullets",
+		}
+	})
+}
