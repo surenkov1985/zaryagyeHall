@@ -682,6 +682,71 @@
 		}
 	}
 
+	.festival {
+		margin-bottom: 24px;
+	
+		&__slider {
+			position: relative;
+	
+			& .swiper-nav {
+				position: absolute;
+				right: 24px;
+				bottom: 24px;
+				z-index: 10;
+	
+				& .btn_slider {
+					background: var(--clr-white-20);
+	
+					& svg path {
+						stroke: var(--clr-white);
+					}
+	
+					&:hover {
+						background: var(--clr-white-10);
+					}
+				}
+			}
+	
+			& .swiper-pagination {
+				position: absolute;
+				margin-top: 1.375rem;
+				visibility: hidden;
+			}
+		}
+	
+		&__slide {
+	
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	
+		&__desc {
+			padding: 36px 0 24px;
+	
+			&_title {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				width: calc((100% - 32px) / 24 * 20);
+				gap: 24px;
+				margin: 0 auto 24px;
+
+				& .h2 {
+					font-size: 3rem;
+				}
+			}
+	
+			&_text {
+				width: calc((100% - 32px) / 24 * 16);
+				margin-left: auto;
+			}
+		}
+	}
+
 	.news {
 		padding-top: 74px;
 		padding-bottom: 120px;

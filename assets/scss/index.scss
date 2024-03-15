@@ -1081,12 +1081,14 @@
 			}
 		}
 
-		& .swiper-pagination {
+		
+	}
+	
+	& .swiper-pagination {
 			position: absolute;
 			margin-top: 1.375rem;
 			visibility: hidden;
 		}
-	}
 
 	&__slide {
 
@@ -1098,14 +1100,14 @@
 	}
 
 	&__desc {
-		padding: 56px 0;
+		padding: 70px 0 56px;
 
 		&_title {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
-			width: calc((100% - 32px) / 24 * 16);
+			width: calc((100% - 32px) / 24 * 15);
 			gap: 40px;
 			margin: 0 auto 48px;
 		}

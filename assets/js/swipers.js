@@ -322,7 +322,7 @@ function festSlider() {
 			nextEl: ".festival__slider .swiper-next-btn"
 		},
 		pagination: {
-			el: ".festival__slider .swiper-pagination",
+			el: ".festival .swiper-pagination",
 			type: "bullets",
 		}
 	})

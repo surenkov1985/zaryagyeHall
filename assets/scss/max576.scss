@@ -633,6 +633,84 @@
 		}
 	}
 
+	.festival {
+		margin-bottom: 16px;
+	
+		&__slider {
+			position: relative;
+	
+			& .swiper-nav {
+				position: absolute;
+				right: 24px;
+				bottom: 24px;
+				z-index: 10;
+				visibility: hidden;
+				opacity: 0;
+	
+				& .btn_slider {
+					background: var(--clr-white-20);
+	
+					& svg path {
+						stroke: var(--clr-white);
+					}
+	
+					&:hover {
+						background: var(--clr-white-10);
+					}
+				}
+			}
+	
+			
+		}
+		& .swiper-pagination {
+				position: static;
+				margin-top: 1.375rem;
+				visibility: visible;
+			}
+	
+		&__slide {
+	
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	
+		&__desc {
+			padding: 36px 0 24px;
+	
+			&_title {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				width: calc((100% - 32px) / 24 * 22);
+				gap: 16px;
+				margin: 0 auto 24px;
+
+				& .h2 {
+					font-size: 2rem;
+				}
+
+				& .mark {
+					width: 30px;
+
+					& svg {
+						width: 100%;
+					}
+				}
+			}
+	
+			&_text {
+				width: calc((100% - 32px) / 24 * 22);
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+		}
+	}
+
 	.about {
 		padding-bottom: 126px;
 
