@@ -186,7 +186,13 @@
 			}
 		}
 
+		&_tab {
+			background: none;
 
+			&:hover  {
+				background: var(--clr-black-5);
+			}
+		}
 	}
 
 	&_menu {
@@ -581,6 +587,10 @@ label {
 
 .section_pb_sm {
 	padding-bottom: 4rem !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
 }
 
 .row {

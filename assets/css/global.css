@@ -148,6 +148,12 @@
 .btn_slider:hover .line {
   background: var(--clr-white);
 }
+.btn_slider_tab {
+  background: none;
+}
+.btn_slider_tab:hover {
+  background: var(--clr-black-5);
+}
 .btn_menu {
   position: relative;
   padding: 0px;
@@ -441,6 +447,10 @@ label.label_radio {
 
 .section_pb_sm {
   padding-bottom: 4rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .row {

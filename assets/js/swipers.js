@@ -327,3 +327,36 @@ function festSlider() {
 		}
 	})
 }
+
+
+function descSlider() {
+
+	const desc = document.querySelector(".description__slider");
+
+	if (!desc) return;
+
+	const descSlider = new Swiper(desc, {
+		slidesPerView: 4,
+		slidesPerGroup: 1,
+		spaceBetween: 24,
+		speed: 1000
+	})
+
+	$(document).on("click", ".description__slider_tabs .dropdown__item", function () {
+
+		console.log(descSlider.params)
+
+		if ($(this).hasClass("active")) return;
+
+		const tabs = $(this).data("tabs");
+
+		$(".description__slider_tabs .dropdown__item").removeClass("active")
+
+		$(this).addClass("active")
+
+		descSlider.params.slidesPerView = tabs;
+		descSlider.params.autoHeight = true
+		descSlider.update()
+		descSlider.updateSize()
+	})
+}

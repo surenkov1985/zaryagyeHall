@@ -408,6 +408,13 @@ h5, .h5 {
   white-space: nowrap;
 }
 
+.numbers_l {
+  font-family: var(--font-title);
+  font-size: 6.75rem;
+  line-height: 1;
+  letter-spacing: 0px;
+}
+
 .numbers_xl {
   font-family: var(--font-title);
   font-size: 30rem;

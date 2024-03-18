@@ -15,6 +15,9 @@
 }
 .fs__page-title {
   text-align: center;
+  width: 54.1666666667%;
+  text-align: center;
+  margin: 0 auto;
 }
 .fs__event-title {
   display: flex;
@@ -1316,12 +1319,15 @@
   width: 65%;
   left: 0;
   bottom: 0;
-  transform: translateY(-25%);
+  transform: translateY(60%);
   -webkit-backdrop-filter: var(--bg-filter-blur);
           backdrop-filter: var(--bg-filter-blur);
   padding: 64px 64px 0;
   display: flex;
   justify-content: space-between;
+}
+.about__nums.w-auto {
+  width: auto;
 }
 .about__nums_item {
   display: flex;
@@ -1334,6 +1340,82 @@
 }
 .about__nums .text {
   width: 120px;
+}
+.about__desc {
+  margin-top: 188px;
+  display: flex;
+  padding: 56px 0;
+  gap: 32px;
+  position: relative;
+}
+.about__desc::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(219, 219, 219);
+}
+.about__desc::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(219, 219, 219);
+}
+.about__desc_col {
+  width: calc((100% - 16px) / 24 * 12);
+  display: flex;
+  flex-direction: column;
+}
+.about__desc_num {
+  padding: 56px 0;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.about__desc_num:first-child {
+  padding-top: 0;
+}
+.about__desc_num:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.description__slider .swiper-wrapper {
+  align-items: flex-end;
+}
+.description__slider_control {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.description__slider_tabs {
+  display: flex;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 60px;
+  position: relative;
+}
+.description__slider_tabs .before {
+  position: absolute;
+  background: var(--clr-black-5);
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 73px;
+  transition: left 0.5s;
+}
+.description__slide {
+  height: auto;
+}
+.description__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .location {

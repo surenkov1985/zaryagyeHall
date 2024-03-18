@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	eventSlider();
 	personSliders();
 	festSlider();
+	descSlider();
 });
 
 $(document).on("click", ".dropdown__value", function () {
