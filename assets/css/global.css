@@ -445,6 +445,10 @@ label.label_radio {
   padding-top: 2rem !important;
 }
 
+.section_pb_l {
+  padding-bottom: 10rem !important;
+}
+
 .section_pb_sm {
   padding-bottom: 4rem !important;
 }

@@ -175,6 +175,9 @@
     margin-top: 72px;
     margin-bottom: 58px;
   }
+  .fs__page-title {
+    width: 60%;
+  }
   .event {
     padding-top: 24px;
   }
@@ -644,6 +647,9 @@
   h5 {
     font-size: 1.5rem;
   }
+  .section_pb_sm {
+    padding-bottom: 2rem !important;
+  }
   .text_content h6 {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -696,6 +702,9 @@
   .numbers_xl {
     font-size: 21rem;
   }
+  .numbers_l {
+    font-size: 5rem;
+  }
   .numbers_xs {
     font-size: 3rem;
   }
@@ -726,10 +735,12 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  .info, .error {
+  .info,
+  .error {
     font-size: 1rem;
   }
-  .info .icon, .error .icon {
+  .info .icon,
+  .error .icon {
     width: 1.75rem;
     height: 1.75rem;
   }
@@ -1270,8 +1281,9 @@
     width: calc((100% - 50px) / 24 * 8);
   }
   .about__nums {
-    transform: translateY(-46%);
+    transform: translateY(40%);
     padding: 51px 48px 0;
+    left: -48px;
   }
   .about__nums_item {
     gap: 36px;
@@ -1281,6 +1293,17 @@
   }
   .about__nums_text {
     width: 100px;
+  }
+  .about__desc {
+    margin-top: 120px;
+    padding: 40px 0;
+    gap: 24px;
+  }
+  .about__desc_num {
+    padding: 40px 0;
+  }
+  .about__desc_text p:not(:last-child) {
+    margin-bottom: 2.5rem;
   }
   .location {
     min-height: 800px;
@@ -1323,5 +1346,47 @@
   }
   .pagination_tabs {
     bottom: 40px !important;
+  }
+  .description .festival__desc {
+    padding: 56px 0 48px;
+  }
+  .description .festival__desc_title {
+    width: calc((100% - 32px) / 24 * 19);
+    gap: 40px;
+    margin-bottom: 42px;
+  }
+  .description .festival__desc_text {
+    padding-right: 48px;
+    line-height: 1.6;
+  }
+  .description__sliders {
+    margin-top: 0;
+  }
+  .history {
+    padding-top: 115px;
+  }
+  .history__sliders {
+    gap: 2.5rem 1.5rem;
+  }
+  .history__images_slider {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .history__desc {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .history__desc_slide {
+    padding: 40px 76px 24px 0;
+  }
+  .history__desc_slide_content {
+    width: 80%;
+  }
+  .history__desc_slide_content p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .history__desc_title {
+    margin-bottom: 162px;
+  }
+  .history__dates_slide {
+    padding-top: 14px;
   }
 }

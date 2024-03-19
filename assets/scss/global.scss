@@ -93,14 +93,16 @@
 
 		}
 
-		& svg	{
+		& svg {
 			width: 24px;
 			height: 24px;
 		}
 
 		&_icon {
 			padding: 27px 44px;
-			width: auto;height: auto;gap: 20px;
+			width: auto;
+			height: auto;
+			gap: 20px;
 		}
 	}
 
@@ -123,7 +125,7 @@
 		gap: 10px;
 		padding: 20px 24px 20px 32px;
 		background: var(--clr-white);
-		border: 1px solid rgb(219, 219,219);
+		border: 1px solid rgb(219, 219, 219);
 
 		& svg {
 			width: 22px;
@@ -189,7 +191,7 @@
 		&_tab {
 			background: none;
 
-			&:hover  {
+			&:hover {
 				background: var(--clr-black-5);
 			}
 		}
@@ -585,6 +587,10 @@ label {
 	padding-top: 2rem !important;
 }
 
+.section_pb_l {
+	padding-bottom: 10rem !important;
+}
+
 .section_pb_sm {
 	padding-bottom: 4rem !important;
 }
@@ -808,7 +814,7 @@ label {
 			background: var(--clr-tag-children-opacity);
 		}
 	}
-	
+
 	&_theaters {
 		border: 1px solid var(--clr-tag-theaters);
 		color: var(--clr-tag-theaters);
@@ -825,7 +831,8 @@ label {
 		color: var(--clr-tag-opera);
 		transition: all 0.5s;
 
-		&:hover, &.active {
+		&:hover,
+		&.active {
 			// color: var(--clr-tag-opera-opacity);
 			background: var(--clr-tag-opera-opacity);
 		}

@@ -24,6 +24,7 @@
 		text-align: center;
 		margin: 0 auto;
 	}
+
 	&__event-title {
 		display: flex;
 		align-items: baseline;
@@ -55,7 +56,7 @@
 			width: calc((100% - 56px) / 12 * 3);
 			display: flex;
 		}
-		
+
 		&_left {
 			width: calc((100% - 16px) / 24 * 17);
 			margin-left: -16px;
@@ -155,10 +156,10 @@
 
 			& img {
 				width: 100%;
-			height: 100%;
-			object-fit: cover;
+				height: 100%;
+				object-fit: cover;
 			}
-			
+
 		}
 
 		& .swiper-pagination {
@@ -474,7 +475,7 @@
 	}
 
 	&__nav {
-		display: flex; 
+		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
@@ -502,7 +503,7 @@
 		}
 
 		&_item {
-			padding:27px 32px 27px;
+			padding: 27px 32px 27px;
 			border-radius: 50px;
 			cursor: pointer;
 			transition: all 0.5s;
@@ -540,7 +541,7 @@
 			top: 100%;
 			background: rgb(219, 219, 219);
 			align-items: center;
-	  }
+		}
 	}
 
 	&__content {
@@ -744,7 +745,7 @@
 			&.active {
 				color: var(--clr-black);
 				pointer-events: none;
-				}
+			}
 
 			&:hover {
 				color: var(--clr-black);
@@ -829,7 +830,7 @@
 		&_dropdown {
 			margin-top: 1rem;
 
-			
+
 		}
 
 		& .dropdown {
@@ -842,9 +843,11 @@
 
 			&__value {
 				display: flex;
-				font-size: 1.375rem;line-height: 1.4;
+				font-size: 1.375rem;
+				line-height: 1.4;
 				align-items: center;
 				justify-content: space-between;
+
 				& .values {
 					display: flex;
 					align-items: center;
@@ -923,24 +926,29 @@
 		&_label {
 			cursor: pointer;
 
-			& input:checked + .tag {
+			& input:checked+.tag {
 
 				&_opera {
 					background: var(--clr-tag-opera-opacity);
 				}
+
 				&_lectures {
 					background: var(--clr-tag-lectures-opacity);
 				}
+
 				&_festival {
-						background: var(--clr-tag-festival-opacity);
-					
+					background: var(--clr-tag-festival-opacity);
+
 				}
+
 				&_children {
 					background: var(--clr-tag-children-opacity);
 				}
+
 				&_theaters {
 					background: var(--clr-tag-theaters-opacity);
 				}
+
 				&_card {
 					background: var(--clr-black-10);
 				}
@@ -977,7 +985,8 @@
 			text-align: center;
 		}
 
-		& .swiper_prev, & .swiper_next {
+		& .swiper_prev,
+		& .swiper_next {
 			width: 24px;
 			height: 100%;
 			display: flex;
@@ -1031,7 +1040,7 @@
 		&.no_events {
 			color: rgb(219, 219, 219);
 		}
-		
+
 
 		& .events_num {
 			width: 40px;
@@ -1050,9 +1059,9 @@
 			}
 		}
 
-		& input:checked + .events_num {
+		& input:checked+.events_num {
 			background: var(--clr-black);
-				color: var(--clr-white);
+			color: var(--clr-white);
 		}
 	}
 }
@@ -1084,14 +1093,14 @@
 			}
 		}
 
-		
+
 	}
-	
+
 	& .swiper-pagination {
-			position: absolute;
-			margin-top: 1.375rem;
-			visibility: hidden;
-		}
+		position: absolute;
+		margin-top: 1.375rem;
+		visibility: hidden;
+	}
 
 	&__slide {
 
@@ -1177,12 +1186,12 @@
 			display: flex;
 			gap: 10px;
 
-			& >.btn_slider {
+			&>.btn_slider {
 				// background: var(--clr-white);
-	
+
 				&:hover {
 					// background: var(--clr-black-5);
-	
+
 					& svg path {
 						fill: var(--clr-white);
 						stroke: none;
@@ -1215,7 +1224,7 @@
 			}
 		}
 
-		
+
 
 		& .btn {
 
@@ -1266,12 +1275,12 @@
 
 			&::after {
 				position: absolute;
-			content: "";
-			width: 100%;
-			height: 1px;
-			left: 0;
-			top: 100%;
-			background: rgb(219, 219, 219);
+				content: "";
+				width: 100%;
+				height: 1px;
+				left: 0;
+				top: 100%;
+				background: rgb(219, 219, 219);
 			}
 		}
 
@@ -1337,14 +1346,14 @@
 			position: absolute;
 			margin-top: 1.375rem;
 		}
-		
+
 	}
 }
 
 // ACCORDION
 
 .accordion {
-	
+
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -1382,7 +1391,7 @@
 				max-height: 2000px;
 			}
 		}
-		
+
 	}
 
 	&__title {
@@ -1750,9 +1759,9 @@
 	&__nums {
 		position: absolute;
 		width: calc(1248 / 1920 * 100%);
-		left: 0;
+		left: -64px;
 		bottom: 0;
-		transform: translateY(60%);
+		transform: translateY(50%);
 		backdrop-filter: var(--bg-filter-blur);
 		padding: 64px 64px 0;
 		display: flex;
@@ -1781,7 +1790,7 @@
 	}
 
 	&__desc {
-		margin-top: 188px;
+		margin-top: 185px;
 		display: flex;
 		padding: 56px 0;
 		gap: 32px;
@@ -1807,6 +1816,11 @@
 			background: rgb(219, 219, 219);
 		}
 
+		&_more {
+			display: flex;
+			margin-top: 32px;
+		}
+
 		&_col {
 			width: calc((100% - 16px) / 24 * 12);
 			display: flex;
@@ -1826,22 +1840,62 @@
 				border-bottom: none;
 			}
 		}
+
+		&_text {
+			width: calc(100% / 12 * 11);
+		}
+
+		&_img {
+			margin-top: auto;
+			width: calc((100% - 32px)/ 12 * 8);
+			height: auto;
+			margin-left: auto;
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&_text {
+
+			& p {
+
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+				}
+			}
+		}
 	}
 }
 
 // DECRIPTION
 
 .description {
+	overflow: hidden;
+	padding-top: 32px;
+
+	& .festival__desc_title {
+		width: calc((100% - 32px) / 24* 18);
+		gap: 60px;
+	}
+
+	&__sliders {
+		margin-top: 42px;
+	}
 
 	&__slider {
+		overflow: visible;
 
 		& .swiper-wrapper {
 			align-items: flex-end;
 		}
 
 		&_control {
-			margin-top: 32px;
-			display: flex;justify-content: space-between;
+			margin-top: 28px;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		&_tabs {
@@ -2104,6 +2158,254 @@
 			z-index: 4;
 			pointer-events: none;
 			left: 64px;
+		}
+	}
+}
+
+// HISTORY
+
+.history {
+	padding-top: 160px;
+	padding-bottom: 48px;
+
+	&__sliders {
+		display: flex;
+		gap: 3.375rem 2rem;
+		flex-wrap: wrap;
+	}
+
+	&__desc {
+		height: auto;
+		width: calc((100% - 32px) / 24 * 12);
+		display: flex;
+		flex-direction: column;
+
+		&_slider {
+			width: 100%;
+			margin: 0;
+		}
+
+		& .swiper-nav {
+			margin-top: auto;
+		}
+
+		&_slide {
+			padding: 56px 76px 32px 0;
+			background: var(--clr-white);
+
+			&_content {
+				width: calc(100% / 12 * 9);
+
+				& p:not(:last-child) {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+
+		&_title {
+			margin-bottom: 212px;
+		}
+	}
+
+	&__images {
+
+		&_slider {
+			width: calc((100% - 32px) / 24 * 12);
+			margin: 0;
+		}
+
+		&_slide {
+			height: auto;
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: bottom;
+			}
+		}
+	}
+
+	&__dates {
+		width: 100%;
+
+		&_slider {
+			overflow: hidden;
+		}
+
+		&_slide {
+			padding-top: 20px;
+			border-top: 1px solid rgb(219, 219, 219);
+			cursor: pointer;
+
+			& .numbers_sm {
+				transition: all .5s;
+			}
+
+			&:hover {
+
+				color: var(--clr-black-40);
+			}
+
+			&.swiper-slide-thumb-active {
+				border-color: rgb(16, 16, 16);
+			}
+		}
+	}
+}
+
+//  MISSION
+
+.mission {
+	padding-top: 46px;
+	padding-bottom: 128px;
+
+	&__tag {
+		display: flex;
+
+		& p {
+			margin: 0 auto 32px;
+			padding: 7px 16px;
+			border: 1px solid rgb(219, 219, 219);
+			border-radius: 40px;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 140%;
+			color: rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__title {
+		text-align: center;
+		width: calc(100% / 24 * 20);
+		margin: 0 auto 80px;
+	}
+
+	& .text_content {
+
+		& p:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__image {
+		position: relative;
+		margin-top: 80px;
+
+		&_content {
+			position: absolute;
+			padding: 60px 0;
+			width: calc(100% / 24 * 8);
+		}
+	}
+}
+
+// ORGAN
+
+.organ {
+	padding-top: 160px;
+	padding-bottom: 78px;
+
+	&__title {
+		margin-bottom: 64px;
+	}
+
+	& .about__desc {
+		margin-top: 0;
+
+		&_col {
+
+			&:last-child {
+				padding-right: 44px;
+			}
+		}
+	}
+}
+
+// AWARDS
+
+.awards {
+	padding-top: 83px;
+	padding-bottom: 86px;
+
+	&__slide {
+
+		&_top {
+			display: flex;
+			gap: 2rem;
+		}
+
+		&_date {
+			width: calc(100% / 8 * 3);
+		}
+
+		&_logo {
+			flex-grow: 1;
+			height: 160px;
+			display: flex;
+
+			& img {
+				// width: auto;
+				height: 100%;
+				object-fit: contain;
+				margin-left: auto;
+				object-position: right top;
+			}
+
+		}
+
+		&_preview {
+			width: 90%;
+		}
+	}
+}
+
+// NAVIGATION
+
+.navigation {
+	padding-top: 12px;
+	padding-bottom: 32px;
+
+	&__list {
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__item {
+		width: calc((100% - 64px) / 24 * 8);
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 64px;
+		border-top: 1px solid rgb(219, 219, 219);
+		border-bottom: 1px solid rgb(219, 219, 219);
+		transition: all .5s;
+		padding: 2rem 0;
+		position: relative;
+
+		& .btn {
+			margin-left: auto;
+		}
+
+		&:hover {
+			border-color: rgb(16, 16, 16);
+
+			& .btn {
+				background: var(--clr-black);
+
+				& svg path {
+					fill: var(--clr-white);
+				}
+			}
+		}
+
+		&_index {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			line-height: 0.6;
+			font-size: 10rem;
+			color: var(--clr-black-5);
 		}
 	}
 }

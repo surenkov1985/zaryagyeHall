@@ -35,19 +35,19 @@
 		font-size: 1.25rem;
 		margin-bottom: 1.25rem;
 	}
-	
+
 	.text_content p {
 		font-size: 1.25rem;
-	
+
 		&:not(:last-child) {
 			margin-bottom: 0.75rem;
 		}
 	}
-	
+
 	.text_content ul {
 		margin-top: 28px;
 	}
-	
+
 	.text_content li {
 		font-size: 1.25rem;
 	}
@@ -55,7 +55,7 @@
 	.desc_content p {
 		font-size: 1.25rem;
 		padding-left: 40px;
-		
+
 	}
 
 	.desc_content blockquote {
@@ -143,22 +143,24 @@
 			padding: 0;
 			width: 81px;
 			height: 81px;
-	
+
 			&:hover {
 				background: var(--clr-black-5);
 				backdrop-filter: var(--bg-filter-blur);
 				color: var(--clr-black);
-	
+
 				& svg path {
 					fill: var(--clr-black);
 				}
-	
+
 			}
-	
+
 			&_icon {
 				padding: 24px 42px;
 				font-size: 1.25rem;
-				width: auto;height: auto;gap: 16px;
+				width: auto;
+				height: auto;
+				gap: 16px;
 			}
 		}
 	}
@@ -249,7 +251,7 @@
 		transform: translateX(0);
 	}
 
-	input:checked + .slider:before {
+	input:checked+.slider:before {
 		transform: translateX(26px);
 	}
 
@@ -275,10 +277,14 @@
 		&__event-title {
 			margin-top: 72px;
 			margin-bottom: 58px;
-	  }
+		}
+
+		&__page-title {
+			width: 60%;
+		}
 	}
 
-.event {
+	.event {
 		padding-top: 24px;
 	}
 
@@ -287,13 +293,13 @@
 		padding-bottom: 150px;
 
 		&__nav {
-	
+
 			&_item {
-				padding:25px 28px 24px;
+				padding: 25px 28px 24px;
 				font-size: 1.25rem;
-	
+
 			}
-	
+
 			&_tools {
 				gap: 22px;
 			}
@@ -301,11 +307,11 @@
 
 		&__pagination {
 			gap: 74px;
-	
+
 			&_list {
 				gap: 26px;
 			}
-	
+
 			&_item {
 				padding: 7px;
 				font-size: 1.25rem;
@@ -313,11 +319,11 @@
 		}
 
 		&__filter {
-	
+
 			&.open {
 				border-top: 1px solid rgb(219, 219, 219);
 			}
-	
+
 			&_form {
 				padding: 1.5rem 0;
 			}
@@ -326,19 +332,19 @@
 
 	.filter {
 		&__form {
-	
+
 			&_fields {
 				display: flex;
 				flex-direction: column;
 			}
-	
+
 			&_field {
 				padding: 36px 0;
-	
+
 				& .title {
 					font-size: 1.25rem;
 				}
-	
+
 				&_cols {
 					display: flex;
 					align-items: flex-end;
@@ -346,7 +352,7 @@
 					flex-wrap: wrap;
 					// justify-content: space-between;
 				}
-	
+
 				&_col {
 					width: calc((100% - 52px) / 24 * 8);
 					height: auto;
@@ -360,28 +366,28 @@
 					}
 				}
 			}
-	
+
 			&_dropdown {
 				margin-top: 1rem;
-	
-				
+
+
 			}
-	
+
 			& .dropdown {
 				padding: 20px;
-	
+
 				&__value {
 					font-size: 1.25rem;
-				
+
 					& .values {
 						gap: 12px;
 					}
-	
+
 					& .value {
 						gap: 12px;
 						padding: 5px 20px;
 					}
-	
+
 					&>.icon {
 						display: flex;
 						width: 32px;
@@ -390,20 +396,20 @@
 						justify-content: center;
 					}
 				}
-	
+
 				&__list {
 					padding: 20px;
 					font-size: 1.25rem;
 				}
 			}
-	
+
 			&_slider {
 				gap: 20px;
 				font-size: 1.25rem;
 				padding: 25px 0;
 			}
 		}
-	
+
 		&__tags {
 			display: flex;
 			flex-wrap: wrap;
@@ -412,56 +418,57 @@
 			margin-top: 38px;
 		}
 	}
-	
+
 	.calendar {
-	
+
 		&__form {
-	
+
 			&_control {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				margin-bottom: 1.5rem;
 			}
-	
+
 			&_events {
 				display: flex;
 				align-items: center;
 				gap: 20px;
 			}
 		}
-	
+
 		&__months {
 			display: flex;
 			align-items: center;
 			width: 240px;
 			gap: 10px;
-	
+
 			&_slide {
 				text-align: center;
 			}
-	
-			& .swiper_prev, & .swiper_next {
+
+			& .swiper_prev,
+			& .swiper_next {
 				width: 24px;
 				height: 100%;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				cursor: pointer;
-	
+
 				& svg path {
 					transition: all .5s;
 				}
-	
+
 				&:hover {
-	
+
 					& svg path {
 						stroke-opacity: 0.4;
 					}
 				}
 			}
 		}
-	
+
 		&__weekdays {
 			width: 100%;
 			display: grid;
@@ -469,14 +476,14 @@
 			grid-template-columns: repeat(7, 1fr);
 			grid-gap: 1rem;
 		}
-	
+
 		&__days {
 			width: 100%;
 			display: grid;
 			grid-template-columns: repeat(7, 1fr);
 			grid-gap: 1.25rem 1rem;
 		}
-	
+
 		&__day {
 			padding-top: 1rem;
 			border-top: 1px solid rgb(219, 219, 219);
@@ -485,16 +492,16 @@
 			justify-content: space-between;
 			cursor: pointer;
 			transition: all .5s;
-	
+
 			&:hover {
 				color: var(--clr-black-40);
 			}
-	
+
 			&.no_events {
 				color: rgb(219, 219, 219);
 			}
-			
-	
+
+
 			& .events_num {
 				width: 40px;
 				height: 40px;
@@ -505,16 +512,16 @@
 				justify-content: center;
 				flex-shrink: 0;
 				transition: all .5s;
-	
+
 				&.active {
 					// background: var(--clr-black);
 					// color: var(--clr-white);
 				}
 			}
-	
-			& input:checked + .events_num {
+
+			& input:checked+.events_num {
 				background: var(--clr-black);
-					color: var(--clr-white);
+				color: var(--clr-white);
 			}
 		}
 	}
@@ -525,7 +532,7 @@
 		& .dropdown {
 			width: calc(100% - 64px) !important;
 
-			
+
 		}
 	}
 
@@ -555,15 +562,15 @@
 		font-size: 3.325rem;
 	}
 
-	
+
 	.text_content h6 {
 		font-size: 1.125rem;
 		margin-bottom: 1.125rem;
 	}
-	
+
 	.text_content p {
 		font-size: 1.125rem;
-	
+
 		&:not(:last-child) {
 			margin-bottom: 0.625rem;
 		}
@@ -572,7 +579,7 @@
 	.text_content ul {
 		margin-top: 24px;
 	}
-	
+
 	.text_content li {
 		font-size: 1.125rem;
 	}
@@ -580,7 +587,7 @@
 	.desc_content p {
 		font-size: 1.125rem;
 		padding-left: 32px;
-		
+
 	}
 
 	.desc_content blockquote {
@@ -683,8 +690,8 @@
 		&_filter {
 			width: 69px;
 			height: 69px;
-					padding: 0;
-	
+			padding: 0;
+
 			&_icon {
 				width: auto;
 				height: auto;
@@ -792,7 +799,7 @@
 		transform: translateX(0);
 	}
 
-	input:checked + .slider:before {
+	input:checked+.slider:before {
 		transform: translateX(24px);
 	}
 
@@ -818,14 +825,14 @@
 		&__event-title {
 			margin-top: 65px;
 			margin-bottom: 52px;
-	  }
+		}
 	}
 
 	.event {
 		padding-top: 16px;
 
 		& .h2 {
-		font-size: 3.25rem;
+			font-size: 3.25rem;
 		}
 	}
 
@@ -834,13 +841,13 @@
 		padding-bottom: 140px;
 
 		&__nav {
-	
+
 			&_item {
-				padding:23px 24px 21px;
+				padding: 23px 24px 21px;
 				font-size: 1.125rem;
-	
+
 			}
-	
+
 			&_tools {
 				gap: 22px;
 			}
@@ -848,25 +855,25 @@
 
 		&__pagination {
 			gap: 68px;
-	
+
 			&_list {
 				gap: 22px;
 			}
-	
+
 			&_item {
 				padding: 7px;
 				font-size: 1.125rem;
 			}
 		}
 
-		
+
 
 		&__filter {
-	
+
 			&.open {
 				border-top: 1px solid rgb(219, 219, 219);
 			}
-	
+
 			&_form {
 				padding: 1rem 0;
 			}
@@ -875,18 +882,18 @@
 
 	.filter {
 		&__form {
-	
+
 			&_field {
 				padding: 34px 0;
-	
+
 				& .title {
 					font-size: 1.125rem;
 				}
-	
+
 				&_cols {
 					gap: 24px;
 				}
-	
+
 				&_col {
 					width: calc((100% - 52px) / 24 * 8);
 					height: auto;
@@ -900,28 +907,28 @@
 					}
 				}
 			}
-	
+
 			&_dropdown {
 				margin-top: 1rem;
-	
-				
+
+
 			}
-	
+
 			& .dropdown {
 				padding: 18px;
-	
+
 				&__value {
 					font-size: 1.125rem;
-				
+
 					& .values {
 						gap: 10px;
 					}
-	
+
 					& .value {
 						gap: 10px;
 						padding: 5px 20px;
 					}
-	
+
 					&>.icon {
 						display: flex;
 						width: 24px;
@@ -930,20 +937,20 @@
 						justify-content: center;
 					}
 				}
-	
+
 				&__list {
 					padding: 18px;
 					font-size: 1.125rem;
 				}
 			}
-	
+
 			&_slider {
 				gap: 18px;
 				font-size: 1.125rem;
 				padding: 23px 0;
 			}
 		}
-	
+
 		&__tags {
 			display: flex;
 			flex-wrap: wrap;
@@ -983,15 +990,18 @@
 		font-size: 1.5rem;
 	}
 
-	
+	.section_pb_sm {
+		padding-bottom: 2rem !important;
+	}
+
 	.text_content h6 {
 		font-size: 1rem;
 		margin-bottom: 1rem;
 	}
-	
+
 	.text_content p {
 		font-size: 1rem;
-	
+
 		&:not(:last-child) {
 			margin-bottom: 0.5rem;
 		}
@@ -1000,10 +1010,10 @@
 	.text_content ul {
 		margin-top: 25px;
 	}
-	
+
 	.text_content li {
 		font-size: 1rem;
-	
+
 		&:not(:last-child) {
 			margin-bottom: 18px;
 		}
@@ -1050,6 +1060,11 @@
 		}
 	}
 
+	.numbers_l {
+		font-size: 5rem;
+
+	}
+
 	.numbers_xs {
 		font-size: 3rem;
 	}
@@ -1089,7 +1104,8 @@
 		padding-right: 0.75rem;
 	}
 
-	.info, .error {
+	.info,
+	.error {
 		font-size: 1rem;
 
 		& .icon {
@@ -1215,7 +1231,7 @@
 			width: 64px;
 			height: 64px;
 			padding: 0;
-	
+
 			&_icon {
 				width: auto;
 				height: auto;
@@ -1394,7 +1410,7 @@
 		transform: translateX(0);
 	}
 
-	input:checked + .slider:before {
+	input:checked+.slider:before {
 		transform: translateX(22px);
 	}
 
@@ -1413,17 +1429,18 @@
 				padding-bottom: 48px;
 			}
 		}
-		
+
 		&__date {
 
 			& .day {
 				font-size: 1rem !important;
 			}
 		}
+
 		&__event-title {
 			margin-top: 58px;
 			margin-bottom: 46px;
-	  }
+		}
 
 		& .container {
 			padding-top: 124px;
@@ -1431,7 +1448,7 @@
 		}
 
 		&__info {
-		margin-bottom: 49px;
+			margin-bottom: 49px;
 
 			&_tags {
 				margin-left: 0;
@@ -1444,11 +1461,11 @@
 
 				& .icon {
 
-				 & svg {
-					width: 12px;
-					height: 12px;
-				 }
-				 }
+					& svg {
+						width: 12px;
+						height: 12px;
+					}
+				}
 			}
 		}
 
@@ -1517,15 +1534,15 @@
 		padding-bottom: 22px;
 
 		& .h2 {
-		font-size: 3rem;
+			font-size: 3rem;
 		}
 
 		&__aside {
-		padding-top: 4px;
-		gap: 38px;
+			padding-top: 4px;
+			gap: 38px;
 
 			&_date {
-				padding-bottom: 34px;	
+				padding-bottom: 34px;
 
 				& .day {
 					font-size: 1rem !important;
@@ -1534,7 +1551,7 @@
 		}
 
 		&__share {
-			
+
 			&_title {
 				margin-bottom: 1.5rem;
 			}
@@ -1565,21 +1582,21 @@
 			&_row {
 				padding: 23px 0;
 			}
-			
+
 			&_col {
 				width: calc((100% - 12px) / 17* 10);
-		   }
+			}
 
 			&_item {
 
 				&:not(:last-child) {
 					padding-bottom: 1rem;
 				}
-	
+
 				&:last-child {
 					padding-top: 1rem;
 				}
-	
+
 				&:first-child {
 					padding-top: 0;
 				}
@@ -1590,10 +1607,7 @@
 			padding: 64px 0;
 		}
 
-		&__person {
-
-			
-		}
+		&__person {}
 	}
 
 	.accordion {
@@ -1688,13 +1702,13 @@
 		}
 
 		&__nav {
-	
+
 			&_item {
-				padding:20px 20px 22px;
+				padding: 20px 20px 22px;
 				font-size: 1rem;
-	
+
 			}
-	
+
 			&_tools {
 				gap: 16px;
 			}
@@ -1702,25 +1716,25 @@
 
 		&__pagination {
 			gap: 56px;
-	
+
 			&_list {
 				gap: 8px;
 			}
-	
+
 			&_item {
 				padding: 7px;
 				font-size: 1rem;
 			}
 		}
 
-		
+
 
 		&__filter {
-	
+
 			&.open {
 				border-top: none;
 			}
-	
+
 			&_form {
 				padding: 0;
 			}
@@ -1729,22 +1743,22 @@
 
 	.filter {
 		&__form {
-	
+
 			&_field {
 				padding: 32px 0;
 
 				&:last-child {
 					padding-bottom: 54px;
 				}
-	
+
 				& .title {
 					font-size: 1rem;
 				}
-	
+
 				&_cols {
 					gap: 24px;
 				}
-	
+
 				&_col {
 					width: calc((100% - 52px) / 24 * 8);
 					height: auto;
@@ -1758,28 +1772,28 @@
 					}
 				}
 			}
-	
+
 			&_dropdown {
 				margin-top: 1rem;
-	
-				
+
+
 			}
-	
+
 			& .dropdown {
 				padding: 16px;
-	
+
 				&__value {
 					font-size: 1rem;
-				
+
 					& .values {
 						gap: 10px;
 					}
-	
+
 					& .value {
 						gap: 10px;
 						padding: 5px 20px;
 					}
-	
+
 					&>.icon {
 						display: flex;
 						width: 24px;
@@ -1792,20 +1806,20 @@
 						}
 					}
 				}
-	
+
 				&__list {
 					padding: 16px;
 					font-size: 1rem;
 				}
 			}
-	
+
 			&_slider {
 				gap: 16px;
 				font-size: 1rem;
 				padding: 23px 0;
 			}
 		}
-	
+
 		&__tags {
 			display: flex;
 			flex-wrap: wrap;
@@ -1904,7 +1918,7 @@
 			margin-top: 1.5rem;
 		}
 
-		&__list  {
+		&__list {
 			& .news__slide {
 				padding: 1.5rem 0 2.375rem;
 			}
@@ -1925,8 +1939,9 @@
 		}
 
 		&__nums {
-			transform: translateY(-46%);
+			transform: translateY(40%);
 			padding: 51px 48px 0;
+			left: -48px;
 
 			&_item {
 				gap: 36px;
@@ -1938,6 +1953,23 @@
 
 			&_text {
 				width: 100px;
+			}
+		}
+
+		&__desc {
+			margin-top: 120px;
+			padding: 40px 0;
+			gap: 24px;
+
+			&_num {
+				padding: 40px 0;
+			}
+
+			&_text {
+
+				& p:not(:last-child) {
+					margin-bottom: 2.5rem;
+				}
 			}
 		}
 	}
@@ -1999,6 +2031,72 @@
 	.pagination {
 		&_tabs {
 			bottom: 40px !important;
+		}
+	}
+
+	.description {
+
+		& .festival {
+
+			&__desc {
+				padding: 56px 0 48px;
+
+				&_title {
+					width: calc((100% - 32px) / 24* 19);
+					gap: 40px;
+					margin-bottom: 42px;
+				}
+
+				&_text {
+					padding-right: 48px;
+					line-height: 1.6;
+				}
+			}
+		}
+
+		&__sliders {
+			margin-top: 0;
+		}
+	}
+
+	.history {
+		padding-top: 115px;
+
+		&__sliders {
+			gap: 2.5rem 1.5rem;
+		}
+
+		&__images {
+			&_slider {
+				width: calc((100% - 24px) / 24* 12);
+			}
+		}
+
+		&__desc {
+			width: calc((100% - 24px) / 24* 12);
+
+			&_slide {
+				padding: 40px 76px 24px 0;
+
+				&_content {
+					width: 80%;
+
+					& p:not(:last-child) {
+						margin-bottom: 2rem;
+					}
+				}
+			}
+
+			&_title {
+				margin-bottom: 162px;
+			}
+		}
+
+		&__dates {
+
+			&_slide {
+				padding-top: 14px;
+			}
 		}
 	}
 }
