@@ -25,6 +25,15 @@
 		margin: 0 auto;
 	}
 
+	&__page-subtitle {
+		font-size: 1.625rem;
+		line-height: 1.4;
+		margin-top: 56px;
+		width: calc(100% / 15 * 10);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	&__event-title {
 		display: flex;
 		align-items: baseline;
@@ -1127,6 +1136,10 @@
 		&_text {
 			width: calc((100% - 32px) / 24 * 12);
 			margin-left: auto;
+		}
+
+		&_more {
+			margin-top: 56px;
 		}
 	}
 }

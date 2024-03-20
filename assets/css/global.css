@@ -541,6 +541,27 @@ label.label_radio {
   color: var(--clr-black-40);
 }
 
+.download-link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.download-link .text {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.download-link:hover .btn {
+  background: var(--clr-black);
+}
+.download-link:hover .btn svg path {
+  stroke: var(--clr-white);
+  fill: none;
+}
+.download-link:hover .text {
+  color: var(--clr-black-40);
+}
+
 .info {
   display: flex;
   align-items: center;

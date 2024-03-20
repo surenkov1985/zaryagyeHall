@@ -19,6 +19,14 @@
   text-align: center;
   margin: 0 auto;
 }
+.fs__page-subtitle {
+  font-size: 1.625rem;
+  line-height: 1.4;
+  margin-top: 56px;
+  width: 66.6666666667%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .fs__event-title {
   display: flex;
   align-items: baseline;
@@ -858,6 +866,9 @@
 .festival__desc_text {
   width: calc((100% - 32px) / 24 * 12);
   margin-left: auto;
+}
+.festival__desc_more {
+  margin-top: 56px;
 }
 
 .event {

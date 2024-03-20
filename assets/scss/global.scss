@@ -699,6 +699,34 @@ label {
 	}
 }
 
+.download-link {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+
+	& .text {
+		display: flex;
+		flex-direction: column;
+		transition: all 0.5s;
+	}
+
+	&:hover {
+
+		& .btn {
+			background: var(--clr-black);
+
+			& svg path {
+				stroke: var(--clr-white);
+				fill: none;
+			}
+		}
+
+		& .text {
+			color: var(--clr-black-40);
+		}
+	}
+}
+
 .info {
 	display: flex;
 	align-items: center;
