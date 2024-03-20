@@ -15,7 +15,7 @@
 }
 .fs__page-title {
   text-align: center;
-  width: 54.1666666667%;
+  width: 62.5%;
   text-align: center;
   margin: 0 auto;
 }
@@ -1446,6 +1446,8 @@
 }
 .description__slide {
   height: auto;
+  overflow: hidden;
+  isolation: isolate;
 }
 .description__slide img {
   width: 100%;
@@ -1682,6 +1684,14 @@
 }
 .history__dates {
   width: 100%;
+  position: relative;
+}
+.history__dates .swiper-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 .history__dates_slider {
   overflow: hidden;
@@ -1735,6 +1745,11 @@
   padding: 60px 0;
   width: 33.3333333333%;
 }
+.mission__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .organ {
   padding-top: 160px;
@@ -1779,7 +1794,7 @@
 }
 
 .navigation {
-  padding-top: 12px;
+  padding-top: 132px;
   padding-bottom: 32px;
 }
 .navigation__list {

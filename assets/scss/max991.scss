@@ -235,10 +235,14 @@
 		&_index {
 			max-height: 1080px;
 		}
-		
+
 		&__event-title {
-		flex-direction: column;
-		gap: 2rem;
+			flex-direction: column;
+			gap: 2rem;
+		}
+
+		&__page-title {
+			width: calc(100% / 12 * 10);
 		}
 
 		&__info {
@@ -286,7 +290,7 @@
 		}
 
 		&__share {
-		margin-left: auto;
+			margin-left: auto;
 
 			&_title {
 				display: none;
@@ -312,7 +316,7 @@
 		&__section {
 
 			&_col {
-				width: calc(100% / 12 * 7);	
+				width: calc(100% / 12 * 7);
 			}
 		}
 	}
@@ -321,7 +325,7 @@
 
 		&__content {
 
-			&_desc{
+			&_desc {
 				padding-top: 32px;
 			}
 
@@ -453,7 +457,7 @@
 			margin-bottom: 2.5rem;
 		}
 
-		&__list  {
+		&__list {
 			grid-gap: 8px;
 			// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 			// & .news__slide {
@@ -464,48 +468,48 @@
 
 	.festival {
 		margin-bottom: 36px;
-	
+
 		&__slider {
 			position: relative;
-	
+
 			& .swiper-nav {
 				position: absolute;
 				right: 24px;
 				bottom: 32px;
 				z-index: 10;
-	
+
 				& .btn_slider {
 					background: var(--clr-white-20);
-	
+
 					& svg path {
 						stroke: var(--clr-white);
 					}
-	
+
 					&:hover {
 						background: var(--clr-white-10);
 					}
 				}
 			}
-	
+
 			& .swiper-pagination {
 				position: absolute;
 				margin-top: 1.375rem;
 				visibility: hidden;
 			}
 		}
-	
+
 		&__slide {
-	
+
 			& img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
 		}
-	
+
 		&__desc {
 			padding: 56px 0 48px;
-	
+
 			&_title {
 				display: flex;
 				flex-direction: column;
@@ -515,9 +519,11 @@
 				gap: 36px;
 				margin: 0 auto 36px;
 			}
-	
+
 			&_text {
-				width: calc((100% - 32px) / 24 * 13);
+				// width: calc((100% - 32px) / 24 * 13);
+				margin-left: 0;
+				width: calc(100% / 12 * 9);
 				margin-left: auto;
 			}
 		}
@@ -570,6 +576,35 @@
 				}
 			}
 		}
+
+		&__desc {
+			margin-top: 96px;
+			flex-direction: column-reverse;
+			gap: 32px;
+			padding: 32px 0;
+
+			&_col {
+				width: 100%;
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+
+			&_num {
+				padding: 32px 0;
+
+				&:first-child {
+					border-top: 1px solid rgb(219, 219, 219);
+					padding-top: 32px;
+				}
+			}
+
+			&_img {
+				width: 100%;
+				margin-top: 42px;
+			}
+		}
 	}
 
 	.location {
@@ -608,4 +643,75 @@
 			}
 		}
 	}
+
+	.description {
+
+		& .festival {
+
+			&__desc {
+				padding: 40px 0;
+
+				&_title {
+					width: calc(100% / 12 * 10);
+					margin-bottom: 32px;
+				}
+
+				&_text {
+					margin-left: 0;
+					width: calc(100% / 12 * 9);
+				}
+			}
+		}
+	}
+
+	.history {
+		padding-top: 86px;
+
+		&__sliders {
+			gap: 2rem;
+		}
+
+		&__desc {
+			width: 100%;
+		}
+
+		&__images {
+
+			&_slider {
+				width: 100%;
+				order: -1;
+			}
+		}
+	}
+
+	.mission {
+
+		& .festival {
+			padding: 40px 0;
+
+			&_title {
+				width: calc(100% / 12 * 10);
+				margin-bottom: 32px;
+			}
+
+			&__desc {
+
+				&_text {
+					margin-left: 0;
+					width: calc(100% / 12 * 9);
+				}
+			}
+		}
+
+		&__image {
+
+			&_content {
+				position: relative;
+				padding-top: 24px;
+				width: calc(100% / 12 * 9);
+			}
+		}
+	}
+
+	.organ {}
 }

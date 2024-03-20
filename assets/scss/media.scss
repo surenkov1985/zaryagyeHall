@@ -994,6 +994,10 @@
 		padding-bottom: 2rem !important;
 	}
 
+	.section_pb_l {
+		padding-bottom: 6.5rem !important;
+	}
+
 	.text_content h6 {
 		font-size: 1rem;
 		margin-bottom: 1rem;
@@ -1016,6 +1020,13 @@
 
 		&:not(:last-child) {
 			margin-bottom: 18px;
+		}
+	}
+
+	.about {
+
+		&.section_pt_sm {
+			padding-top: 0.5rem !important;
 		}
 	}
 
@@ -1896,6 +1907,10 @@
 		padding-top: 160px;
 		padding-bottom: 160px;
 
+		&.section_pt_sm {
+			padding-top: 1rem;
+		}
+
 		&__title {
 			margin-bottom: 3rem;
 		}
@@ -1939,7 +1954,7 @@
 		}
 
 		&__nums {
-			transform: translateY(40%);
+			transform: translateY(55%);
 			padding: 51px 48px 0;
 			left: -48px;
 
@@ -1957,7 +1972,7 @@
 		}
 
 		&__desc {
-			margin-top: 120px;
+			margin-top: 144px;
 			padding: 40px 0;
 			gap: 24px;
 
@@ -2055,7 +2070,7 @@
 		}
 
 		&__sliders {
-			margin-top: 0;
+			margin-top: 14px;
 		}
 	}
 
@@ -2063,7 +2078,7 @@
 		padding-top: 115px;
 
 		&__sliders {
-			gap: 2.5rem 1.5rem;
+			gap: 2.375rem 1.5rem;
 		}
 
 		&__images {
@@ -2096,6 +2111,93 @@
 
 			&_slide {
 				padding-top: 14px;
+			}
+		}
+	}
+
+	.mission {
+		padding-top: 42px;
+		padding-bottom: 96px;
+
+		&__tag {
+
+			& p {
+				font-size: 14px;
+				padding: 5px 14px;
+				line-height: 1.4;
+				margin-bottom: 25px;
+			}
+		}
+
+		&__title {
+			width: calc(100% / 24 * 22);
+			margin-bottom: 57px;
+		}
+
+		& .festival {
+			&__desc {
+
+				&_text {
+					width: calc((100% - 24px) / 24* 12);
+					padding-right: 16px;
+
+					& mark {
+						line-height: 1.6;
+					}
+				}
+			}
+		}
+
+		&__image {
+			margin-top: 56px;
+
+			&_content {
+				padding: 48px 0;
+
+				& p:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+			}
+
+			& img {
+				width: 693px;
+			}
+		}
+	}
+
+	.organ {
+		padding-top: 120px;
+		padding-bottom: 56px;
+
+		&__title {
+			margin-bottom: 44px;
+		}
+
+		& .about__desc_col:last-child {
+			padding-right: 32px;
+		}
+	}
+
+	.awards {
+		padding-top: 64px;
+		padding-bottom: 12px;
+	}
+
+	.navigation {
+		padding-bottom: 16px;
+		padding-top: 102px;
+
+		&__list {
+			gap: 1.5rem;
+		}
+
+		&__item {
+			padding: 1.5rem 0;
+			width: calc((100% - 32px) / 24* 8);
+			gap: 48px;
+
+			&_index {
+				font-size: 7.5rem;
 			}
 		}
 	}

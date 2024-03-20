@@ -523,8 +523,14 @@
     font-size: 1.375rem;
     padding: 27px 62px;
   }
+  .numbers_l {
+    line-height: 1.3;
+  }
   .about {
     padding-bottom: 112px;
+  }
+  .about.section_pt_sm {
+    padding-top: 1rem !important;
   }
   .about__title {
     flex-direction: column;
@@ -557,6 +563,27 @@
   }
   .about__nums_item .numbers {
     line-height: 0.8;
+  }
+  .about__desc {
+    margin-top: 52px;
+  }
+  .about__desc_text {
+    width: 74%;
+  }
+  .about__desc_text p {
+    line-height: 1.6;
+  }
+  .about__desc_text p:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .about__desc_num {
+    padding: 24px 0;
+  }
+  .about__desc_num:first-child {
+    padding-top: 24px;
+  }
+  .about__desc_img {
+    height: 376px;
   }
   .location {
     min-height: 812px;
@@ -623,6 +650,136 @@
     opacity: 1 !important;
     visibility: visible !important;
     order: 2;
+  }
+  .description .festival__desc {
+    padding: 24px 0;
+  }
+  .description .festival__desc_title {
+    gap: 32px;
+  }
+  .description .festival__desc_title .h2 {
+    font-size: 4rem;
+  }
+  .description .festival__desc_text {
+    padding-right: 0;
+  }
+  .description .festival__desc_text p {
+    line-height: 1.6;
+  }
+  .description__sliders {
+    margin-top: 18px;
+  }
+  .description__slider_control {
+    margin-top: 22px;
+  }
+  .history {
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+  .history__images_slider {
+    height: 450px;
+  }
+  .history__desc_slide {
+    padding: 40px 56px 0 0;
+  }
+  .history__desc_slide_content {
+    width: 77%;
+  }
+  .history__desc_slide_content mark {
+    line-height: 1.6;
+  }
+  .history__desc_title {
+    margin-bottom: 42px;
+  }
+  .history__desc .swiper-nav {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .history__dates .swiper-nav {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+  }
+  .history__dates_slide {
+    padding-top: 42px;
+  }
+  .history__dates_slide .news__slide_date {
+    margin-bottom: 0;
+  }
+  .mission {
+    padding-top: 56px;
+    padding-bottom: 84px;
+  }
+  .mission__tag p {
+    margin-bottom: 22px;
+  }
+  .mission .text_content p {
+    line-height: 1.6;
+  }
+  .mission .text_content p:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  .mission__image {
+    margin-top: 42px;
+  }
+  .mission__image_content.text_content p {
+    line-height: 1.4;
+  }
+  .mission__image_content.text_content p:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+  .organ {
+    padding-top: 45px;
+  }
+  .organ__title {
+    margin-bottom: 48px;
+  }
+  .organ .about__desc {
+    padding: 40px 0 0;
+  }
+  .organ .about__desc_text {
+    width: 90%;
+  }
+  .organ .about__desc_more {
+    margin-top: 24px;
+  }
+  .organ .about__desc_col:last-child {
+    padding-right: 0;
+  }
+  .organ .about__desc_num {
+    padding: 28px 0;
+  }
+  .organ .about__desc_num:first-child {
+    padding-top: 0;
+  }
+  .organ .about__desc_num .numbers_l {
+    line-height: 1.1;
+  }
+  .awards .news__slide {
+    gap: 26px;
+  }
+  .awards__slide_logo {
+    height: 120px;
+  }
+  .section_pb_l {
+    padding-bottom: 0.5rem !important;
+  }
+  .navigation {
+    padding-bottom: 22px;
+    padding-top: 110px;
+  }
+  .navigation__list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .navigation__item {
+    width: 100%;
+    gap: 10px;
+    padding: 25px 0;
+  }
+  .navigation__item_index {
+    line-height: 0.6;
   }
 }
 @media (max-width: 700px) {

@@ -650,6 +650,9 @@
   .section_pb_sm {
     padding-bottom: 2rem !important;
   }
+  .section_pb_l {
+    padding-bottom: 6.5rem !important;
+  }
   .text_content h6 {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -668,6 +671,9 @@
   }
   .text_content li:not(:last-child) {
     margin-bottom: 18px;
+  }
+  .about.section_pt_sm {
+    padding-top: 0.5rem !important;
   }
   .desc_content p {
     font-size: 1rem;
@@ -1249,6 +1255,9 @@
     padding-top: 160px;
     padding-bottom: 160px;
   }
+  .news.section_pt_sm {
+    padding-top: 1rem;
+  }
   .news__title {
     margin-bottom: 3rem;
   }
@@ -1281,7 +1290,7 @@
     width: calc((100% - 50px) / 24 * 8);
   }
   .about__nums {
-    transform: translateY(40%);
+    transform: translateY(55%);
     padding: 51px 48px 0;
     left: -48px;
   }
@@ -1295,7 +1304,7 @@
     width: 100px;
   }
   .about__desc {
-    margin-top: 120px;
+    margin-top: 144px;
     padding: 40px 0;
     gap: 24px;
   }
@@ -1360,13 +1369,13 @@
     line-height: 1.6;
   }
   .description__sliders {
-    margin-top: 0;
+    margin-top: 14px;
   }
   .history {
     padding-top: 115px;
   }
   .history__sliders {
-    gap: 2.5rem 1.5rem;
+    gap: 2.375rem 1.5rem;
   }
   .history__images_slider {
     width: calc((100% - 24px) / 24 * 12);
@@ -1388,5 +1397,67 @@
   }
   .history__dates_slide {
     padding-top: 14px;
+  }
+  .mission {
+    padding-top: 42px;
+    padding-bottom: 96px;
+  }
+  .mission__tag p {
+    font-size: 14px;
+    padding: 5px 14px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+  .mission__title {
+    width: 91.6666666667%;
+    margin-bottom: 57px;
+  }
+  .mission .festival__desc_text {
+    width: calc((100% - 24px) / 24 * 12);
+    padding-right: 16px;
+  }
+  .mission .festival__desc_text mark {
+    line-height: 1.6;
+  }
+  .mission__image {
+    margin-top: 56px;
+  }
+  .mission__image_content {
+    padding: 48px 0;
+  }
+  .mission__image_content p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .mission__image img {
+    width: 693px;
+  }
+  .organ {
+    padding-top: 120px;
+    padding-bottom: 56px;
+  }
+  .organ__title {
+    margin-bottom: 44px;
+  }
+  .organ .about__desc_col:last-child {
+    padding-right: 32px;
+  }
+  .awards {
+    padding-top: 64px;
+    padding-bottom: 12px;
+  }
+  .navigation {
+    padding-bottom: 16px;
+    padding-top: 102px;
+  }
+  .navigation__list {
+    gap: 1.5rem;
+  }
+  .navigation__item {
+    padding: 1.5rem 0;
+    width: calc((100% - 32px) / 24 * 8);
+    gap: 48px;
+  }
+  .navigation__item_index {
+    font-size: 7.5rem;
   }
 }

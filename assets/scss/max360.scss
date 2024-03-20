@@ -35,10 +35,10 @@
 		font-size: 0.875rem;
 		margin-bottom: 0.875rem;
 	}
-	
+
 	.text_content p {
 		font-size: 0.875rem;
-	
+
 		&:not(:last-child) {
 			margin-bottom: 0.75rem;
 		}
@@ -47,11 +47,11 @@
 	.text_content ul {
 		margin-top: 22px;
 	}
-	
+
 	.text_content li {
 		font-size: 0.875rem;
 		line-height: 1.45;
-	
+
 		&:not(:last-child) {
 			margin-bottom: 16px;
 		}
@@ -89,7 +89,10 @@
 		font-size: 1.75rem;
 	}
 
-	
+	.numbers_l {
+		font-size: 2.5rem;
+	}
+
 	.numbers_sm {
 		font-size: 2rem;
 	}
@@ -189,7 +192,8 @@
 		font-size: 0.875rem;
 	}
 
-	.info, .error {
+	.info,
+	.error {
 		font-size: 0.75rem;
 
 		& .icon {
@@ -202,13 +206,14 @@
 			}
 		}
 	}
+
 	label {
 		font-size: 0.875rem;
 	}
 
 	.section_pt_sm {
 		padding-top: 1.5rem !important;
-  }
+	}
 
 	.section {
 		padding-left: 16px;
@@ -491,7 +496,7 @@
 				padding-top: 130px;
 			}
 		}
-		
+
 		& .container {
 			padding-top: 137px;
 			padding-bottom: 4px;
@@ -520,7 +525,7 @@
 			}
 
 			&_tags {
-				gap: 16px 6px	;
+				gap: 16px 6px;
 			}
 
 			&_time {
@@ -629,11 +634,11 @@
 				&:not(:last-child) {
 					padding-bottom: 0.625rem;
 				}
-	
+
 				&:last-child {
 					padding-top: 0.625rem;
 				}
-	
+
 				&:first-child {
 					padding-top: 0;
 				}
@@ -712,22 +717,22 @@
 
 		&__item {
 			padding-top: 24px;
-			padding-bottom: 24px; 
+			padding-bottom: 24px;
 
-				&:first-child {
-					padding-top: 0;
-				}
+			&:first-child {
+				padding-top: 0;
+			}
 
-				&:last-child {
-					padding-bottom: 0;
-				}
-			
+			&:last-child {
+				padding-bottom: 0;
+			}
+
 
 			&_top {
 				height: auto;
 				flex-direction: column;
 				// gap: 24px;
-				
+
 			}
 
 			&_preview {
@@ -793,6 +798,7 @@
 
 			&_field {
 				padding: 20px 0;
+
 				& .title {
 					font-size: 0.875rem;
 				}
@@ -805,13 +811,15 @@
 					justify-content: center;
 					padding: 16px 32px;
 					width: 100%;
-			  }
-			  &:last-child {
-				display: flex;flex-direction: column;
-				gap: 0.875rem;
-				padding-bottom: 24px;
-			  }
-				
+				}
+
+				&:last-child {
+					display: flex;
+					flex-direction: column;
+					gap: 0.875rem;
+					padding-bottom: 24px;
+				}
+
 			}
 
 			&_submit {
@@ -870,7 +878,7 @@
 		}
 
 		&__weekdays {
-			padding: 1rem 0 0.5rem; 
+			padding: 1rem 0 0.5rem;
 		}
 
 		&__days {
@@ -911,7 +919,7 @@
 		&__slide {
 			padding: 40px 16px;
 			gap: 32px;
-			
+
 			&_title {
 				width: calc(100% / 12 * 9);
 			}
@@ -928,6 +936,7 @@
 				}
 			}
 		}
+
 		& .dropdown {
 			width: calc(100% - 32px) !important;
 			bottom: 16px !important;
@@ -973,6 +982,7 @@
 		&__more {
 			justify-content: center;
 			margin-top: 2.5rem;
+
 			& .btn {
 				font-size: .875rem;
 				padding: 18px 28px;
@@ -988,6 +998,10 @@
 			width: 100%;
 		}
 
+		&.section_pt_sm {
+			padding-top: 2.25rem !important;
+		}
+
 		&__title {
 			gap: 1.375rem;
 			margin-bottom: 25px;
@@ -996,6 +1010,7 @@
 		&__subtitle {
 			width: 100%;
 			font-size: 18px;
+
 			& p {
 				width: 100%;
 			}
@@ -1016,7 +1031,7 @@
 
 				&:nth-child(2n) {
 					width: calc((100% - 8px) / 12 * 6);
-			  }
+				}
 
 				& .numbers {
 					position: absolute;
@@ -1029,10 +1044,28 @@
 				}
 			}
 		}
+
+		&__desc {
+			margin-top: 76px;
+			gap: 16px;
+
+			&_text {
+				width: 100%;
+			}
+
+			&_img {
+
+				height: 172px;
+				margin-top: 32px;
+
+			}
+
+		}
 	}
 
 	.location {
 		min-height: 630px;
+
 		&__content {
 			padding: 56px 0;
 
@@ -1062,7 +1095,7 @@
 			&_navigation {
 				// left: 2%;
 				left: 18%;
-    			width: 70%;
+				width: 70%;
 			}
 
 			&_btn {
@@ -1091,9 +1124,236 @@
 					right: calc(100% + 33px);
 					bottom: calc(100% + 25px);
 					font-size: 0.875rem;
-					
+
 				}
 			}
+		}
+	}
+
+	.festival {
+
+		&__desc {
+
+			&_title {
+
+				& .h2 {
+					font-size: 2rem !important;
+				}
+			}
+		}
+	}
+
+	.description {
+
+		&.section_pt_sm {
+			padding-top: 1rem !important;
+		}
+
+		& .festival {
+
+			&__desc {
+				padding: 16px 0;
+
+				&_title {
+					margin-bottom: 24px;
+				}
+			}
+		}
+
+		&__sliders {
+			margin-top: 12px;
+		}
+
+		&__slider {
+
+			&_control {
+				margin-top: 24px;
+			}
+		}
+
+		&__slide {
+			max-height: 246px;
+		}
+	}
+
+	.history {
+		padding-top: 64px;
+		padding-bottom: 32px;
+
+		&__sliders {
+			gap: 1.5rem;
+		}
+
+		&__images {
+
+			&_slider {
+				height: 206px;
+			}
+		}
+
+		&__desc {
+
+			&_title {
+				margin-bottom: 32px;
+			}
+
+			&_slide {
+				padding: 32px 0 10px;
+
+				&_content {
+
+					& p:not(:last-child) {
+						margin-bottom: 1.25rem;
+					}
+
+					& mark {
+						font-size: 0.875rem;
+						line-height: 1.4;
+					}
+				}
+			}
+		}
+
+		&__dates {
+
+			&_slide {
+				padding-top: 28px;
+			}
+		}
+	}
+
+	.mission {
+		padding-top: 52px;
+		padding-bottom: 64px;
+
+		& .h2 {
+			font-size: 2rem;
+		}
+
+		&__tag {
+
+			& p {
+				font-size: 12px;
+				padding: 3px 8px;
+				margin-bottom: 16px;
+			}
+		}
+
+		& .text_content p {
+			line-height: 1.4;
+		}
+
+		& .festival {
+
+			&__desc {
+
+				&_text {
+
+					& mark {
+						line-height: 1.4;
+						font-size: 0.875rem;
+					}
+				}
+			}
+		}
+
+		&__image {
+			margin-top: 46px;
+
+			&_content {
+				width: 100%;
+				padding-bottom: 46px;
+			}
+
+			& mark {
+				font-size: 0.875rem;
+			}
+
+			& img {
+				height: 273px;
+			}
+		}
+	}
+
+	.organ {
+		padding-top: 40px;
+		padding-bottom: 32px;
+
+		& .h2 {
+			font-size: 2rem;
+		}
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		& .about {
+
+			&__desc {
+				padding: 32px 0 0;
+
+				&_text {
+					width: 100%;
+				}
+
+				&_img {
+					h172px {
+						margin-top: 32px;
+					}
+				}
+
+				&_num {
+					padding: 11px 0;
+
+					& .numbers_l {
+						line-height: 1.6;
+					}
+				}
+			}
+		}
+	}
+
+	.awards {
+		padding-top: 44px;
+		padding-bottom: 44px;
+
+		& .swiper-nav {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		& .h2 {
+			font-size: 2rem;
+		}
+
+		& .news__slide {
+			padding-top: 1.5rem;
+			gap: 4px;
+			padding-bottom: 0.5rem;
+		}
+
+		&__slide {
+
+			&_top {
+				flex-direction: column;
+				gap: 4px;
+			}
+
+			&_logo {
+
+				& img {
+					margin-right: auto;
+				}
+			}
+		}
+	}
+
+	.navigation {
+		padding-top: 70px;
+		padding-bottom: 32px;
+
+		&__item {
+			padding: 14px 0;
 		}
 	}
 }
@@ -1138,7 +1398,7 @@
 		&__slide {
 			padding: 40px 16px;
 			gap: 32px;
-			
+
 			&_title {
 				width: calc(100% / 12 * 9);
 			}
@@ -1156,11 +1416,12 @@
 			}
 		}
 
-		
+
 	}
 
 	.location {
 		min-height: 630px;
+
 		&__content {
 			padding: 56px 0;
 
@@ -1190,7 +1451,7 @@
 			&_navigation {
 				// left: 2%;
 				left: 18%;
-    			width: 70%;
+				width: 70%;
 			}
 
 			&_btn {
@@ -1219,7 +1480,7 @@
 					right: calc(100% + 16px);
 					bottom: calc(100% + 25px);
 					font-size: 0.875rem;
-					
+
 				}
 			}
 		}

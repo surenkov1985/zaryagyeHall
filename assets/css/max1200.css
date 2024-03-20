@@ -204,6 +204,9 @@
     padding-top: 120px;
     padding-bottom: 36px;
   }
+  .fs__page-title {
+    width: 75%;
+  }
   .fs .container {
     padding-top: 120px;
     padding-bottom: 36px;
@@ -422,7 +425,7 @@
     width: calc((100% - 50px) / 24 * 8);
   }
   .about__nums {
-    transform: translateY(-46%);
+    transform: translateY(60%);
     padding: 51px 32px 0;
     width: 85%;
     gap: 24px;
@@ -474,5 +477,37 @@
   }
   .pagination_tabs {
     bottom: 40px !important;
+  }
+  .description .festival__desc {
+    padding: 42px 0;
+  }
+  .description .festival__desc_title {
+    width: calc((100% - 32px) / 24 * 21);
+  }
+  .history {
+    padding-top: 92px;
+    padding-bottom: 32px;
+  }
+  .history__sliders {
+    gap: 2rem 1rem;
+  }
+  .history__desc {
+    width: calc((100% - 16px) / 24 * 12);
+  }
+  .history__desc_slide {
+    padding: 24px 56px 16px 0;
+  }
+  .history__desc_slide_content {
+    width: 90%;
+  }
+  .history__desc_title {
+    margin-bottom: 76px;
+  }
+  .mission__title {
+    margin-bottom: 48px;
+  }
+  .organ {
+    padding-top: 80px;
+    padding-bottom: 48px;
   }
 }

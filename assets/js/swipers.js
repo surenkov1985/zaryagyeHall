@@ -191,7 +191,7 @@ function newsSlider() {
 			prevEl: ".news .swiper-prev-btn",
 		},
 		pagination: {
-			el: ".news__content .swiper-pagination",
+			el: ".news .swiper-pagination",
 			type: "bullets",
 		},
 		breakpoints: {
@@ -328,13 +328,40 @@ function descSlider() {
 	if (!desc) return;
 
 	const descSlider = new Swiper(desc, {
-		slidesPerView: 4,
+		slidesPerView: 1,
 		slidesPerGroup: 1,
-		spaceBetween: 25,
+		spaceBetween: 16,
 		speed: 1000,
 		navigation: {
 			prevEl: ".description__slider_control .swiper-prev-btn",
 			nextEl: ".description__slider_control .swiper-next-btn",
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+			},
+			576: {
+				slidesPerView: 2,
+				slidesPerGroup: 1,
+				spaceBetween: 4,
+			},
+			767: {
+				slidesPerView: 3,
+				slidesPerGroup: 1,
+				spaceBetween: 4,
+			},
+			991: {
+				slidesPerView: 3,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+			},
+			1440: {
+				slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 25,
+			},
 		},
 	});
 
@@ -375,15 +402,28 @@ function historySliders() {
 		dates = history.querySelector(".history__dates_slider");
 
 	let datesSlider = new Swiper(dates, {
-		slidesPerView: 6,
-		// slidesPerGroup: 1,
 		speed: 1000,
-		spaceBetween: 32,
+		slidesPerView: 1,
+		spaceBetween: 4,
 		// navigation: {
 		// 	prevEl: ".history__sliders .swiper-prev-btn",
 		// 	nextEl: ".history__sliders .swiper-next-btn",
 		// },
 		watchSlidesProgress: true,
+		breakpoints: {
+			320: { slidesPerView: 1, spaceBetween: 4 },
+			576: { slidesPerView: 1, spaceBetween: 4 },
+			769: {
+				slidesPerView: 3,
+				spaceBetween: 4,
+			},
+			991: { slidesPerView: 4, spaceBetween: 8 },
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+			},
+			1441: { slidesPerView: 6, spaceBetween: 32 },
+		},
 	});
 
 	let imagesSlider = new Swiper(images, {
@@ -431,21 +471,21 @@ function awardaSlider() {
 			prevEl: ".awards .swiper-prev-btn",
 		},
 		pagination: {
-			el: ".news__content .swiper-pagination",
+			el: ".awards .swiper-pagination",
 			type: "bullets",
 		},
 		breakpoints: {
 			576: {
 				slidesPerView: 2,
-				spaceBetween: 4,
+				spaceBetween: 24,
 			},
 			769: {
 				slidesPerView: 2,
-				spaceBetween: 8,
+				spaceBetween: 24,
 			},
 			991: {
 				slidesPerView: 3,
-				spaceBetween: 12,
+				spaceBetween: 24,
 			},
 			1200: {
 				slidesPerView: 3,

@@ -1,30 +1,30 @@
 @media (max-width: 1300px) {
 
-// 	.fs {
+	// 	.fs {
 
-// 		&__title {
-// 			width: calc((100% - 12px) / 24 * 16);
-// 		}
+	// 		&__title {
+	// 			width: calc((100% - 12px) / 24 * 16);
+	// 		}
 
-// 		&__info {
+	// 		&__info {
 
-// 			&_left {
-// 				width: calc((100% - 12px) / 24 * 16);
-// 			}
-// 		}
-// 	}
+	// 			&_left {
+	// 				width: calc((100% - 12px) / 24 * 16);
+	// 			}
+	// 		}
+	// 	}
 
-// 	.event {
+	// 	.event {
 
-// 		&__aside {
-// 			width: calc((100% - 105px) / 12* 4);
+	// 		&__aside {
+	// 			width: calc((100% - 105px) / 12* 4);
 
-// 		}
+	// 		}
 
-// 		&__content {
-// 			width: calc((100% - 12px) / 24 * 16);
-// 	  }
-// 	}
+	// 		&__content {
+	// 			width: calc((100% - 12px) / 24 * 16);
+	// 	  }
+	// 	}
 }
 
 @media (max-width: 1200px) {
@@ -310,7 +310,7 @@
 		transform: translateX(0);
 	}
 
-	input:checked + .slider:before {
+	input:checked+.slider:before {
 		transform: translateX(22px);
 	}
 
@@ -328,7 +328,10 @@
 				padding-bottom: 36px;
 			}
 		}
-		
+
+		&__page-title {
+			width: calc(100% / 24 * 18);
+		}
 
 		& .container {
 			padding-top: 120px;
@@ -417,19 +420,20 @@
 
 			&_list {
 				display: none;
+
 				&.dropdown {
 					display: flex;
 					line-height: 1.4;
 					padding: 20px 20px 22px;
 					position: relative;
 
-					& .dropdown{
+					& .dropdown {
 						&__value {
 							display: flex;
 							align-items: center;
 							justify-content: space-between;
 							width: 100%;
-		
+
 							& svg {
 								width: 14px;
 							}
@@ -554,9 +558,10 @@
 			margin-top: 1.5rem;
 		}
 
-		&__list  {
+		&__list {
 			grid-gap: 12px;
 			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 			& .news__slide {
 				padding: 1.5rem 0 2rem;
 			}
@@ -565,48 +570,48 @@
 
 	.festival {
 		margin-bottom: 48px;
-	
+
 		&__slider {
 			position: relative;
-	
+
 			& .swiper-nav {
 				position: absolute;
 				right: 32px;
 				bottom: 32px;
 				z-index: 10;
-	
+
 				& .btn_slider {
 					background: var(--clr-white-20);
-	
+
 					& svg path {
 						stroke: var(--clr-white);
 					}
-	
+
 					&:hover {
 						background: var(--clr-white-10);
 					}
 				}
 			}
-	
+
 			& .swiper-pagination {
 				position: absolute;
 				margin-top: 1.375rem;
 				visibility: hidden;
 			}
 		}
-	
+
 		&__slide {
-	
+
 			& img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
 		}
-	
+
 		&__desc {
 			padding: 56px 0 48px;
-	
+
 			&_title {
 				display: flex;
 				flex-direction: column;
@@ -616,7 +621,7 @@
 				gap: 36px;
 				margin: 0 auto 36px;
 			}
-	
+
 			&_text {
 				width: calc((100% - 32px) / 24 * 13);
 				margin-left: auto;
@@ -639,7 +644,7 @@
 		}
 
 		&__nums {
-			transform: translateY(-46%);
+			transform: translateY(60%);
 			padding: 51px 32px 0;
 			width: 85%;
 			gap: 24px;
@@ -712,5 +717,59 @@
 		&_tabs {
 			bottom: 40px !important;
 		}
+	}
+
+	.description {
+
+
+		& .festival {
+
+			&__desc {
+				padding: 42px 0;
+
+				&_title {
+					width: calc((100% - 32px) / 24* 21);
+				}
+			}
+		}
+	}
+
+	.history {
+		padding-top: 92px;
+		padding-bottom: 32px;
+
+		&__sliders {
+			gap: 2rem 1rem;
+		}
+
+		&__desc {
+			width: calc((100% - 16px) / 24* 12);
+
+			&_slide {
+				padding: 24px 56px 16px 0;
+
+				&_content {
+					width: 90%;
+				}
+			}
+
+			&_title {
+				margin-bottom: 76px;
+			}
+		}
+	}
+
+	.mission {
+
+
+		&__title {
+			// width: calc(100% / 24 * 23);
+			margin-bottom: 48px;
+		}
+	}
+
+	.organ {
+		padding-top: 80px;
+		padding-bottom: 48px;
 	}
 }
