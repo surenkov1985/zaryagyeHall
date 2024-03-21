@@ -510,6 +510,7 @@ function aboutSliders() {
 		effect: "fade",
 		allowTouchMove: false,
 		speed: 1000,
+		autoHeight: true,
 		pagination: {
 			el: ".about__sliders_control .dropdown-slider__tabs",
 			type: "bullets",

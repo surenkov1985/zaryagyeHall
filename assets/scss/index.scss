@@ -1750,6 +1750,12 @@
 	&__img {
 		position: relative;
 
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
 		& .dark {
 			position: absolute;
 			width: 100%;
@@ -1934,6 +1940,10 @@
 			&_title {
 				width: calc((100% - 32px) / 24* 11);
 				margin-bottom: 80px;
+
+				&.title_l {
+					width: calc((100% - 32px) / 24* 18);
+				}
 			}
 
 			&_text {
