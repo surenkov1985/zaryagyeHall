@@ -3,7 +3,14 @@
 	h1,
 	.h1,
 	.text-content h1 {
-		font-size: 6.25rem;
+
+		&:not(.h1-l){
+			font-size: 6.25rem;
+		}
+
+		&.h1-l {
+			font-size: 7.5rem;
+		}
 	}
 
 	.desc_content p {
@@ -14,6 +21,10 @@
 	.desc_content blockquote {
 		width: calc(100% / 12 * 11);
 	}
+
+	.download-link {
+		gap: 16px;
+  }
 
 	.date_xl {
 		font-size: 4rem;
@@ -355,6 +366,15 @@
 			margin-top: 68px;
 			margin-bottom: 64px;
 			gap: 2.8rem;
+		}
+
+		&__page-subtitle {
+			width: 100%;
+			margin-top: 28px;
+		}
+
+		& .h1-l {
+			margin-top: 64px;
 		}
 
 		&__picture {
@@ -865,6 +885,46 @@
 			&_img {
 				height: 376px;
 			}
+		}
+
+		& .festival {
+			
+			&__desc {
+				padding-bottom: 64px;
+
+				&_title {
+					width: 87%;
+					gap: 34px;
+					margin-bottom: 46px;
+
+					& .h2 {
+						font-size: 4rem;
+					}
+				}
+
+				&_text {
+					margin-left: 0;
+					width: 100%;
+				}
+
+				&_more {
+					margin-top: 35px;
+				}
+			}
+		}
+
+		& .organ__title {
+			width: 100%;
+		}
+
+		
+
+		&__slider {
+
+			& .swiper-slide {
+				max-height: 246px;
+			}
+			
 		}
 	}
 

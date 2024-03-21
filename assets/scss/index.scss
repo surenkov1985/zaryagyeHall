@@ -29,7 +29,7 @@
 		font-size: 1.625rem;
 		line-height: 1.4;
 		margin-top: 56px;
-		width: calc(100% / 15 * 10);
+		width: calc(100% / 15 * 9);
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1724,6 +1724,7 @@
 	padding-bottom: 161px;
 	position: relative;
 	margin-bottom: 106px;
+	overflow: hidden;
 
 	&__title {
 		display: flex;
@@ -1881,6 +1882,65 @@
 			}
 		}
 	}
+
+	&__sliders {
+
+		&_top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 80px;
+		}
+
+		&_control {
+		}
+
+		&_tabs {
+			overflow: visible;
+		}
+		&_tab {
+			background: var(--clr-white);
+
+			& .organ__title {
+				width: calc(100% / 24 * 16);
+				margin-bottom: 46px;
+			}
+ 
+		 & .about__desc {
+			margin-top: 0px;
+ 
+			 &::after {
+				 display: none;
+			 }
+		 }
+		}
+	}
+
+	&__slider {
+		margin-top: 18px;
+		overflow: visible;
+
+		& .swiper-wrapper {
+			align-items: flex-end;
+	  }
+	}
+
+	& .festival {
+
+		&__desc {
+			padding-top: 112px;
+			padding-bottom: 82px;
+
+			&_title {
+				width: calc((100% - 32px) / 24* 11);
+				margin-bottom: 80px;
+			}
+
+			&_text {
+				padding-right: 44px;
+			}
+		}
+	}
 }
 
 // DECRIPTION
@@ -1926,9 +1986,10 @@
 				height: 100%;
 				top: 0;
 				left: 0;
-				z-index: -1;
+				z-index: 0;
 				border-radius: 73px;
 				transition: left 0.5s;
+				pointer-events: none;
 			}
 		}
 	}

@@ -2,6 +2,11 @@
 
 	.h1 {
 		font-size: 4.75rem;
+
+		&.h1-l {
+			font-size: 4.75rem;
+			margin-top: 48px;
+		}
 	}
 
 	.h2 {
@@ -793,6 +798,45 @@
 
 			&_text {
 				width: calc(100% / 12 * 11);
+			}
+		}
+
+		& .festival {
+
+			&__desc {
+
+				&_title {
+					width: 100%;
+				}
+				&_text {
+					text-align: left;
+	
+					& p {
+						text-align: left;
+					}
+				}
+			}
+
+			
+		}
+
+		&__sliders {
+
+			&_top {
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+
+			&_more {
+				width: 100%;
+
+				& .btn {
+					width: 100%;
+				}
+			}
+
+			&_control {
+				width: 100%;
 			}
 		}
 	}

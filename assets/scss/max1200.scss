@@ -333,6 +333,10 @@
 			width: calc(100% / 24 * 18);
 		}
 
+		&__page-subtitle {
+			width: calc(100% / 18 * 12);
+		}
+
 		& .container {
 			padding-top: 120px;
 			padding-bottom: 36px;
@@ -654,6 +658,32 @@
 
 				&:nth-child(2n) {
 					gap: 54px;
+				}
+			}
+		}
+
+		& .festival {
+
+			&__desc {
+				padding-top: 60px;
+
+				&_title {
+					width: calc((100% - 92px) / 24* 18);
+					margin-bottom: 36px;
+				}
+			}
+		}
+
+		&__sliders {
+
+			&_top {
+				margin-bottom: 56px;
+			}
+
+			&_tab {
+
+				& .organ__title {
+					width: calc(100% / 24 * 16);
 				}
 			}
 		}

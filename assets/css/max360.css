@@ -4,6 +4,12 @@
   .text-content h1 {
     font-size: 3.75rem;
   }
+  h1.h1-l,
+  .h1.h1-l,
+  .text-content h1.h1-l {
+    font-size: 3.75rem;
+    margin-top: 32px;
+  }
   h2,
   .h2,
   .text-content h2 {
@@ -356,6 +362,10 @@
   }
   .fs_index .container {
     padding-top: 130px;
+  }
+  .fs__page-subtitle {
+    margin-top: 39px;
+    font-size: 18px;
   }
   .fs .container {
     padding-top: 137px;
@@ -738,6 +748,38 @@
   .about__desc_img {
     height: 172px;
     margin-top: 32px;
+  }
+  .about__desc_more {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .about__desc_more .btn {
+    width: 100%;
+  }
+  .about .festival__desc {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  .about .festival__desc_title {
+    width: 95%;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .about .festival__desc_text {
+    padding-right: 0;
+  }
+  .about .festival__desc_more {
+    margin-top: 26px;
+  }
+  .about__sliders_top {
+    gap: 0.75rem;
+    margin-bottom: 38px;
+  }
+  .about .organ__title {
+    margin-bottom: 36px;
+  }
+  .about .organ__title .h2 {
+    font-size: 2rem;
   }
   .location {
     min-height: 630px;

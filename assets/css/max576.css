@@ -2,6 +2,10 @@
   .h1 {
     font-size: 4.75rem;
   }
+  .h1.h1-l {
+    font-size: 4.75rem;
+    margin-top: 48px;
+  }
   .h2 {
     font-size: 3rem;
   }
@@ -545,6 +549,28 @@
   }
   .about__desc_text {
     width: 91.6666666667%;
+  }
+  .about .festival__desc_title {
+    width: 100%;
+  }
+  .about .festival__desc_text {
+    text-align: left;
+  }
+  .about .festival__desc_text p {
+    text-align: left;
+  }
+  .about__sliders_top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .about__sliders_more {
+    width: 100%;
+  }
+  .about__sliders_more .btn {
+    width: 100%;
+  }
+  .about__sliders_control {
+    width: 100%;
   }
   .location {
     min-height: 630px;

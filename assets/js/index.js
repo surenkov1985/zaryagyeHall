@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	festSlider();
 	descSlider();
 	historySliders();
-	awardaSlider();
+	awardsSlider();
+	aboutSliders();
 });
 
 $(document).on("click", ".dropdown__value", function () {
@@ -24,11 +25,24 @@ $(document).on("click", ".dropdown__value", function () {
 	$(dropdown).toggleClass("active");
 });
 
-// if ($(".head__theme input").prop("checked")) {
-// 	console.log($(this).val());
+$(document).on("click", ".dropdown-slider__value", function () {
+	const dropdown = $(this).closest(".dropdown-slider");
 
-// 	$("body").addClass("dark")
-// }
+	$(".dropdown-slider").each((ind, drop) => {
+		if (!$(this).closest($(drop)).length) {
+			$(drop).removeClass("active");
+		}
+	});
+
+	$(dropdown).toggleClass("active");
+});
+
+
+if ($(".head__theme input").prop("checked")) {
+	console.log($(this).val());
+
+	$("body").addClass("dark")
+}
 
 $(document).on("change", ".head__theme input", function () {
 	if ($(this).prop("checked")) {
@@ -81,6 +95,22 @@ $(document).on("click", ".dropdown__item", function () {
 	}
 
 	$(dropdown).find(".dropdown__value>.value").text(value);
+	$(dropdown).removeClass("active");
+});
+
+$(document).on("click", ".dropdown-slider__item", function () {
+	const dropdown = $(this).closest(".dropdown-slider");
+	const value = $(this).find(".value").text();
+	const inputVal = $(this).find("input").val();
+	// const form = $(".aparts__filter_form");
+	// const formContainer = $(form).closest(".aparts__filter");
+
+	// if ($(dropdown).closest(".aparts__filter_control").length) {
+	// 	$(form).find("input[name=sortby]").val(inputVal);
+	// 	$(form).trigger("submit");
+	// }
+
+	$(dropdown).find(".dropdown-slider__value>.value").text(value);
 	$(dropdown).removeClass("active");
 });
 

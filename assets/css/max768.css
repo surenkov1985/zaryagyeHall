@@ -1,8 +1,13 @@
 @media (max-width: 768px) {
-  h1,
-  .h1,
-  .text-content h1 {
+  h1:not(.h1-l),
+  .h1:not(.h1-l),
+  .text-content h1:not(.h1-l) {
     font-size: 6.25rem;
+  }
+  h1.h1-l,
+  .h1.h1-l,
+  .text-content h1.h1-l {
+    font-size: 7.5rem;
   }
   .desc_content p {
     width: 91.6666666667%;
@@ -10,6 +15,9 @@
   }
   .desc_content blockquote {
     width: 91.6666666667%;
+  }
+  .download-link {
+    gap: 16px;
   }
   .date_xl {
     font-size: 4rem;
@@ -240,6 +248,13 @@
     margin-top: 68px;
     margin-bottom: 64px;
     gap: 2.8rem;
+  }
+  .fs__page-subtitle {
+    width: 100%;
+    margin-top: 28px;
+  }
+  .fs .h1-l {
+    margin-top: 64px;
   }
   .fs__picture_slider .swiper-nav {
     right: 24px;
@@ -584,6 +599,30 @@
   }
   .about__desc_img {
     height: 376px;
+  }
+  .about .festival__desc {
+    padding-bottom: 64px;
+  }
+  .about .festival__desc_title {
+    width: 87%;
+    gap: 34px;
+    margin-bottom: 46px;
+  }
+  .about .festival__desc_title .h2 {
+    font-size: 4rem;
+  }
+  .about .festival__desc_text {
+    margin-left: 0;
+    width: 100%;
+  }
+  .about .festival__desc_more {
+    margin-top: 35px;
+  }
+  .about .organ__title {
+    width: 100%;
+  }
+  .about__slider .swiper-slide {
+    max-height: 246px;
   }
   .location {
     min-height: 812px;

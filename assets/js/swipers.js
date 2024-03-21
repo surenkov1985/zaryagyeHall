@@ -85,9 +85,8 @@ function hallsSliders() {
 			renderBullet: function (current, total) {
 				const slide = Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current];
 
-				return `<span class="btn btn_tab dropdown__item ${total} ${
-					slide.classList.contains("swiper-slide-active") ? "active" : ""
-				}"><span class="value">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name}</span></span>`;
+				return `<span class="btn btn_tab dropdown__item ${total} ${slide.classList.contains("swiper-slide-active") ? "active" : ""
+					}"><span class="value">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name}</span></span>`;
 			},
 		},
 		on: {
@@ -330,17 +329,17 @@ function descSlider() {
 	const descSlider = new Swiper(desc, {
 		slidesPerView: 1,
 		slidesPerGroup: 1,
-		spaceBetween: 16,
+		spaceBetween: 4,
 		speed: 1000,
 		navigation: {
-			prevEl: ".description__slider_control .swiper-prev-btn",
-			nextEl: ".description__slider_control .swiper-next-btn",
+			prevEl: ".description__sliders .description__slider_control .swiper-prev-btn",
+			nextEl: ".description__sliders .description__slider_control .swiper-next-btn",
 		},
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
 				slidesPerGroup: 1,
-				spaceBetween: 16,
+				spaceBetween: 4,
 			},
 			576: {
 				slidesPerView: 2,
@@ -365,7 +364,7 @@ function descSlider() {
 		},
 	});
 
-	$(document).on("click", ".description__slider_tabs .dropdown__item", function () {
+	$(document).on("click", ".description__sliders .description__slider_tabs .dropdown__item", function () {
 		console.log(descSlider.params);
 		const before = $(this).closest(".description__slider_tabs").find(".before");
 
@@ -373,7 +372,7 @@ function descSlider() {
 
 		const tabs = $(this).data("tabs");
 
-		$(".description__slider_tabs .dropdown__item").removeClass("active");
+		$(".description__sliders .description__slider_tabs .dropdown__item").removeClass("active");
 
 		$(this).addClass("active");
 
@@ -457,7 +456,7 @@ function historySliders() {
 	});
 }
 
-function awardaSlider() {
+function awardsSlider() {
 	const news = document.querySelector(".awards__slider");
 
 	if (!news) return;
@@ -497,4 +496,138 @@ function awardaSlider() {
 			},
 		},
 	});
+}
+
+function aboutSliders() {
+
+	const sliders = document.querySelectorAll(".about__slider");
+	// const sliderTabs = 
+	const hallsSlider = document.querySelector(".about__halls_slider");
+
+	if (!sliders.length) return;
+
+	const aboutHallsSlider = new Swiper(hallsSlider, {
+		effect: "fade",
+		allowTouchMove: false,
+		speed: 1000,
+		pagination: {
+			el: ".about__sliders_control .dropdown-slider__tabs",
+			type: "bullets",
+			clickable: true,
+			bulletClass: "btn_tab",
+			bulletActiveClass: "active",
+			renderBullet: function (current, total) {
+
+				const slide = Array.from(hallsSlider.querySelectorAll(".about__sliders_tab"))[current];
+				return `<span class="btn btn_tab  dropdown-slider__item ${total} ${slide.classList.contains("swiper-slide-active") ? "active" : ""
+					}"><span class="value">${Array.from(hallsSlider.querySelectorAll(".about__sliders_tab"))[current].dataset.name}</span></span>`;
+			},
+		},
+		on: {
+			init: function () {
+				const pagin = $(".about__sliders_control .dropdown-slider__tabs");
+				const paginBg = $(pagin).find(".before");
+
+				const activeTab = $(pagin).find(".active");
+
+				$(pagin).closest(".dropdown-slider").find(".dropdown-slider__value .value").text($(activeTab).text());
+				$(".about__sliders_control .dropdown-slider__tabs").append(`<div class="before"></div>`);
+				$(".about__sliders_control .dropdown-slider__tabs .before").width($(".about__sliders_control .dropdown-slider__tabs .active").innerWidth());
+			},
+		},
+	});
+
+	aboutHallsSlider.on("slideChange", function (slider) {
+		const activeSlide = $(slider.slides)[slider.activeIndex];
+		const pagin = $(".about__sliders_control .dropdown-slider__tabs");
+		const paginBg = $(pagin).find(".before");
+
+		const activeTab = $(pagin).find(".active");
+
+		$(paginBg).css({ width: $(activeTab).innerWidth(), left: $(activeTab).position().left + "px" });
+		$(pagin).closest(".dropdown-slider").find(".dropdown-slider__value .value").text($(activeTab).text());
+
+		console.log($(activeTab).position());
+
+		descSlider.slideTo(slider.activeIndex);
+		smallSlider.slideTo(!!(slider.slides.length > slider.activeIndex + 1) ? slider.activeIndex + 1 : 0);
+	});
+
+	$(window).resize(function () {
+		const pagin = $(".about__sliders_control .dropdown-slider__tabs");
+		const paginBg = $(pagin).find(".before");
+
+		const activeTab = $(pagin).find(".active");
+
+		$(paginBg).css({ width: $(activeTab).innerWidth(), left: $(activeTab).position().left + "px" });
+	});
+
+	for (let slider of sliders) {
+		const sliderCont = slider.closest(".about__sliders_tab");
+
+		const aboutSlider = new Swiper(slider,
+			{
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 4,
+				speed: 1000,
+				navigation: {
+					prevEl: sliderCont.querySelector(".description__slider_control .swiper-prev-btn"),
+					nextEl: sliderCont.querySelector(".description__slider_control .swiper-next-btn"),
+				},
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						slidesPerGroup: 1,
+						spaceBetween: 4,
+					},
+					576: {
+						slidesPerView: 2,
+						slidesPerGroup: 1,
+						spaceBetween: 4,
+					},
+					767: {
+						slidesPerView: 3,
+						slidesPerGroup: 1,
+						spaceBetween: 4,
+					},
+					991: {
+						slidesPerView: 3,
+						slidesPerGroup: 1,
+						spaceBetween: 16,
+					},
+					1440: {
+						slidesPerView: 4,
+						slidesPerGroup: 1,
+						spaceBetween: 25,
+					},
+				},
+			})
+
+		$(sliderCont).find(".description__slider_tabs .dropdown__item").on("click", function () {
+			console.log(aboutSlider.params);
+			const before = $(this).closest(".description__slider_tabs").find(".before");
+
+			if ($(this).hasClass("active")) return;
+
+			const tabs = $(this).data("tabs");
+
+			$(sliderCont).find(".description__slider_tabs .dropdown__item").removeClass("active");
+
+			$(this).addClass("active");
+
+			$(before).css({ left: $(this).position().left + "px" });
+
+			if (tabs === 1) {
+				$(slider).find(".swiper-wrapper").css({ "align-items": "flex-start" });
+			} else {
+				$(slider).find(".swiper-wrapper").css({ "align-items": "flex-end" });
+			}
+
+			aboutSlider.params.slidesPerView = tabs;
+			aboutSlider.params.autoHeight = true;
+			aboutSlider.update();
+			aboutSlider.updateSize();
+		});
+	}
 }

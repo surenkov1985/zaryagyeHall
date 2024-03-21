@@ -282,6 +282,12 @@
 		&__page-title {
 			width: 60%;
 		}
+
+		&__page-subtitle {
+			font-size: 24px;
+			margin-top: 50px;
+			width: calc(100% / 15 * 10);
+		}
 	}
 
 	.event {
@@ -826,6 +832,12 @@
 			margin-top: 65px;
 			margin-bottom: 52px;
 		}
+
+		&__page-subtitle {
+			font-size: 22px;
+			margin-top: 44px;
+			width: calc(100% / 15 * 9);
+		}
 	}
 
 	.event {
@@ -997,6 +1009,10 @@
 	.section_pb_l {
 		padding-bottom: 6.5rem !important;
 	}
+
+	.section_pt_l {
+		padding-top: 2.5rem !important;
+  }
 
 	.text_content h6 {
 		font-size: 1rem;
@@ -1257,6 +1273,10 @@
 		font-size: 1rem;
 	}
 
+	.download-link {
+		gap: 12px;
+	}
+
 	.foot {
 
 		& .container {
@@ -1451,6 +1471,12 @@
 		&__event-title {
 			margin-top: 58px;
 			margin-bottom: 46px;
+		}
+
+		&__page-subtitle {
+			font-size: 20px;
+			margin-top: 40px;
+			width: calc(100% / 15 * 9);
 		}
 
 		& .container {
@@ -1942,6 +1968,7 @@
 
 	.about {
 		margin-bottom: 46px;
+		padding-bottom: 116px;
 
 		&__title {
 			align-items: center;
@@ -1986,6 +2013,41 @@
 					margin-bottom: 2.5rem;
 				}
 			}
+		}
+
+		& .festival {
+
+			&__desc {
+				padding-top: 68px;
+				padding-bottom: 56px;
+
+				&_title {
+					width: calc((100% - 92px) / 24* 12);
+					margin-bottom: 48px;
+				}
+
+				&_text {
+					padding-right: 16px;
+					& p {
+						line-height: 1.6;
+					}
+				}
+
+				&_more {
+					margin-top: 40px;
+				}
+			}
+		}
+
+		&__sliders {
+
+			&_top {
+				margin-bottom: 62px;
+			}
+		}
+
+		&__slider {
+			margin-top: 30px;
 		}
 	}
 
@@ -2160,7 +2222,7 @@
 			}
 
 			& img {
-				width: 693px;
+				height: 693px;
 			}
 		}
 	}

@@ -23,7 +23,7 @@
   font-size: 1.625rem;
   line-height: 1.4;
   margin-top: 56px;
-  width: 66.6666666667%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1289,6 +1289,7 @@
   padding-bottom: 161px;
   position: relative;
   margin-bottom: 106px;
+  overflow: hidden;
 }
 .about__title {
   display: flex;
@@ -1415,6 +1416,46 @@
 .about__desc_text p:not(:last-child) {
   margin-bottom: 2rem;
 }
+.about__sliders_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.about__sliders_tabs {
+  overflow: visible;
+}
+.about__sliders_tab {
+  background: var(--clr-white);
+}
+.about__sliders_tab .organ__title {
+  width: 66.6666666667%;
+  margin-bottom: 46px;
+}
+.about__sliders_tab .about__desc {
+  margin-top: 0px;
+}
+.about__sliders_tab .about__desc::after {
+  display: none;
+}
+.about__slider {
+  margin-top: 18px;
+  overflow: visible;
+}
+.about__slider .swiper-wrapper {
+  align-items: flex-end;
+}
+.about .festival__desc {
+  padding-top: 112px;
+  padding-bottom: 82px;
+}
+.about .festival__desc_title {
+  width: calc((100% - 32px) / 24 * 11);
+  margin-bottom: 80px;
+}
+.about .festival__desc_text {
+  padding-right: 44px;
+}
 
 .description {
   overflow: hidden;
@@ -1451,9 +1492,10 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   border-radius: 73px;
   transition: left 0.5s;
+  pointer-events: none;
 }
 .description__slide {
   height: auto;

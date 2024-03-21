@@ -178,6 +178,11 @@
   .fs__page-title {
     width: 60%;
   }
+  .fs__page-subtitle {
+    font-size: 24px;
+    margin-top: 50px;
+    width: 66.6666666667%;
+  }
   .event {
     padding-top: 24px;
   }
@@ -534,6 +539,11 @@
     margin-top: 65px;
     margin-bottom: 52px;
   }
+  .fs__page-subtitle {
+    font-size: 22px;
+    margin-top: 44px;
+    width: 60%;
+  }
   .event {
     padding-top: 16px;
   }
@@ -652,6 +662,9 @@
   }
   .section_pb_l {
     padding-bottom: 6.5rem !important;
+  }
+  .section_pt_l {
+    padding-top: 2.5rem !important;
   }
   .text_content h6 {
     font-size: 1rem;
@@ -843,6 +856,9 @@
   .nav-link {
     font-size: 1rem;
   }
+  .download-link {
+    gap: 12px;
+  }
   .foot .container {
     padding-bottom: 40px;
   }
@@ -962,6 +978,11 @@
   .fs__event-title {
     margin-top: 58px;
     margin-bottom: 46px;
+  }
+  .fs__page-subtitle {
+    font-size: 20px;
+    margin-top: 40px;
+    width: 60%;
   }
   .fs .container {
     padding-top: 124px;
@@ -1280,6 +1301,7 @@
   }
   .about {
     margin-bottom: 46px;
+    padding-bottom: 116px;
   }
   .about__title {
     align-items: center;
@@ -1313,6 +1335,29 @@
   }
   .about__desc_text p:not(:last-child) {
     margin-bottom: 2.5rem;
+  }
+  .about .festival__desc {
+    padding-top: 68px;
+    padding-bottom: 56px;
+  }
+  .about .festival__desc_title {
+    width: calc((100% - 92px) / 24 * 12);
+    margin-bottom: 48px;
+  }
+  .about .festival__desc_text {
+    padding-right: 16px;
+  }
+  .about .festival__desc_text p {
+    line-height: 1.6;
+  }
+  .about .festival__desc_more {
+    margin-top: 40px;
+  }
+  .about__sliders_top {
+    margin-bottom: 62px;
+  }
+  .about__slider {
+    margin-top: 30px;
   }
   .location {
     min-height: 800px;
@@ -1429,7 +1474,7 @@
     margin-bottom: 1rem;
   }
   .mission__image img {
-    width: 693px;
+    height: 693px;
   }
   .organ {
     padding-top: 120px;
