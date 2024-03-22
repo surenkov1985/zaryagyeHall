@@ -230,14 +230,31 @@ function locationSliders() {
 	imagesSlider.on("slideChange", function (slider) {
 		const pos = +$(window).width() - +$(".location__path_icon").innerWidth();
 		console.log($(".location__path svg").innerWidth(), $(window).width());
-		if (slider.activeIndex == 1) {
+
+		if ($(".location").hasClass(".tour")) {
+
 			$(".location__path_icon").css({ left: `${pos}px`, right: 0 });
-			$(".location__slides_btn.first").css({ visibility: "hidden", opacity: 0 });
 		} else {
-			$(".location__path_icon").css({ left: 0, right: `${pos}px` });
-			$(".location__slides_btn.first").css({ visibility: "visible", opacity: 1 });
+			if (slider.activeIndex == 1) {
+				$(".location__slides_btn.first").css({ visibility: "hidden", opacity: 0 });
+			} else {
+				$(".location__path_icon").css({ left: 0, right: `${pos}px` });
+				$(".location__slides_btn.first").css({ visibility: "visible", opacity: 1 });
+			}
 		}
+
 	});
+
+	if ($(".location").hasClass("tour")) {
+
+		const pos = +$(window).width() - +$(".location__path_icon").innerWidth();
+		$(".location__path_icon").css({ left: `${pos}px`, right: 0 });
+		$(window).resize(function () {
+			const pos = +$(window).width() - +$(".location__path_icon").innerWidth();
+			$(".location__path_icon").css({ left: `${pos}px`, right: 0 });
+		})
+	}
+
 }
 
 function calendarSliders() {
@@ -386,6 +403,34 @@ function descSlider() {
 
 		descSlider.params.slidesPerView = tabs;
 		descSlider.params.autoHeight = true;
+
+		descSlider.params.breakpoints = {
+			320: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 4,
+			},
+			576: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 4,
+			},
+			767: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 4,
+			},
+			991: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+			},
+			1440: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 25,
+			},
+		}
 		descSlider.update();
 		descSlider.updateSize();
 	});
@@ -550,8 +595,8 @@ function aboutSliders() {
 
 		console.log($(activeTab).position());
 
-		descSlider.slideTo(slider.activeIndex);
-		smallSlider.slideTo(!!(slider.slides.length > slider.activeIndex + 1) ? slider.activeIndex + 1 : 0);
+		// descSlider.slideTo(slider.activeIndex);
+		// smallSlider.slideTo(!!(slider.slides.length > slider.activeIndex + 1) ? slider.activeIndex + 1 : 0);
 	});
 
 	$(window).resize(function () {
@@ -572,6 +617,7 @@ function aboutSliders() {
 				slidesPerGroup: 1,
 				spaceBetween: 4,
 				speed: 1000,
+				// autoHeight: true,
 				navigation: {
 					prevEl: sliderCont.querySelector(".description__slider_control .swiper-prev-btn"),
 					nextEl: sliderCont.querySelector(".description__slider_control .swiper-next-btn"),
@@ -604,14 +650,14 @@ function aboutSliders() {
 					},
 				},
 			})
-
+		let tabs = 0;
 		$(sliderCont).find(".description__slider_tabs .dropdown__item").on("click", function () {
-			console.log(aboutSlider.params);
+
 			const before = $(this).closest(".description__slider_tabs").find(".before");
 
 			if ($(this).hasClass("active")) return;
 
-			const tabs = $(this).data("tabs");
+			tabs = $(this).data("tabs");
 
 			$(sliderCont).find(".description__slider_tabs .dropdown__item").removeClass("active");
 
@@ -627,8 +673,51 @@ function aboutSliders() {
 
 			aboutSlider.params.slidesPerView = tabs;
 			aboutSlider.params.autoHeight = true;
+			// aboutSlider.params.height = 700;
+
+			aboutSlider.params.breakpoints = {
+				320: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 4,
+				},
+				576: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 4,
+				},
+				767: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 4,
+				},
+				991: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 16,
+				},
+				1440: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 25,
+				},
+			}
+
 			aboutSlider.update();
 			aboutSlider.updateSize();
+			aboutHallsSlider.update();
+
+
 		});
+		// aboutSlider.on("slideChange", function () {
+
+
+		// 	if (tabs === 1) {
+		// 		console.log(111)
+		// 		aboutSlider.update();
+		// 		aboutHallsSlider.update();
+		// 	}
+
+		// })
 	}
 }

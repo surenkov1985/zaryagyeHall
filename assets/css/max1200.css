@@ -452,6 +452,9 @@
   .about__sliders_tab .organ__title {
     width: 66.6666666667%;
   }
+  .about__slider .swiper-slide {
+    max-height: 550px;
+  }
   .location {
     min-height: 800px;
     margin-bottom: 0;
@@ -499,6 +502,9 @@
   }
   .description .festival__desc_title {
     width: calc((100% - 32px) / 24 * 21);
+  }
+  .description__slider .swiper-slide {
+    max-height: 550px;
   }
   .history {
     padding-top: 92px;

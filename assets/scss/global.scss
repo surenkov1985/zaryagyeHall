@@ -40,6 +40,16 @@
 
 	}
 
+	&_light {
+		background: var(--clr-white-20);
+		color: var(--clr-white);
+
+		&:hover {
+			color: var(--clr-black);
+			background: var(--clr-white);
+		}
+	}
+
 	&_color {
 		background: var(--clr-tag-opera);
 		color: var(--clr-white);
@@ -593,6 +603,10 @@ label {
 
 .section_pb_l {
 	padding-bottom: 10rem !important;
+}
+
+.section_pb_md {
+	padding-bottom: 7.5rem !important;
 }
 
 .section_pb_sm {

@@ -687,6 +687,12 @@
 				}
 			}
 		}
+
+		&__slider {
+			& .swiper-slide {
+				max-height: 550px;
+			}
+		}
 	}
 
 	.location {
@@ -760,6 +766,12 @@
 				&_title {
 					width: calc((100% - 32px) / 24* 21);
 				}
+			}
+		}
+
+		&__slider {
+			& .swiper-slide {
+				max-height: 550px;
 			}
 		}
 	}

@@ -781,8 +781,50 @@
   .about .organ__title .h2 {
     font-size: 2rem;
   }
+  .about__slider .swiper-slide {
+    max-height: 160px;
+  }
   .location {
     min-height: 630px;
+  }
+  .location.tour {
+    min-height: 630px;
+  }
+  .location.tour .location__slides_navigation {
+    justify-content: center;
+  }
+  .location.tour .location__slides_icon {
+    margin-bottom: 12px;
+    transform: translateX(-5%);
+  }
+  .location.tour .location__content_subtitle {
+    width: 100%;
+  }
+  .location.tour .location__ellipse {
+    position: absolute;
+    width: calc((100% - 47px) / 24 * 19);
+    height: 0;
+    padding-top: 66%;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white-40);
+    bottom: 0;
+    transform: translateY(50%) translateX(-51%);
+    z-index: 4;
+    pointer-events: none;
+    left: 50%;
+  }
+  .location.tour .location__ellipse-sm {
+    position: absolute;
+    width: calc((100% - 0px) / 24 * 8);
+    height: 0;
+    padding-top: 33%;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white);
+    bottom: 0;
+    transform: translateY(37%) translateX(-50%);
+    z-index: 4;
+    pointer-events: none;
+    left: 50%;
   }
   .location__content {
     padding: 56px 0;
@@ -849,8 +891,8 @@
   .description__slider_control {
     margin-top: 24px;
   }
-  .description__slide {
-    max-height: 246px;
+  .description__slide .swiper-slide {
+    max-height: 160px;
   }
   .history {
     padding-top: 64px;

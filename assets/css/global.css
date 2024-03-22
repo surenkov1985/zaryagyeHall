@@ -33,6 +33,14 @@
 .btn_dark:hover {
   background: var(--clr-black-40);
 }
+.btn_light {
+  background: var(--clr-white-20);
+  color: var(--clr-white);
+}
+.btn_light:hover {
+  color: var(--clr-black);
+  background: var(--clr-white);
+}
 .btn_color {
   background: var(--clr-tag-opera);
   color: var(--clr-white);
@@ -451,6 +459,10 @@ label.label_radio {
 
 .section_pb_l {
   padding-bottom: 10rem !important;
+}
+
+.section_pb_md {
+  padding-bottom: 7.5rem !important;
 }
 
 .section_pb_sm {

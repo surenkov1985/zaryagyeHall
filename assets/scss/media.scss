@@ -1476,7 +1476,7 @@
 		&__page-subtitle {
 			font-size: 20px;
 			margin-top: 40px;
-			width: calc(100% / 15 * 9);
+			width: calc(100% / 15 * 10);
 		}
 
 		& .container {
@@ -2048,6 +2048,10 @@
 
 		&__slider {
 			margin-top: 30px;
+
+			& .swiper-slide {
+				max-height: 650px;
+			}
 		}
 	}
 
@@ -2072,6 +2076,58 @@
 
 				& .text {
 					margin-top: 0;
+				}
+			}
+		}
+
+		&.tour {
+
+			& .location {
+	
+				&__slides {
+	
+					&_navigation {
+						justify-content: center;
+					}
+	
+					&_icon {
+						margin-bottom: -12px;
+						transform: translateX(0%);
+					}
+				}
+	
+				&__content {
+	
+					&_subtitle {
+						width: calc((100% - 32px) / 24* 9);
+				  }}
+	
+				  &__ellipse {
+					position: absolute;
+					width: calc((100% - 47px) / 24* 19);
+					height: 0;
+					padding-top: 66%;
+					border-radius: 50%;
+					border: 1px solid var(--clr-white-40);
+					bottom: 0;
+					transform: translateY(50%) translateX(-51%);
+					z-index: 4;
+					pointer-events: none;
+					left: 50%;
+			
+					&-sm {
+						position: absolute;
+						width: calc((100% - 0px) / 24* 8);
+						height: 0;
+						padding-top: 33%;
+						border-radius: 50%;
+						border: 1px solid var(--clr-white);
+						bottom: 0;
+						transform: translateY(37%) translateX(-50%);
+						z-index: 4;
+						pointer-events: none;
+						left: 50%;
+					}
 				}
 			}
 		}
@@ -2133,6 +2189,12 @@
 
 		&__sliders {
 			margin-top: 14px;
+		}
+
+		&__slider {
+			& .swiper-slide {
+				max-height: 650px;
+			}
 		}
 	}
 

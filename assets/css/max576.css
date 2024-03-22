@@ -572,8 +572,50 @@
   .about__sliders_control {
     width: 100%;
   }
+  .about__slider .swiper-slide {
+    max-height: 250px;
+  }
   .location {
     min-height: 630px;
+  }
+  .location.tour {
+    min-height: 630px;
+  }
+  .location.tour .location__slides_navigation {
+    justify-content: center;
+  }
+  .location.tour .location__slides_icon {
+    margin-bottom: 0px;
+    transform: translateX(0%);
+  }
+  .location.tour .location__content_subtitle {
+    width: calc((100% - 32px) / 24 * 22);
+  }
+  .location.tour .location__ellipse {
+    position: absolute;
+    width: calc((100% - 47px) / 24 * 19);
+    height: 0;
+    padding-top: 66%;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white-40);
+    bottom: 0;
+    transform: translateY(50%) translateX(-51%);
+    z-index: 4;
+    pointer-events: none;
+    left: 50%;
+  }
+  .location.tour .location__ellipse-sm {
+    position: absolute;
+    width: calc((100% - 0px) / 24 * 8);
+    height: 0;
+    padding-top: 33%;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white);
+    bottom: 0;
+    transform: translateY(37%) translateX(-50%);
+    z-index: 4;
+    pointer-events: none;
+    left: 50%;
   }
   .location__content {
     padding: 56px 0;
@@ -628,6 +670,9 @@
   .description .festival__desc_text {
     width: 91.6666666667%;
     text-align: left;
+  }
+  .description__slider .swiper-slide {
+    max-height: 250px;
   }
   .history {
     padding-top: 74px;

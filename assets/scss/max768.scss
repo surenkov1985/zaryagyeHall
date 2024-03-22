@@ -863,7 +863,7 @@
 			margin-top: 52px;
 
 			&_text {
-				width: 74%;
+				width: 90%;
 
 				& p {
 					line-height: 1.6;
@@ -890,12 +890,16 @@
 		& .festival {
 			
 			&__desc {
-				padding-bottom: 64px;
+				padding-bottom: 48px;
 
 				&_title {
 					width: 87%;
 					gap: 34px;
 					margin-bottom: 46px;
+
+					&.title_l {
+						width: 100%;
+					}
 
 					& .h2 {
 						font-size: 4rem;
@@ -920,9 +924,10 @@
 		
 
 		&__slider {
+			margin-top: 0;
 
 			& .swiper-slide {
-				max-height: 246px;
+				max-height: 346px;
 			}
 			
 		}
@@ -930,6 +935,63 @@
 
 	.location {
 		min-height: 812px;
+
+		&.tour {
+			
+		}
+
+		&.tour {
+			min-height: 1040px;
+
+			& .location {
+	
+				&__slides {
+	
+					&_navigation {
+						justify-content: center;
+					}
+	
+					&_icon {
+						margin-bottom: -12px;
+						transform: translateX(17%);
+					}
+				}
+	
+				&__content {
+	
+					&_subtitle {
+						width: calc((100% - 32px) / 24* 9);
+				  }}
+	
+				  &__ellipse {
+					position: absolute;
+					width: calc((100% - 47px) / 24* 19);
+					height: 0;
+					padding-top: 66%;
+					border-radius: 50%;
+					border: 1px solid var(--clr-white-40);
+					bottom: 0;
+					transform: translateY(50%) translateX(-51%);
+					z-index: 4;
+					pointer-events: none;
+					left: 50%;
+			
+					&-sm {
+						position: absolute;
+						width: calc((100% - 0px) / 24* 8);
+						height: 0;
+						padding-top: 33%;
+						border-radius: 50%;
+						border: 1px solid var(--clr-white);
+						bottom: 0;
+						transform: translateY(37%) translateX(-50%);
+						z-index: 4;
+						pointer-events: none;
+						left: 50%;
+					}
+				}
+			}
+		}
 
 		&__content {
 			padding: 80px 0;
@@ -1048,6 +1110,10 @@
 
 			&_control {
 				margin-top: 22px;
+			}
+
+			& .swiper-slide {
+				max-height: 346px;
 			}
 		}
 	}

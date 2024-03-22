@@ -656,6 +656,12 @@
 				width: calc(100% / 12 * 8);
 			}
 		}
+
+		&__slider {
+			& .swiper-slide {
+				max-height: 450px;
+			}
+		}
 	}
 
 	.location {
@@ -711,6 +717,12 @@
 					margin-left: 0;
 					width: calc(100% / 12 * 9);
 				}
+			}
+		}
+
+		&__slider {
+			& .swiper-slide {
+				max-height: 450px;
 			}
 		}
 	}

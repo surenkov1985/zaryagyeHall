@@ -1911,6 +1911,11 @@
 				width: calc(100% / 24 * 16);
 				margin-bottom: 46px;
 			}
+
+			&:not(.swiper-slide-active) {
+				overflow: hidden;
+				opacity: 0 !important;
+			}
  
 		 & .about__desc {
 			margin-top: 0px;
@@ -1926,9 +1931,27 @@
 		margin-top: 18px;
 		overflow: visible;
 
+		// max-height: 800px;
+
 		& .swiper-wrapper {
 			align-items: flex-end;
-	  }
+			// max-height: 693px;
+	  	}
+
+		& .swiper-slide {
+			max-height: 900px;
+		}
+	}
+
+	&__sheme {
+		width: 100%;
+		height: auto;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	}
 
 	& .festival {
@@ -1940,6 +1963,10 @@
 			&_title {
 				width: calc((100% - 32px) / 24* 11);
 				margin-bottom: 80px;
+
+				&.title_l {
+					width: calc((100% - 32px) / 24* 18);
+				}
 
 				&.title_l {
 					width: calc((100% - 32px) / 24* 18);
@@ -1975,6 +2002,10 @@
 			align-items: flex-end;
 		}
 
+		& .swiper-slide {
+			max-height: 1000px;
+		}
+
 		&_control {
 			margin-top: 28px;
 			display: flex;
@@ -2008,6 +2039,7 @@
 		height: auto;
 		overflow: hidden;
 		isolation: isolate;
+		// max-height: 693px;
 
 		& img {
 			width: 100%;
@@ -2071,6 +2103,59 @@
 				left: 0;
 				z-index: 1;
 				background: rgba(16, 16, 16, 0.2);
+			}
+		}
+	}
+
+
+	&.tour {
+
+		& .location {
+
+			&__slides {
+
+				&_navigation {
+					justify-content: center;
+				}
+
+				&_icon {
+					margin-bottom: -26px;
+					transform: translateX(5%);
+				}
+			}
+
+			&__content {
+
+				&_subtitle {
+					width: calc((100% - 32px) / 24* 9);
+			  }}
+
+			  &__ellipse {
+				position: absolute;
+				width: calc((100% - 47px) / 24* 19);
+				height: 0;
+				padding-top: 66%;
+				border-radius: 50%;
+				border: 1px solid var(--clr-white-40);
+				bottom: 0;
+				transform: translateY(50%) translateX(-51%);
+				z-index: 4;
+				pointer-events: none;
+				left: 50%;
+		
+				&-sm {
+					position: absolute;
+					width: calc((100% - 0px) / 24* 8);
+					height: 0;
+					padding-top: 33%;
+					border-radius: 50%;
+					border: 1px solid var(--clr-white);
+					bottom: 0;
+					transform: translateY(37%) translateX(-50%);
+					z-index: 4;
+					pointer-events: none;
+					left: 50%;
+				}
 			}
 		}
 	}

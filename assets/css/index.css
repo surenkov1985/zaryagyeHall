@@ -1438,6 +1438,10 @@
   width: 66.6666666667%;
   margin-bottom: 46px;
 }
+.about__sliders_tab:not(.swiper-slide-active) {
+  overflow: hidden;
+  opacity: 0 !important;
+}
 .about__sliders_tab .about__desc {
   margin-top: 0px;
 }
@@ -1451,6 +1455,19 @@
 .about__slider .swiper-wrapper {
   align-items: flex-end;
 }
+.about__slider .swiper-slide {
+  max-height: 900px;
+}
+.about__sheme {
+  width: 100%;
+  height: auto;
+}
+.about__sheme img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .about .festival__desc {
   padding-top: 112px;
   padding-bottom: 82px;
@@ -1458,6 +1475,9 @@
 .about .festival__desc_title {
   width: calc((100% - 32px) / 24 * 11);
   margin-bottom: 80px;
+}
+.about .festival__desc_title.title_l {
+  width: calc((100% - 32px) / 24 * 18);
 }
 .about .festival__desc_title.title_l {
   width: calc((100% - 32px) / 24 * 18);
@@ -1482,6 +1502,9 @@
 }
 .description__slider .swiper-wrapper {
   align-items: flex-end;
+}
+.description__slider .swiper-slide {
+  max-height: 1000px;
 }
 .description__slider_control {
   margin-top: 28px;
@@ -1553,6 +1576,42 @@
   left: 0;
   z-index: 1;
   background: rgba(16, 16, 16, 0.2);
+}
+.location.tour .location__slides_navigation {
+  justify-content: center;
+}
+.location.tour .location__slides_icon {
+  margin-bottom: -26px;
+  transform: translateX(5%);
+}
+.location.tour .location__content_subtitle {
+  width: calc((100% - 32px) / 24 * 9);
+}
+.location.tour .location__ellipse {
+  position: absolute;
+  width: calc((100% - 47px) / 24 * 19);
+  height: 0;
+  padding-top: 66%;
+  border-radius: 50%;
+  border: 1px solid var(--clr-white-40);
+  bottom: 0;
+  transform: translateY(50%) translateX(-51%);
+  z-index: 4;
+  pointer-events: none;
+  left: 50%;
+}
+.location.tour .location__ellipse-sm {
+  position: absolute;
+  width: calc((100% - 0px) / 24 * 8);
+  height: 0;
+  padding-top: 33%;
+  border-radius: 50%;
+  border: 1px solid var(--clr-white);
+  bottom: 0;
+  transform: translateY(37%) translateX(-50%);
+  z-index: 4;
+  pointer-events: none;
+  left: 50%;
 }
 .location__path {
   position: absolute;

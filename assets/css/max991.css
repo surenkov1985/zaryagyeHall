@@ -446,6 +446,9 @@
   .about__sliders_control {
     width: 66.6666666667%;
   }
+  .about__slider .swiper-slide {
+    max-height: 450px;
+  }
   .location__content {
     padding: 98px 0;
   }
@@ -479,6 +482,9 @@
   .description .festival__desc_text {
     margin-left: 0;
     width: 75%;
+  }
+  .description__slider .swiper-slide {
+    max-height: 450px;
   }
   .history {
     padding-top: 86px;
