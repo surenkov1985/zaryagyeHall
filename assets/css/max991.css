@@ -515,4 +515,14 @@
     padding-top: 24px;
     width: 75%;
   }
+  .leaders .about__desc {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .leaders .about__desc::before {
+    display: none;
+  }
+  .leaders__desc {
+    width: 100%;
+  }
 }

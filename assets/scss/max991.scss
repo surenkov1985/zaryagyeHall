@@ -777,4 +777,23 @@
 	}
 
 	.organ {}
+
+	.leaders {
+
+		& .about {
+
+			&__desc {
+				flex-direction: column;
+				margin-top: 0;
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		&__desc {
+			width: 100%;
+		}
+	}
 }
