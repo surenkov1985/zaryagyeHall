@@ -1,12 +1,12 @@
 @media (max-width: 360px) {
   h1,
-  .h1,
-  .text-content h1 {
+  .h1:not(.h1-l),
+  .text-content h1:not(.h1-l) {
     font-size: 3.75rem;
   }
   h1.h1-l,
-  .h1.h1-l,
-  .text-content h1.h1-l {
+  .h1:not(.h1-l).h1-l,
+  .text-content h1:not(.h1-l).h1-l {
     font-size: 3.75rem;
     margin-top: 32px;
   }
@@ -1006,6 +1006,62 @@
   }
   .navigation__item {
     padding: 14px 0;
+  }
+  .leaders {
+    padding-bottom: 1.5rem;
+  }
+  .leaders .festival__desc {
+    padding-top: 40px;
+  }
+  .leaders .festival__desc_title {
+    width: calc((100% - 32px) / 24 * 23);
+    gap: 26px;
+  }
+  .leaders .history__images_slider {
+    height: 320px;
+  }
+  .leaders .history__images_slide {
+    height: 100%;
+  }
+  .leaders__sliders {
+    gap: 1.375rem;
+  }
+  .leaders__desc_slide {
+    padding-right: 0;
+    padding-bottom: 23px;
+  }
+  .leaders__desc_slide .text p:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .leaders .about__desc {
+    gap: 28px;
+    padding-bottom: 30px;
+  }
+  .leaders .about__desc_text p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .leaders__item {
+    padding: 22px 0 24px;
+    gap: 1.25rem;
+  }
+  .leaders__item_top {
+    margin-bottom: 36px;
+  }
+  .leaders__item_top .h3 {
+    margin-bottom: 4px;
+  }
+  .leaders__item_contacts {
+    gap: 16px;
+  }
+  .leaders__item_contact {
+    flex-direction: column;
+    gap: 0;
+  }
+  .leaders__item_contact:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .leaders__item .nav-link {
+    font-size: 0.875rem;
   }
 }
 @media (max-width: 350px) {

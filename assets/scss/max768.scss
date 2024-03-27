@@ -1292,6 +1292,75 @@
 			}
 		}
 	}
+
+	.leaders {
+
+		& .festival {
+
+			&__desc {
+				padding-top: 36px;
+
+				&_title {
+
+					& .h2 {
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+
+		& .history {
+
+			&__images {
+
+				&_slider {
+					height: 700px;
+				}
+
+				&_slide {
+					height: 100%;
+				}
+			}
+		}
+
+		& .about {
+
+			&__desc {
+				padding-top: 26px;
+				padding-bottom: 40px;
+				gap: 14px;
+
+				&_num:first-child {
+					padding-top: 0;
+			  }
+			}
+		}
+
+		&__sliders {
+			gap: 2rem;
+		}
+
+		&__desc {
+
+			&_title {
+				margin-bottom: 28px;
+			}
+
+			&_slide {
+				padding-right: 90px;
+				padding-bottom: 40px;
+			}
+		}
+
+		&__item {
+			gap: 1.5rem;
+			padding: 31px 0;
+
+			&_top {
+				margin-bottom: 40px;
+			}
+		}
+	}
 }
 
 @media (max-width:700px) {

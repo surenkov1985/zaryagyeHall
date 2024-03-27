@@ -1,8 +1,8 @@
 @media (max-width:360px) {
 
 	h1,
-	.h1,
-	.text-content h1 {
+	.h1:not(.h1-l),
+	.text-content h1:not(.h1-l) {
 		font-size: 3.75rem;
 
 		
@@ -1478,6 +1478,97 @@
 
 		&__item {
 			padding: 14px 0;
+		}
+	}
+
+	.leaders {
+		padding-bottom: 1.5rem;
+
+		& .festival {
+
+			&__desc {
+				padding-top: 40px;
+
+				&_title {
+					width: calc((100% - 32px) / 24* 23);
+					gap: 26px;
+				}
+			}
+		}
+
+		& .history {
+
+			&__images {
+
+				&_slider {
+					height: 320px;
+				}
+
+				&_slide {
+					height: 100%;
+				}
+			}
+		}
+
+		&__sliders {
+			gap: 1.375rem;
+		}
+
+		&__desc {
+
+			&_slide {
+				padding-right: 0;
+				padding-bottom: 23px;
+
+				&  .text p:not(:last-child) {
+					margin-bottom: 18px;
+			  }
+			}
+		}
+
+		& .about {
+
+			&__desc {
+				gap: 28px;
+				padding-bottom: 30px;
+
+				&_text {
+
+					& p:not(:last-child) {
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+
+		&__item {
+			padding: 22px 0 24px;
+			gap: 1.25rem;
+
+			&_top {
+				margin-bottom: 36px;
+
+				& .h3 {
+					margin-bottom: 4px;
+				}
+			}
+
+			&_contacts {
+				gap: 16px;
+			}
+
+			&_contact {
+				flex-direction: column;
+				gap: 0;
+
+				&:not(:last-child) {
+					margin-bottom: 16px;
+				}
+			}
+
+			& .nav-link {
+				font-size: 0.875rem;
+			}
 		}
 	}
 }

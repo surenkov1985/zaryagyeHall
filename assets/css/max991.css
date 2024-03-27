@@ -519,10 +519,22 @@
     flex-direction: column;
     margin-top: 0;
   }
-  .leaders .about__desc::before {
+  .leaders .about__desc_col::before {
     display: none;
   }
+  .leaders .about__desc_num {
+    padding-top: 0;
+    border-top: none;
+  }
   .leaders__desc {
+    width: 100%;
+  }
+  .leaders__item {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 32px 0;
+  }
+  .leaders__item_col {
     width: 100%;
   }
 }

@@ -868,6 +868,43 @@
   .navigation__item_index {
     line-height: 0.6;
   }
+  .leaders .festival__desc {
+    padding-top: 36px;
+  }
+  .leaders .festival__desc_title .h2 {
+    font-size: 4rem;
+  }
+  .leaders .history__images_slider {
+    height: 700px;
+  }
+  .leaders .history__images_slide {
+    height: 100%;
+  }
+  .leaders .about__desc {
+    padding-top: 26px;
+    padding-bottom: 40px;
+    gap: 14px;
+  }
+  .leaders .about__desc_num:first-child {
+    padding-top: 0;
+  }
+  .leaders__sliders {
+    gap: 2rem;
+  }
+  .leaders__desc_title {
+    margin-bottom: 28px;
+  }
+  .leaders__desc_slide {
+    padding-right: 90px;
+    padding-bottom: 40px;
+  }
+  .leaders__item {
+    gap: 1.5rem;
+    padding: 31px 0;
+  }
+  .leaders__item_top {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 700px) {
   .head__left {

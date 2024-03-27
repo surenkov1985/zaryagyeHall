@@ -1049,4 +1049,57 @@
 			}
 		}
 	}
+
+	.leaders {
+
+		& .festival {
+
+			&__desc {
+				padding-top: 24px;
+				padding-bottom: 32px;
+
+				&_title {
+					& .h2 {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+
+		&__desc {
+
+			&_slide {
+				padding-right: 32px;
+			}
+		}
+
+		&__item {
+
+			&_top {
+				flex-direction: column-reverse;
+				gap: 1rem;
+				
+			}
+
+			&_img {
+				margin: 0 auto;
+				width: 200px;
+				height: 200px;
+			}
+		}
+
+		& .history {
+
+			&__images {
+
+				&_slider {
+					height: 500px;
+				}
+
+				&_slide {
+					height: 100%;
+				}
+			}
+		}
+	}
 }

@@ -704,4 +704,29 @@
   .mission__image img {
     height: 400px;
   }
+  .leaders .festival__desc {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .leaders .festival__desc_title .h2 {
+    font-size: 3rem;
+  }
+  .leaders__desc_slide {
+    padding-right: 32px;
+  }
+  .leaders__item_top {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .leaders__item_img {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .leaders .history__images_slider {
+    height: 500px;
+  }
+  .leaders .history__images_slide {
+    height: 100%;
+  }
 }
