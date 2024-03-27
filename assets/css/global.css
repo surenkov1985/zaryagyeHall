@@ -69,6 +69,30 @@
 .btn_social:hover svg path {
   fill: var(--clr-white);
 }
+.btn_play {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--clr-white-10);
+  -webkit-backdrop-filter: blur(74.75px);
+          backdrop-filter: blur(74.75px);
+  flex-shrink: 0;
+  padding: 0 !important;
+  justify-content: center;
+}
+.btn_play:hover {
+  background: var(--clr-black);
+}
+.btn_play:hover svg path {
+  fill: var(--clr-white);
+}
+.btn_play span {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn_filter {
   background: none;
   padding: 0;

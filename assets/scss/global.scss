@@ -85,6 +85,34 @@
 		}
 	}
 
+	&_play {
+		// padding: 52px;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background: var(--clr-white-10);
+		backdrop-filter: blur(74.75px);
+		flex-shrink: 0;
+		padding: 0 !important;
+		justify-content: center;
+
+		&:hover {
+			background: var(--clr-black);
+
+			& svg path {
+				fill: var(--clr-white);
+			}
+		}
+
+		& span {
+			width: 32px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
 	&_filter {
 		background: none;
 		padding: 0;
