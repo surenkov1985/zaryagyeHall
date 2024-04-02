@@ -169,38 +169,43 @@ let isAnim = false;
 let lastScrollTop = 0;
 let eventsDatePos;
 if ($(".events__date").length) eventsDatePos = parseFloat($(".events__date").css("top"));
-$(document).bind("scroll", function (e) {
-	var current = $(window).scrollTop();
 
-	if (window.pageYOffset >= 300) {
-		const head = $(".head").not(".mobile__head");
-		$(head).addClass("fixed");
+// скролл
 
-		if (current < last) {
-			console.log("Вверх");
+// $(document).bind("scroll", function (e) {
+// 	var current = $(window).scrollTop();
 
-			if (!$(".head.fixed").hasClass("show")) {
-				$(".head.fixed").css({ transition: "all 0.7s" });
-				$(".head.fixed").addClass("show");
-				$(".head.fixed").removeClass("hide");
-			}
+// 	if (window.pageYOffset >= 300) {
+// 		const head = $(".head").not(".mobile__head");
+// 		$(head).addClass("fixed");
 
-			if ($(".events__date").length) {
-				$(".events__date").css({ top: $(".head.fixed").innerHeight() + eventsDatePos + "px" });
-			}
-		} else if (current > last) {
-			$(".head.fixed").removeClass("show");
-			$(".head.fixed").addClass("hide");
+// 		if (current < last) {
+// 			console.log("Вверх");
 
-			if ($(".events__date").length) {
-				$(".events__date").css({ top: eventsDatePos + "px" });
-			}
-		}
-	} else {
-		$(".head").not(".mobile__head").removeClass("fixed");
-	}
-	last = current;
-});
+// 			if (!$(".head.fixed").hasClass("show")) {
+// 				$(".head.fixed").css({ transition: "all 0.7s" });
+// 				$(".head.fixed").addClass("show");
+// 				$(".head.fixed").removeClass("hide");
+// 			}
+
+// 			if ($(".events__date").length) {
+// 				$(".events__date").css({ top: $(".head.fixed").innerHeight() + eventsDatePos + "px" });
+// 			}
+// 		} else if (current > last) {
+// 			$(".head.fixed").removeClass("show");
+// 			$(".head.fixed").addClass("hide");
+
+// 			if ($(".events__date").length) {
+// 				$(".events__date").css({ top: eventsDatePos + "px" });
+// 			}
+// 		}
+// 	} else {
+// 		$(".head").not(".mobile__head").removeClass("fixed");
+// 	}
+// 	last = current;
+// });
+
+
 
 $(document).on("click", function (e) {
 	if (!e.target.closest(".dropdown")) {

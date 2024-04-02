@@ -242,6 +242,9 @@
   .fs__content_slider .swiper-nav {
     gap: 8px;
   }
+  .fs__info {
+    margin-top: 0;
+  }
   .event__aside {
     width: calc((100% - 16px) / 12 * 3);
   }
@@ -250,6 +253,12 @@
   }
   .event__section_col {
     width: 58.8235294118%;
+  }
+  .event__person_content .text_content {
+    width: 88.2352941176%;
+  }
+  .event__person_num {
+    width: calc((100% - 16px) / 17 * 9);
   }
   .events {
     padding-top: 88px;

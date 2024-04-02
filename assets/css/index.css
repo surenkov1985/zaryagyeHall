@@ -1092,7 +1092,8 @@
 }
 .event__person_nums {
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  margin-top: 56px;
 }
 .event__person_num {
   width: calc((100% - 32px) / 17 * 6);

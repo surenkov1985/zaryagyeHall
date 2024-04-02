@@ -329,6 +329,13 @@
 			}
 		}
 
+		&__title {
+
+			&.fs__title-sm {
+				// width: calc((100% - 12px) / 24* 20);
+			}
+		}
+
 		&__page-title {
 			width: calc(100% / 24 * 18);
 		}
@@ -389,6 +396,10 @@
 				}
 			}
 		}
+
+		&__info {
+			margin-top: 0;
+		}
 	}
 
 	.event {
@@ -406,6 +417,21 @@
 			&_col {
 				width: calc(100% / 17* 10);
 			}
+		}
+
+		&__person {
+
+			&_content {
+
+				& .text_content {
+					width: calc(100% / 17 * 15);
+				}
+			}
+
+				&_num {
+					width: calc((100% - 16px) / 17* 9);
+				}
+			
 		}
 	}
 

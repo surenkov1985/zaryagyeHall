@@ -189,6 +189,10 @@
   .fs__page-title {
     width: 83.3333333333%;
   }
+  .fs__title.fs__title-sm .h2 {
+    width: calc((100% - 12px) / 24 * 24);
+    font-size: 4rem;
+  }
   .fs__page-subtitle {
     width: 80%;
   }

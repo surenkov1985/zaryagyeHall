@@ -1089,6 +1089,17 @@
 		padding-top: 2.5rem !important;
   }
 
+  .text_content h2 {
+	font-size: 4rem;
+	margin-bottom: 22px;
+  }
+
+  .text_content h3 {
+	font-size: 3rem;
+	margin-bottom: 22px;
+	margin-top: 0;
+  }
+
 	.text_content h6 {
 		font-size: 1rem;
 		margin-bottom: 1rem;
@@ -1107,12 +1118,18 @@
 	}
 
 	.text_content li {
-		font-size: 1rem;
+		font-size: 1rem !important;
 
 		&:not(:last-child) {
 			margin-bottom: 18px;
 		}
 	}
+
+	.text_content ol li {
+		padding-left: 8px;
+		list-style-type: decimal;
+		margin-left: 16px;
+  }
 
 	.about {
 
@@ -1138,6 +1155,15 @@
 	.text_content mark {
 		font-size: 1rem;
 	}
+
+	.text_content blockquote {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin: 0;
+		padding-left: 26px;
+		margin-left: -26px;
+		margin-top:5rem;
+  }
 
 	.tag {
 		font-size: 14px;
@@ -1181,6 +1207,10 @@
 	}
 
 	.main_font {
+		font-size: 1rem;
+	}
+
+	table {
 		font-size: 1rem;
 	}
 
@@ -1561,6 +1591,7 @@
 
 		&__info {
 			margin-bottom: 49px;
+			margin-top: 78px;
 
 			&_tags {
 				margin-left: 0;
@@ -1719,7 +1750,68 @@
 			padding: 64px 0;
 		}
 
-		&__person {}
+		&__person {
+
+			&_content {
+
+				&:not(:last-child) {
+					padding-bottom: 50px;
+			  }
+
+				& .text_content {
+					padding-bottom: 16px;
+
+					& h3 {
+						margin-top: 0;
+					}
+
+					& h5 {
+						margin-bottom: 24px;
+
+						&:last-child {
+							margin-bottom: 10px;
+						}
+					}
+
+					& div:not(:last-child) {
+						margin-bottom: 64px;
+					}
+
+					& ol li {
+						padding-left: 8px;
+						list-style-type: decimal;
+						margin-left: 16px;
+
+						&:not(:last-child) {
+						margin-bottom: 12px;}
+				  }
+
+				  & ul li {
+						padding-left: 8px;
+						margin-left: 16px;
+
+						&:not(:last-child) {
+						margin-bottom: 12px;}
+				}
+					& .text_content blockquote {
+						font-size: 1rem;
+						line-height: 1.6;
+						padding-left: 26px;
+						margin-left: -26px;
+						margin-top: 5rem;
+				  }
+				}
+
+				& table {
+					margin-bottom: 56px;
+				}
+			}
+
+			&_nums {
+				margin-top: 46px;
+				gap: 18px;
+			}
+		}
 	}
 
 	.accordion {
@@ -2473,6 +2565,32 @@
 			&_img {
 				width: 128px;
 				height: 128px;
+			}
+		}
+	}
+
+	.news-detail {
+
+		&__person {
+			&_name {
+
+				& .icon {
+					width: 64px;
+					height: 64px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1350px) {
+	
+	.event {
+
+		&__person {
+
+			&_num {
+				width: calc((100% - 32px) / 17* 8);
 			}
 		}
 	}

@@ -283,7 +283,17 @@
 			width: calc(100% / 12 * 10);
 		}
 
-		
+		&__title {
+
+			&.fs__title-sm {
+
+				& .h2 {
+					width: calc((100% - 12px) / 24* 24);
+					font-size: 4rem;
+				}
+				
+			}
+		}
 
 		&__page-subtitle {
 			width: calc(100% / 10 * 8);

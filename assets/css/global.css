@@ -10,6 +10,7 @@
   font-size: 1.375rem;
   line-height: 1.4;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .btn:hover {
   background: var(--clr-black);
@@ -646,12 +647,27 @@ label.label_radio {
   background: var(--clr-error);
 }
 
+.dropdown {
+  position: relative;
+}
+.dropdown__value {
+  width: 100%;
+}
 .dropdown__list {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transform: translateX(-50%) translateY(-30px);
   transition: all 0.5s;
+  left: 50%;
+  top: calc(100% + 10px);
+  border-radius: 24px;
+  padding: 24px 32px;
+  background: var(--clr-white);
+  box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .dropdown.active .dropdown__list {
   visibility: visible;
@@ -660,6 +676,15 @@ label.label_radio {
   max-height: 220px;
   overflow: auto;
   z-index: 10;
+}
+.dropdown__item {
+  line-height: 1.4;
+  color: var(--clr-black-40);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.dropdown__item:hover {
+  color: var(--clr-black);
 }
 
 .dropdown-slider__value {

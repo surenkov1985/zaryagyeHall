@@ -709,6 +709,15 @@
   .section_pt_l {
     padding-top: 2.5rem !important;
   }
+  .text_content h2 {
+    font-size: 4rem;
+    margin-bottom: 22px;
+  }
+  .text_content h3 {
+    font-size: 3rem;
+    margin-bottom: 22px;
+    margin-top: 0;
+  }
   .text_content h6 {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -723,10 +732,15 @@
     margin-top: 25px;
   }
   .text_content li {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .text_content li:not(:last-child) {
     margin-bottom: 18px;
+  }
+  .text_content ol li {
+    padding-left: 8px;
+    list-style-type: decimal;
+    margin-left: 16px;
   }
   .about.section_pt_sm {
     padding-top: 0.5rem !important;
@@ -745,6 +759,14 @@
   }
   .text_content mark {
     font-size: 1rem;
+  }
+  .text_content blockquote {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 26px;
+    margin-left: -26px;
+    margin-top: 5rem;
   }
   .tag {
     font-size: 14px;
@@ -778,6 +800,9 @@
     font-size: 4rem;
   }
   .main_font {
+    font-size: 1rem;
+  }
+  table {
     font-size: 1rem;
   }
   .time {
@@ -1033,6 +1058,7 @@
   }
   .fs__info {
     margin-bottom: 49px;
+    margin-top: 78px;
   }
   .fs__info_tags {
     margin-left: 0;
@@ -1130,6 +1156,53 @@
   }
   .event__desc {
     padding: 64px 0;
+  }
+  .event__person_content:not(:last-child) {
+    padding-bottom: 50px;
+  }
+  .event__person_content .text_content {
+    padding-bottom: 16px;
+  }
+  .event__person_content .text_content h3 {
+    margin-top: 0;
+  }
+  .event__person_content .text_content h5 {
+    margin-bottom: 24px;
+  }
+  .event__person_content .text_content h5:last-child {
+    margin-bottom: 10px;
+  }
+  .event__person_content .text_content div:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  .event__person_content .text_content ol li {
+    padding-left: 8px;
+    list-style-type: decimal;
+    margin-left: 16px;
+  }
+  .event__person_content .text_content ol li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .event__person_content .text_content ul li {
+    padding-left: 8px;
+    margin-left: 16px;
+  }
+  .event__person_content .text_content ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .event__person_content .text_content .text_content blockquote {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 26px;
+    margin-left: -26px;
+    margin-top: 5rem;
+  }
+  .event__person_content table {
+    margin-bottom: 56px;
+  }
+  .event__person_nums {
+    margin-top: 46px;
+    gap: 18px;
   }
   .accordion__item {
     padding: 24px 0;
@@ -1635,5 +1708,14 @@
   .leaders__item_img {
     width: 128px;
     height: 128px;
+  }
+  .news-detail__person_name .icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (max-width: 1350px) {
+  .event__person_num {
+    width: calc((100% - 32px) / 17 * 8);
   }
 }
