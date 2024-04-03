@@ -672,6 +672,12 @@
 				max-height: 450px;
 			}
 		}
+
+		&__aside {
+			& .about__desc_num {
+				border-top: none;
+			}
+		}
 	}
 
 	.location {

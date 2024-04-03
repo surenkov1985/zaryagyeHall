@@ -257,7 +257,7 @@
   .event__person_content .text_content {
     width: 88.2352941176%;
   }
-  .event__person_content .text_content svg {
+  .event__person_content .text_content svg.mark {
     width: 56px;
     height: 48px;
   }

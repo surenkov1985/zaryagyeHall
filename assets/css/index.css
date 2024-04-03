@@ -871,6 +871,9 @@
   width: calc((100% - 32px) / 24 * 12);
   margin-left: auto;
 }
+.festival__desc_text p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
 .festival__desc_more {
   margin-top: 56px;
 }
@@ -888,6 +891,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.event .festival {
+  width: 100%;
 }
 .event__aside {
   padding-top: 30px;
@@ -1056,7 +1062,7 @@
 .event__person_content .text_content div:not(:last-child) {
   margin-bottom: 84px;
 }
-.event__person_content .text_content svg {
+.event__person_content .text_content svg.mark {
   margin-bottom: 24px;
   width: 64px;
   height: 50px;
@@ -1364,6 +1370,10 @@
 .news__slide_text a:hover {
   color: var(--clr-black-40) !important;
 }
+.news__slide_link {
+  display: flex;
+  justify-content: flex-end;
+}
 .news__slide_preview {
   height: 330px;
   overflow: hidden;
@@ -1606,6 +1616,27 @@
 }
 .about .festival__desc_text {
   padding-right: 44px;
+}
+.about__aside {
+  border-top: 1px solid rgb(219, 219, 219);
+  padding-top: 24px;
+}
+.about__aside .about__desc_num {
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about__accordion {
+  border-top: 1px solid rgb(219, 219, 219);
+}
+.about__accordion .text_content {
+  padding-top: 0 !important;
+}
+.about__accordion_more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
 }
 
 .description {
@@ -2039,6 +2070,12 @@
 .navigation {
   padding-top: 132px;
   padding-bottom: 32px;
+}
+.navigation__title {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigation__list {
   display: flex;

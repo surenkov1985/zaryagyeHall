@@ -453,6 +453,9 @@
   .about__slider .swiper-slide {
     max-height: 450px;
   }
+  .about__aside .about__desc_num {
+    border-top: none;
+  }
   .location__content {
     padding: 98px 0;
   }

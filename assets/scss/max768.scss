@@ -91,6 +91,11 @@
 				gap: 10px;
 			}
 		}
+
+		&_play {
+			width: 64px;
+			height: 64px;
+		}
 	}
 
 	.depkult-logo {
@@ -556,7 +561,7 @@
 						padding-left: 60px;
 					}
 
-					& svg {
+					& svg.mark {
 						width: 48px;
 						height: 44px;
 					}

@@ -193,6 +193,11 @@
 				padding: 16px 32px;
 			}
 		}
+
+		&_play {
+			width: 48px;
+			height: 48px;
+		}
 	}
 
 	.link {
@@ -736,7 +741,7 @@
 						}
 					}
 
-					& svg {
+					& svg.mark {
 						width: 32px;
 						height: 24px;
 						margin-bottom: 12px;
@@ -1694,6 +1699,10 @@
 }
 
 @media (max-width: 350px) {
+
+	.h3{
+		font-size: 1.5rem;
+	}
 
 	.btn {
 

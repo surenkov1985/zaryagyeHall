@@ -153,6 +153,10 @@
     justify-content: space-between;
     padding: 16px 32px;
   }
+  .btn_play {
+    width: 48px;
+    height: 48px;
+  }
   .link {
     font-size: 0.875rem;
   }
@@ -524,7 +528,7 @@
   .event__person_content .text_content ol li:not(:last-child), .event__person_content .text_content ul li:not(:last-child) {
     margin-bottom: 4px;
   }
-  .event__person_content .text_content svg {
+  .event__person_content .text_content svg.mark {
     width: 32px;
     height: 24px;
     margin-bottom: 12px;
@@ -1143,6 +1147,9 @@
   }
 }
 @media (max-width: 350px) {
+  .h3 {
+    font-size: 1.5rem;
+  }
   .btn_social {
     width: 90px;
     height: 90px;

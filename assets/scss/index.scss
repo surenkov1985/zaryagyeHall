@@ -1146,6 +1146,13 @@
 		&_text {
 			width: calc((100% - 32px) / 24 * 12);
 			margin-left: auto;
+
+			& p {
+
+				&:not(:last-child) {
+					margin-bottom: 1.5rem;
+				}
+			}
 		}
 
 		&_more {
@@ -1169,6 +1176,10 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
+	}
+
+	& .festival {
+		width: 100%;
 	}
 
 	&__aside {
@@ -1403,7 +1414,7 @@
 					
 				}
 
-				& svg {
+				& svg.mark {
 					margin-bottom: 24px;
 					width: 64px;
 					height: 50px;
@@ -1845,6 +1856,11 @@
 			
 		}
 
+		&_link {
+			display: flex;
+			justify-content: flex-end;
+		}
+
 		&_preview {
 			height: 330px;
 			overflow: hidden;
@@ -2164,6 +2180,32 @@
 			&_text {
 				padding-right: 44px;
 			}
+		}
+	}
+
+	&__aside {
+		border-top: 1px solid rgb(219, 219, 219);
+		padding-top: 24px;
+
+		& .about__desc_num {
+			border-bottom: none;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+
+	&__accordion {
+		border-top: 1px solid rgb(219, 219, 219);
+
+		& .text_content {
+			padding-top: 0 !important;
+		}
+
+		&_more {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 48px;
 		}
 	}
 }
@@ -2739,6 +2781,13 @@
 .navigation {
 	padding-top: 132px;
 	padding-bottom: 32px;
+
+	&__title {
+		margin-bottom: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
 	&__list {
 		display: flex;

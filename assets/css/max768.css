@@ -71,6 +71,10 @@
     font-size: 1rem;
     gap: 10px;
   }
+  .btn_play {
+    width: 64px;
+    height: 64px;
+  }
   .depkult-logo {
     height: 28px;
     padding-top: 0;
@@ -378,7 +382,7 @@
     margin-left: 0;
     padding-left: 60px;
   }
-  .event__person_content .text_content svg {
+  .event__person_content .text_content svg.mark {
     width: 48px;
     height: 44px;
   }
