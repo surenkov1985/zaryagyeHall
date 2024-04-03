@@ -9,6 +9,12 @@
   .text-content h1.h1-l {
     font-size: 7.5rem;
   }
+  .text_content h2 {
+    font-size: 3rem;
+  }
+  .text_content h3 {
+    font-size: 3rem;
+  }
   .desc_content p {
     width: 91.6666666667%;
     margin-bottom: 36px;
@@ -333,8 +339,17 @@
     padding: 55px 0;
   }
   .event__aside {
-    padding-top: 45px;
+    padding-top: 32px;
     gap: 37px;
+    align-items: center;
+  }
+  .event__aside_date {
+    width: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .event__aside_btn {
+    display: none;
   }
   .event__person_content .text_content {
     width: 91.6666666667%;
@@ -363,8 +378,16 @@
     margin-left: 0;
     padding-left: 60px;
   }
-  .event__person_content table {
+  .event__person_content .text_content svg {
+    width: 48px;
+    height: 44px;
+  }
+  .event__person_content_table {
     margin-top: 36px;
+  }
+  .event__person_nums {
+    margin-top: 36px;
+    margin-bottom: 36px;
   }
   table colgroup col:nth-child(1) {
     width: 11% !important;

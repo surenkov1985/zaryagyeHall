@@ -47,7 +47,7 @@
 		font-size: 0.875rem;
 
 		&:not(:last-child) {
-			margin-bottom: 0.75rem;
+			margin-bottom: 0.5rem;
 		}
 	}
 
@@ -81,7 +81,7 @@
 	}
 
 	.text_content mark {
-		font-size: 1rem;
+		font-size: 0.875rem;
 	}
 
 	.numbers {
@@ -504,6 +504,10 @@
 			}
 		}
 
+		&__title.fs__title-sm .h2 {
+			font-size: 2rem;
+	  }
+
 		&__page-subtitle {
 			margin-top: 39px;
 			font-size: 18px;
@@ -511,7 +515,7 @@
 
 		& .container {
 			padding-top: 137px;
-			padding-bottom: 4px;
+			padding-bottom: 36px;
 		}
 
 		&__event-title {
@@ -526,7 +530,8 @@
 
 		&__info {
 			flex-direction: column;
-			margin-bottom: 24px;
+			// margin-bottom: 24px;
+			margin-bottom: 8px;
 
 			&_btn {
 				width: 100%;
@@ -638,6 +643,7 @@
 
 		&__title {
 			gap: 0.25rem;
+			margin-bottom: 0.5rem;
 		}
 
 		&__section {
@@ -680,7 +686,96 @@
 					margin-top: 1rem;
 				}
 			}
+
+			&_content {
+
+				& .text_content {
+					width: 98.4%;
+					overflow-wrap: break-word;
+
+					&.text_content_sm {
+						width: 100%;
+				  }
+
+					& h3 {
+						font-size: 1.75rem;
+						margin-bottom: 27px;
+					}
+
+					& h2 {
+						font-size: 2rem;
+						margin-bottom: 24px;
+					}
+
+					& h5 {
+						margin-top: 32px;
+						margin-bottom: 20px;
+					}
+
+					& p {
+
+						&:not(:last-child) {
+							margin-bottom: 1.5rem;
+					  }
+					}
+
+					& ol, & ul {
+						margin-top: 24px;
+
+						& p {
+							margin-bottom: 10px !important;
+						}
+
+						& li {
+							padding-left: 0;
+							font-size: 0.875rem !important;
+
+							&:not(:last-child) {
+								margin-bottom: 4px;
+							}
+						}
+					}
+
+					& svg {
+						width: 32px;
+						height: 24px;
+						margin-bottom: 12px;
+					}
+
+					& div:not(:last-child) {
+						margin-bottom: 44px;
+				  }
+
+				  & blockquote {
+					padding-left: 16px;
+					font-size: 0.875rem;
+				  }
+				}
+
+				&_table {
+					margin-top: 4px;
+
+					
+				}
+			}
+
+			&_nums {
+				flex-wrap: wrap;
+				margin-bottom: 22px;
+			}
 		}
+	}
+
+	td {
+		padding-bottom: 16px;
+		padding-top: 16px;
+		vertical-align: top;
+	}
+
+	tbody th {
+		padding-bottom: 16px;
+		padding-top: 16px;
+		vertical-align: top;
 	}
 
 	.events {
@@ -1568,6 +1663,31 @@
 
 			& .nav-link {
 				font-size: 0.875rem;
+			}
+		}
+	}
+
+	.news-detail {
+
+		&__section {
+
+			&_row {
+				padding: 1.125rem 0 0.75rem;
+			}
+
+			&_col {
+				width: calc((100% - 17px) / 17* 12);
+			}
+		}
+
+		&__person {
+
+			&_name {
+
+				& .icon {
+					width: 48px;
+					height: 48px;
+				}
 			}
 		}
 	}

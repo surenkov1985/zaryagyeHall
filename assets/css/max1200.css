@@ -257,6 +257,10 @@
   .event__person_content .text_content {
     width: 88.2352941176%;
   }
+  .event__person_content .text_content svg {
+    width: 56px;
+    height: 48px;
+  }
   .event__person_num {
     width: calc((100% - 16px) / 17 * 9);
   }

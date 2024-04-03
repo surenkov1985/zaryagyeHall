@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fs {
   width: 100%;
   height: 100%;
@@ -1057,6 +1058,8 @@
 }
 .event__person_content .text_content svg {
   margin-bottom: 24px;
+  width: 64px;
+  height: 50px;
 }
 .event__person_content .text_content h2 {
   margin-bottom: 26px;
@@ -1084,8 +1087,19 @@
 .event__person_content .text_content li:not(:last-child) {
   margin-bottom: 16px;
 }
-.event__person_content table {
+.event__person_content_table {
+  overflow: auto;
   margin-bottom: 84px;
+}
+.event__person_content_table table {
+  min-width: 480px;
+}
+.event__person_content_table::-webkit-scrollbar {
+  height: 1px; /* Ширина всего элемента навигации */
+  background-color: rgb(216, 216, 216);
+}
+.event__person_content_table::-webkit-scrollbar-thumb {
+  background-color: rgb(16, 16, 16);
 }
 .event__person_content .event__section_col {
   width: calc((100% - 28px) / 17 * 10);
@@ -1393,7 +1407,9 @@
 .news__list .news__slide {
   padding: 2rem 0 2.125rem;
 }
-
+.news__slider_cont {
+  position: relative;
+}
 .about {
   padding-bottom: 161px;
   position: relative;

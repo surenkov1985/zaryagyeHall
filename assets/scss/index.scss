@@ -1405,6 +1405,8 @@
 
 				& svg {
 					margin-bottom: 24px;
+					width: 64px;
+					height: 50px;
 				}
 
 				& h2 {
@@ -1447,8 +1449,28 @@
 				}
 			}
 
-			& table {
+			&_table {
+				overflow: auto;
 				margin-bottom: 84px;
+		
+				& table {
+					min-width: 480px;
+				}
+
+				&::-webkit-scrollbar {
+					height: 1px; /* Ширина всего элемента навигации */
+					background-color: rgb(216, 216, 216);
+				 }
+
+				 &::-webkit-scrollbar-thumb {
+					background-color: rgb(16, 16, 16);
+					// border-radius: 9em;
+					// box-shadow: inset 1px 1px 10px #f3faf7;
+			  }
+			}
+
+			& table {
+				
 			}
 
 			& .event__section_col {
@@ -1873,6 +1895,17 @@
 
 		& .news__slide {
 			padding: 2rem 0 2.125rem;
+		}
+	}
+
+	&__slider {
+
+		&_cont {
+			position: relative;
+
+			& .swiper-pagination {
+				// position: relative;
+			}
 		}
 	}
 }
