@@ -32,6 +32,11 @@
 		width: calc(100% / 15 * 9);
 		margin-left: auto;
 		margin-right: auto;
+
+		& .btn {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	&__event-title {
@@ -2109,12 +2114,9 @@
 
 		&_top {
 			display: flex;
-			align-items: center;
+			// align-items: center;
 			justify-content: space-between;
 			margin-bottom: 80px;
-		}
-
-		&_control {
 		}
 
 		&_tabs {
@@ -3374,4 +3376,272 @@
 			gap: 48px;
 		}
 	}
+}
+
+// PERSONAL
+
+.personal {
+
+	&__content {
+		margin-top: 180px;
+		margin-bottom: 120px;
+		padding-top: 56px;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: var(--clr-black);
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__slider {
+		width: calc((100% - 32px) / 24 * 12);
+
+		&_control {
+			width: calc((100% - 32px) / 24 * 12);
+			display: flex;
+			height: auto;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+	&__slide	{
+		&_top {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+
+			& p {
+				margin-top: 10px;
+			}
+		}
+
+		&_text {
+			margin-top: 84px;
+		}
+
+		&_img {
+			width: 164px;
+			height: 164px;
+			border-radius: 50%;
+			overflow: hidden;
+			isolation: isolate;
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+// ADVS
+
+.advs {
+	
+	padding-top: 96px;
+	padding-bottom: 85px;
+	position: relative;
+	color: var(--clr-white);
+
+	&__bg {
+		position: absolute;
+		background: linear-gradient(90.00deg, rgba(16, 7, 1, 0.7) 43.958%,rgba(13, 7, 2, 0) 67.5%),url(image);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top center;
+		}
+	}
+
+	&__row{
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	&__col {
+		width: calc((100% - 32px) / 24 * 12);
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		padding: 32px 0;
+		border-bottom: 1px solid var(--clr-white-40);
+
+		&_text {
+			width: calc(100% / 12 * 7);
+
+			& p {
+				color: var(--clr-white-40);
+				margin-top: 32px;
+			}
+			
+		}
+
+		&_img {
+			width: 170px;
+			height: 170px;
+			border-radius: 50%;
+			overflow: hidden;
+			isolation: isolate;
+			background: var(--clr-white-10);
+			backdrop-filter: var(--bg-filter-blur);
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+// VACANCIES
+
+.vacancies {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	&__title {
+		margin-bottom: 64px;
+	}
+
+	&__item {
+		padding: 32px 0;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			top: 0;
+			left: 0;
+			background: var(--clr-black-40);
+		}
+
+		&:last-child {
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				bottom: 0;
+				left: 0;
+				background: var(--clr-black-40);
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&_desc {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: calc((100% - 32px) / 24 * 18);
+		}
+
+		& .h5 {
+			transition: all .5s;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 2px;
+				background: var(--clr-black-40);
+				left: 0;
+				top: 100%;
+				// opacity: 0;
+				scale: 0;
+				transition: all .3s;
+			}
+		}
+
+		&:hover {
+
+			& .h5 {
+				color: var(--clr-black-40);
+				
+				&::after {
+					// opacity: 1;
+				scale: 1;
+				}
+				// text-decoration: underline;
+				// text-underline-offset: 10px;
+			}
+
+			& .btn {
+				background: var(--clr-black);
+
+				& svg path {
+					fill: var(--clr-white);
+				}
+			}
+		}
+	}
+}
+
+// FEEDBACK
+
+.feedback {
+	padding-top: 80px;
+	padding-bottom: 84px;
+
+	&__title {
+		margin-bottom: 84px;
+	}
+
+	&__form {
+
+		&_row {
+			display: flex;
+			justify-content: space-between;
+			gap: 32px;
+		}
+
+		&_col {
+			width: calc((100% - 32px) / 24 * 12);
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			justify-content: space-between;
+		}
+
+		&_title {
+			width: calc(100% / 12 * 7);
+		}
+
+		&_agree_text {
+			width: calc(100% / 12 * 7);
+		}
+	}
+
 }

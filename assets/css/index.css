@@ -28,6 +28,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+.fs__page-subtitle .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
 .fs__event-title {
   display: flex;
   align-items: baseline;
@@ -1566,7 +1570,6 @@
 }
 .about__sliders_top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -2511,4 +2514,214 @@
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
+}
+
+.personal__content {
+  margin-top: 180px;
+  margin-bottom: 120px;
+  padding-top: 56px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.personal__content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: var(--clr-black);
+  top: 0;
+  left: 0;
+}
+.personal__slider {
+  width: calc((100% - 32px) / 24 * 12);
+}
+.personal__slider_control {
+  width: calc((100% - 32px) / 24 * 12);
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.personal__slide_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.personal__slide_top p {
+  margin-top: 10px;
+}
+.personal__slide_text {
+  margin-top: 84px;
+}
+.personal__slide_img {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  overflow: hidden;
+  isolation: isolate;
+}
+.personal__slide_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.advs {
+  padding-top: 96px;
+  padding-bottom: 85px;
+  position: relative;
+  color: var(--clr-white);
+}
+.advs__bg {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(16, 7, 1, 0.7) 43.958%, rgba(13, 7, 2, 0) 67.5%), url(image);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.advs__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+.advs__row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.advs__col {
+  width: calc((100% - 32px) / 24 * 12);
+}
+.advs__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--clr-white-40);
+}
+.advs__item_text {
+  width: 58.3333333333%;
+}
+.advs__item_text p {
+  color: var(--clr-white-40);
+  margin-top: 32px;
+}
+.advs__item_img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--clr-white-10);
+  -webkit-backdrop-filter: var(--bg-filter-blur);
+          backdrop-filter: var(--bg-filter-blur);
+}
+.advs__item_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vacancies {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.vacancies__title {
+  margin-bottom: 64px;
+}
+.vacancies__item {
+  padding: 32px 0;
+  position: relative;
+}
+.vacancies__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background: var(--clr-black-40);
+}
+.vacancies__item:last-child::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: var(--clr-black-40);
+}
+.vacancies__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.vacancies__link_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc((100% - 32px) / 24 * 18);
+}
+.vacancies__link .h5 {
+  transition: all 0.5s;
+  position: relative;
+}
+.vacancies__link .h5::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--clr-black-40);
+  left: 0;
+  top: 100%;
+  scale: 0;
+  transition: all 0.3s;
+}
+.vacancies__link:hover .h5 {
+  color: var(--clr-black-40);
+}
+.vacancies__link:hover .h5::after {
+  scale: 1;
+}
+.vacancies__link:hover .btn {
+  background: var(--clr-black);
+}
+.vacancies__link:hover .btn svg path {
+  fill: var(--clr-white);
+}
+
+.feedback {
+  padding-top: 80px;
+  padding-bottom: 84px;
+}
+.feedback__title {
+  margin-bottom: 84px;
+}
+.feedback__form_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.feedback__form_col {
+  width: calc((100% - 32px) / 24 * 12);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+}
+.feedback__form_title {
+  width: 58.3333333333%;
+}
+.feedback__form_agree_text {
+  width: 58.3333333333%;
 }
