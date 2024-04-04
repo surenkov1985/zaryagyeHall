@@ -67,6 +67,14 @@
 		font-size: 1.25rem;
 	}
 
+	
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom: 80px;
+	}
+}
+
 	.head {
 
 		& .btn_menu {
@@ -609,6 +617,14 @@
 		font-size: 1.125rem;
 	}
 
+	
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom:72px;
+	}
+}
+
 	.tag {
 		font-size: 16px;
 	}
@@ -991,6 +1007,8 @@
 			&__desc {
 				padding-top: 44px;
 				padding-bottom: 42px;
+
+				
 			}
 		}
 
@@ -1131,10 +1149,50 @@
 		margin-left: 16px;
   }
 
+  
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom:48px;
+	}
+}
+
+
+
 	.about {
 
 		&.section_pt_sm {
 			padding-top: 0.5rem !important;
+		}
+	}
+
+	
+
+	.festival {
+
+		&__desc {
+			padding-top: 58px;
+			padding-bottom: 28px;
+
+			&_title {
+				gap: 24px;
+				margin-bottom: 58px;
+
+				& .h2 {
+					font-size: 4rem !important;
+				}
+			}
+			&_text {
+				width: calc((100% - 24px) / 24* 12);
+
+				& p {
+					line-height: 1.6;
+				}
+
+				& blockquote {
+					margin-top: 50px !important;
+				}
+			}
 		}
 	}
 
@@ -2578,6 +2636,31 @@
 					width: 64px;
 					height: 64px;
 				}
+			}
+		}
+	}
+
+	.partners {
+		padding-bottom: 2rem;
+
+		& .about {
+
+			&__sliders {
+
+				&_top {
+					margin-bottom: 48px;
+
+					& .btn_tab {
+						padding: 21px 20px;
+					}
+				}
+			}
+		}
+
+		&__slide {
+
+			&_icon {
+				max-width: 52%;
 			}
 		}
 	}

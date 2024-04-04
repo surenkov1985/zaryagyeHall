@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	historySliders();
 	awardsSlider();
 	aboutSliders();
+	partnersSliders();
 });
 
 $(document).on("click", ".dropdown__value", function () {

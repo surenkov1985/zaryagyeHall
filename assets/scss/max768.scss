@@ -98,6 +98,14 @@
 		}
 	}
 
+	
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+}
+
 	.depkult-logo {
 		// width: 122px;
 		height: 28px;
@@ -491,6 +499,7 @@
 
 	.event {
 		padding-bottom: 68px;
+		padding-top: 16px;
 
 		&__title {
 			padding-bottom: 1.25rem;
@@ -577,6 +586,32 @@
 			&_nums {
 				margin-top: 36px;
 				margin-bottom: 36px;
+			}
+		}
+
+		& .festival {
+
+			&__desc {
+				padding-top: 50px;
+
+				&_title {
+					margin-bottom: 50px;
+				}
+
+				&_text {
+					margin-left: 0;
+					width: calc((100% - 24px) / 24* 23);
+
+					& p {
+						padding-left: 60px;
+					}
+
+					& blockquote {
+						margin-left: 0;
+						padding-left: 60px;
+						margin-top: 40px !important;
+					}
+				}
 			}
 		}
 	}
@@ -1470,6 +1505,48 @@
 
 			&_row {
 				padding: 1.375rem 0;
+			}
+		}
+	}
+
+	.partners {
+		padding-bottom: 3.5rem;
+
+		& .news__slide {
+			padding-top: 1.25rem;
+		}
+
+		& .about {
+
+			&__sliders {
+
+				&_top {
+					margin-bottom: 46px;
+				}
+			}
+		}
+
+		&__slide {
+
+			&_desc {
+				flex-direction: column;
+				height: 100%;
+				gap: 24px;
+			}
+
+			&_icon {
+				margin-left: auto;
+				margin-top: auto;
+				max-width: 100%;
+				width: 100%;
+				height: 120px;
+
+				& img {
+					object-fit: contain;
+					object-position: center;
+					height: 100%;
+					width: 100%;
+				}
 			}
 		}
 	}

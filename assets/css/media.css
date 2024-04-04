@@ -50,6 +50,9 @@
   .text_content mark {
     font-size: 1.25rem;
   }
+  .text_content div:not(:last-child) {
+    margin-bottom: 80px;
+  }
   .head .btn_menu {
     margin-right: -16px;
   }
@@ -410,6 +413,9 @@
   .text_content mark {
     font-size: 1.125rem;
   }
+  .text_content div:not(:last-child) {
+    margin-bottom: 72px;
+  }
   .tag {
     font-size: 16px;
   }
@@ -742,8 +748,31 @@
     list-style-type: decimal;
     margin-left: 16px;
   }
+  .text_content div:not(:last-child) {
+    margin-bottom: 48px;
+  }
   .about.section_pt_sm {
     padding-top: 0.5rem !important;
+  }
+  .festival__desc {
+    padding-top: 58px;
+    padding-bottom: 28px;
+  }
+  .festival__desc_title {
+    gap: 24px;
+    margin-bottom: 58px;
+  }
+  .festival__desc_title .h2 {
+    font-size: 4rem !important;
+  }
+  .festival__desc_text {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .festival__desc_text p {
+    line-height: 1.6;
+  }
+  .festival__desc_text blockquote {
+    margin-top: 50px !important;
   }
   .desc_content p {
     font-size: 1rem;
@@ -1712,6 +1741,18 @@
   .news-detail__person_name .icon {
     width: 64px;
     height: 64px;
+  }
+  .partners {
+    padding-bottom: 2rem;
+  }
+  .partners .about__sliders_top {
+    margin-bottom: 48px;
+  }
+  .partners .about__sliders_top .btn_tab {
+    padding: 21px 20px;
+  }
+  .partners__slide_icon {
+    max-width: 52%;
   }
 }
 @media (max-width: 1350px) {

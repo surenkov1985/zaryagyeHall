@@ -46,6 +46,14 @@
 		font-size: 2.5rem;	
 	}
 
+	
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom: 36px;
+	}
+}
+
 	.head {
 		&__logo {
 			// height: 56px;
@@ -442,7 +450,42 @@
 			}
 		}
 
+		& .festival {
 
+			&__desc {
+				padding-top: 50px;
+
+				&_title {
+					margin-bottom: 50px;
+				}
+
+				&_text {
+					margin-left: 0;
+					width: calc((100% - 24px) / 24* 23);
+
+					& p {
+						padding-left: 24px;
+					}
+
+					& blockquote {
+						margin-left: 0;
+						padding-left: 24px;
+						margin-top: 40px !important;
+					}
+				}
+			}
+		}
+
+		& .festival__desc_text {
+			text-align: left;
+			width: 100%;
+			margin-left: 0;
+
+			& blockquote {
+				margin-left: 0;
+				margin-top: 3rem;
+			}
+		}
 	}
 
 	.accordion {
@@ -1138,5 +1181,9 @@
 				}
 			}
 		}
+	}
+
+	.partners {
+		// padding-bottom: 2.5rem;
 	}
 }

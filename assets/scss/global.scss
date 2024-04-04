@@ -642,6 +642,10 @@ label {
 	padding-bottom: 4rem !important;
 }
 
+.section_pb_xs {
+	padding-bottom: 1.625rem !important;
+}
+
 .section_pt_0 {
 	padding-top: 0 !important;
 }
@@ -709,6 +713,9 @@ label {
 
 .justify-between {
 	justify-content: space-between !important;
+}.partners__slide_desc {
+	color: var(--clr-black-40);
+	line-height: 1.6;
 }
 
 

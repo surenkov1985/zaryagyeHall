@@ -84,6 +84,17 @@
 		font-size: 0.875rem;
 	}
 
+	.section_pb_xs {
+		padding-bottom: 1.125rem !important;
+  }
+
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom: 34px;
+	}
+}
+
 	.numbers {
 		font-size: 4rem;
 	}
@@ -639,8 +650,12 @@
 		}
 	}
 
+	.title_xl {
+		width: 100% !important;
+	}
+
 	.event {
-		padding-top: 0;
+		padding-top: 4px;
 
 		& .h2 {
 			font-size: 1.75rem;
@@ -767,6 +782,36 @@
 			&_nums {
 				flex-wrap: wrap;
 				margin-bottom: 22px;
+			}
+		}
+
+		& .festival {
+
+			&__desc {
+				padding-top: 40px;
+
+				& .tag {
+					padding: 7px 12px;
+				}
+
+				&_title {
+					margin-bottom: 40px;
+				}
+
+				&_text {
+
+					& p {
+						padding-left: 0;
+						line-height: 1.4;
+					}
+
+					& blockquote {
+						margin-top: 34px !important;
+						padding-left: 14px;
+						font-size: 0.875rem;
+						line-height: 1.4;
+					}
+				}
 			}
 		}
 	}
@@ -1693,6 +1738,44 @@
 					width: 48px;
 					height: 48px;
 				}
+			}
+		}
+	}
+	
+	.partners {
+		padding-bottom: 4.75rem;
+
+		& .about {
+
+			&__sliders{ 
+
+				&_top {
+					margin-bottom: 29px;
+				}
+			}
+		}
+
+		&__list {
+			grid-gap: 14px;
+		}
+
+		& .news {
+
+			&__slide {
+				padding-top: 1rem;
+			}
+		}
+
+		&__slide {
+
+			&_desc {
+				gap: 14px;
+			}
+
+			&_icon {
+				width: calc(100% / 12 * 8);
+				height: 112px;
+				margin-right: auto;
 			}
 		}
 	}

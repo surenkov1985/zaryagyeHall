@@ -362,6 +362,13 @@ h5,
 	}
 }
 
+.text_content div {
+
+	&:not(:last-child) {
+		margin-bottom: 84px;
+	}
+}
+
 .text_content mark {
 	font-family: var(--font-accent);
 	font-size: 1.375rem;
