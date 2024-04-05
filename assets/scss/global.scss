@@ -472,6 +472,25 @@ label {
 		}
 	}
 
+	& input[type=file] {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+
+		
+	}
+
+	& .button {
+		display: flex;
+		align-items: center;
+		gap: 	22px;
+		font-size: 1.375rem;
+		line-height: 1.4;
+		color: var(--clr-black-40);
+		transition: all .5s;
+		cursor: pointer;
+	}
+
 	& input[type=checkbox] {
 		position: absolute;
 		visibility: hidden;
@@ -511,10 +530,26 @@ label {
 		& span.checkbox {
 			border-color: var(--clr-black);
 		}
+
+		& .button {
+			color: var(--clr-black);
+
+			& .btn {
+				background: var(--clr-black);
+
+				& svg path {
+					fill: var(--clr-white);
+				}
+			}
+		}
 	}
 
 	&.disabled {
 		color: var(--clr-gray);
+	}
+
+	& span.error {
+		font-size: 0.75rem;
 	}
 
 	& input[type=text],
@@ -522,32 +557,79 @@ label {
 	& input[type=tel] {
 		width: 100%;
 		display: block;
-		padding: 22px 0 16px;
+		padding: 8px 0 22px;
 		border-bottom: 1px solid var(--clr-gray);
+		font-size: 1.375rem;
+		line-height: 1.4;
+		font-family: var(--font-accent);
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			background: var(--clr-gray);
+			display: block;
+		}
 
 		&.error {
 			color: var(--clr-error);
 			border-color: rgba(#ef3c0d, 0.5);
+			
 
 			&+span.error {
 				opacity: 1;
 				visibility: visible;
 			}
 		}
+
+		&::placeholder {
+			color: var(--clr-black-40);
+			visibility: hidden;
+			opacity: 0;
+			font-size: 1.375rem;
+		}
+
+		&:focus {
+			 &::placeholder {
+				transition: all .5s;
+				visibility: visible;
+				opacity: 1;
+			 }
+		}
 	}
+
+	// &:focus {
+
+	// 	& .placeholder {
+	// 		bottom: 100%;
+	// 	}
+	// }
 
 	& span.placeholder {
 		position: absolute;
 		color: var(--clr-gray);
 		transition: all 0.3s;
-
-		top: 22px;
+		font-size: 1.375rem;
+		line-height: 1.4;
+		transition: all .5s;
+		bottom: 22px;
+		top: auto;
 		pointer-events: none;
+
+		&.active {
+			font-size: 1.125rem;
+			top: 0;
+			bottom: auto;
+		}
 	}
 
 	& span.error {
 		position: absolute;
-		top: calc(100% + 4px);
+		top: 100%;
 		font-size: .875rem;
 		color: rgba(#ef3c0d, 0.5);
 		visibility: hidden;
@@ -630,6 +712,10 @@ label {
 	padding-top: 4.5rem !important;
 }
 
+.section_pt_xl {
+	padding-top: 10rem !important;
+}
+
 .section_pb_l {
 	padding-bottom: 10rem !important;
 }
@@ -657,6 +743,11 @@ label {
 .mb-0 {
 	margin-bottom: 0 !important;
 }
+
+.mb-2 {
+	margin-bottom: 2.75rem !important;
+}
+
 
 .row {
 	// width: 100%;

@@ -349,6 +349,21 @@ label input[type=radio]:checked + span.radio svg {
   visibility: visible;
   opacity: 1;
 }
+label input[type=file] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+label .button {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 1.375rem;
+  line-height: 1.4;
+  color: var(--clr-black-40);
+  transition: all 0.5s;
+  cursor: pointer;
+}
 label input[type=checkbox] {
   position: absolute;
   visibility: hidden;
@@ -382,14 +397,40 @@ label span.checkbox svg {
 label:hover span.checkbox {
   border-color: var(--clr-black);
 }
+label:hover .button {
+  color: var(--clr-black);
+}
+label:hover .button .btn {
+  background: var(--clr-black);
+}
+label:hover .button .btn svg path {
+  fill: var(--clr-white);
+}
 label.disabled {
   color: var(--clr-gray);
+}
+label span.error {
+  font-size: 0.75rem;
 }
 label input[type=text], label input[type=email], label input[type=tel] {
   width: 100%;
   display: block;
-  padding: 22px 0 16px;
+  padding: 8px 0 22px;
   border-bottom: 1px solid var(--clr-gray);
+  font-size: 1.375rem;
+  line-height: 1.4;
+  font-family: var(--font-accent);
+  position: relative;
+}
+label input[type=text]::after, label input[type=email]::after, label input[type=tel]::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: var(--clr-gray);
+  display: block;
 }
 label input[type=text].error, label input[type=email].error, label input[type=tel].error {
   color: var(--clr-error);
@@ -399,16 +440,48 @@ label input[type=text].error + span.error, label input[type=email].error + span.
   opacity: 1;
   visibility: visible;
 }
+label input[type=text]::-moz-placeholder, label input[type=email]::-moz-placeholder, label input[type=tel]::-moz-placeholder {
+  color: var(--clr-black-40);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.375rem;
+}
+label input[type=text]::placeholder, label input[type=email]::placeholder, label input[type=tel]::placeholder {
+  color: var(--clr-black-40);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.375rem;
+}
+label input[type=text]:focus::-moz-placeholder, label input[type=email]:focus::-moz-placeholder, label input[type=tel]:focus::-moz-placeholder {
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+label input[type=text]:focus::placeholder, label input[type=email]:focus::placeholder, label input[type=tel]:focus::placeholder {
+  transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
 label span.placeholder {
   position: absolute;
   color: var(--clr-gray);
   transition: all 0.3s;
-  top: 22px;
+  font-size: 1.375rem;
+  line-height: 1.4;
+  transition: all 0.5s;
+  bottom: 22px;
+  top: auto;
   pointer-events: none;
+}
+label span.placeholder.active {
+  font-size: 1.125rem;
+  top: 0;
+  bottom: auto;
 }
 label span.error {
   position: absolute;
-  top: calc(100% + 4px);
+  top: 100%;
   font-size: 0.875rem;
   color: rgba(239, 60, 13, 0.5);
   visibility: hidden;
@@ -482,6 +555,10 @@ label.label_radio {
   padding-top: 4.5rem !important;
 }
 
+.section_pt_xl {
+  padding-top: 10rem !important;
+}
+
 .section_pb_l {
   padding-bottom: 10rem !important;
 }
@@ -508,6 +585,10 @@ label.label_radio {
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.mb-2 {
+  margin-bottom: 2.75rem !important;
 }
 
 .row {

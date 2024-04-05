@@ -450,6 +450,11 @@
   .about__sliders_control {
     width: 66.6666666667%;
   }
+  .about__sliders_more.max991 {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+  }
   .about__slider .swiper-slide {
     max-height: 450px;
   }

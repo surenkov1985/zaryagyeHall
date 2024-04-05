@@ -288,7 +288,7 @@
 		}
 
 		&__page-title {
-			width: 60%;
+			width: 62.5%;
 		}
 
 		&__page-subtitle {
@@ -1098,6 +1098,10 @@
 	.section_pb_sm {
 		padding-bottom: 2rem !important;
 	}
+
+	.section_pt_sm {
+		padding-top: 0.5rem !important;
+  }
 
 	.section_pb_l {
 		padding-bottom: 6.5rem !important;
@@ -1989,7 +1993,15 @@
 			}
 		}
 
-
+		& .festival {
+			&__desc {
+			padding-top: 58px;
+			margin-bottom: 92px;
+				&_title {
+					margin-bottom: 56px;
+				}
+			}
+		}
 
 		&__filter {
 
@@ -2661,6 +2673,176 @@
 
 			&_icon {
 				max-width: 52%;
+			}
+		}
+	}
+
+	.personal {
+
+		&__content {
+			margin-top: 144px;
+			padding-top: 35px;
+			gap: 24px;
+		}
+
+		&__slider {
+			width: calc((100% - 24px) / 24* 12);
+			&_control {
+				width: calc((100% - 24px) / 24* 12);
+			}
+		}
+
+		&__slide {
+
+			&_top {
+
+					& p {
+					margin-top: 4px;
+				}
+			}
+
+			&_img {
+				width: 128px;
+				height: 128px;
+			}
+
+			&_text {
+				margin-top: 64px; 
+				
+				& p {
+					line-height: 1.6;
+				}
+			}
+		}
+	}
+
+	.advs {
+		padding-top: 48px;
+		padding-bottom: 68px;
+
+		& .h2 {
+			font-size: 5rem;
+		}
+
+		&__row {
+			gap: 24px;
+		}
+
+		&__col {
+			width: calc((100% - 24px) / 24 * 12);
+		}
+
+		&__item {
+			padding: 23px 0;
+
+			&:first-child {
+				padding-top: 5px;
+			}
+
+			&_text {
+
+				& p {
+					margin-top: 24px;
+				}
+			}
+			&_img {
+				width: 128px;
+				height: 128px;
+			}
+		}
+	}
+
+	.h5 {
+		font-size: 1.5rem;
+	}
+
+	.section_pt_xl {
+		padding-top: 7.75rem !important;
+	}
+
+	.h2-l {
+		font-size: 5rem;
+	}
+
+	.mb-2 {
+		margin-bottom: 1rem !important;
+  }
+
+  .vacancies {
+	padding-top: 84px;
+	padding-bottom: 60px;
+
+	&__title {
+		margin-bottom: 48px;
+	}
+
+	&__item {
+		padding: 24px 0;
+	}
+  }
+
+  .feedback {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+		&__title {
+			margin-bottom: 62px;
+		}
+
+		&__form {
+
+			&_row {
+				gap: 24px;
+			}
+
+			&_col {
+				width: calc((100% - 24px) / 24 * 12);
+			}
+
+			&_fields {
+				gap: 23px 24px;
+			}
+
+			&_field {
+				padding-top: 16px;
+				width: calc((100% - 24px) / 24 * 12);
+			}
+
+			&_submit {
+				margin-top: 55px;
+			}
+
+			&_agree_text a {
+				text-underline-offset: 6px;
+			}
+		}
+   }
+
+	label {
+
+		& input[type=text],
+		& input[type=email],
+		& input[type=tel] {
+			font-size: 1rem;
+			padding: 8px 0 16px;
+
+			&::placeholder {
+				font-size: 1rem;
+			}
+
+		}
+
+		& .button {
+			font-size: 1rem;
+			gap: 16px;
+		}
+
+		& span.placeholder {
+			font-size: 1rem;
+			bottom: 16px;
+
+			&.active {
+				font-size: 0.875rem;
 			}
 		}
 	}

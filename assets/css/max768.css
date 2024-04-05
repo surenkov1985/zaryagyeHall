@@ -246,6 +246,12 @@
   .breadcrumbs {
     margin-bottom: 11px;
   }
+  .section_pt_sm {
+    padding-top: 18px !important;
+  }
+  .title_xl {
+    width: calc((100% - 32px) / 24 * 24) !important;
+  }
   .fs_index {
     max-height: 1080px;
   }
@@ -261,6 +267,9 @@
     margin-top: 68px;
     margin-bottom: 64px;
     gap: 2.8rem;
+  }
+  .fs__page-title {
+    width: calc((100% - 32px) / 24 * 24) !important;
   }
   .fs__page-subtitle {
     width: 100%;
@@ -485,6 +494,25 @@
   }
   .events__item_top {
     height: 193px;
+  }
+  .events .festival__desc {
+    margin-bottom: 64px;
+  }
+  .events .festival__desc_title {
+    margin-bottom: 46px;
+  }
+  .events .festival__desc_text {
+    margin-left: 0;
+  }
+  .events .leaders__desc_title {
+    font-size: 4rem;
+    margin-bottom: 44px;
+  }
+  .events .leaders__desc_slide_content {
+    width: 84%;
+  }
+  .events .leaders__desc_slide_content .text_content div:not(:last-child) {
+    margin-bottom: 58px;
   }
   .filter__form_field_col {
     width: 100% !important;
@@ -857,6 +885,9 @@
   .history__images_slider {
     height: 450px;
   }
+  .history__images_slide {
+    height: 100%;
+  }
   .history__desc_slide {
     padding: 40px 56px 0 0;
   }
@@ -1027,6 +1058,68 @@
        object-position: center;
     height: 100%;
     width: 100%;
+  }
+  .personal__content {
+    margin-top: 90px;
+    padding-top: 42px;
+  }
+  .personal__slide_text {
+    width: 75%;
+  }
+  .personal__slide_text .mark {
+    margin-bottom: 56px !important;
+  }
+  .advs {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .advs h2 {
+    margin-bottom: 172px;
+  }
+  .advs__item {
+    padding: 24px 0;
+  }
+  .section_pt_xl {
+    padding-top: 6.75rem !important;
+  }
+  .mb-2 {
+    margin-bottom: 3rem !important;
+  }
+  .vacancies__title {
+    margin-bottom: 40px;
+  }
+  .vacancies__item {
+    padding: 20px 0 20px;
+  }
+  .vacancies__link {
+    align-items: flex-start;
+  }
+  .vacancies__link_desc {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 22px;
+    width: calc((100% - 4px) / 12 * 11);
+  }
+  .feedback {
+    padding-top: 34px;
+    padding-bottom: 56px;
+  }
+  .feedback .h1 {
+    font-size: 7.5rem;
+  }
+  .feedback__form_title {
+    width: calc((100% - 4px) / 12 * 8);
+  }
+  .feedback__form_row {
+    gap: 30px;
+  }
+  .feedback__form_submit {
+    justify-content: flex-start;
+  }
+  .feedback__form_agree_text {
+    margin-top: 30px;
+    width: calc((100% - 4px) / 12 * 8);
   }
 }
 @media (max-width: 700px) {

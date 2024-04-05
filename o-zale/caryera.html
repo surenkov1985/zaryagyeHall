@@ -295,11 +295,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="fs__page-title ">
-						<h1 class="h1 h1-l">Стань частью команды
+					<div class="fs__page-title title_xl">
+						<h1 class="h1">Стань частью команды
 							Зала Зарядье</h1>
 						<div class="fs__page-subtitle">
-							<button class="btn">Отправить резюме</button>
+							<div class="d-flex"><a href="#feedback" class="btn">Отправить резюме</a></div>
+
 						</div>
 					</div>
 				</div>
@@ -307,7 +308,7 @@
 
 			<!-- ABOUT -->
 
-			<section class="section section_about about mb-0 section_pt_sm ">
+			<section class="section section_about events mb-0 section_pt_sm ">
 				<div class="container">
 					<div class="about__img">
 						<img src="/assets/img/carrier.png" alt="">
@@ -330,9 +331,9 @@
 							<p class="leaders__desc_tag main_font light_text">О зале</p>
 							<div class="leaders__desc_slider swiper">
 								<div class="leaders__desc_slide_content leaders__desc_slide text_content">
-									<h3 class="h2 leaders__desc_title">
+									<h2 class="h2 leaders__desc_title">
 										Уникальное концертное пространство
-									</h3>
+									</h2>
 									<div class="text">
 										<p>Московский концертный зал «Зарядье», построенный
 											на территории парка «Зарядье» у стен Кремля — самый ожидаемый и громкий культурный
@@ -341,8 +342,8 @@
 											уникальное концертное пространство с прекрасной акустикой и принципиально новым
 											форматом посещения концертов</mark>
 									</div>
-									<div class="leaders__desc_more">
-										<button class="btn">Отправить резюме</button>
+									<div class="leaders__desc_more d-flex">
+										<a href="#feedback" class="btn">Отправить резюме</a>
 									</div>
 								</div>
 							</div>
@@ -484,17 +485,17 @@
 
 			<!-- END ADVS -->
 
-			<section class="events secton section_pb_sm">
+			<section class="events section section_pb_sm section_pt_xl">
 				<div class="container">
 					<div class="about__sliders">
-						<div class="about__sliders_top">
+						<div class="about__sliders_top mb-2">
 							<div class="about__sliders_title">
-								<h2 class="h2">
+								<h2 class="h2-l">
 									Корпоративная<br> культура
 								</h2>
 							</div>
-							<div class="about__sliders_more">
-								<button class="btn">Отправить резюме</button>
+							<div class="about__sliders_more min991">
+								<a href="#feedback" class="btn">Отправить резюме</a>
 							</div>
 						</div>
 						<div class="about__sliders_tabs about__halls_slider swiper">
@@ -588,6 +589,9 @@
 							</div>
 
 						</div>
+						<div class="about__sliders_more max991">
+							<a href="#feedback" class="btn">Отправить резюме</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -597,7 +601,7 @@
 			<section class="section vacancies">
 				<div class="container">
 					<div class="vacancies__title">
-						<h2 class="h2">
+						<h2 class="h2-l">
 							Вакансии
 						</h2>
 					</div>
@@ -673,7 +677,7 @@
 
 			<!-- FEEDBACK -->
 
-			<section class="section feedback">
+			<section class="section feedback" id="feedback">
 				<div class="container">
 					<div class="feedback__title">
 						<h2 class="h1 text_center">
@@ -681,6 +685,7 @@
 						</h2>
 					</div>
 					<form action="" class="feedback__form">
+						<input type="hidden" name="agree" value="true">
 						<div class="feedback__form_row">
 							<div class="feedback__form_col">
 								<div class="feedback__form_title">
@@ -689,13 +694,70 @@
 										вакансия
 									</p>
 								</div>
-								<div class="feedback__form_agree_text">
+								<div class="feedback__form_agree_text min991">
 									<p class="main_font light_text">Нажимая кнопку «Отправить» я соглашаюсь с условиями <a
 											class="" href="">Политики конфиденциальности</a></p>
 								</div>
 
 							</div>
-							<div class="feedback__form_col"></div>
+							<div class="feedback__form_col">
+								<div class="form_content feedback__form_content">
+									<div class="feedback__form_fields">
+										<label class="feedback__form_field w100">
+											<input type="text" name="fio" class="" placeholder="Введите имя" data-test="false"
+												data-reg="false">
+											<span class="error">error</span>
+											<span class="placeholder">ФИО</span>
+
+										</label>
+										<label class="feedback__form_field w100">
+											<input type="text" name="vacancy" class="" placeholder="Введите должность"
+												data-test="false" data-reg="false">
+											<span class="error">error</span>
+											<span class="placeholder">Желаемая должность</span>
+
+										</label>
+										<label class="feedback__form_field">
+											<input type="tel" name="tel" class="" placeholder="Введите телефон" data-test="false"
+												data-reg="false">
+											<span class="error">error</span>
+											<span class="placeholder">Телефон</span>
+
+										</label>
+										<label class="feedback__form_field">
+											<input type="email" name="email" class="" placeholder=" Введите почту"
+												data-test="false" data-reg="false">
+											<span class="error">error</span>
+											<span class="placeholder">E-mail</span>
+
+										</label>
+										<label class="feedback__form_field">
+											<input type="file" name="file" class="" accept=".png,.pdf,.doc,.docx">
+											<span class="error">error</span>
+											<span class="button">
+												<span class="btn btn_slider">
+													<svg width="22.000000" height="24.000000" viewBox="0 0 22 24" fill="none"
+														xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path id="Path (Stroke)"
+															d="M7.23 2.1C10.48 -1.15 15.76 -1.15 19.02 2.1C22.27 5.36 22.27 10.64 19.02 13.89L11 21.91C8.53 24.38 4.52 24.38 2.04 21.91C-0.43 19.44 -0.43 15.42 2.04 12.95L8.64 6.35C10.08 4.92 12.4 4.92 13.83 6.35C15.26 7.78 15.26 10.1 13.83 11.53L8.17 17.19C7.78 17.58 7.15 17.58 6.76 17.19C6.37 16.8 6.37 16.17 6.76 15.78L12.42 10.12C13.07 9.47 13.07 8.41 12.42 7.76C11.77 7.11 10.71 7.11 10.06 7.76L3.46 14.36C1.76 16.06 1.76 18.8 3.46 20.5C5.15 22.19 7.89 22.19 9.59 20.5L17.6 12.48C20.08 10 20.08 5.99 17.6 3.52C15.13 1.04 11.12 1.04 8.64 3.52L1.57 10.59C1.18 10.98 0.55 10.98 0.15 10.59C-0.24 10.2 -0.24 9.57 0.15 9.18L7.23 2.1Z"
+															fill="#101010" fill-opacity="1.000000" fill-rule="evenodd" />
+													</svg>
+												</span>
+												Прикрепить резюме
+											</span>
+
+										</label>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="feedback__form_submit">
+							<input class="btn" type="submit" value="Отправить">
+						</div>
+						<div class="feedback__form_agree_text max991">
+							<p class="main_font light_text">Нажимая кнопку «Отправить» я соглашаюсь с условиями <a class=""
+									href="">Политики конфиденциальности</a></p>
 						</div>
 					</form>
 				</div>

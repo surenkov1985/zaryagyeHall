@@ -490,6 +490,7 @@
 .events {
 	padding-top: 122px;
 	padding-bottom: 160px;
+	overflow: hidden;
 
 	&__top {
 		width: 100%;
@@ -800,6 +801,18 @@
 
 		&_form {
 			padding: 2rem 0;
+		}
+	}
+
+	& .festival {
+
+		&__desc {
+			padding-top: 84px;
+			margin-bottom: 107px;
+
+			&_title {
+				margin-bottom: 74px;
+			}
 		}
 	}
 }
@@ -3384,7 +3397,7 @@
 
 	&__content {
 		margin-top: 180px;
-		margin-bottom: 120px;
+		// margin-bottom: 120px;
 		padding-top: 56px;
 		position: relative;
 		display: flex;
@@ -3449,7 +3462,7 @@
 
 .advs {
 	
-	padding-top: 96px;
+	padding-top:76px;
 	padding-bottom: 85px;
 	position: relative;
 	color: var(--clr-white);
@@ -3471,6 +3484,10 @@
 		}
 	}
 
+	& h2 {
+		margin-top: 18px;
+	}
+
 	&__row{
 		position: relative;
 		z-index: 1;
@@ -3485,12 +3502,18 @@
 
 	&__item {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		padding: 32px 0;
 		border-bottom: 1px solid var(--clr-white-40);
 
+		&:first-child {
+			padding-top: 0;
+		}
+
 		&_text {
 			width: calc(100% / 12 * 7);
+
 
 			& p {
 				color: var(--clr-white-40);
@@ -3520,7 +3543,7 @@
 // VACANCIES
 
 .vacancies {
-	padding-top: 80px;
+	padding-top: 92px;
 	padding-bottom: 80px;
 
 	&__title {
@@ -3564,7 +3587,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			width: calc((100% - 32px) / 24 * 18);
+			width: calc((100% - 12px) / 24 * 18);
 		}
 
 		& .h5 {
@@ -3636,11 +3659,40 @@
 		}
 
 		&_title {
-			width: calc(100% / 12 * 7);
+			width: calc(100% / 12 * 6);
 		}
 
 		&_agree_text {
-			width: calc(100% / 12 * 7);
+			width: calc(100% / 12 * 6);
+
+			& a {
+				text-decoration: underline;
+				text-decoration-color: var(--clr-black-40);
+				text-underline-offset: 10px;
+				transition: all 0.5s;
+
+				&:hover {
+					color: var(--clr-black-40);
+				}
+			}
+		}
+
+		&_fields {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px 32px;
+
+		}
+
+		&_field {
+			width: calc((100% - 32px) / 12 * 6);
+			padding-top: 23px;
+		}
+
+		&_submit {
+			margin-top: 60px;
+			display: flex;
+			justify-content: center;
 		}
 	}
 

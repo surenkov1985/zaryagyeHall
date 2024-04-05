@@ -317,6 +317,13 @@ h2,
 	// letter-spacing: 1.4px;
 }
 
+.h2-l {
+	font-family: var(--font-title);
+	font-size: 6.75rem;
+	line-height: 0.9;
+	letter-spacing: 0px;
+}
+
 h3,
 .h3,
 .text-content h3 {

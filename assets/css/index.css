@@ -352,6 +352,7 @@
 .events {
   padding-top: 122px;
   padding-bottom: 160px;
+  overflow: hidden;
 }
 .events__top {
   width: 100%;
@@ -608,6 +609,13 @@
 }
 .events__filter_form {
   padding: 2rem 0;
+}
+.events .festival__desc {
+  padding-top: 84px;
+  margin-bottom: 107px;
+}
+.events .festival__desc_title {
+  margin-bottom: 74px;
 }
 
 .filter__form_fields {
@@ -2518,7 +2526,6 @@
 
 .personal__content {
   margin-top: 180px;
-  margin-bottom: 120px;
   padding-top: 56px;
   position: relative;
   display: flex;
@@ -2570,7 +2577,7 @@
 }
 
 .advs {
-  padding-top: 96px;
+  padding-top: 76px;
   padding-bottom: 85px;
   position: relative;
   color: var(--clr-white);
@@ -2592,6 +2599,9 @@
   -o-object-position: top center;
      object-position: top center;
 }
+.advs h2 {
+  margin-top: 18px;
+}
 .advs__row {
   position: relative;
   z-index: 1;
@@ -2604,9 +2614,13 @@
 }
 .advs__item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 32px 0;
   border-bottom: 1px solid var(--clr-white-40);
+}
+.advs__item:first-child {
+  padding-top: 0;
 }
 .advs__item_text {
   width: 58.3333333333%;
@@ -2633,7 +2647,7 @@
 }
 
 .vacancies {
-  padding-top: 80px;
+  padding-top: 92px;
   padding-bottom: 80px;
 }
 .vacancies__title {
@@ -2670,7 +2684,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc((100% - 32px) / 24 * 18);
+  width: calc((100% - 12px) / 24 * 18);
 }
 .vacancies__link .h5 {
   transition: all 0.5s;
@@ -2720,8 +2734,31 @@
   justify-content: space-between;
 }
 .feedback__form_title {
-  width: 58.3333333333%;
+  width: 50%;
 }
 .feedback__form_agree_text {
-  width: 58.3333333333%;
+  width: 50%;
+}
+.feedback__form_agree_text a {
+  text-decoration: underline;
+  text-decoration-color: var(--clr-black-40);
+  text-underline-offset: 10px;
+  transition: all 0.5s;
+}
+.feedback__form_agree_text a:hover {
+  color: var(--clr-black-40);
+}
+.feedback__form_fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 32px;
+}
+.feedback__form_field {
+  width: calc((100% - 32px) / 12 * 6);
+  padding-top: 23px;
+}
+.feedback__form_submit {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }

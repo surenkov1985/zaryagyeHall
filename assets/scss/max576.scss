@@ -610,6 +610,34 @@
 			}
 		}
 
+		& .festival {
+
+			&__desc {
+				padding-top: 48px;
+				margin-bottom: 56px;
+
+				&_title {
+					& .h2 {
+						font-size: 2.5rem !important;
+					}
+				}
+
+				&_text {
+					text-align: left;
+				}
+			}
+		}
+
+		& .leaders {
+
+			&__desc {
+
+				&_title {
+					font-size: 3rem;
+				}
+			}
+		}
+
 	}
 
 	.calendar {
@@ -1185,5 +1213,74 @@
 
 	.partners {
 		// padding-bottom: 2.5rem;
+	}
+
+	.personal {
+
+		&__content {
+			margin-top: 80px;
+		}
+
+		&__slide {
+
+			&_img {
+				width: 84px;
+				height: 84px;
+			}
+		}
+	}
+
+	.h3 {
+		font-size: 2.5rem;
+	}
+
+	.advs {
+		padding-top: 48px;
+
+		& .h2 {
+			font-size: 48px;
+		}
+
+		& h2 {
+			margin-bottom: 116px;
+		}
+
+		&__item {
+			align-items: flex-start;
+
+			&_text {
+				width: calc(100% / 12 * 8);
+			}
+			&_img {
+				width: 84px;
+				height: 84px;
+			}
+		}
+	}
+
+	.h2-l {
+		font-size: 3rem;
+	}
+
+	.feedback {
+
+		& .h1 {
+			font-size: 4rem;
+		}
+
+		&__form {
+
+			&_title {
+				width: 100%;
+			}
+
+			&_agree_text {
+				width: 100%;
+			}
+
+			&_field {
+				width: 100%;
+			}
+		}
 	}
 }

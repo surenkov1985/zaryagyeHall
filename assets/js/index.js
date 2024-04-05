@@ -38,6 +38,7 @@ $(document).on("click", ".dropdown-slider__value", function () {
 	$(dropdown).toggleClass("active");
 });
 
+// Переключение темы
 
 if ($(".head__theme input").prop("checked")) {
 	console.log($(this).val());
@@ -47,7 +48,6 @@ if ($(".head__theme input").prop("checked")) {
 
 $(document).on("change", ".head__theme input", function () {
 	if ($(this).prop("checked")) {
-		// console.log($(this).val());
 
 		$("body").addClass("dark");
 
@@ -68,20 +68,17 @@ if (!localStorage.hasOwnProperty("colorTheme") || localStorage.colorTheme === "l
 	$(".head__theme input").prop("checked", true);
 }
 
+// Скролл вверх страницы по клику кнопки в футере
+
 $(document).on("click", ".scroll_top_btn", function () {
-	// $('html, body').animate({
-	// 	scrollTop: 0
-	//  }, {duration: 2000, easing: "linear"})
 
 	window.scrollTo({
 		top: 0,
 		behavior: "smooth",
 	});
-
-	// $(document).scrollTop(0)
 });
 
-console.log(localStorage.colorTheme);
+// Dropdown
 
 $(document).on("click", ".dropdown__item", function () {
 	const dropdown = $(this).closest(".dropdown");
@@ -214,6 +211,8 @@ $(document).on("click", function (e) {
 	}
 });
 
+// Мобильное меню
+
 $(document).on("click", ".head .btn_menu", function (e) {
 	if (!$(".mobile").hasClass("show")) {
 		$(".mobile .animate").each((_, item) => {
@@ -306,3 +305,28 @@ $(document).on("click", ".accordion__title", function () {
 // 	color: 'rgba(16, 16, 16,, .8)',
 // 	speed: 0.3
 //  });
+
+
+$(document).on("focus", "input[type=text], input[type=email], input[type=tel]", function (e) {
+
+	const label = $(this).closest("label");
+	const placeholder = $(label).find(".placeholder");
+
+	// $(placeholder).css({ "bottom": "auto", "top": "0", "font-size": "1.125rem" })
+
+	$(placeholder).addClass("active");
+})
+
+$(document).on("blur", "input[type=text], input[type=email], input[type=tel]", function (e) {
+
+	const label = $(this).closest("label");
+	const placeholder = $(label).find(".placeholder");
+
+	if (!$(this).val()) {
+		// $(placeholder).css({ "bottom": "22px", "top": "auto", "font-size": "1.375rem" });
+
+		$(placeholder).removeClass("active");
+	}
+
+
+})

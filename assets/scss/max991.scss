@@ -665,6 +665,15 @@
 			&_control {
 				width: calc(100% / 12 * 8);
 			}
+
+			&_more {
+
+				&.max991 {
+					margin-top: 64px;
+					display: flex;
+					justify-content: center;
+				}
+			}
 		}
 
 		&__slider {

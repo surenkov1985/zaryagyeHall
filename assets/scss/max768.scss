@@ -367,6 +367,14 @@
 		margin-bottom: 11px;
 	}
 
+	.section_pt_sm {
+		padding-top: 18px !important;
+  }
+
+  .title_xl {
+	width: calc((100% - 32px) / 24* 24) !important;
+}
+
 	.fs {
 
 		&_index {
@@ -389,6 +397,9 @@
 			gap: 2.8rem;
 		}
 
+		&__page-title {
+			width: calc((100% - 32px) / 24* 24) !important;
+	  }
 		&__page-subtitle {
 			width: 100%;
 			margin-top: 28px;
@@ -728,6 +739,46 @@
 			}
 		}
 
+		& .festival {
+
+			&__desc {
+				margin-bottom: 64px;
+
+				&_title {
+					margin-bottom: 46px;
+				}
+				&_text {
+					margin-left: 0;
+				}
+			}
+		}
+
+		& .leaders {
+
+			&__desc {
+
+				&_title {
+					font-size: 4rem;
+					margin-bottom: 44px;
+				}
+
+				&_slide  {
+
+					&_content {
+						width: 84%;
+						
+						& .text_content {
+
+							& div {
+								&:not(:last-child) {
+									margin-bottom: 58px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 
 	}
 
@@ -1264,6 +1315,10 @@
 			&_slider {
 				height: 450px;
 			}
+
+			&_slide {
+				height: 100%;
+			}
 		}
 
 		&__desc {
@@ -1547,6 +1602,99 @@
 					height: 100%;
 					width: 100%;
 				}
+			}
+		}
+	}
+
+	.personal {
+
+
+		&__content {
+			margin-top: 90px;
+			padding-top: 42px;
+		}
+
+		&__slide {
+
+			&_text {
+				width: calc(100% / 12 * 9);
+				& .mark {
+				margin-bottom: 56px !important;
+			}
+			}
+
+			
+		}
+	}
+
+	.advs {
+		padding-top: 60px;
+		padding-bottom: 0;
+
+		& h2 {
+			margin-bottom: 172px;
+		}
+
+		&__item {
+			padding: 24px 0;
+		}
+	}
+
+	.section_pt_xl {
+		padding-top: 6.75rem !important;
+	}
+
+	.mb-2 {
+		margin-bottom: 3rem !important;
+   }
+
+	.vacancies {
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__item {
+			padding: 20px 0 20px;
+		}
+
+		&__link {
+			align-items: flex-start;
+
+			&_desc {
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 22px;
+				width: calc((100% - 4px) / 12 * 11);
+			}
+		}
+	}
+
+	.feedback {
+		padding-top: 34px;
+		padding-bottom: 56px;
+
+		& .h1 {
+			font-size: 7.5rem;
+		}
+
+		&__form {
+			&_title {
+				width: calc((100% - 4px) / 12 * 8);
+			}
+
+			&_row {
+				gap: 30px;
+			}
+
+			&_submit {
+				justify-content: flex-start;
+			}
+
+			&_agree_text {
+				margin-top: 30px;
+				width: calc((100% - 4px) / 12 * 8);
 			}
 		}
 	}

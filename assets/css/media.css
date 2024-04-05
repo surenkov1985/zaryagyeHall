@@ -179,7 +179,7 @@
     margin-bottom: 58px;
   }
   .fs__page-title {
-    width: 60%;
+    width: 62.5%;
   }
   .fs__page-subtitle {
     font-size: 24px;
@@ -708,6 +708,9 @@
   }
   .section_pb_sm {
     padding-bottom: 2rem !important;
+  }
+  .section_pt_sm {
+    padding-top: 0.5rem !important;
   }
   .section_pb_l {
     padding-bottom: 6.5rem !important;
@@ -1310,6 +1313,13 @@
     padding: 7px;
     font-size: 1rem;
   }
+  .events .festival__desc {
+    padding-top: 58px;
+    margin-bottom: 92px;
+  }
+  .events .festival__desc_title {
+    margin-bottom: 56px;
+  }
   .events__filter.open {
     border-top: none;
   }
@@ -1753,6 +1763,125 @@
   }
   .partners__slide_icon {
     max-width: 52%;
+  }
+  .personal__content {
+    margin-top: 144px;
+    padding-top: 35px;
+    gap: 24px;
+  }
+  .personal__slider {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .personal__slider_control {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .personal__slide_top p {
+    margin-top: 4px;
+  }
+  .personal__slide_img {
+    width: 128px;
+    height: 128px;
+  }
+  .personal__slide_text {
+    margin-top: 64px;
+  }
+  .personal__slide_text p {
+    line-height: 1.6;
+  }
+  .advs {
+    padding-top: 48px;
+    padding-bottom: 68px;
+  }
+  .advs .h2 {
+    font-size: 5rem;
+  }
+  .advs__row {
+    gap: 24px;
+  }
+  .advs__col {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .advs__item {
+    padding: 23px 0;
+  }
+  .advs__item:first-child {
+    padding-top: 5px;
+  }
+  .advs__item_text p {
+    margin-top: 24px;
+  }
+  .advs__item_img {
+    width: 128px;
+    height: 128px;
+  }
+  .h5 {
+    font-size: 1.5rem;
+  }
+  .section_pt_xl {
+    padding-top: 7.75rem !important;
+  }
+  .h2-l {
+    font-size: 5rem;
+  }
+  .mb-2 {
+    margin-bottom: 1rem !important;
+  }
+  .vacancies {
+    padding-top: 84px;
+    padding-bottom: 60px;
+  }
+  .vacancies__title {
+    margin-bottom: 48px;
+  }
+  .vacancies__item {
+    padding: 24px 0;
+  }
+  .feedback {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .feedback__title {
+    margin-bottom: 62px;
+  }
+  .feedback__form_row {
+    gap: 24px;
+  }
+  .feedback__form_col {
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .feedback__form_fields {
+    gap: 23px 24px;
+  }
+  .feedback__form_field {
+    padding-top: 16px;
+    width: calc((100% - 24px) / 24 * 12);
+  }
+  .feedback__form_submit {
+    margin-top: 55px;
+  }
+  .feedback__form_agree_text a {
+    text-underline-offset: 6px;
+  }
+  label input[type=text], label input[type=email], label input[type=tel] {
+    font-size: 1rem;
+    padding: 8px 0 16px;
+  }
+  label input[type=text]::-moz-placeholder, label input[type=email]::-moz-placeholder, label input[type=tel]::-moz-placeholder {
+    font-size: 1rem;
+  }
+  label input[type=text]::placeholder, label input[type=email]::placeholder, label input[type=tel]::placeholder {
+    font-size: 1rem;
+  }
+  label .button {
+    font-size: 1rem;
+    gap: 16px;
+  }
+  label span.placeholder {
+    font-size: 1rem;
+    bottom: 16px;
+  }
+  label span.placeholder.active {
+    font-size: 0.875rem;
   }
 }
 @media (max-width: 1350px) {
