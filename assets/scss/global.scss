@@ -447,7 +447,8 @@
 
 label {
 	display: flex;
-	align-items: center;
+	// align-items: center;
+	flex-direction: column;
 	gap: 10px;
 	position: relative;
 
@@ -621,6 +622,7 @@ label {
 		pointer-events: none;
 
 		&.active {
+			
 			font-size: 1.125rem;
 			top: 0;
 			bottom: auto;

@@ -1109,7 +1109,12 @@
 			width: 100%;
 		}
 
-		
+		&__sliders {
+
+			&_more {
+				margin-top: 0;
+			}
+		}
 
 		&__slider {
 			margin-top: 0;

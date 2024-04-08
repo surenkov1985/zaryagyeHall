@@ -1950,37 +1950,57 @@
 	}
 
 	.feedback {
+		padding-top: 35px;
+		padding-bottom: 40px;
 
 		&__title {
-			margin-bottom: 40px;
+			margin-bottom: 36px;
 		}
 
 		&__form {
 
+			&_title p{
+				font-size: 1rem;
+			}
+
 			&_row {
-				gap: 36px;
+				gap: 32px;
 			}
 
 			&_fields {
-				gap: 8px;
+				gap: 26px;
 			}
 
 			&_field {
-				padding-top: 18px;
+				// padding-top: 16px;
+			}
+
+			&_submit {
+				margin-top: 24px;
+
+				& .btn {
+					width: 100%;
+				}
+			}
+
+			&_agree_text {
+				margin-top: 32px;
 			}
 		}
 	}
 
 	label {
+		gap: 4px;
 
 		& input[type=text],
 		& input[type=email],
 		& input[type=tel] {
 			font-size: 0.875rem;
-			padding: 8px 0 18px;
+			padding: 2px 0 16px;
 
 			&::placeholder {
 				font-size: 0.875rem;
+				bottom: 20px;
 			}
 
 		}
@@ -1996,6 +2016,7 @@
 
 			&.active {
 				font-size: 0.875rem;
+				position: relative;
 			}
 		}
 	}

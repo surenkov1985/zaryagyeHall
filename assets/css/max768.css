@@ -743,6 +743,9 @@
   .about .organ__title {
     width: 100%;
   }
+  .about__sliders_more {
+    margin-top: 0;
+  }
   .about__slider {
     margin-top: 0;
   }

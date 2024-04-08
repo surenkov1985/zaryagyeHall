@@ -1301,27 +1301,45 @@
   .vacancies__link_desc .main_font {
     font-size: 0.75rem;
   }
+  .feedback {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
   .feedback__title {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+  }
+  .feedback__form_title p {
+    font-size: 1rem;
   }
   .feedback__form_row {
-    gap: 36px;
+    gap: 32px;
   }
   .feedback__form_fields {
-    gap: 8px;
+    gap: 26px;
   }
-  .feedback__form_field {
-    padding-top: 18px;
+  .feedback__form_submit {
+    margin-top: 24px;
+  }
+  .feedback__form_submit .btn {
+    width: 100%;
+  }
+  .feedback__form_agree_text {
+    margin-top: 32px;
+  }
+  label {
+    gap: 4px;
   }
   label input[type=text], label input[type=email], label input[type=tel] {
     font-size: 0.875rem;
-    padding: 8px 0 18px;
+    padding: 2px 0 16px;
   }
   label input[type=text]::-moz-placeholder, label input[type=email]::-moz-placeholder, label input[type=tel]::-moz-placeholder {
     font-size: 0.875rem;
+    bottom: 20px;
   }
   label input[type=text]::placeholder, label input[type=email]::placeholder, label input[type=tel]::placeholder {
     font-size: 0.875rem;
+    bottom: 20px;
   }
   label .button {
     font-size: 0.875rem;
@@ -1333,6 +1351,7 @@
   }
   label span.placeholder.active {
     font-size: 0.875rem;
+    position: relative;
   }
 }
 @media (max-width: 350px) {
