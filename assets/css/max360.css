@@ -1002,8 +1002,23 @@
     bottom: calc(100% + 25px);
     font-size: 0.875rem;
   }
+  .festival.section_pt_sm {
+    padding-top: 0 !important;
+  }
+  .festival__desc_title.title_l {
+    width: 100%;
+    margin-bottom: 40px;
+  }
   .festival__desc_title .h2 {
     font-size: 2rem !important;
+  }
+  .festival__desc_text {
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+  }
+  .festival__desc_more {
+    margin-top: 16px;
   }
   .description.section_pt_sm {
     padding-top: 1rem !important;
@@ -1352,6 +1367,62 @@
   label span.placeholder.active {
     font-size: 0.875rem;
     position: relative;
+  }
+  .h1.h1-l {
+    font-size: 3.75rem !important;
+    margin-top: 0px;
+  }
+  .rules {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .rules__list {
+    gap: 16px;
+  }
+  .rules__item_img {
+    width: 100%;
+    height: auto;
+  }
+  .rules__item_right {
+    width: 100%;
+    gap: 16px;
+  }
+  .rules__item_num {
+    width: calc((100% - 8px) / 12 * 1.5);
+    gap: 16px;
+  }
+  .rules__item_num .line {
+    height: auto;
+    flex-grow: 1;
+  }
+  .rules__item_num .number {
+    font-size: 3.5rem;
+  }
+  .rules__item_content {
+    flex-grow: 1;
+    padding-left: 0;
+    gap: 32px;
+    padding-bottom: 66px;
+  }
+  .rules__item_title {
+    margin-top: 8px;
+  }
+  .rules__item_text {
+    gap: 1.5rem;
+  }
+  .rules__item_text p {
+    width: 100% !important;
+  }
+  .rules__item_text p .icon {
+    position: static;
+    margin-bottom: 16px;
+  }
+  .rules__item_text_cols {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .rules__item_more {
+    margin-top: 0px;
   }
 }
 @media (max-width: 350px) {

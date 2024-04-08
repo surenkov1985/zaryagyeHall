@@ -399,6 +399,10 @@
 
 		&__page-title {
 			width: calc((100% - 32px) / 24* 24) !important;
+
+			& .h1-l {
+				font-size: 6.25rem;
+			}
 	  }
 		&__page-subtitle {
 			width: 100%;
@@ -1700,6 +1704,68 @@
 			&_agree_text {
 				margin-top: 30px;
 				width: calc((100% - 4px) / 12 * 8);
+			}
+		}
+	}
+
+	
+
+	.rules {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
+		&__list {
+			gap: 16px;
+		}
+
+		&__item {
+
+			&_img {
+				width: 100%;
+				height: 332px;
+			}
+
+			&_right {
+				width: 100%;
+				gap: 18px;
+			}
+
+			&_num {
+				width: calc((100% - 8px) / 12 * 0.7);
+				gap: 16px;
+				
+				& .line {
+					height: auto;
+					flex-grow: 1;
+				}
+				& .number {
+					font-size: 3.5rem;
+				}
+			}
+
+			&_content {
+				// width: calc((100% - 8px) / 12 * 11);
+				flex-grow: 1;
+				padding-left: 0;
+				gap: 32px;
+				padding-bottom: 96px;
+			}
+
+			&_title {
+				margin-top: 8px;
+			}
+
+			&_text {
+				gap: 0.5rem;
+
+				& p .icon {
+					position: static;
+					margin-bottom: 20px;
+				}
+			}
+
+			&_more {
+				margin-top: 10px;
 			}
 		}
 	}

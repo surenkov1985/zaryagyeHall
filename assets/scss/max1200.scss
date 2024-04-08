@@ -999,4 +999,30 @@
 			}
 		}
 	}
+
+	.rules {
+		padding-top: 2.5rem;
+		padding-bottom: 7rem;
+
+		&__item {
+
+			&_num {
+				
+				& .line {
+					height: 360px;
+				}
+				& .number {
+					font-size: 6.5rem;
+				}
+			}
+
+			&_content {
+				padding-left: 45px;
+			}
+
+			&_title {
+				margin-top: 10px;
+			}
+		}
+	}
 }

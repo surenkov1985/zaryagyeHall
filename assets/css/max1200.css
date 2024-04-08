@@ -641,4 +641,20 @@
   .feedback__form_col {
     width: 100%;
   }
+  .rules {
+    padding-top: 2.5rem;
+    padding-bottom: 7rem;
+  }
+  .rules__item_num .line {
+    height: 360px;
+  }
+  .rules__item_num .number {
+    font-size: 6.5rem;
+  }
+  .rules__item_content {
+    padding-left: 45px;
+  }
+  .rules__item_title {
+    margin-top: 10px;
+  }
 }

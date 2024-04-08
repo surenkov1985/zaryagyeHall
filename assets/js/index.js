@@ -170,38 +170,38 @@ if ($(".events__date").length) eventsDatePos = parseFloat($(".events__date").css
 
 // скролл
 
-// $(document).bind("scroll", function (e) {
-// 	var current = $(window).scrollTop();
+$(document).bind("scroll", function (e) {
+	var current = $(window).scrollTop();
 
-// 	if (window.pageYOffset >= 300) {
-// 		const head = $(".head").not(".mobile__head");
-// 		$(head).addClass("fixed");
+	if (window.pageYOffset >= 300) {
+		const head = $(".head").not(".mobile__head");
+		$(head).addClass("fixed");
 
-// 		if (current < last) {
-// 			console.log("Вверх");
+		if (current < last) {
+			console.log("Вверх");
 
-// 			if (!$(".head.fixed").hasClass("show")) {
-// 				$(".head.fixed").css({ transition: "all 0.7s" });
-// 				$(".head.fixed").addClass("show");
-// 				$(".head.fixed").removeClass("hide");
-// 			}
+			if (!$(".head.fixed").hasClass("show")) {
+				$(".head.fixed").css({ transition: "all 0.7s" });
+				$(".head.fixed").addClass("show");
+				$(".head.fixed").removeClass("hide");
+			}
 
-// 			if ($(".events__date").length) {
-// 				$(".events__date").css({ top: $(".head.fixed").innerHeight() + eventsDatePos + "px" });
-// 			}
-// 		} else if (current > last) {
-// 			$(".head.fixed").removeClass("show");
-// 			$(".head.fixed").addClass("hide");
+			if ($(".events__date").length) {
+				$(".events__date").css({ top: $(".head.fixed").innerHeight() + eventsDatePos + "px" });
+			}
+		} else if (current > last) {
+			$(".head.fixed").removeClass("show");
+			$(".head.fixed").addClass("hide");
 
-// 			if ($(".events__date").length) {
-// 				$(".events__date").css({ top: eventsDatePos + "px" });
-// 			}
-// 		}
-// 	} else {
-// 		$(".head").not(".mobile__head").removeClass("fixed");
-// 	}
-// 	last = current;
-// });
+			if ($(".events__date").length) {
+				$(".events__date").css({ top: eventsDatePos + "px" });
+			}
+		}
+	} else {
+		$(".head").not(".mobile__head").removeClass("fixed");
+	}
+	last = current;
+});
 
 
 

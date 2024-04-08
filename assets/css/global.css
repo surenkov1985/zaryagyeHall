@@ -652,6 +652,14 @@ label.label_radio {
   line-height: 1.6;
 }
 
+.opera {
+  color: var(--clr-tag-opera);
+}
+
+.lecture {
+  color: var(--clr-tag-lectures);
+}
+
 .nav-link {
   font-size: 1.375rem;
   transition: all 0.3s;

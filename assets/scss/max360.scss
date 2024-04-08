@@ -1452,13 +1452,31 @@
 
 	.festival {
 
+		&.section_pt_sm {
+			padding-top: 0 !important;
+		}
+
 		&__desc {
 
 			&_title {
+				&.title_l {
+				width: 100%;
+				margin-bottom: 40px;
+		  }
 
 				& .h2 {
 					font-size: 2rem !important;
 				}
+			}
+
+			&_text {
+				text-align: left;
+				margin-left: 0;
+				width: 100%;
+			}
+
+			&_more {
+				margin-top: 16px;
 			}
 		}
 	}
@@ -2020,6 +2038,80 @@
 			}
 		}
 	}
+
+	.h1.h1-l {
+		font-size: 3.75rem !important;
+		margin-top: 0px;
+  }
+  
+  .rules {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	&__list {
+		gap: 16px;
+	}
+
+	&__item {
+
+		&_img {
+			width: 100%;
+			height: auto;
+		}
+
+		&_right {
+			width: 100%;
+			gap: 16px;
+		}
+
+		&_num {
+			width: calc((100% - 8px) / 12 * 1.5);
+			gap: 16px;
+			
+			& .line {
+				height: auto;
+				flex-grow: 1;
+			}
+			& .number {
+				font-size: 3.5rem;
+			}
+		}
+
+		&_content {
+			// width: calc((100% - 8px) / 12 * 11);
+			flex-grow: 1;
+			padding-left: 0;
+			gap: 32px;
+			padding-bottom: 66px;
+		}
+
+		&_title {
+			margin-top: 8px;
+		}
+
+		&_text {
+			gap: 1.5rem;
+
+			& p {
+				width: 100% !important;
+			}
+
+			& p .icon {
+				position: static;
+				margin-bottom: 16px;
+			}
+
+			&_cols {
+				flex-direction: column;
+				gap: 14px;
+			}
+		}
+
+		&_more {
+			margin-top: 0px;
+		}
+	}
+}
 
 }
 
