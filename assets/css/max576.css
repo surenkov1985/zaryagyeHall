@@ -861,6 +861,9 @@
   .faq__aside_btn {
     justify-content: center;
   }
+  .faq .event__aside_btn {
+    justify-content: center;
+  }
   .faq .accordion__item {
     padding: 15px 0 16px;
   }

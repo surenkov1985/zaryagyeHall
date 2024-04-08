@@ -2890,3 +2890,44 @@
   justify-content: center;
   margin-top: 77px;
 }
+
+.contacts {
+  padding-top: 32px;
+}
+.contacts__top {
+  padding-top: 32px;
+  position: relative;
+}
+.contacts__top::before {
+  width: 100%;
+  height: 1px;
+  content: "";
+  position: absolute;
+  display: block;
+  background: rgb(219, 219, 219);
+  top: 0;
+  left: 0;
+}
+.contacts__title {
+  text-align: center;
+}
+.contacts__title_more {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.contacts__time {
+  font-size: 1.625rem;
+  line-height: 1.4;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  margin-bottom: 1.25rem;
+}
+.contacts__phone {
+  margin-bottom: 1.25rem;
+}
+.contacts__addr {
+  font-size: 1.625rem;
+  line-height: 1.4;
+}

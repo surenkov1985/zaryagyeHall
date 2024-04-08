@@ -3872,3 +3872,53 @@
 			margin-top: 77px;
 		}
 	}
+
+	// CONTACTS
+
+	.contacts {
+		padding-top: 32px;
+
+		&__top {
+			padding-top: 32px;
+			position: relative;
+
+			&::before {
+				width: 100%;
+				height: 1px;
+				content: "";
+				position: absolute;
+				display: block;
+				background: rgb(219, 219, 219);
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&__title {
+			text-align: center;
+
+			&_more {
+				margin-top: 40px;
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		&__time {
+			font-size: 1.625rem;
+			line-height: 1.4;
+			position: absolute;
+			top: 32px;
+			left: 0;
+			margin-bottom: 1.25rem;
+		}
+
+		&__phone {
+			margin-bottom: 1.25rem;
+		}
+
+		&__addr {
+			font-size: 1.625rem;
+			line-height: 1.4;
+		}
+	}
