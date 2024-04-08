@@ -369,7 +369,7 @@ h5,
 	}
 }
 
-.text_content div {
+.text_content > div {
 
 	&:not(:last-child) {
 		margin-bottom: 84px;

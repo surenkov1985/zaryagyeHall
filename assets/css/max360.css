@@ -68,10 +68,13 @@
   .text_content mark {
     font-size: 0.875rem;
   }
+  .section_pt_md {
+    padding-top: 0rem !important;
+  }
   .section_pb_xs {
     padding-bottom: 1.125rem !important;
   }
-  .text_content div:not(:last-child) {
+  .text_content > div:not(:last-child) {
     margin-bottom: 34px;
   }
   .numbers {

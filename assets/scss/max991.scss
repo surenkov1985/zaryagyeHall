@@ -930,4 +930,32 @@
 			}
 		}
 	}
+
+	.faq {
+
+		& .container {
+			flex-direction: column;
+			gap: 2rem	;
+		}
+
+		& .about__desc_num{
+			gap: 11px;
+			&:first-child {
+				border-top: none;
+				padding-bottom: 0;
+				padding-top: 0;
+			}
+	  }
+
+	  &__top {
+		margin-bottom: 56px;
+	  }
+
+		&__aside {
+			width: 100%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+		}
+	}
 }

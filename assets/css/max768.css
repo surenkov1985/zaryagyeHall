@@ -75,7 +75,7 @@
     width: 64px;
     height: 64px;
   }
-  .text_content div:not(:last-child) {
+  .text_content > div:not(:last-child) {
     margin-bottom: 40px;
   }
   .depkult-logo {
@@ -445,7 +445,7 @@
   .accordion__content .text_content {
     padding: 56px 0 32px;
   }
-  .accordion__content .text_content div {
+  .accordion__content .text_content > div:not(:last-child) {
     margin-bottom: 58px;
   }
   .events {
@@ -1171,6 +1171,43 @@
   }
   .rules__item_more {
     margin-top: 10px;
+  }
+  .faq .container {
+    flex-direction: column;
+    gap: 34px;
+  }
+  .faq .about__desc_num {
+    gap: 11px;
+  }
+  .faq .about__desc_num:first-child {
+    border-top: none;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .faq__top {
+    margin-bottom: 56px;
+  }
+  .faq__aside {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .faq .accordion__item {
+    padding: 24px 0;
+  }
+  .faq .accordion .text_content p {
+    line-height: 1.6;
+  }
+  .faq .accordion .text_content p:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+  .faq .about__accordion_more {
+    gap: 48px;
+    margin-top: 32px;
+  }
+  .faq__more {
+    margin-top: 44px;
   }
 }
 @media (max-width: 700px) {

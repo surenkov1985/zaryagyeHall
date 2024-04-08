@@ -46,8 +46,15 @@
 		font-size: 2.5rem;	
 	}
 
-	
-.text_content div {
+	.section_pt_md {
+		padding-top: 1rem !important;
+  }
+
+  .section_pb_sm {
+	padding-bottom: 2.5rem !important;
+}
+
+.text_content > div {
 
 	&:not(:last-child) {
 		margin-bottom: 36px;
@@ -504,7 +511,7 @@
 				padding: 39px 0 24px;
 				width: 95%;
 
-				& div {
+				& >div:not(:last-child) {
 					margin-bottom: 38px;
 				}
 
@@ -1281,6 +1288,69 @@
 			&_field {
 				width: 100%;
 			}
+		}
+	}
+
+	.faq {
+
+		& .container {
+			gap: 40px;
+		}
+
+		&__top {
+			margin-bottom: 24px;
+		}
+
+		& .about__desc_num {
+			gap: 6px;
+	  }
+
+		&__aside {
+			padding-top: 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+
+			&_btn {
+				justify-content: center;
+			}
+		}
+
+		& .accordion {
+
+			&__item {
+				padding: 15px 0 16px;
+			}
+
+			&__content {
+
+				&_desc {
+					padding-top: 30px;
+				}
+			}
+
+			& .text_content p {
+				line-height: 1.4;
+
+				&:not(:last-child) {
+					margin-bottom: 1.125rem;
+			  }
+		  }
+		}
+
+		& .about {
+
+			&__accordion {
+
+				&_more {
+					margin-top: 26px;
+					gap: 16px;
+				}
+			}
+		}
+
+		&__more {
+			margin-top: 48px;
 		}
 	}
 }

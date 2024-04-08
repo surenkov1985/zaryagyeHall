@@ -99,7 +99,7 @@
 	}
 
 	
-.text_content div {
+.text_content > div {
 
 	&:not(:last-child) {
 		margin-bottom: 40px;
@@ -664,7 +664,7 @@
 			& .text_content {
 				padding: 56px 0 32px;
 
-				& div {
+				& >div:not(:last-child) {
 					margin-bottom: 58px;
 				}
 			}
@@ -1768,6 +1768,61 @@
 				margin-top: 10px;
 			}
 		}
+	}
+
+	.faq {
+
+		& .container {
+			flex-direction: column;
+			gap: 34px	;
+		}
+
+		& .about__desc_num{
+			gap: 11px;
+			&:first-child {
+				border-top: none;
+				padding-bottom: 0;
+				padding-top: 0;
+			}
+	   }
+
+	   &__top {
+			margin-bottom: 56px;
+	   }
+
+		&__aside {
+			width: 100%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+		}
+
+		& .accordion {
+
+			&__item {
+				padding: 24px 0;
+			}
+
+			& .text_content {
+
+				& p {
+					line-height: 1.6;
+
+					&:not(:last-child) {
+						margin-bottom: 0.75rem;
+					}
+				}
+			}
+		}
+
+		& .about__accordion_more {
+			gap: 48px;
+			margin-top: 32px;
+	  }
+
+	  &__more {
+		margin-top: 44px;
+	  }
 	}
 }
 

@@ -610,4 +610,25 @@
     position: static;
     margin-bottom: 1rem;
   }
+  .faq .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .faq .about__desc_num {
+    gap: 11px;
+  }
+  .faq .about__desc_num:first-child {
+    border-top: none;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .faq__top {
+    margin-bottom: 56px;
+  }
+  .faq__aside {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
