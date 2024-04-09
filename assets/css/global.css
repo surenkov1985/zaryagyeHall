@@ -334,11 +334,19 @@ label {
 }
 label.label_check {
   cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+}
+label:hover span.radio {
+  border: 1px solid var(--clr-black);
 }
 label input[type=radio] {
   position: absolute;
   visibility: hidden;
   opacity: 0;
+}
+label input[type=radio] span.radio {
+  position: relative;
 }
 label input[type=radio]:checked + span.radio {
   background: var(--clr-black);
@@ -347,6 +355,9 @@ label input[type=radio]:checked + span.radio {
 }
 label input[type=radio]:checked + span.radio svg {
   visibility: visible;
+  opacity: 1;
+}
+label input[type=radio]:checked + span.radio::before {
   opacity: 1;
 }
 label input[type=file] {
@@ -411,6 +422,57 @@ label.disabled {
 }
 label span.error {
   font-size: 0.75rem;
+}
+label input[type=search] {
+  width: 100%;
+  display: block;
+  padding: 0px 0 16px;
+  border-bottom: 1px solid var(--clr-gray);
+  font-size: 1.375rem;
+  line-height: 1.4;
+  font-family: var(--font-accent);
+  position: relative;
+}
+label input[type=search]::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: var(--clr-gray);
+  display: block;
+}
+label input[type=search].error {
+  color: var(--clr-error);
+  border-color: rgba(239, 60, 13, 0.5);
+}
+label input[type=search].error + span.error {
+  opacity: 1;
+  visibility: visible;
+}
+label input[type=search]::-moz-placeholder {
+  color: var(--clr-black-40);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.375rem;
+}
+label input[type=search]::placeholder {
+  color: var(--clr-black-40);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.375rem;
+}
+label input[type=search]:focus::-moz-placeholder {
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+label input[type=search]:focus::placeholder {
+  transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
 }
 label input[type=text], label input[type=email], label input[type=tel] {
   width: 100%;
@@ -510,6 +572,7 @@ label span.radio {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -522,6 +585,16 @@ label span.radio svg {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s;
+}
+label span.radio::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--clr-white);
+  opacity: 0;
 }
 label.label_radio {
   cursor: pointer;

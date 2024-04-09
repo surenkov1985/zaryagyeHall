@@ -4159,3 +4159,41 @@
 			}
 		}
 	}
+
+	// SEARCH
+
+	.search {
+
+		&__top {
+			display: flex;
+			gap: 2rem;
+		}
+
+		&__popular {
+			width: calc((100% - 32px) / 24 * 7);
+
+			&_tags {
+				width: calc(100% / 7 * 5);
+				margin-top: 24px;
+			}
+		}
+
+		&__form {
+			width: calc((100% - 32px) / 24 * 17);
+
+			&_fields {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem	;
+			}
+
+			&_field {
+				width: 100%;
+				display: flex;
+				gap: 2rem;
+
+				& label {
+				}
+			}
+		}
+	}
