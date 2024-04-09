@@ -1427,6 +1427,96 @@
   .rules__item_more {
     margin-top: 0px;
   }
+  .contacts {
+    padding-top: 0.25rem;
+    padding-bottom: 4rem;
+  }
+  .contacts__top {
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+  .contacts__time {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+  .contacts__phone {
+    font-size: 3.75rem !important;
+  }
+  .contacts__addr {
+    font-size: 1.125rem;
+  }
+  .contacts__title_more {
+    margin-top: 24px;
+  }
+  .contacts__content {
+    margin-bottom: 1.25rem;
+  }
+  .contacts__content_title {
+    margin-bottom: 24px;
+  }
+  .contacts__content_title .h2 {
+    font-size: 2rem;
+  }
+  .contacts__cols {
+    gap: 9px;
+  }
+  .contacts__col {
+    padding-top: 16px;
+  }
+  .contacts__col_top .contacts__col_left {
+    width: 56px;
+    margin-right: 12px;
+  }
+  .contacts__col_top .contacts__col_right {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.125rem;
+  }
+  .contacts__col_right .text_content {
+    padding-top: 8px;
+  }
+  .contacts__col_right .text_content p:not(:last-child) {
+    margin-bottom: 16px !important;
+  }
+  .contacts .location__slides_btn {
+    width: 56px;
+    height: 56px;
+  }
+  .contacts__map {
+    width: 100vw;
+    height: 640px;
+    margin-left: -16px;
+  }
+  .contacts__list {
+    margin-top: 64px;
+    gap: 14px;
+  }
+  .contacts__list_more {
+    margin-top: 38px;
+  }
+  .contacts__list_more .btn {
+    font-size: 0.875rem;
+    padding: 18px 16px;
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+  }
+  .contacts__item {
+    padding: 16px 0;
+    gap: 20px;
+  }
+  .contacts__item_row {
+    padding: 24px 0;
+  }
+  .contacts__item_row:first-child {
+    padding-top: 32px;
+  }
+  .contacts__item_row p {
+    margin-bottom: 1.75rem;
+  }
+  .contacts__item_link {
+    font-size: 0.875rem;
+  }
 }
 @media (max-width: 350px) {
   .h3 {
@@ -1509,5 +1599,14 @@
     right: calc(100% + 16px);
     bottom: calc(100% + 25px);
     font-size: 0.875rem;
+  }
+  .contacts__phone {
+    font-size: 3rem !important;
+  }
+  .contacts__time {
+    font-size: 1rem;
+  }
+  .contacts__addr {
+    font-size: 1rem;
   }
 }

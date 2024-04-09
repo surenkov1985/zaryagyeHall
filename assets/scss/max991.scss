@@ -958,4 +958,54 @@
 			justify-content: space-between;
 		}
 	}
+
+	.contacts {
+
+		&__time {
+			position: static;
+		}
+
+		&__cols {
+			flex-direction: column;
+			gap: 12px;
+		}
+
+		&__col {
+			width: 100%;
+
+			&_row {
+				gap: 8px;
+			}
+
+			&_right {
+				width: calc((100% - 8px) / 12 * 8);
+			}
+
+			&_left {
+				width: calc((100% - 8px) / 12 * 4);
+			}
+		}
+
+		&__list {
+			margin-top: 80px;
+		}
+
+		&__item {
+			padding: 24px 0;
+			// gap: 0;
+
+			&_row {
+				padding: 32px 0;
+
+				&:first-child {
+					padding-top: 32px;
+					border-top: 1px solid rgb(219, 219, 219);
+				}
+			}
+		}
+
+		&__map {
+			height: 750px;
+		}
+	}
 }

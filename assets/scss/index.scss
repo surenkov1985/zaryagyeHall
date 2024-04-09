@@ -1180,7 +1180,7 @@
 }
 
 .title_l {
-	width: calc((100% - 32px) / 24* 18);
+	width: calc((100% - 32px) / 24* 18) !important;
 }
 
 .title_xl {
@@ -3876,10 +3876,13 @@
 	// CONTACTS
 
 	.contacts {
-		padding-top: 32px;
+		padding-top: 29px;
+		padding-bottom: 4rem;
 
 		&__top {
-			padding-top: 32px;
+			padding-top: 34px;
+			padding-bottom: 32px;	
+			margin-bottom: 48px;
 			position: relative;
 
 			&::before {
@@ -3908,17 +3911,251 @@
 			font-size: 1.625rem;
 			line-height: 1.4;
 			position: absolute;
-			top: 32px;
+			top: 42px;
 			left: 0;
 			margin-bottom: 1.25rem;
 		}
 
 		&__phone {
 			margin-bottom: 1.25rem;
+			transition: all .5s;
+			display: block;
+
+			&:hover {color: var(--clr-black-40);}
 		}
 
 		&__addr {
 			font-size: 1.625rem;
 			line-height: 1.4;
+		}
+
+		&__content {
+			margin-bottom: 1rem;
+
+			&_title {
+				margin-bottom: 56px;
+			}
+		}
+
+		&__cols {
+			display: flex;
+			gap: 32px;
+		}
+
+		&__col {
+			padding-top: 24px;
+			position: relative;
+			width: calc((100% - 32px) / 24 * 12);
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: rgb(219, 219, 219);
+			}
+
+			&_row {
+				display: flex;
+				gap: 1.5rem;
+			}
+
+			&_top {
+				margin-bottom: 70px;
+
+				& .text_content {
+
+					& p:not(:last-child) {
+						margin-bottom: 20px;
+					}
+				}
+			}
+
+			&_left {
+				width: calc((100% - 24px) / 12 * 5);
+
+				& .icons {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 32px;
+
+					& .place {
+						z-index: 1;
+
+						&:not(:first-child) {
+							margin-left: -6px;
+							z-index: 0;
+						}
+					}
+
+					& .icon {
+						border-radius: 3px;
+						display: flex;
+						width: 32px;
+						height: 32px;
+						overflow: hidden;
+
+						& svg {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+
+			&_right {
+				width: calc((100% - 32px) / 12 * 7);
+
+				& .text_content {
+
+					& p:not(:last-child) {
+						margin-bottom: 40px;
+					}
+				}
+			}
+
+			&_item {
+				padding: 19px 0;
+				border-bottom: 1px solid rgb(219, 219, 219);
+	
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					border-bottom: none;
+				}
+	
+				&_name {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+				}
+			}
+		}
+
+		&__list	 {
+			margin-top: 128px;
+
+			&_more {
+				display: flex;
+				justify-content: center;
+				margin-top: 84px;
+			}
+		}
+
+		&__item {
+			position: relative;
+			padding: 56px 0;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: rgb(219, 219, 219);
+			}
+
+			&:last-child {
+
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: rgb(219, 219, 219);
+				}
+			}
+
+			& .contacts__col {
+				padding-top: 0;
+
+				&::before {
+					display: none;
+				}
+			}
+
+			&_phone {
+				transition: all .5s;
+
+				&:hover {
+					color: var(--clr-black-40);
+				}
+			}
+
+			&_row {
+				padding: 56px 0;
+				border-bottom: 1px solid rgb(219, 219, 219);
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+
+				& p {
+					margin-bottom: 2rem;
+				}
+			}
+
+			&_links {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+
+			&_link {
+				font-size: 1.375rem;
+				line-height: 1.4;
+
+				& a {
+					transition: all .5s;
+
+					&:hover {
+						color: var(--clr-black-40);
+					}
+
+					&.download_link {
+						position: relative;
+
+						&::before {
+							content: "";
+							position: absolute;
+							width: 100%;
+							height: 1px;
+							background: rgb(219, 219, 219);
+							left: 0;
+							top: calc(100% + 2px);
+						}
+					}
+				}
+
+				&-text {
+					color: var(--clr-black-40);
+				}
+			}
+		}
+
+		&__map {
+			width: 100%;
+			height: 788px;
+
+			& .map {
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}

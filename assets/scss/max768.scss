@@ -400,6 +400,10 @@
 		&__page-title {
 			width: calc((100% - 32px) / 24* 24) !important;
 
+			&.title_l {
+				width: calc((100% - 32px) / 24* 18) !important;
+			}
+
 			& .h1-l {
 				font-size: 6.25rem;
 			}
@@ -1824,6 +1828,74 @@
 		margin-top: 44px;
 	  }
 	}
+
+	.contacts {
+		padding-top: 1.25rem;
+		padding-bottom: 2rem;
+
+		&__top {
+			padding-top: 30px;
+			margin-bottom: 16px;
+		}
+
+		&__phone {
+			margin-bottom: 0.75rem;
+		}
+
+		&__title {
+
+			&_more {
+				margin-top: 34px;
+			}
+		}
+
+		& .location__slides_btn {
+			width: 139px;
+			height: 139px;
+		}
+
+		&__cols {
+			gap: 48px;
+		}
+
+		&__col {
+
+			&_row {
+				gap: 4px;
+			}
+
+			&_left {
+				width: calc((100% - 4px) / 12* 4);
+			}
+
+			&_right {
+				width: calc((100% - 4px) / 12* 8);
+			}
+
+			&_top {
+				margin-bottom: 18px;
+			}
+		}
+
+		&__list {
+			margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+		}
+
+		&__item {
+			gap: 22px;
+		} 
+
+		&__content {
+			margin-bottom: 3rem;
+		}
+
+		&__map {
+			height: 1024px;
+		}
+	}
 }
 
 @media (max-width:700px) {
@@ -1835,6 +1907,13 @@
 
 		&__right {
 			padding-left: 1.5rem;
+		}
+	}
+
+	.contacts {
+
+		&__phone {
+			font-size: 5rem !important;
 		}
 	}
 }

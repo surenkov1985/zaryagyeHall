@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	awardsSlider();
 	aboutSliders();
 	partnersSliders();
+
+	loadScript(window.location.protocol + "//api-maps.yandex.ru/2.1/?lang=ru_RU", setMap);
 });
+
+// dropdown
 
 $(document).on("click", ".dropdown__value", function () {
 	const dropdown = $(this).closest(".dropdown");
@@ -270,6 +274,24 @@ $(document).on("click", ".accordion__title", function () {
 	} else {
 		$(accItem).removeClass("active");
 		$(accItem).find(".accordion__content").css({ "max-height": "0px" });
+	}
+});
+
+$(document).on("click", ".contacts__col .accordion_btn", function () {
+	const accItem = $(this).closest(".contacts__col");
+
+	if (!$(accItem).hasClass("active")) {
+		$(".contacts__col").each((i, item) => {
+			$(item).removeClass("active");
+			$(item).find(".contacts__col_bottom").css({ "max-height": "0px" });
+		});
+		$(accItem).addClass("active");
+		$(accItem)
+			.find(".contacts__col_bottom")
+			.css({ "max-height": $(accItem).find(".contacts__col_list").innerHeight() + "px" });
+	} else {
+		$(accItem).removeClass("active");
+		$(accItem).find(".contacts__col_bottom").css({ "max-height": "0px" });
 	}
 });
 

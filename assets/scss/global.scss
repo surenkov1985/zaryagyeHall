@@ -1048,6 +1048,10 @@ label {
 	display: none !important;
 }
 
+.max576 {
+	display: none !important;
+}
+
 .hidden {
 	overflow: hidden;
 }
@@ -1136,4 +1140,69 @@ label {
 	display: flex;
 	align-items: center;
 	gap: 12px;
+}
+
+.place {
+	width: 12px;
+	height: 12px;
+	display: flex;
+	border: 1px solid;
+	border-radius: 50%;
+	background: var(--clr-white);
+	position: relative;
+	align-items: center;
+	justify-content: center;
+
+	&::after {
+		content: "";
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		border-radius: 50%;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		display: block;
+		transform: translate(-50%, -50%);
+	}
+
+	&_yell {
+		border-color: rgb(232, 160, 53);
+
+		&::after {
+			background: rgb(232, 160, 53);
+		}
+	}
+
+	&_pink {
+		border-color: rgb(189, 0, 181);
+
+		&::after {
+			background: rgb(189, 0, 181);
+		}
+	}
+
+	&_violet {
+		border-color: rgb(15, 0, 189);
+
+		&::after {
+			background: rgb(15, 0, 189);
+		}
+	}
+
+	&_green {
+		border-color: rgb(0, 160, 16);
+
+		&::after {
+			background: rgb(0, 160, 16);
+		}
+	}
+
+	&_red {
+		border-color: rgb(189, 0, 0);
+
+		&::after {
+			background: rgb(189, 0, 0);
+		}
+	}
 }

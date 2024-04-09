@@ -185,6 +185,9 @@
   .fs__page-title {
     width: 100%;
   }
+  .fs__page-title.title_l {
+    width: calc((100% - 32px) / 24 * 22) !important;
+  }
   .fs__title.fs__title-sm .h2 {
     font-size: 3rem;
   }
@@ -882,5 +885,52 @@
   }
   .faq__more {
     margin-top: 48px;
+  }
+  .max576 {
+    display: flex !important;
+  }
+  .contacts__phone {
+    font-size: 4.75rem !important;
+  }
+  .contacts .location__slides_btn {
+    width: 84px;
+    height: 84px;
+  }
+  .contacts__col_item {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .contacts__col_left {
+    width: 100%;
+  }
+  .contacts__col_right {
+    width: 100%;
+  }
+  .contacts__col.active .accordion_btn {
+    background: var(--clr-black);
+  }
+  .contacts__col.active .accordion_btn .line {
+    background: var(--clr-white);
+  }
+  .contacts__col.active .accordion_btn .line:last-child {
+    transform: rotate(0);
+  }
+  .contacts__col_top .contacts__col_left {
+    width: 84px;
+    margin-right: 16px;
+  }
+  .contacts__col_top .contacts__col_right {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .contacts__col_bottom {
+    overflow: hidden;
+    height: auto;
+    max-height: 0;
+    transition: all 0.7s;
+  }
+  .contacts__map {
+    height: 860px;
   }
 }

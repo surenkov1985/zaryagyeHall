@@ -891,7 +891,7 @@
 }
 
 .title_l {
-  width: calc((100% - 32px) / 24 * 18);
+  width: calc((100% - 32px) / 24 * 18) !important;
 }
 
 .title_xl {
@@ -2892,10 +2892,13 @@
 }
 
 .contacts {
-  padding-top: 32px;
+  padding-top: 29px;
+  padding-bottom: 4rem;
 }
 .contacts__top {
-  padding-top: 32px;
+  padding-top: 34px;
+  padding-bottom: 32px;
+  margin-bottom: 48px;
   position: relative;
 }
 .contacts__top::before {
@@ -2920,14 +2923,198 @@
   font-size: 1.625rem;
   line-height: 1.4;
   position: absolute;
-  top: 32px;
+  top: 42px;
   left: 0;
   margin-bottom: 1.25rem;
 }
 .contacts__phone {
   margin-bottom: 1.25rem;
+  transition: all 0.5s;
+  display: block;
+}
+.contacts__phone:hover {
+  color: var(--clr-black-40);
 }
 .contacts__addr {
   font-size: 1.625rem;
   line-height: 1.4;
+}
+.contacts__content {
+  margin-bottom: 1rem;
+}
+.contacts__content_title {
+  margin-bottom: 56px;
+}
+.contacts__cols {
+  display: flex;
+  gap: 32px;
+}
+.contacts__col {
+  padding-top: 24px;
+  position: relative;
+  width: calc((100% - 32px) / 24 * 12);
+}
+.contacts__col::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(219, 219, 219);
+}
+.contacts__col_row {
+  display: flex;
+  gap: 1.5rem;
+}
+.contacts__col_top {
+  margin-bottom: 70px;
+}
+.contacts__col_top .text_content p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__col_left {
+  width: calc((100% - 24px) / 12 * 5);
+}
+.contacts__col_left .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+}
+.contacts__col_left .icons .place {
+  z-index: 1;
+}
+.contacts__col_left .icons .place:not(:first-child) {
+  margin-left: -6px;
+  z-index: 0;
+}
+.contacts__col_left .icons .icon {
+  border-radius: 3px;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+.contacts__col_left .icons .icon svg {
+  width: 100%;
+  height: 100%;
+}
+.contacts__col_right {
+  width: calc((100% - 32px) / 12 * 7);
+}
+.contacts__col_right .text_content p:not(:last-child) {
+  margin-bottom: 40px;
+}
+.contacts__col_item {
+  padding: 19px 0;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.contacts__col_item:first-child {
+  padding-top: 0;
+}
+.contacts__col_item:last-child {
+  border-bottom: none;
+}
+.contacts__col_item_name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contacts__list {
+  margin-top: 128px;
+}
+.contacts__list_more {
+  display: flex;
+  justify-content: center;
+  margin-top: 84px;
+}
+.contacts__item {
+  position: relative;
+  padding: 56px 0;
+}
+.contacts__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(219, 219, 219);
+}
+.contacts__item:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(219, 219, 219);
+}
+.contacts__item .contacts__col {
+  padding-top: 0;
+}
+.contacts__item .contacts__col::before {
+  display: none;
+}
+.contacts__item_phone {
+  transition: all 0.5s;
+}
+.contacts__item_phone:hover {
+  color: var(--clr-black-40);
+}
+.contacts__item_row {
+  padding: 56px 0;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.contacts__item_row:first-child {
+  padding-top: 0;
+}
+.contacts__item_row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.contacts__item_row p {
+  margin-bottom: 2rem;
+}
+.contacts__item_links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contacts__item_link {
+  font-size: 1.375rem;
+  line-height: 1.4;
+}
+.contacts__item_link a {
+  transition: all 0.5s;
+}
+.contacts__item_link a:hover {
+  color: var(--clr-black-40);
+}
+.contacts__item_link a.download_link {
+  position: relative;
+}
+.contacts__item_link a.download_link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgb(219, 219, 219);
+  left: 0;
+  top: calc(100% + 2px);
+}
+.contacts__item_link-text {
+  color: var(--clr-black-40);
+}
+.contacts__map {
+  width: 100%;
+  height: 788px;
+}
+.contacts__map .map {
+  width: 100%;
+  height: 100%;
 }

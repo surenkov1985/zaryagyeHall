@@ -2117,6 +2117,131 @@
 	}
 }
 
+	.contacts {
+		padding-top: 0.25rem;
+		padding-bottom: 4rem;
+
+		&__top {
+			padding-top: 16px;
+			margin-bottom: 32px;
+		}
+
+		&__time {
+			margin-bottom: 1rem;
+			font-size: 1.125rem;
+		}
+
+		&__phone {
+			font-size: 3.75rem !important;
+		}
+		&__addr {
+			font-size: 1.125rem;
+		}
+		&__title {
+
+			&_more {
+				margin-top: 24px;
+
+			}
+		}
+
+		&__content {
+			margin-bottom: 1.25rem;
+
+			&_title {
+				margin-bottom: 24px;
+
+				& .h2 {
+					font-size: 2rem;
+				}
+			}
+		}
+
+		&__cols {
+			gap: 9px;
+		}
+
+		&__col {
+			padding-top: 16px;
+
+			&_top {
+
+				& .contacts__col_left {
+					width: 56px;
+					margin-right: 12px;
+				}
+
+				& .contacts__col_right {
+					display: flex;
+					justify-content: space-between;
+					gap: 0.125rem;
+				}
+			}
+
+			&_right {
+
+				& .text_content {
+					padding-top: 8px;
+
+					& p {
+						&:not(:last-child) {
+							margin-bottom: 16px !important;
+						}
+					}
+				}
+			}
+		}
+
+		& .location__slides_btn {
+			width: 56px;
+			height: 56px;
+		}
+
+		&__map {
+			width: 100vw;
+			height: 640px;
+			margin-left: -16px;
+		}
+
+		&__list {
+			margin-top: 64px;
+			gap: 14px;
+
+			&_more {
+				margin-top: 38px;
+				
+				& .btn {
+					font-size: 0.875rem;
+					padding: 18px 16px;
+					width: 100%;
+					text-align: center;
+					white-space: normal;
+				}
+			}
+		}
+
+		&__item {
+			padding: 16px 0;
+			gap: 20px;
+
+			&_row {
+				padding: 24px 0;
+
+				&:first-child {
+					padding-top: 32px;
+				}
+
+				& p {
+					margin-bottom: 1.75rem;
+				}
+			}
+
+			&_link {
+				font-size: 0.875rem;
+			}
+		}
+	}
+
 }
 
 @media (max-width: 350px) {
@@ -2248,6 +2373,21 @@
 
 				}
 			}
+		}
+	}
+
+	.contacts {
+
+		&__phone {
+			font-size: 3rem !important;	
+		}
+
+		&__time {
+			font-size: 1rem;
+		}
+
+		&__addr {
+			font-size: 1rem;
 		}
 	}
 }

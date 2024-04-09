@@ -631,4 +631,39 @@
     align-items: flex-end;
     justify-content: space-between;
   }
+  .contacts__time {
+    position: static;
+  }
+  .contacts__cols {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contacts__col {
+    width: 100%;
+  }
+  .contacts__col_row {
+    gap: 8px;
+  }
+  .contacts__col_right {
+    width: calc((100% - 8px) / 12 * 8);
+  }
+  .contacts__col_left {
+    width: calc((100% - 8px) / 12 * 4);
+  }
+  .contacts__list {
+    margin-top: 80px;
+  }
+  .contacts__item {
+    padding: 24px 0;
+  }
+  .contacts__item_row {
+    padding: 32px 0;
+  }
+  .contacts__item_row:first-child {
+    padding-top: 32px;
+    border-top: 1px solid rgb(219, 219, 219);
+  }
+  .contacts__map {
+    height: 750px;
+  }
 }

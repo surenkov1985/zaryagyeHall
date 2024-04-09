@@ -313,6 +313,10 @@ h2,
   line-height: 1;
 }
 
+[class*=ymaps-2-1][class*=-ground-pane] {
+  -webkit-filter: grayscale(100%);
+}
+
 .h2-l {
   font-family: var(--font-title);
   font-size: 6.75rem;
