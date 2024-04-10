@@ -351,4 +351,37 @@ $(document).on("blur", "input[type=text], input[type=email], input[type=tel]", f
 	}
 
 
+});
+
+// popup 
+
+$(document).on("click", ".popup_open", function () {
+
+	const popup = $(".popup");
+	const popupContent = $(".popup__content");
+
+	$("body").addClass("hidden");
+	const timeLine = gsap.timeline();
+
+	timeLine.to(".popup", {
+		opacity: 1, visibility: "visible", duration: 0.1, ease: "power1.out"
+	}).to(".popup__content", {
+		translateX: 0, duration: 0.1, ease: "power1.out"
+	});
+});
+
+$(document).on("click", ".popup", function (e) {
+
+	if (!e.target.closest(".popup__content") || e.target.closest(".popup_close")) {
+		$("body").removeClass("hidden");
+		const timeLine = gsap.timeline();
+
+		timeLine.to(".popup__content", {
+			translateX: "100%", duration: 0.1, ease: "power1.out"
+		}).to(".popup", {
+			opacity: 0, duration: 0.1, ease: "power1.out", delay: 0.4
+		}).to(".popup", {
+			visibility: "hidden", duration: 0, ease: "power1.out"
+		});
+	}
 })

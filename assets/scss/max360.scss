@@ -2371,7 +2371,34 @@
 	}
 	.section_pb_md {
 		padding-bottom: 2.5rem !important;
-  }
+   }
+
+	.popup {
+
+		&__content {
+			padding: 32px 16px;
+		}
+
+		&_close {
+			right: 12px;
+			top: 32px;
+		}
+
+		&__form {
+
+			&_title {
+				margin-bottom: 56px;
+				width: calc(100% / 12 * 9);
+			}
+
+			&_agree_text {
+				margin-top: 24px;
+			}
+			&_submit {
+				margin-top: 32px;
+			}
+		}
+	}
 }
 
 @media (max-width: 350px) {

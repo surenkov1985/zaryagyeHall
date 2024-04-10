@@ -728,4 +728,14 @@
   .section_pb_md {
     padding-bottom: 6rem !important;
   }
+  .popup__content {
+    max-width: 800px;
+    padding: 48px 32px 48px 48px;
+  }
+  .popup_close {
+    right: 32px;
+  }
+  .popup__form_title {
+    margin-bottom: 90px;
+  }
 }

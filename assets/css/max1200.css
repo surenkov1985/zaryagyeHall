@@ -692,4 +692,14 @@
   .program__item_nums {
     gap: 24px;
   }
+  .popup__content {
+    max-width: calc((100% - 24px) / 24 * 15);
+    padding: 48px 48px 48px 56px;
+  }
+  .popup_close {
+    right: 48px;
+  }
+  .popup__form_title {
+    margin-bottom: 112px;
+  }
 }

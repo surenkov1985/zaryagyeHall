@@ -1099,4 +1099,23 @@
 	.section_pb_md {
 		padding-bottom: 6rem !important;
   }
+
+  .popup {
+
+	&__content {
+		max-width: 800px;
+		padding: 48px 32px 48px 48px;
+	}
+
+	&_close {
+		right: 32px;
+	}
+
+	&__form {
+
+		&_title {
+			margin-bottom: 90px;
+		}
+	}
+}
 }

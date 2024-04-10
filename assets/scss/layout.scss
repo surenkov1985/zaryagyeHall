@@ -882,3 +882,62 @@
 		}
 	}
  }
+
+ .popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--clr-black-40);
+	z-index: 1000;
+	opacity: 0;
+	visibility: hidden;
+
+	&.show {
+		visibility: visible;
+		opacity: 1;
+
+		& .popup__content {
+			transform: translateX(0);
+		}
+	}	
+
+	&__content {
+		position: absolute;
+		width: 90%;
+		max-width: calc((100% - 32px) / 24 * 13);
+		height: 100%;
+		top: 0;
+		right: 0;
+		background: var(--clr-white);
+		z-index: 1001;
+		padding: 56px 56px 56px 64px;
+		transform: translateX(100%);
+		transition: transform 1s;
+		overflow: auto;
+	}
+
+	&_close {
+		position: absolute;
+		right: 56px;
+		top: 60px;
+	}
+
+	&__form {
+
+		&_title {
+			margin-bottom: 124px;
+			width: calc(100% / 13 * 11);
+		}
+
+		&_agree_text {
+			width: calc(100% / 13 * 11);
+			margin-top: 32px;
+		}
+
+		&_submit {
+			margin-top: 56px;
+		}
+	}
+ }

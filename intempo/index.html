@@ -524,7 +524,7 @@
 						</div>
 					</div>
 					<div class="program__more">
-						<button class="btn">Подтвердить участие</button>
+						<button class="btn popup_open">Подтвердить участие</button>
 					</div>
 				</div>
 			</section>
@@ -1966,11 +1966,73 @@
 			</div>
 
 		</div>
+		<div class="popup">
+			<div class="popup__content">
+				<button class="btn btn_slider popup_close">
+					<svg width="13.727905" height="13.727905" viewBox="0 0 13.7279 13.7279" fill="none"
+						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<path
+							d="M0.146484 0.146423C0.341675 -0.0488281 0.658325 -0.0488281 0.853516 0.146423L6.86401 6.15686L12.8744 0.146423C13.0696 -0.0488281 13.3862 -0.0488281 13.5814 0.146423C13.7767 0.341736 13.7767 0.658264 13.5814 0.853577L7.57104 6.86395L13.5814 12.8744C13.7767 13.0696 13.7767 13.3862 13.5814 13.5815C13.3862 13.7767 13.0696 13.7767 12.8744 13.5815L6.86401 7.57104L0.853516 13.5815C0.658325 13.7767 0.341675 13.7767 0.146484 13.5815C-0.0488281 13.3862 -0.0488281 13.0696 0.146484 12.8744L6.15686 6.86395L0.146484 0.853577C-0.0488281 0.658264 -0.0488281 0.341736 0.146484 0.146423Z"
+							fill="#101010" fill-opacity="1.000000" fill-rule="evenodd" />
+					</svg>
+				</button>
+				<div class="popup__form">
+					<div class="popup__form_title">
+						<h2 class="h2-l">Подтвердите свое участие</h2>
+					</div>
+					<form action="" class="feedback__form">
+						<input type="hidden" name="agree" value="true">
+						<div class="form_content feedback__form_content">
+							<div class="feedback__form_fields">
+								<label class="feedback__form_field w100">
+									<span class="placeholder">ФИО</span>
+									<input type="text" name="fio" class="" placeholder="Введите имя" data-test="false"
+										data-reg="false">
+									<span class="error">error</span>
 
+								</label>
+								<label class="feedback__form_field">
+									<span class="placeholder">Телефон</span>
+									<input type="tel" name="tel" class="" placeholder="Введите телефон" data-test="false"
+										data-reg="false">
+									<span class="error">error</span>
+
+								</label>
+								<label class="feedback__form_field">
+									<span class="placeholder">E-mail</span>
+									<input type="email" name="email" class="" placeholder=" Введите почту" data-test="false"
+										data-reg="false">
+									<span class="error">error</span>
+
+
+								</label>
+
+							</div>
+						</div>
+						<div class="popup__form_agree_text">
+							<p class="main_font light_text">Нажимая кнопку «Отправить» я соглашаюсь с условиями <a class=""
+									href="">Политики конфиденциальности</a></p>
+						</div>
+						<div class="popup__form_submit">
+							<input class="btn" type="submit" value="Отправить">
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+		</div>
 	</div>
 	</div>
 
 	<script src="/assets/libs/jquery/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+	<script src="/assets/libs/wavify/jquery.wavify.js"></script>
+	<script src="/assets/libs/wavify/wavify.js"></script>
+	<script src="/assets/libs/scrollSpeed/script.js"></script>
 	<script src="/assets/libs/fancybox/script.js"></script>
 	<script src="/assets/libs/swiper/swiper.js"></script>
 	<script src="/assets/js/methods.js"></script>

@@ -1075,4 +1075,23 @@
 			}
 		}
 	}
+
+	.popup {
+
+		&__content {
+			max-width: calc((100% - 24px) / 24 * 15);
+			padding: 48px 48px 48px 56px;
+		}
+
+		&_close {
+			right: 48px;
+		}
+
+		&__form {
+
+			&_title {
+				margin-bottom: 112px;
+			}
+		}
+	}
 }

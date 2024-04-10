@@ -642,3 +642,52 @@ input:checked + .slider:before {
 .breadcrumbs__item .back_link:hover .btn svg path {
   fill: var(--clr-white);
 }
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--clr-black-40);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+.popup.show .popup__content {
+  transform: translateX(0);
+}
+.popup__content {
+  position: absolute;
+  width: 90%;
+  max-width: calc((100% - 32px) / 24 * 13);
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: var(--clr-white);
+  z-index: 1001;
+  padding: 56px 56px 56px 64px;
+  transform: translateX(100%);
+  transition: transform 1s;
+  overflow: auto;
+}
+.popup_close {
+  position: absolute;
+  right: 56px;
+  top: 60px;
+}
+.popup__form_title {
+  margin-bottom: 124px;
+  width: 84.6153846154%;
+}
+.popup__form_agree_text {
+  width: 84.6153846154%;
+  margin-top: 32px;
+}
+.popup__form_submit {
+  margin-top: 56px;
+}
