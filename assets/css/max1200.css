@@ -657,4 +657,39 @@
   .rules__item_title {
     margin-top: 10px;
   }
+  .program__top {
+    margin-bottom: 48px;
+  }
+  .program__item {
+    gap: 1.5rem;
+    padding-bottom: 24px;
+  }
+  .program__item_left {
+    width: calc((100% - 24px) / 24 * 4);
+  }
+  .program__item_right {
+    width: calc((100% - 24px) / 24 * 20);
+    gap: 24px;
+  }
+  .program__item_desc {
+    width: calc((100% - 24px) / 20 * 16);
+    padding-top: 30px;
+  }
+  .program__item_desc .text_content ul {
+    margin-top: 0;
+  }
+  .program__item_desc .text_content ul li {
+    margin-left: -16px;
+    padding-left: 16px;
+  }
+  .program__item_desc .text_content ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .program__item_img {
+    width: calc((100% - 24px) / 20 * 6);
+    height: 152px;
+  }
+  .program__item_nums {
+    gap: 24px;
+  }
 }

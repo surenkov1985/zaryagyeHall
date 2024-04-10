@@ -1477,8 +1477,6 @@
 		}
 	}
 
-	
-
 	.festival {
 
 		&.section_pt_sm {
@@ -2110,9 +2108,9 @@
 	.h1.h1-l {
 		font-size: 3.75rem !important;
 		margin-top: 0px;
-  }
+   }
   
-  .rules {
+   .rules {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 
@@ -2179,7 +2177,7 @@
 			margin-top: 0px;
 		}
 	}
-}
+	}
 
 	.contacts {
 		padding-top: 0.25rem;
@@ -2339,6 +2337,41 @@
 		}
 	}
 
+	.program {
+
+		&__item {
+			padding-bottom: 16px;
+
+			&_left {
+				padding-top: 16px;
+			}
+
+			&_img {
+				height: 174px;
+			}
+
+			&_desc {
+
+				& .text_content {
+
+					& ul {
+
+						& li {
+							padding-left: 0;
+							margin-left: 16px;
+						}
+					}
+				}
+			}
+		}
+
+		&__more {
+			margin-top: 36px;
+		}
+	}
+	.section_pb_md {
+		padding-bottom: 2.5rem !important;
+  }
 }
 
 @media (max-width: 350px) {

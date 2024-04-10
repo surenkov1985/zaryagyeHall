@@ -2119,6 +2119,44 @@
   .search__form_total {
     margin-top: 1.25rem;
   }
+  .program__top {
+    margin-bottom: 48px;
+  }
+  .program__item {
+    gap: 1.5rem;
+    padding-bottom: 24px;
+  }
+  .program__item_left {
+    width: calc((100% - 24px) / 24 * 7);
+  }
+  .program__item_right {
+    width: calc((100% - 24px) / 24 * 17);
+    gap: 24px;
+  }
+  .program__item_desc {
+    width: calc((100% - 24px) / 17 * 12);
+    padding-top: 30px;
+  }
+  .program__item_desc .text_content ul {
+    margin-top: 0;
+  }
+  .program__item_desc .text_content ul li {
+    margin-left: -16px;
+    padding-left: 16px;
+  }
+  .program__item_desc .text_content ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .program__item_img {
+    width: calc((100% - 24px) / 17 * 5);
+    height: 152px;
+  }
+  .program__item_nums {
+    gap: 24px;
+  }
+  .program__more {
+    margin-top: 64px;
+  }
 }
 @media (max-width: 1350px) {
   .event__person_num {

@@ -382,7 +382,7 @@ h5,
   background: none;
 }
 
-.text_content ul {
+.text_content ul:not(:first-child) {
   margin-top: 30px;
 }
 
