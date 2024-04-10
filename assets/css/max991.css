@@ -666,4 +666,23 @@
   .contacts__map {
     height: 750px;
   }
+  .search {
+    padding-top: 0;
+  }
+  .search__top {
+    flex-direction: column-reverse;
+    gap: 2.75rem;
+  }
+  .search__popular {
+    width: 100%;
+  }
+  .search__popular_tags {
+    margin-top: 18px;
+  }
+  .search__form {
+    width: 100%;
+  }
+  label.label_search input[type=search] {
+    padding-bottom: 12px;
+  }
 }

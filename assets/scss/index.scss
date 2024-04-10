@@ -4163,6 +4163,7 @@
 	// SEARCH
 
 	.search {
+		padding-top: 0.75rem;
 
 		&__top {
 			display: flex;
@@ -4179,7 +4180,7 @@
 		}
 
 		&__form {
-			width: calc((100% - 32px) / 24 * 17);
+			width: calc((100% - 14px) / 24 * 17);
 
 			&_fields {
 				display: flex;
@@ -4190,10 +4191,14 @@
 			&_field {
 				width: 100%;
 				display: flex;
-				gap: 2rem;
+				gap: 2.5rem;
 
 				& label {
 				}
+			}
+
+			&_total {
+				margin-top: 3.5rem;
 			}
 		}
 	}

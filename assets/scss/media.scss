@@ -2849,9 +2849,32 @@
 
 		}
 
+		&.label_search {
+			padding-right: 2px;
+
+			& .download-link {
+				font-size: 1rem;
+				gap: 22px;
+			}
+
+			& input[type=search] {
+				font-size: 1rem;
+				padding-bottom: 8px;
+			}
+		}
+
+		&.label_check {
+			gap: 7px;
+		}
+
 		& .button {
 			font-size: 1rem;
 			gap: 16px;
+		}
+
+		& span.radio {
+			width: 18px;
+			height: 18px;
 		}
 
 		& span.placeholder {
@@ -3097,6 +3120,24 @@
 			margin-left: -2px;
 			z-index: 0;
 	  }
+	}
+
+	.search {
+
+		&__top {
+			gap: 1rem;
+		}
+
+		&__form {
+
+			&_fields {
+				gap: 1rem;
+			}
+
+			&_total {
+				margin-top: 1.25rem;
+			}
+		}
 	}
 }
 

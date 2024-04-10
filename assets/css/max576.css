@@ -933,4 +933,14 @@
   .contacts__map {
     height: 860px;
   }
+  .search__top {
+    gap: 3rem;
+  }
+  .search__form_field {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .search__form_total {
+    margin-top: 0;
+  }
 }

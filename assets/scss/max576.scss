@@ -1431,4 +1431,23 @@
 			height: 860px;
 		}
 	}
+
+	.search {
+
+		&__top {
+			gap: 3rem;
+		}
+
+		&__form {
+
+			&_field {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			&_total {
+				margin-top: 0;
+			}
+		}
+	}
 }

@@ -3119,6 +3119,9 @@
   height: 100%;
 }
 
+.search {
+  padding-top: 0.75rem;
+}
 .search__top {
   display: flex;
   gap: 2rem;
@@ -3131,7 +3134,7 @@
   margin-top: 24px;
 }
 .search__form {
-  width: calc((100% - 32px) / 24 * 17);
+  width: calc((100% - 14px) / 24 * 17);
 }
 .search__form_fields {
   display: flex;
@@ -3141,5 +3144,8 @@
 .search__form_field {
   width: 100%;
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
+}
+.search__form_total {
+  margin-top: 3.5rem;
 }

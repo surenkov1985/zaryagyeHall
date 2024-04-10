@@ -1008,4 +1008,37 @@
 			height: 750px;
 		}
 	}
+
+	.search {
+		padding-top: 0;
+
+		&__top {
+			flex-direction: column-reverse;
+			gap: 2.75rem;
+		}
+
+		&__popular {
+			width: 100%;
+
+			&_tags {
+				margin-top: 18px;
+			}
+		}
+
+		&__form {
+			width: 100%;
+
+			
+		}
+	}
+
+	label {
+
+		&.label_search {
+
+			& input[type=search] {
+				padding-bottom: 12px;
+			}
+		}
+	}
 }

@@ -1885,9 +1885,27 @@
   label input[type=text]::placeholder, label input[type=email]::placeholder, label input[type=tel]::placeholder {
     font-size: 1rem;
   }
+  label.label_search {
+    padding-right: 2px;
+  }
+  label.label_search .download-link {
+    font-size: 1rem;
+    gap: 22px;
+  }
+  label.label_search input[type=search] {
+    font-size: 1rem;
+    padding-bottom: 8px;
+  }
+  label.label_check {
+    gap: 7px;
+  }
   label .button {
     font-size: 1rem;
     gap: 16px;
+  }
+  label span.radio {
+    width: 18px;
+    height: 18px;
   }
   label span.placeholder {
     font-size: 1rem;
@@ -2060,6 +2078,15 @@
   .place:not(:first-child) {
     margin-left: -2px;
     z-index: 0;
+  }
+  .search__top {
+    gap: 1rem;
+  }
+  .search__form_fields {
+    gap: 1rem;
+  }
+  .search__form_total {
+    margin-top: 1.25rem;
   }
 }
 @media (max-width: 1350px) {
