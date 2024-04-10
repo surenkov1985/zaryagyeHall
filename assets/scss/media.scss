@@ -304,6 +304,8 @@
 
 	.event {
 		padding-top: 24px;
+
+		& .festival {}
 	}
 
 	.events {
@@ -1770,6 +1772,11 @@
 					font-size: 1rem !important;
 				}
 			}
+
+			&_btn {
+				display: flex;
+				margin-top: 10px;
+			}
 		}
 
 		&__share {
@@ -1891,19 +1898,32 @@
 				gap: 18px;
 			}
 		}
+
+		& .festival {
+			margin-bottom: 81px;
+
+			&__desc {
+				padding-top: 66px;
+
+				&_title {
+					margin-bottom: 78px;
+					gap: 43px;
+				}
+			}
+		}
 	}
 
 	.accordion {
 
 		&__item {
-			padding: 24px 0;
+			padding: 23px 0 24px;
 		}
 
 		&__content {
 
 			&_desc {
 
-				padding-top: 50px;
+				padding-top: 20px;
 			}
 
 			& .text_content {
@@ -1915,7 +1935,25 @@
 				}
 
 				&> div:not(:last-child) {
-					margin-bottom: 64px;
+					// margin-bottom: 64px;
+					margin-bottom: 25px;
+
+				}
+
+				& p {
+					line-height: 1.4;
+				}
+
+				& ul {
+					margin-top: 26px;
+					width: 80%;
+
+					& li {
+						padding-left: 8px;
+						margin-left: 16px;
+
+						&:not(:last-child) {margin-bottom: 17px;}
+					}
 				}
 			}
 		}
@@ -2305,6 +2343,13 @@
 
 			& .swiper-slide {
 				max-height: 650px;
+			}
+		}
+
+		&__accordion {
+
+			&_more {
+				margin-top: 21px;
 			}
 		}
 	}

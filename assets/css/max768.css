@@ -412,6 +412,9 @@
     margin-top: 36px;
     margin-bottom: 36px;
   }
+  .event .festival {
+    margin-bottom: 48px;
+  }
   .event .festival__desc {
     padding-top: 50px;
   }

@@ -1168,6 +1168,10 @@
   .event__aside_date .day {
     font-size: 1rem !important;
   }
+  .event__aside_btn {
+    display: flex;
+    margin-top: 10px;
+  }
   .event__share_title {
     margin-bottom: 1.5rem;
   }
@@ -1249,11 +1253,21 @@
     margin-top: 46px;
     gap: 18px;
   }
+  .event .festival {
+    margin-bottom: 81px;
+  }
+  .event .festival__desc {
+    padding-top: 66px;
+  }
+  .event .festival__desc_title {
+    margin-bottom: 78px;
+    gap: 43px;
+  }
   .accordion__item {
-    padding: 24px 0;
+    padding: 23px 0 24px;
   }
   .accordion__content_desc {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .accordion__content .text_content {
     padding: 65px 0 44px;
@@ -1263,7 +1277,21 @@
     margin-bottom: 1.75rem;
   }
   .accordion__content .text_content > div:not(:last-child) {
-    margin-bottom: 64px;
+    margin-bottom: 25px;
+  }
+  .accordion__content .text_content p {
+    line-height: 1.4;
+  }
+  .accordion__content .text_content ul {
+    margin-top: 26px;
+    width: 80%;
+  }
+  .accordion__content .text_content ul li {
+    padding-left: 8px;
+    margin-left: 16px;
+  }
+  .accordion__content .text_content ul li:not(:last-child) {
+    margin-bottom: 17px;
   }
   .events {
     padding-top: 96px;
@@ -1529,6 +1557,9 @@
   }
   .about__slider .swiper-slide {
     max-height: 650px;
+  }
+  .about__accordion_more {
+    margin-top: 21px;
   }
   .location {
     min-height: 800px;

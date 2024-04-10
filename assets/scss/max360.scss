@@ -647,6 +647,28 @@
 		}
 	}
 
+	.text_content li {
+		font-size: 0.875rem !important;
+  }
+
+	.accordion {
+
+		& .text_content {
+
+			& ul {
+
+				& li {
+					font-size: 0.875rem;
+
+					&:not(:last-child) {
+						margin-bottom: 8px;
+					}
+				}
+			}
+
+		}
+	}
+
 	.breadcrumbs {
 		margin-bottom: 32px;
 
@@ -794,6 +816,7 @@
 		}
 
 		& .festival {
+			margin-bottom: 24px;
 
 			&__desc {
 				padding-top: 40px;
@@ -1454,6 +1477,8 @@
 		}
 	}
 
+	
+
 	.festival {
 
 		&.section_pt_sm {
@@ -1464,7 +1489,7 @@
 
 			&_title {
 				&.title_l {
-				width: 100%;
+				width: 100% !important;
 				margin-bottom: 40px;
 		  }
 

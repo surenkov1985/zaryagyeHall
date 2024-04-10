@@ -310,6 +310,9 @@
   .event__calendar_btn .btn {
     width: 100%;
   }
+  .event .festival {
+    margin-bottom: 36px;
+  }
   .event .festival__desc {
     padding-top: 50px;
   }
@@ -356,6 +359,9 @@
   .accordion__content .text_content h5 {
     margin-top: 36px;
     margin-bottom: 1.625rem;
+  }
+  .accordion__content .text_content ul {
+    width: 100%;
   }
   .events {
     padding-top: 10px;

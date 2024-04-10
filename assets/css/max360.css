@@ -465,6 +465,15 @@
     visibility: visible;
     position: relative;
   }
+  .text_content li {
+    font-size: 0.875rem !important;
+  }
+  .accordion .text_content ul li {
+    font-size: 0.875rem;
+  }
+  .accordion .text_content ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
   .breadcrumbs {
     margin-bottom: 32px;
   }
@@ -561,6 +570,9 @@
   .event__person_nums {
     flex-wrap: wrap;
     margin-bottom: 22px;
+  }
+  .event .festival {
+    margin-bottom: 24px;
   }
   .event .festival__desc {
     padding-top: 40px;
@@ -1009,7 +1021,7 @@
     padding-top: 0 !important;
   }
   .festival__desc_title.title_l {
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 40px;
   }
   .festival__desc_title .h2 {
