@@ -377,6 +377,15 @@
 
 	.accordion {
 
+		&.accordion_l {
+			& .accordion__content {
+	
+				& .text_content {
+					width: 75%;
+				}
+			}
+		}
+
 		&__content {
 
 			&_desc {
@@ -1056,6 +1065,10 @@
 
 			&_left {
 				width: 100%;
+
+				& .tags {
+					width: calc((100% - 24px) / 17 * 12);
+				}
 			}
 
 			&_right {
@@ -1087,6 +1100,7 @@
 			&_img {
 				width: calc((100% - 24px) / 17 * 5);
 				height: 152px;
+				position: absolute;
 			}
 
 			&_nums {
@@ -1129,6 +1143,56 @@
 
 			&_title {
 				padding: 48px 32px 48px 32px;
+			}
+		}
+	}
+
+	.menu {
+
+		&__list {
+
+			&_head {
+				display: none;
+			}
+		}
+
+		&__item {
+
+			&_name {
+				width: 100%;
+			}
+
+			&_img {
+				position: static;
+
+				
+			}
+		}
+
+		&__img {
+			width: calc(100% / 12 * 4);
+			// top: 0;
+			right: 0;
+			// transform: translateY(0);
+		}
+	}
+
+	.docs {
+
+		&__item {
+			align-items: baseline;
+
+			&_left {
+				flex-wrap: wrap;
+				gap: 24px;
+			}
+
+			&_name {
+				width: 100%;
+
+				& .h5 {
+					width: 100%;
+				}
 			}
 		}
 	}

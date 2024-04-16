@@ -2172,6 +2172,28 @@
   .form_success_title {
     padding: 48px 48px 44px 56px;
   }
+  .lead {
+    font-size: 0.875rem;
+  }
+  .section_pb_md {
+    padding-bottom: 4.5rem !important;
+  }
+  .docs__item {
+    padding: 1.5rem 0;
+    gap: 24px;
+  }
+  .docs__item_left {
+    width: calc((100% - 24px) / 24 * 22);
+  }
+  .docs__item_right {
+    width: calc((100% - 24px) / 24 * 2);
+  }
+  .docs__item_name {
+    width: calc((100% - 0px) / 22 * 16);
+  }
+  .docs__item_type {
+    width: calc((100% - 24px) / 22 * 1);
+  }
 }
 @media (max-width: 1350px) {
   .event__person_num {

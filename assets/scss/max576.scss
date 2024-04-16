@@ -3,6 +3,14 @@
 	.h1 {
 		font-size: 4.75rem;
 
+		&:not(.h1-l){
+			font-size:  4.75rem;
+		}
+
+		&.h1-l {
+			font-size:  4.75rem;
+		}
+
 		&.h1-l {
 			font-size: 4.75rem;
 			margin-top: 48px;
@@ -11,6 +19,10 @@
 
 	.h2 {
 		font-size: 3rem;
+	}
+
+	.h5 {
+		font-size: 1.25rem !important;
 	}
 
 	.section {
@@ -502,6 +514,15 @@
 
 	.accordion {
 
+		&.accordion_l {
+			& .accordion__content {
+	
+				& .text_content {
+					width: 100%;
+				}
+			}
+		}
+
 		&__item {
 			padding: 16px 0;
 		}
@@ -622,7 +643,7 @@
 			justify-content: center;
 
 			& .btn {
-				width: 216px;
+				// width: 216px;
 			}
 		}
 
@@ -1469,6 +1490,10 @@
 
 			&_left {
 				width: 100%;
+
+				& .tags {
+					width: 100%;
+				}
 			}
 
 			&_right {
@@ -1514,6 +1539,68 @@
 			&_num {
 				
 				width: calc((100% - 16px) / 12 * 6);
+			}
+		}
+	}
+
+	.menu {
+
+		&__list {
+
+			&_head {
+				display: none;
+			}
+		}
+
+		&__item {
+			gap: 8px	;
+
+			&_name {
+				order: -2;
+			}
+
+			&_img {
+				width: 100%;
+				order: -1;
+			}
+
+			&_desc {
+				width: calc((100% - 8px) / 12 * 10);
+			}
+
+			&_price {
+				width: calc((100% - 8px) / 12 * 2);
+			}
+		}
+
+		&__img {
+			position: static;
+			width: 100%;
+			transform: translateY(0);
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	.docs {
+
+		&__item {
+			gap: 4px;
+
+			&_left {
+				width: calc((100% - 4px) / 12 * 11);
+			}
+
+			&_right {
+				width: calc((100% - 4px) / 12 * 1);
+			}
+
+			&_type {
+				width: calc(100% / 12 * 0.5);
+			}
+
+			&_size {
+				width: calc(100% / 12 * 2);
 			}
 		}
 	}

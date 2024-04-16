@@ -3271,6 +3271,38 @@
 			}
 		}
 	}
+
+	.lead {
+		font-size: 0.875rem;
+	}
+
+	.section_pb_md {
+		padding-bottom: 4.5rem !important;
+   }
+
+	.docs {
+
+		&__item {
+			padding: 1.5rem 0;
+			gap: 24px;
+
+			&_left {
+				width: calc((100% - 24px) / 24* 22);
+			}
+
+			&_right {
+				width: calc((100% - 24px) / 24* 2);
+			}
+
+			&_name {
+				width: calc((100% - 0px) / 22* 16);
+			}
+
+			&_type {
+				width: calc((100% - 24px) / 22* 1);
+			}
+		}
+	}
 	
 }
 

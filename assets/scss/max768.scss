@@ -660,6 +660,15 @@
 
 	.accordion {
 
+		&.accordion_l {
+			& .accordion__content {
+	
+				& .text_content {
+					width: 80%;
+				}
+			}
+		}
+
 		&__content {
 
 			&_desc {
@@ -1999,6 +2008,29 @@
 			}
 		}
 	}
+
+	.section_pt_sm {
+		padding-top: 42px !important;
+  }
+  .section_pb_md {
+	padding-bottom: 4rem !important;
+}
+
+  .docs {
+
+	&__item {
+		align-items: center;
+		padding: 17px 0 26px;
+
+		&_left {
+			gap: 22px 12px;
+		}
+
+		&_size {
+			width: calc((100% - 32px) / 22* 3);
+		}
+	}
+  }
 }
 
 @media (max-width:700px) {

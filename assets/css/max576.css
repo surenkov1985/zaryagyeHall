@@ -2,12 +2,21 @@
   .h1 {
     font-size: 4.75rem;
   }
+  .h1:not(.h1-l) {
+    font-size: 4.75rem;
+  }
+  .h1.h1-l {
+    font-size: 4.75rem;
+  }
   .h1.h1-l {
     font-size: 4.75rem;
     margin-top: 48px;
   }
   .h2 {
     font-size: 3rem;
+  }
+  .h5 {
+    font-size: 1.25rem !important;
   }
   .section {
     padding-left: 20px;
@@ -340,6 +349,9 @@
     margin-left: 0;
     margin-top: 3rem;
   }
+  .accordion.accordion_l .accordion__content .text_content {
+    width: 100%;
+  }
   .accordion__item {
     padding: 16px 0;
   }
@@ -425,9 +437,6 @@
   .events__more {
     margin-top: 1rem;
     justify-content: center;
-  }
-  .events__more .btn {
-    width: 216px;
   }
   .events .festival__desc {
     padding-top: 48px;
@@ -960,6 +969,9 @@
   .program__item_left {
     width: 100%;
   }
+  .program__item_left .tags {
+    width: 100%;
+  }
   .program__item_right {
     width: 100%;
     gap: 16px;
@@ -992,6 +1004,47 @@
   }
   .program__item_num {
     width: calc((100% - 16px) / 12 * 6);
+  }
+  .menu__list_head {
+    display: none;
+  }
+  .menu__item {
+    gap: 8px;
+  }
+  .menu__item_name {
+    order: -2;
+  }
+  .menu__item_img {
+    width: 100%;
+    order: -1;
+  }
+  .menu__item_desc {
+    width: calc((100% - 8px) / 12 * 10);
+  }
+  .menu__item_price {
+    width: calc((100% - 8px) / 12 * 2);
+  }
+  .menu__img {
+    position: static;
+    width: 100%;
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .docs__item {
+    gap: 4px;
+  }
+  .docs__item_left {
+    width: calc((100% - 4px) / 12 * 11);
+  }
+  .docs__item_right {
+    width: calc((100% - 4px) / 12 * 1);
+  }
+  .docs__item_type {
+    width: 4.1666666667%;
+  }
+  .docs__item_size {
+    width: 16.6666666667%;
   }
 }
 @media (max-width: 450px) {

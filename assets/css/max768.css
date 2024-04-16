@@ -445,6 +445,9 @@
   table colgroup col:nth-child(4) {
     width: 29% !important;
   }
+  .accordion.accordion_l .accordion__content .text_content {
+    width: 80%;
+  }
   .accordion__content_desc {
     padding-top: 24px;
   }
@@ -1324,6 +1327,22 @@
   }
   .form_success_title {
     padding: 48px 24px 24px 24px;
+  }
+  .section_pt_sm {
+    padding-top: 42px !important;
+  }
+  .section_pb_md {
+    padding-bottom: 4rem !important;
+  }
+  .docs__item {
+    align-items: center;
+    padding: 17px 0 26px;
+  }
+  .docs__item_left {
+    gap: 22px 12px;
+  }
+  .docs__item_size {
+    width: calc((100% - 32px) / 22 * 3);
   }
 }
 @media (max-width: 700px) {
