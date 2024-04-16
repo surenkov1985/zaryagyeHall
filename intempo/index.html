@@ -1977,12 +1977,16 @@
 					</svg>
 				</button>
 				<div class="popup__form">
-					<div class="popup__form_title">
-						<h2 class="h2-l">Подтвердите свое участие</h2>
-					</div>
-					<form action="" class="feedback__form">
+
+					<form action="" class="feedback__form form">
 						<input type="hidden" name="agree" value="true">
 						<div class="form_content feedback__form_content">
+							<div class="popup__form_title">
+								<h2 class="h2-l">Подтвердите свое участие</h2>
+								<p class="form_error main_font error">Вы еще не можете стать участником программы, либо указали
+									неверные
+									данные</p>
+							</div>
 							<div class="feedback__form_fields">
 								<label class="feedback__form_field w100">
 									<span class="placeholder">ФИО</span>
@@ -2008,13 +2012,27 @@
 								</label>
 
 							</div>
+							<div class="popup__form_agree_text">
+								<p class="main_font light_text">Нажимая кнопку «Отправить» я соглашаюсь с условиями <a class=""
+										href="">Политики конфиденциальности</a></p>
+							</div>
+							<div class="popup__form_submit">
+								<input class="btn" type="submit" value="Отправить" disabled>
+							</div>
 						</div>
-						<div class="popup__form_agree_text">
-							<p class="main_font light_text">Нажимая кнопку «Отправить» я соглашаюсь с условиями <a class=""
-									href="">Политики конфиденциальности</a></p>
-						</div>
-						<div class="popup__form_submit">
-							<input class="btn" type="submit" value="Отправить">
+						<div class="form_success">
+							<div class="popup__form_title form_success_title">
+								<h2 class="h2">
+									Поздравляем, вы вступили
+									в программу привилегий In Tempo!
+								</h2>
+							</div>
+							<div class="form_success_img">
+								<img src="/assets/img/intempo_access.png" alt="">
+							</div>
+							<div class="form_success_img dark">
+								<img src="/assets/img/intempo_access_dark.png" alt="">
+							</div>
 						</div>
 
 					</form>

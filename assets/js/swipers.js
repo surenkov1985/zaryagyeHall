@@ -780,6 +780,9 @@ function partnersSliders() {
 
 	$(window).resize(function () {
 		const pagin = $(".about__sliders_control .dropdown-slider__tabs");
+
+		if (!$(pagin).length) return;
+
 		const paginBg = $(pagin).find(".before");
 
 		const activeTab = $(pagin).find(".active");

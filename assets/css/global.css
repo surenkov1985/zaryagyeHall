@@ -369,10 +369,6 @@ label.label_search input[type=search].error {
   color: var(--clr-error);
   border-color: rgba(239, 60, 13, 0.5);
 }
-label.label_search input[type=search].error + span.error {
-  opacity: 1;
-  visibility: visible;
-}
 label.label_search input[type=search]::-moz-placeholder {
   color: var(--clr-black-40);
   visibility: hidden;
@@ -509,10 +505,6 @@ label input[type=text].error, label input[type=email].error, label input[type=te
   color: var(--clr-error);
   border-color: rgba(239, 60, 13, 0.5);
 }
-label input[type=text].error + span.error, label input[type=email].error + span.error, label input[type=tel].error + span.error {
-  opacity: 1;
-  visibility: visible;
-}
 label input[type=text]::-moz-placeholder, label input[type=email]::-moz-placeholder, label input[type=tel]::-moz-placeholder {
   color: var(--clr-black-40);
   visibility: hidden;
@@ -560,6 +552,10 @@ label span.error {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
+}
+label span.error.show {
+  opacity: 1;
+  visibility: visible;
 }
 label.label_text:hover {
   color: var(--clr-black);

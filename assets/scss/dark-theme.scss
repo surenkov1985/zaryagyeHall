@@ -53,6 +53,13 @@
 					fill: none;
 					stroke: var(--clr-black);
 				}
+				& .line {
+					background: var(--clr-black);
+				}
+			}
+
+			& .line {
+				background: var(--clr-white);
 			}
 		}
 
@@ -151,8 +158,9 @@
 			}
 		}
 
-		& input[type=text], & input[type=email], & input[type=tel]  {
+		& input[type=text], & input[type=email], & input[type=tel], & input[type=search]  {
 			border-color: var(--clr-white-40);
+			color: var(--clr-white);
 		}
 
 		& span.placeholder {
@@ -189,6 +197,7 @@
 
 		&_card {
 			border-color: var(--clr-white-40);
+			color: var(--clr-white-40);
 		}
 	}
 
@@ -212,6 +221,14 @@
 
 	& .head{
 
+		& .logo {
+
+			& svg path {
+				fill: var(--clr-white);
+				stroke: none !important;
+			}
+		}
+
 		&.fixed {
 			background: var(--clr-black);
 
@@ -221,12 +238,14 @@
 			stroke: var(--clr-white);
 		}
 
+		
+
 		& .light-logo {
-			display: flex;
+			display: none;
 		}
 
 		& .dark-logo {
-			display: none;
+			display: flex;
 		}
 
 		& .btn {
@@ -373,6 +392,51 @@
 				}
 			}
 			
+		}
+	}
+
+	& .leaders {
+
+		&__desc {
+			&_slide {
+				background: var(--clr-black);
+			}
+		}
+	}
+
+	& .accordion__item {
+
+		&.active {
+
+			& .btn_slider {
+				background: var(--clr-white);
+
+				& .line {
+					background: var(--clr-black);
+				}
+			}
+		}
+	}
+
+	& .popup {
+
+		&__content {
+			background: var(--clr-black);
+		}
+	}
+
+	& .form {
+
+		&_success {
+			background: var(--clr-black);
+
+			&_img	{
+				display: none;
+
+				&.dark {
+					display: block;
+				}
+			}
 		}
 	}
 }

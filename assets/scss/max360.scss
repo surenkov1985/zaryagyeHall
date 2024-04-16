@@ -2376,7 +2376,7 @@
 	.popup {
 
 		&__content {
-			padding: 32px 16px;
+			
 		}
 
 		&_close {
@@ -2396,6 +2396,20 @@
 			}
 			&_submit {
 				margin-top: 32px;
+			}
+		}
+	}
+
+	.form {
+
+		&_content {
+			padding: 32px 16px;
+		}
+
+		&_success {
+
+			&_title {
+				padding: 32px 16px;
 			}
 		}
 	}

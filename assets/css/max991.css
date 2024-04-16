@@ -730,12 +730,17 @@
   }
   .popup__content {
     max-width: 800px;
-    padding: 48px 32px 48px 48px;
   }
   .popup_close {
     right: 32px;
   }
   .popup__form_title {
     margin-bottom: 90px;
+  }
+  .form_content {
+    padding: 48px 32px 48px 48px;
+  }
+  .form_success_title {
+    padding: 48px 32px 48px 32px;
   }
 }

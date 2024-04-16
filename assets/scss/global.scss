@@ -497,8 +497,8 @@ label {
 				
 	
 				&+span.error {
-					opacity: 1;
-					visibility: visible;
+					// opacity: 1;
+					// visibility: visible;
 				}
 			}
 	
@@ -713,10 +713,10 @@ label {
 			border-color: rgba(#ef3c0d, 0.5);
 			
 
-			&+span.error {
-				opacity: 1;
-				visibility: visible;
-			}
+			// &+span.error {
+			// 	opacity: 1;
+			// 	visibility: visible;
+			// }
 		}
 
 		&::placeholder {
@@ -769,6 +769,11 @@ label {
 		visibility: hidden;
 		opacity: 0;
 		transition: all 0.3s;
+
+		&.show {
+			opacity: 1;
+    		visibility: visible;
+		}
 	}
 
 	&.label_text {

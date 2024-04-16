@@ -1964,7 +1964,7 @@
 	.popup {
 
 		&__content {
-			padding: 48px 24px 32px 24px;
+			// padding: 48px 24px 32px 24px;
 		}
 
 		&_close {
@@ -1982,6 +1982,20 @@
 			}
 			&_submit {
 				margin-top: 32px;
+			}
+		}
+	}
+
+	.form {
+
+		&_content {
+			padding: 48px 24px 32px 24px;
+		}
+
+		&_success {
+
+			&_title {
+				padding: 48px 24px 24px 24px;
 			}
 		}
 	}

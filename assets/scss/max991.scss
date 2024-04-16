@@ -1102,20 +1102,34 @@
 
   .popup {
 
-	&__content {
-		max-width: 800px;
-		padding: 48px 32px 48px 48px;
-	}
+		&__content {
+			max-width: 800px;
+			// padding: 48px 32px 48px 48px;
+		}
 
-	&_close {
-		right: 32px;
-	}
+		&_close {
+			right: 32px;
+		}
 
-	&__form {
+		&__form {
 
-		&_title {
-			margin-bottom: 90px;
+			&_title {
+				margin-bottom: 90px;
+			}
 		}
 	}
-}
+
+	.form {
+
+		&_content {
+			padding: 48px 32px 48px 48px;
+		}
+
+		&_success {
+
+			&_title {
+				padding: 48px 32px 48px 32px;
+			}
+		}
+	}
 }

@@ -374,6 +374,8 @@ $(document).on("click", ".popup", function (e) {
 
 	if (!e.target.closest(".popup__content") || e.target.closest(".popup_close")) {
 		$("body").removeClass("hidden");
+		$(this).find(".form_success").removeClass("show");
+		$(this).find("form").trigger("reset");
 		const timeLine = gsap.timeline();
 
 		timeLine.to(".popup__content", {
@@ -385,3 +387,413 @@ $(document).on("click", ".popup", function (e) {
 		});
 	}
 })
+
+///////////////////////////
+
+function formatValueInput(elem, regexp) {
+	let str = elem.value.replace(regexp, "");
+
+	return str;
+}
+
+function testValue(elem, reg, string) {
+	if ($(elem).attr("data-reg") === "true") {
+
+		let str = $(elem).val();
+		let errElem = $(elem).closest("label").find("span.error");
+
+		if (!str.length) {
+
+			$(errElem).text("Заполните это поле");
+			$(errElem).addClass("show");
+			$(elem).addClass("error");
+			$(elem).attr("data-test", "false");
+
+		} else if (!reg.test(str)) {
+
+			$(errClass).text(string);
+			$(elem).addClass("error");
+			$(elem).attr("data-test", "false");
+
+		} else {
+
+			$(elem).removeClass("error");
+			$(elem).attr("data-test", "true");
+			$(errClass).text("");
+		};
+	};
+};
+
+function phoneMask(e) {
+	let key = e.key;
+	let testReg = /^((8|\+7)[\- ])?(\(\d{3}\)[\- ])\d{3}[\- ]\d{2}[\- ]\d{2}$/;
+
+	let valRegRu = /\D/gi;
+	let valRegEur = /\+\d{15}/;
+	let testString = "Введите валидный номер";
+
+	let cursorPosition = e.target.selectionStart;
+	let str = formatValueInput(this, valRegRu);
+	let formatStr = "";
+
+	let rusTel = ["7", "8", "9"];
+	let korTel = ["82"];
+
+	if (rusTel.indexOf(str[0]) > -1) {
+		if (str[0] === "7") {
+			formatStr = "+" + str[0];
+		} else if (str[0] === "8") {
+			formatStr = str[0];
+		} else {
+			formatStr = "+7" + str[0];
+		}
+
+
+		if (str.length > 1) {
+			formatStr += " (" + str.slice(1, 4);
+		}
+
+		if (str.length >= 5) {
+			formatStr += ") " + str.slice(4, 7);
+		}
+
+		if (str.length >= 8) {
+			formatStr += " " + str.slice(7, 9);
+		}
+
+		if (str.length >= 10) {
+			formatStr += " " + str.slice(9, 11);
+		}
+	} else {
+		if (str.length >= 1) formatStr = "+" + str;
+	}
+
+	if (e.type === "blur" || e.type === "focusout") {
+
+		if (this.value && testReg.test(formatStr)) {
+			// formData.tel = str;
+			console.log(testReg.test(formatStr))
+		} else {
+
+		}
+	}
+
+	this.value = formatStr;
+}
+
+//function on(event, element, callback = function() {}) {
+//document.addEventListener(event, function(e) {
+//e.stopPropagation()
+//const target = e.target.closest(element);
+//if (!target) return;
+//callback.call(target, e);
+//});
+//}
+
+function maskedEmail(elem) {
+	let regexp = /[^\w-@\.]/gi;
+	let str = elem.value.replace(regexp, "");
+	let test = /\w+@\w+/.test(str);
+	if (!/[\w-]/g.test(str)) {
+		str = str.replace(/@/, "");
+	}
+	if (str.match(/@/g) && str.match(/@/g).length > 1) {
+		str = str.slice(0, -1);
+	}
+	if (!test) {
+		//str = str.replace(/\./, "");
+	}
+	if (str.match(/\./g) && str.match(/\./g).length > 1) {
+		//str = str.slice(0, -1);
+	}
+	return str;
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+	let formData = {};
+	formData.sectors = [];
+
+	function validationFormFields() {
+		const form = $(".feedback__form");
+		const inputs = $(form).find("input").not("[type=hidden]").not("[type=submit]");
+		const testInputs = $(form).find("input[data-test=true]");
+		console.log(testInputs.length);
+		if (inputs.length === testInputs.length) {
+			$(form).find("input[type=submit]").attr("disabled", false);
+		} else {
+			$(form).find("input[type=submit]").attr("disabled", true);
+		}
+	}
+
+	$(document).on("submit", ".feedback__form", function (e) {
+		e.preventDefault();
+		// console.log(e);
+		// const url = "https://script.google.com/macros/s/AKfycbwLVcrSrHUv1IvOzBRCI10QNauQw4k3hf2VKaC7QpdDACFNBKeXaq2ePuQK1m8PwM7S/exec";
+		const data = new FormData();
+		const inputs = $(this).find("input");
+		$(inputs).each((ind, input) => {
+			// if ($(input).attr('name') === "form_text_118") {
+			// 	console.log($(input).val());
+			// 	data.append("name", $(input).val());
+			// }
+
+			// if ($(input).attr('name') === "form_email_119") {
+			// 	data.append("email", $(input).val());
+			// }
+
+			// if ($(input).attr('name') === "form_text_120") {
+			// 	data.append("phone", $(input).val().replace("+", ""));
+			// }
+
+			// if ($(input).attr('name') === "form_date_121") {
+			// 	data.append("birthsDate", $(input).val());
+			// }
+			data.append($(input).attr("name"), $(input).val());
+			// $(input).val("");
+		})
+
+		setTimeout(() => {
+			$(this).find(".form_success").addClass("show");
+
+			setTimeout(() => {
+				$(this).find(".form_success").removeClass("show");
+			}, 1500);
+		}, 1500);
+	});
+
+	$(document).on("input keydown blur focusout", "input[type=tel]", function (e) {
+
+		const label = this.closest("label");
+		// const form = this.closest("form");
+		// const formError = form.querySelector(".form_error");
+		this.classList.remove("error");
+		// formError.classList.remove("show");
+		label.querySelector("span.error").classList.remove("show");
+
+		let key = e.key;
+		let testReg = /^((8|\+7)[\- ])?(\(\d{3}\)[\- ])\d{3}[\- ]\d{2}[\- ]\d{2}$/;
+
+		let valRegRu = /\D/gi;
+		let valRegEur = /\+\d{15}/;
+		let testString = "Введите валидный номер";
+
+		let cursorPosition = e.target.selectionStart;
+		let str = formatValueInput(this, valRegRu);
+		let formatStr = "";
+
+		let rusTel = ["7", "8", "9"];
+		let korTel = ["82"];
+
+		if (rusTel.indexOf(str[0]) > -1) {
+			if (str[0] === "7") {
+				formatStr = "+" + str[0];
+			} else if (str[0] === "8") {
+				formatStr = str[0];
+			} else {
+				formatStr = "+7" + str[0];
+			}
+
+
+			if (str.length > 1) {
+				formatStr += " (" + str.slice(1, 4);
+			}
+
+			if (str.length >= 5) {
+				formatStr += ") " + str.slice(4, 7);
+			}
+
+			if (str.length >= 8) {
+				formatStr += " " + str.slice(7, 9);
+			}
+
+			if (str.length >= 10) {
+				formatStr += " " + str.slice(9, 11);
+			}
+		} else {
+			if (str.length >= 1) formatStr = "+" + str;
+		}
+
+		this.value = formatStr;
+
+		if (e.type === "keydown" && e.key === "Enter") {
+			e.preventDefault();
+			$(this).attr("data-reg", "true");
+			if (this.value) {
+
+				if (testReg.test(this.value)) {
+					$(this).attr("data-test", "true");
+					formData.tel = str;
+				} else {
+					$(this).attr("data-test", "false");
+					this.classList.add("error");
+					label.querySelector("span.error").classList.add("show");
+					label.querySelector("span.error").textContent = "Введите валидный телефон";
+					// formError.classList.add("show");
+				}
+			} else {
+				$(this).attr("data-test", "false");
+				this.classList.add("error");
+				label.querySelector("span.error").classList.add("show");
+				label.querySelector("span.error").textContent = "Обязательное поле для заполнения";
+				// formError.classList.add("show");
+			}
+		}
+
+		if (e.type === "blur" || e.type === "focusout") {
+			$(this).attr("data-reg", "true");
+			if (this.value) {
+
+				if (testReg.test(this.value)) {
+					$(this).attr("data-test", "true");
+					formData.tel = str;
+				} else {
+					$(this).attr("data-test", "false");
+					this.classList.add("error");
+					label.querySelector("span.error").classList.add("show");
+					label.querySelector("span.error").textContent = "Введите валидный телефон";
+					// formError.classList.add("show");
+				}
+			} else {
+				$(this).attr("data-test", "false");
+				this.classList.add("error");
+				label.querySelector("span.error").classList.add("show");
+				label.querySelector("span.error").textContent = "Обязательное поле для заполнения";
+				// formError.classList.add("show");
+			}
+		}
+
+		validationFormFields()
+	});
+
+	$(document).on("input keydown blur focusout", "input[type=email]", function (e) {
+
+		const label = this.closest("label");
+		// const form = this.closest("form");
+		// const formError = form.querySelector(".form_error");
+		this.classList.remove("error");
+		// formError.classList.remove("show");
+		label.querySelector("span.error").classList.remove("show");
+		let valRegRu = /[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/gi;
+		let str = maskedEmail(this);
+		this.value = str;
+
+		if (e.type === "keydown" && e.key === "Enter") {
+			e.preventDefault();
+			$(this).attr("data-reg", "true");
+			if (this.value) {
+
+				if (valRegRu.test(this.value)) {
+
+					formData.email = this.value;
+					$(this).attr("data-test", "true");
+				} else {
+					$(this).attr("data-test", "false");
+					this.classList.add("error");
+					label.querySelector("span.error").classList.add("show");
+					label.querySelector("span.error").textContent = "Введите валидный email";
+					// formError.classList.add("show");
+				}
+			} else {
+				$(this).attr("data-test", "false");
+				this.classList.add("error");
+				label.querySelector("span.error").classList.add("show");
+				label.querySelector("span.error").textContent = "Обязательное поле для заполнения";
+				// formError.classList.add("show");
+			}
+		}
+
+		if (e.type === "blur" || e.type === "focusout") {
+			$(this).attr("data-reg", "true");
+			if (this.value) {
+
+				if (valRegRu.test(this.value)) {
+					$(this).attr("data-test", "true");
+					formData.email = this.value;
+				} else {
+					$(this).attr("data-test", "false");
+					this.classList.add("error");
+					label.querySelector("span.error").classList.add("show");
+					label.querySelector("span.error").textContent = "Введите валидный email";
+					// formError.classList.add("show");
+				}
+			} else {
+				$(this).attr("data-test", "false");
+				this.classList.add("error");
+				label.querySelector("span.error").classList.add("show");
+				label.querySelector("span.error").textContent = "Обязательное поле для заполнения";
+				// formError.classList.add("show");
+			}
+		}
+
+		validationFormFields()
+	});
+
+	$(document).on("input keydown focusout blur", "input[name=fio]", function (e) {
+
+		const label = this.closest("label");
+		label.querySelector("span.error").classList.remove("show");
+
+		if (e.type === "blur" || e.type === "focusout") {
+			$(this).attr("data-reg", "true");
+			if (this.value) {
+				formData.fio = this.value;
+				//document.querySelector("textarea[name=form_textarea_93]").focus();
+				$(this).attr("data-test", "true");
+			} else {
+				this.classList.add("error");
+				label.querySelector("span.error").textContent = "Поле обязательно к заполнению";
+				label.querySelector("span.error").classList.add("show");
+				$(this).attr("data-test", "false");
+			}
+		}
+
+		validationFormFields()
+	});
+
+
+	$(document).on("click", "[type=submit]", function (e) {
+		//e.preventDefault();
+		const form = $(this).closest("form");
+		let errors = 0;
+		const elements = $(form).find("input,select,textarea").not("[type=submit]").not("[type=hidden]");
+		$(elements).each((_, input) => {
+
+
+
+			if (!$(input).val()) {
+
+				errors += 1;
+				$(input).addClass("error");
+				if ($(input).closest("label")) {
+					$(input).closest("label").find("span.error").addClass("show").text("Обязательное поле для заполнения");
+
+
+				} else if ($(input).closest("label")) {
+					$(input).closest("label").find("span.error").addClass("show");
+				}
+			}
+
+		});
+		if (errors !== 0) {
+			e.preventDefault();
+		};
+	});
+
+
+	// $("input[name=form_date_32]").attr("placeholder", "DD.MM.YYYY");
+	// $("input[name=form_text_17]").attr("maxlength", "90");
+	// $("input[name=form_text_19]").attr("maxlength", "20");
+	// $("input[name=form_text_20]").attr("maxlength", "7");
+	// $("input[name=form_text_23]").attr("maxlength", "20");
+	// $("input[name=form_email_24]").attr("type", "email");
+	// $("input[name=form_text_28]").attr("maxlength", "15");
+	// $("input[name=form_text_29]").attr("maxlength", "6");
+	// $("input[name=form_text_31]").attr("maxlength", "80");
+	// $("input[name=row]").attr("maxlength", "4");
+	// $("input[name=place]").attr("maxlength", "40");
+	// console.log($(".date").text())
+});
+
