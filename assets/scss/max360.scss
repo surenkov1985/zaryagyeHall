@@ -2413,6 +2413,41 @@
 			}
 		}
 	}
+
+	.docs {
+
+		&__item {
+			padding: 16px 0 23px;
+
+			&_left {
+				width: calc((100% - 2px) / 12* 9);
+				gap: 16px 9px	;
+			}
+
+			&_right {
+				width: calc((100% - 2px) / 12* 3);
+			}
+
+			&_type {
+				width: calc(100% / 12 * 1);
+
+				& .lead {
+					font-size: 0.75rem;
+				}
+			}
+
+			&_size {
+				width: calc(100% / 12 * 2);
+				& .lead {
+					font-size: 0.75rem;
+				}
+			}
+		}
+
+		& .events__more {
+			margin-top: 3.5rem;
+		}
+	}
 }
 
 @media (max-width: 350px) {

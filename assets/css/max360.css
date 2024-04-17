@@ -1615,6 +1615,31 @@
   .form_success_title {
     padding: 32px 16px;
   }
+  .docs__item {
+    padding: 16px 0 23px;
+  }
+  .docs__item_left {
+    width: calc((100% - 2px) / 12 * 9);
+    gap: 16px 9px;
+  }
+  .docs__item_right {
+    width: calc((100% - 2px) / 12 * 3);
+  }
+  .docs__item_type {
+    width: 8.3333333333%;
+  }
+  .docs__item_type .lead {
+    font-size: 0.75rem;
+  }
+  .docs__item_size {
+    width: 16.6666666667%;
+  }
+  .docs__item_size .lead {
+    font-size: 0.75rem;
+  }
+  .docs .events__more {
+    margin-top: 3.5rem;
+  }
 }
 @media (max-width: 350px) {
   .h3 {
