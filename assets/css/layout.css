@@ -4,7 +4,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: var(--clr-white);
+  background-color: var(--clr-white);
+  transition: all 1s;
 }
 
 .depkult-logo {
@@ -15,7 +16,7 @@
 
 .head {
   position: absolute;
-  z-index: 1000;
+  z-index: 1001;
   width: 100%;
   top: 0;
   left: 0;
@@ -29,12 +30,55 @@
   transform: translateY(-100%);
   -webkit-backdrop-filter: var(--bg-filter-blurs);
           backdrop-filter: var(--bg-filter-blurs);
-  box-shadow: var(--box-shadow);
-  background: var(--clr-white);
+  background: var(--clr-white-20);
+  color: var(--clr-black);
+}
+.head.fixed.head_light {
+  color: var(--clr-white);
+}
+.head.fixed.head_light svg path {
+  stroke: var(--clr-black);
+}
+.head.fixed.head_light .logo svg path {
+  stroke: none;
+  fill: #000;
+}
+.head.fixed.head_light .light-logo {
+  display: none;
+}
+.head.fixed.head_light .dark-logo {
+  display: flex;
+}
+.head.fixed.head_light .btn_menu {
+  background: var(--clr-black-10);
+}
+.head.fixed.head_light .btn_menu:hover {
+  background: var(--clr-black);
+}
+.head.fixed.head_light .btn_menu:hover .line {
+  background-color: var(--clr-white);
+}
+.head.fixed.head_light .btn_menu .line {
+  background-color: var(--clr-black);
+}
+.head.fixed.head_light .nav-link {
+  color: var(--clr-black);
+}
+.head.fixed.head_light .nav-link:hover {
+  color: var(--clr-black-40);
+}
+.head.fixed.head_light .head__languages {
+  color: var(--clr-black-40);
+}
+.head.fixed.head_light .head__languages .dropdown__value:hover {
   color: var(--clr-black);
 }
 .head.fixed svg path {
-  stroke: var(--clr-black);
+  stroke: #000;
+}
+.head.fixed .logo svg path {
+  stroke: none;
+  fill: #000;
 }
 .head.fixed .light-logo {
   display: none;
@@ -67,11 +111,11 @@
   color: var(--clr-black);
 }
 .head.fixed.show {
-  transition: all 0.7s;
+  transition: translateY 0.7s;
   transform: translateY(0);
 }
 .head.fixed.hide {
-  transition: transform 0.7s;
+  transition: translateY 0.7s;
   transform: translateY(-100%);
 }
 .head .light-logo {
@@ -82,6 +126,10 @@
 }
 .head_light svg path {
   stroke: var(--clr-white);
+}
+.head_light .logo svg path {
+  stroke: none;
+  fill: var(--clr-white);
 }
 .head_light .light-logo {
   display: flex;
@@ -409,14 +457,12 @@
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  transition: background 0.5s;
   visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s;
+  transform: translateY(100%);
 }
 .mobile.show {
   visibility: visible;
-  opacity: 1;
 }
 .mobile__content {
   display: flex;
@@ -432,6 +478,7 @@
 }
 .mobile__head {
   position: static;
+  opacity: 0;
 }
 .mobile__head .container {
   padding-bottom: 8px;
@@ -752,4 +799,13 @@ input:checked + .slider:before {
 }
 .form_success_img.dark {
   display: none;
+}
+
+#vawe {
+  position: absolute;
+  z-index: 10;
+  bottom: calc(100% - 1px);
+  left: 0;
+  right: 0;
+  width: 100%;
 }

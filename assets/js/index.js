@@ -14,6 +14,26 @@ document.addEventListener("DOMContentLoaded", function () {
 	partnersSliders();
 
 	loadScript(window.location.protocol + "//api-maps.yandex.ru/2.1/?lang=ru_RU", setMap);
+
+	// if (time > 15) {
+	// 	console.log(11)
+	// 	$("body").addClass("dark");
+	// } else if (time > 7) {
+	// 	$("body").removeClass("dark");
+	// }
+
+	if (!localStorage.hasOwnProperty("colorTheme")) {
+
+		if (!$("body").hasClass("dark")) {
+
+			if (time > 19) {
+				$("body").addClass("dark");
+			} else if (time > 7) {
+				$("body").removeClass("dark");
+			}
+		}
+	}
+	console.log(time > 15);
 });
 
 // dropdown
@@ -47,18 +67,32 @@ $(document).on("click", ".dropdown-slider__value", function () {
 if ($(".head__theme input").prop("checked")) {
 	console.log($(this).val());
 
-	$("body").addClass("dark")
+	$("body").addClass("dark");
+
+	myWave.updateColor({
+		color: 'rgb(16, 16,16)'
+	});
 }
+
+const date = new Date();
+const time = date.getHours();
+
 
 $(document).on("change", ".head__theme input", function () {
 	if ($(this).prop("checked")) {
 
 		$("body").addClass("dark");
+		myWave.updateColor({
+			color: 'rgb(16, 16,16)'
+		});
 
 		localStorage.colorTheme = "dark";
 	} else {
 		localStorage.colorTheme = "light";
 		$("body").removeClass("dark");
+		myWave.updateColor({
+			color: 'rgb(251, 251,251)'
+		});
 	}
 });
 
@@ -217,24 +251,63 @@ $(document).on("click", function (e) {
 
 // Мобильное меню
 
+// For jQuery
+var myWave = $('#myId').wavify({
+	container: ".mobile .wrapper",
+	height: 100,
+	bones: 4,
+	amplitude: 150,
+	color: $("body").hasClass("dark") ? 'rgb(16, 16, 16)' : 'rgb(251, 251, 251)',
+	// color: 'rgb(16, 16, 16)',
+	speed: 0.3
+});
+myWave.play();
+
 $(document).on("click", ".head .btn_menu", function (e) {
+	let gs = gsap.timeline();
 	if (!$(".mobile").hasClass("show")) {
-		$(".mobile .animate").each((_, item) => {
-			// $(item).css({"opacity": 0})
-		});
-		// $(this).addClass("active");
+
+
 		$(".mobile").addClass("show");
 		$("body").addClass("hidden");
+
+
+
+		gs.to(".mobile", {
+			translateY: 0, duration: 1.5, ease: "power2.out",
+		}).to(".head:not(.mobile__head)", {
+			opacity: 0, visibility: 'hidden', duration: 0
+		}).to(".mobile__head", {
+			opacity: 1, duration: 0
+		})
+		$(".mobile .animate").each((_, item) => {
+			$(item).css({ "opacity": 0 })
+		});
+		$(".mobile__contacts").css({ "opacity": 0 })
+		// $(this).addClass("active");
+
 
 		setTimeout(() => {
 			$(".mobile__contacts").addClass("animate__animated animate__fadeInUpSm");
 			$(".mobile .animate").each((_, item) => {
 				$(item).addClass("animate__animated animate__fadeInUp");
 			});
-		}, 0);
+		}, 900);
 	} else {
 		// $(this).removeClass("active");
+		// gs.kill();
+
+		gs.to(".mobile", {
+			translateY: '100%', duration: 0
+		}).to(".head:not(.mobile__head)", {
+			opacity: 1, visibility: 'visible', duration: 0
+		}).to(".mobile__head", {
+			opacity: 0, duration: 0
+		})
 		$(".mobile").removeClass("show");
+		// $(".head.fixed").css({ "opacity": 1 });
+		// $(".mobile__head").css({ "opacity": 0 });
+		// $(".mobile").css({ "transform": "translate3d(0, 100%, 0)" });
 		$("body").removeClass("hidden");
 		$(".mobile__nav_sublist").removeClass("active");
 		$(".mobile__contacts").removeClass("animate__animated animate__fadeInUpSm");
@@ -311,22 +384,22 @@ $(document).on("click", ".contacts__col .accordion_btn", function () {
 // })
 
 // For Vanilla JavaScript
-// var myWave = wavify( document.querySelector('#myId'), {
+// var myWave = wavify(document.querySelector('#myId'), {
 // 	height: 60,
 // 	bones: 3,
 // 	amplitude: 30,
 // 	color: 'rgba(150, 97, 255, .8)',
 // 	speed: .25
-//  })
+// })
 
 // For jQuery
-//  var myWave = $('#myID').wavify({
+// var myWave = $('#myId').wavify({
 // 	height: 50,
-// 	bones: 5,
+// 	bones: 4,
 // 	amplitude: 100,
-// 	color: 'rgba(16, 16, 16,, .8)',
-// 	speed: 0.3
-//  });
+// 	color: $("body").hasClass(".dark") ? 'rgb(16, 16, 16)' : 'rgb(255, 255, 255)',
+// 	speed: 0.2
+// });
 
 
 $(document).on("focus", "input[type=text], input[type=email], input[type=tel]", function (e) {

@@ -184,7 +184,8 @@ body {
   font-size: var(--font-size);
   font-family: var(--font-accent);
   line-height: 0.4;
-  background: var(--clr-white);
+  background-color: var(--clr-white);
+  transition: backgroundColor 1s;
 }
 
 a {

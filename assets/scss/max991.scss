@@ -512,6 +512,21 @@
 				gap: 4rem;
 			}
 		}
+
+		& .dropdown {
+			width: calc(100% - 48px) !important;
+			bottom: 32px !important;
+
+			&__value {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				font-size: 1rem;
+				color: var(--clr-white);
+				line-height: 1.4;
+				padding: 18px 32px;
+			}
+	  }
 	}
 
 	.news {

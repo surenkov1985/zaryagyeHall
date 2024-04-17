@@ -42,11 +42,12 @@
 	<link rel="stylesheet" href="/assets/css/max576.css">
 	<link rel="stylesheet" href="/assets/css/max360.css">
 	<title>Главная</title>
-
+	<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+	<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 </head>
 
 <body>
-	<canvas id="canvas"></canvas>
+	<!-- <canvas id="canvas"></canvas> -->
 	<div id="wrapper" class="wrapper">
 		<header class="head ">
 			<div class="container">
@@ -115,7 +116,7 @@
 													stroke-linejoin="round" stroke-linecap="round" />
 											</svg>
 										</a>
-										<a href="" class="links__item">
+										<span id="specialButton" style="cursor:pointer;" class="links__item">
 											<svg width="25.669922" height="20.471924" viewBox="0 0 25.6699 20.4719" fill="none"
 												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -129,7 +130,7 @@
 													stroke-linejoin="round" />
 											</svg>
 
-										</a>
+										</span>
 										<a href="" class="links__item">
 											<svg width="27.666016" height="25.000000" viewBox="0 0 27.666 25" fill="none"
 												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -524,7 +525,7 @@
 										<div class="events__item_info">
 											<div class="events__item_time">
 												<div class="time">13:00</div>
-												<div class="place light_text main_font">большой зал</div>
+												<div class=" light_text main_font">большой зал</div>
 											</div>
 											<div class="events__item_title">
 												<h5>Лада Лабзина, орган<br>
@@ -567,7 +568,7 @@
 										<div class="events__item_info">
 											<div class="events__item_time">
 												<div class="time">19:00</div>
-												<div class="place light_text main_font">большой зал</div>
+												<div class=" light_text main_font">большой зал</div>
 											</div>
 											<div class="events__item_title">
 												<h5>Сонаты Шуберта, Елизавета Леонская, фортепиано</h5>
@@ -618,7 +619,7 @@
 										<div class="events__item_info">
 											<div class="events__item_time">
 												<div class="time">13:00</div>
-												<div class="place light_text main_font">большой зал</div>
+												<div class=" light_text main_font">большой зал</div>
 											</div>
 											<div class="events__item_title">
 												<h5>Московский государственный симфонический оркестр</h5>
@@ -666,7 +667,7 @@
 										<div class="events__item_info">
 											<div class="events__item_time">
 												<div class="time">13:00</div>
-												<div class="place light_text main_font">большой зал</div>
+												<div class=" light_text main_font">большой зал</div>
 											</div>
 											<div class="events__item_title">
 												<h5>Московский государственный симфонический оркестр</h5>
@@ -715,7 +716,7 @@
 										<div class="events__item_info">
 											<div class="events__item_time">
 												<div class="time">13:00</div>
-												<div class="place light_text main_font">большой зал</div>
+												<div class=" light_text main_font">большой зал</div>
 											</div>
 											<div class="events__item_title">
 												<h5>XII Московский музыкальный фестиваль «Владимир Спиваков приглашает»
@@ -784,7 +785,7 @@
 											fill-rule="evenodd" />
 									</svg>
 								</div>
-								<div class="pagination pagination_tabs tabs dropdown__list">
+								<div class="pagination pagination_tabs tabs dropdown-slider__tabs">
 									<div class="before"></div>
 								</div>
 							</div>
@@ -1264,9 +1265,18 @@
 
 			</div>
 		</footer>
+		<!-- <svg id="vawe" width="100%" height="150" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<defs></defs>
+			<path id="myId" d="" />
+		</svg> -->
 		<div class="mobile">
+
 			<div class="mobile__content">
 				<div class="wrapper ">
+					<svg id="vawe" width="120%" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<defs></defs>
+						<path id="myId" d="" />
+					</svg>
 					<div class="head mobile__head">
 						<div class="container">
 							<div class="head__top d-flex align-end justify-between">
@@ -2060,10 +2070,7 @@
 
 	</div>
 	</div>
-	<!-- <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-		<defs></defs>
-		<path id="myID" d="" />
-	</svg> -->
+
 
 	<script src="/assets/libs/jquery/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

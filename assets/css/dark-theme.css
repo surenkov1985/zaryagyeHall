@@ -1,8 +1,6 @@
 .dark {
   color: var(--clr-white);
-}
-.dark #canvas {
-  background: var(--clr-black);
+  background-color: var(--clr-black);
 }
 .dark a {
   color: var(--clr-white);
@@ -157,11 +155,15 @@
   stroke: none !important;
 }
 .dark .head.fixed {
-  background: var(--clr-black);
+  background: var(--clr-black-40);
   color: var(--clr-white);
 }
 .dark .head.fixed svg path {
   stroke: var(--clr-white);
+}
+.dark .head.fixed .logo svg path {
+  fill: var(--clr-white);
+  stroke: none !important;
 }
 .dark .head.fixed .light-logo {
   display: none;
@@ -212,6 +214,15 @@
   color: var(--clr-white-40);
 }
 .dark .halls__slide {
+  background: var(--clr-black);
+}
+.dark .halls .dropdown {
+  background: var(--clr-white-10);
+}
+.dark .halls .dropdown .btn_tab {
+  background: none;
+}
+.dark .events__date {
   background: var(--clr-black);
 }
 .dark .about__img .dark {

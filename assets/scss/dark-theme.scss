@@ -1,13 +1,13 @@
 .dark {
 		color: var(--clr-white);
-		// background: var(--clr-black);
+		background-color: var(--clr-black);
 
 		// :root {
 		// 	--font-accent: #fff;
 		// }
 		
 		& #canvas {
-			background: var(--clr-black);
+			// background-color: var(--clr-black);
 		}
 
 		& a {
@@ -230,7 +230,7 @@
 		}
 
 		&.fixed {
-			background: var(--clr-black);
+			background: var(--clr-black-40);
 
 			color: var(--clr-white);
 
@@ -238,7 +238,13 @@
 			stroke: var(--clr-white);
 		}
 
-		
+		& .logo {
+
+			& svg path {
+				fill: var(--clr-white);
+				stroke: none !important;
+			}
+		}
 
 		& .light-logo {
 			display: none;
@@ -321,6 +327,21 @@
 	& .halls {
 
 		&__slide {
+			background: var(--clr-black);
+		}
+
+		& .dropdown {
+			background: var(--clr-white-10);
+
+			& .btn_tab {
+				background: none;
+			}
+		}
+	}
+
+	& .events {
+
+		&__date {
 			background: var(--clr-black);
 		}
 	}

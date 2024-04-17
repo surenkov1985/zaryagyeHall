@@ -8,3 +8,19 @@
     transform: translateZ(0);
   }
 }
+@keyframes blackToWhite {
+  from {
+    background-color: var(--clr-black);
+  }
+  to {
+    background-color: var(--clr-white);
+  }
+}
+@keyframes whiteToBlack {
+  from {
+    background-color: var(--clr-black);
+  }
+  to {
+    background-color: var(--clr-white);
+  }
+}

@@ -85,7 +85,7 @@ function hallsSliders() {
 			renderBullet: function (current, total) {
 				const slide = Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current];
 
-				return `<span class="btn btn_tab dropdown__item ${total} ${slide.classList.contains("swiper-slide-active") ? "active" : ""
+				return `<span class="btn btn_tab dropdown-slider__item ${total} ${slide.classList.contains("swiper-slide-active") ? "active" : ""
 					}"><span class="value">${Array.from(hallSlider.querySelectorAll(".swiper-slide"))[current].dataset.name}</span></span>`;
 			},
 		},

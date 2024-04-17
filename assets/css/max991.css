@@ -336,6 +336,19 @@
     width: 58.3333333333%;
     gap: 4rem;
   }
+  .halls .dropdown {
+    width: calc(100% - 48px) !important;
+    bottom: 32px !important;
+  }
+  .halls .dropdown__value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--clr-white);
+    line-height: 1.4;
+    padding: 18px 32px;
+  }
   .news_title {
     margin-bottom: 2.5rem;
   }
